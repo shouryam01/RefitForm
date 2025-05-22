@@ -2,6 +2,7 @@
     <h2>INS DELHI REFIT TRIALS </h2>
     <h4>SUMMARY OF TRIALS</h4>
 </div>
+<form [formGroup]="delhiForm" (ngSubmit)="onSubmit()">
 
 <div class="table table-bordered">
     <table class="table table-bordered">
@@ -23,19 +24,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials1">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks1">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks1">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials1">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks1">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks1">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks1">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks1">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials1">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials1">
                 </td>
                 <td rowspan="2">
                     <input type="text" form-control formControlName="summ_trial_remarks1">
@@ -49,19 +50,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials2">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks2">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks2">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials2">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks2">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks2">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks2">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks2">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials2">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials2">
                 </td>
                 <!-- <td>
                     <input type="text" form-control formControlName="summ_trial_remarks2">
@@ -75,19 +76,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials3">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks3">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks3">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials3">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks3">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks3">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks3">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks3">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials3">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials3">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks3">
@@ -101,19 +102,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials4">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks4">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks4">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials4">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks4">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks4">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks4">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks4">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials4">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials4">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks4">
@@ -127,19 +128,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials5">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks5">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks5">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials5">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks5">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks5">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks5">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks5">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials5">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials5">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks5">
@@ -154,19 +155,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials6">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks6">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks6">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials6">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks6">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks6">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks6">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks6">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials6">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials6">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks6">
@@ -181,19 +182,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials7">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks7">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks7">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials7">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks7">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks7">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks7">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks7">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials7">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials7">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks7">
@@ -208,19 +209,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials8">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks8">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks8">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials8">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks8">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks8">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks8">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks8">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials8">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials8">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks8">
@@ -235,19 +236,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials9">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks9">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks9">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials9">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks9">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks9">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks9">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks9">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials9">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials9">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks9">
@@ -262,19 +263,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials10">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks10">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks10">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials10">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks10">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks10">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks10">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks10">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials10">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials10">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks10">
@@ -289,19 +290,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials11">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks11">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks11">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials11">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks11">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks11">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks11">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks11">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials11">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials11">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks11">
@@ -315,19 +316,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials12">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks12">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks12">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials12">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks12">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks12">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks12">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks12">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials12">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials12">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks12">
@@ -341,19 +342,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials13">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks13">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks13">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials13">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks13">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks13">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks13">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks13">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials13">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials13">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks13">
@@ -367,19 +368,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials14">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks14">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks14">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials14">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks14">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks14">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks14">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks14">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials14">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials14">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks14">
@@ -394,19 +395,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials15">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks15">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks15">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials15">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks15">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks15">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks15">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks15">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials15">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials15">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks15">
@@ -421,19 +422,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials16">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks16">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks16">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials16">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks16">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks16">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks16">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks16">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials16">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials16">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks16">
@@ -447,19 +448,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials17">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks17">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks17">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials17">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks17">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks17">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks17">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks17">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials17">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials17">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks17">
@@ -473,19 +474,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials18">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks18">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks18">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials18">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks18">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks18">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks18">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks18">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials18">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials18">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks18">
@@ -496,25 +497,25 @@
                 <td>19.</td>
                 <td>Fire main Pump No.4</td>
                 <td>
-                    <input type="date" form-control formControlName="summ_trial_date_trials18">
+                    <input type="date" form-control formControlName="summ_trial_date_trials19">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks18">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks19">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_vib_trials18">
+                    <input type="text" form-control formControlName="summ_trial_vib_trials19">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks18">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks19">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks18">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks19">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials18">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials19">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_remarks18">
+                    <input type="text" form-control formControlName="summ_trial_remarks19">
                 </td>
             </tr>
 
@@ -525,19 +526,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials20">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks20">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks20">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials20">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks20">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks20">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks20">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks20">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials20">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials20">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks20">
@@ -551,19 +552,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials21">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks21">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks21">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials21">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks21">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks21">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks21">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks21">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials21">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials21">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks21">
@@ -577,19 +578,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials22">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks22">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks22">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials22">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks22">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks22">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks22">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks22">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials22">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials22">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks22">
@@ -603,19 +604,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials23">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks23">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks23">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials23">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks23">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks23">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks23">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks23">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials23">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials23">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks23">
@@ -629,19 +630,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials24">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks24">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks24">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials24">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks24">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks24">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks24">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks24">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials24">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials24">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks24">
@@ -655,19 +656,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials25">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks25">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks25">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials25">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks25">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks25">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks25">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks25">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials25">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials25">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks25">
@@ -681,19 +682,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials26">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks26">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks26">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials26">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks26">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks26">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks26">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks26">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials26">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials26">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks26">
@@ -707,19 +708,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials27">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks27">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks27">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials27">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks27">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks27">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks27">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks27">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials27">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials27">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks27">
@@ -733,19 +734,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials28">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks28">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks28">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials28">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks28">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks28">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks28">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks28">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials28">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials28">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks28">
@@ -759,19 +760,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials29">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks29">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks29">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials29">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks29">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks29">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks29">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks29">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials29">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials29">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks29">
@@ -785,19 +786,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials30">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks30">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks30">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials30">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks30">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks30">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks30">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks30">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials30">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials30">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks30">
@@ -812,19 +813,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials31">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks31">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks31">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials31">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks31">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks31">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks31">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks31">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials31">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials31">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks31">
@@ -839,19 +840,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials32">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks32">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks32">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials32">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks32">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks32">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks32">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks32">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials32">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials32">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks32">
@@ -865,19 +866,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials33">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks33">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks33">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials33">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks33">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks33">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks33">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks33">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials33">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials33">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks33">
@@ -892,19 +893,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials34">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks34">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks34">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials34">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks34">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks34">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks34">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks34">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials34">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials34">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks34">
@@ -919,19 +920,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials35">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks35">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks35">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials35">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks35">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks35">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks35">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks35">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials35">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials35">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks35">
@@ -946,19 +947,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials36">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks36">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks36">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials36">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks36">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks36">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks36">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks36">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials36">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials36">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks36">
@@ -972,19 +973,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials37">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks37">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks37">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials37">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks37">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks37">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks37">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks37">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials37">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials37">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks37">
@@ -998,19 +999,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials38">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks38">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks38">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials38">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks38">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks38">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks38">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks38">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials38">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials38">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks38">
@@ -1025,19 +1026,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials39">
                 </td>
                 <!-- <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks39">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks39">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials39">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks39">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks39">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks39">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks39">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials39">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials39">
                 </td> -->
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks39">
@@ -1051,19 +1052,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials40">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks40">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks40">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials40">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks40">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks40">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks40">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks40">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials40">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials40">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks40">
@@ -1077,19 +1078,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials41">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks41">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks41">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials41">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks41">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks41">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks41">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks41">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials41">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials41">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks41">
@@ -1103,19 +1104,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials42">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks42">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks42">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials42">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks42">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks42">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks42">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks42">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials42">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials42">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks42">
@@ -1129,19 +1130,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials43">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks43">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks43">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials43">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks43">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks43">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks43">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks43">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials43">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials43">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks43">
@@ -1156,19 +1157,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials44">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks44">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks44">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials44">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks44">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks44">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks44">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks44">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials44">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials44">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks44">
@@ -1183,19 +1184,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials45">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks45">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks45">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials45">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks45">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks45">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks45">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks45">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials45">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials45">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks45">
@@ -1210,19 +1211,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials46">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks46">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks46">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials46">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks46">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks46">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks46">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks46">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials46">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials46">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks46">
@@ -1237,19 +1238,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials47">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks47">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks47">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials47">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks47">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks47">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks47">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks47">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials47">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials47">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks47">
@@ -1263,19 +1264,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials48">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks48">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks48">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials48">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks48">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks48">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks48">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks48">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials48">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials48">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks48">
@@ -1289,19 +1290,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials49">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks49">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks49">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials49">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks49">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks49">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks49">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks49">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials49">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials49">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks49">
@@ -1315,19 +1316,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials50">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks50">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks50">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials50">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks50">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks50">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks50">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks50">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials50">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials50">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks50">
@@ -1342,19 +1343,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials51">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks51">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks51">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials51">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks51">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks51">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks51">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks51">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials51">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials51">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks51">
@@ -1368,19 +1369,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials52">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks52">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks52">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials52">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks52">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks52">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks52">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks52">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials52">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials52">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks52">
@@ -1394,19 +1395,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials53">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks53">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks53">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials53">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks53">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks53">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks53">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks53">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials53">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials53">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks53">
@@ -1420,19 +1421,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials54">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks54">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks54">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials54">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks54">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks54">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks54">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks54">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials54">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials54">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks54">
@@ -1446,19 +1447,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials55">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks55">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks55">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials55">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks55">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks55">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks55">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks55">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials55">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials55">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks55">
@@ -1472,19 +1473,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials56">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks56">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks56">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials56">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks56">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks56">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks56">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks56">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials56">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials56">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks56">
@@ -1498,19 +1499,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials57">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks57">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks57">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials57">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks57">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks57">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks57">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks57">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials57">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials57">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks57">
@@ -1524,19 +1525,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials58">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks58">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks58">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials58">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks58">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks58">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks58">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks58">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials58">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials58">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks58">
@@ -1550,19 +1551,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials59">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks59">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks59">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials59">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks59">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks59">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks59">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks59">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials59">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials59">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks59">
@@ -1575,19 +1576,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials60">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks60">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks60">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials60">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks60">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks60">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks60">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks60">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials60">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials60">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks60">
@@ -1601,19 +1602,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials61">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks61">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks61">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials61">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks61">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks61">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks61">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks61">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials61">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials61">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks61"> 
@@ -1628,19 +1629,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials62">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks62">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks62">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials62">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks62">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks62">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks62">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks62">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials62">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials62">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks62">
@@ -1654,19 +1655,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials63">
                 </td>
                 <td colspan="6">
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks63">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks63">
                 </td>
                 <!-- <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials63">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks63">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks63">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks63">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks63">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials63">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials63">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks63">
@@ -1680,19 +1681,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials64">
                 </td>
                 <td colspan="6">
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks64">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks64">
                 </td>
                 <!-- <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials64">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks64">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks64">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks64">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks64">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials64">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials64">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks64">
@@ -1705,19 +1706,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials65">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks65">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks65">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials65">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks65">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks65">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks65">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks65">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials65">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials65">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks65">
@@ -1731,19 +1732,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials66">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks66">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks66">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials66">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks66">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks66">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks66">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks66">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials66">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials66">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks66">
@@ -1757,19 +1758,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials67">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks67">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks67">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials67">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks67">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks67">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks67">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks67">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials67">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials67">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks67">
@@ -1783,19 +1784,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials68">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks68">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks68">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials68">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks68">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks68">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks68">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks68">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials68">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials68">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks68">
@@ -1810,19 +1811,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials69">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks69">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks69">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials69">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks69">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks69">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks69">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks69">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials69">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials69">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks69">
@@ -1836,19 +1837,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials70">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks70">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks70">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials70">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks70">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks70">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks70">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks70">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials70">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials70">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks70">
@@ -1862,19 +1863,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials71">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks71">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks71">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials71">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks71">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks71">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks71">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks71">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials71">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials71">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks71">
@@ -1888,19 +1889,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials72">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks72">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks72">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials72">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks72">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks72">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks72">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks72">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials72">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials72">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks72">
@@ -1913,19 +1914,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials73">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks73">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks73">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials73">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks73">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks73">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks73">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks73">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials73">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials73">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks73">
@@ -1938,19 +1939,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials74">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks74">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks74">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials74">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks74">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks74">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks74">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks74">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials74">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials74">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks74">
@@ -1963,19 +1964,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials75">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks75">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks75">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials75">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks75">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks75">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks75">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks75">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials75">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials75">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks75">
@@ -1989,19 +1990,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials76">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks76">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks76">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials76">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks76">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks76">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks76">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks76">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials76">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials76">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks76">
@@ -2014,19 +2015,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials77">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks77">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks77">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials77">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks77">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks77">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks77">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks77">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials77">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials77">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks77">
@@ -2039,19 +2040,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials78">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks78">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks78">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials78">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks78">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks78">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks78">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks78">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials78">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials78">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks78">         
@@ -2064,19 +2065,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials79">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks79">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks79">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials79">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks79">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks79">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks79">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks79">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials79">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials79">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks79">
@@ -2089,19 +2090,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials80">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks80">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks80">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials80">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks80">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks80">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks80">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks80">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials80">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials80">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks80">
@@ -2115,19 +2116,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials81">
                 </td>
                 <td colspan="6">
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks81">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks81">
                 </td>
                 <!-- <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials81">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks81">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks81">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks81">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks81">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials81">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials81">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks81"> 
@@ -2141,19 +2142,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials82">
                 </td>
                 <td colspan="4">
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks82">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks82">
                 </td>
                 <!-- <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials82">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks82">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks82">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks82">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks82">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials82">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials82">
                 </td> -->
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks82"> 
@@ -2167,19 +2168,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials83">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks83">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks83">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials83">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks83">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks83">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks83">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks83">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials83">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials83">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks83">
@@ -2192,19 +2193,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials84">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks84">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks84">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials84">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks84">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks84">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks84">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks84">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials84">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials84">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks84">
@@ -2218,19 +2219,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials85">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks85">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks85">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials85">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks85">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks85">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks85">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks85">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials85">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials85">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks85">
@@ -2244,19 +2245,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials86">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks86">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks86">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials86">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks86">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks86">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks86">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks86">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials86">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials86">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks86">
@@ -2270,19 +2271,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials87">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks87">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks87">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials87">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks87">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks87">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks87">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks87">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials87">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials87">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks87">
@@ -2295,19 +2296,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials88">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks88">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks88">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials88">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks88">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks88">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks88">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks88">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials88">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials88">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks88">
@@ -2321,19 +2322,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials89">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks89">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks89">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials89">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks89">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks89">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks89">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks89">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials89">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials89">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks89">
@@ -2347,19 +2348,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials90">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks90">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks90">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials90">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks90">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks90">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks90">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks90">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials90">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials90">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks90">
@@ -2372,19 +2373,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials91">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks91">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks91">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials91">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks91">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks91">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks91">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks91">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials91">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials91">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks91">
@@ -2397,19 +2398,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials92">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks92">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks92">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials92">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks92">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks92">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks92">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks92">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials92">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials92">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks92">
@@ -2422,19 +2423,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials93">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks93">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks93">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials93">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks93">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks93">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks93">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks93">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials93">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials93">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks93">
@@ -2448,19 +2449,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials94">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks94">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks94">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials94">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks94">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks94">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks94">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks94">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials94">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials94">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks94">
@@ -2474,19 +2475,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials95">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks95">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks95">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials95">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks95">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks95">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks95">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks95">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials95">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials95">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks95">
@@ -2499,19 +2500,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials96">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks96">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks96">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials96">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks96">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks96">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks96">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks96">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials96">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials96">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks96">
@@ -2524,19 +2525,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials97">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks97">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks97">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials97">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks97">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks97">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks97">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks97">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials97">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials97">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks97">
@@ -2550,19 +2551,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials98">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks98">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks98">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials98">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks98">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks98">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks98">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks98">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials98">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials98">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks98">
@@ -2576,19 +2577,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials99">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks99">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks99">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials99">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks99">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks99">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks99">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks99">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials99">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials99">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks99">
@@ -2602,19 +2603,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials100">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks100">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks100">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials100">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks100">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks100">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks100">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks100">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials100">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials100">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks100">
@@ -2628,19 +2629,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials101">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks101">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks101">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials101">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks101">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks101">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks101">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks101">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials101">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials101">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks101">
@@ -2654,19 +2655,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials102">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks102">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks102">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials102">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks102">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks102">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks102">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks102">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials102">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials102">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks102">
@@ -2680,19 +2681,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials103">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks103">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks103">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials103">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks103">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks103">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks103">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks103">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials103">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials103">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks103">
@@ -2705,19 +2706,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials104">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks104">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks104">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials104">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks104">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks104">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks104">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks104">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials104">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials104">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks104">
@@ -2731,19 +2732,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials105">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks105">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks105">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials105">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks105">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks105">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks105">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks105">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials105">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials105">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks105">
@@ -2757,19 +2758,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials106">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks106">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks106">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials106">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks106">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks106">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks106">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks106">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials106">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials106">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks106">    
@@ -2783,19 +2784,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials107">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks107">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks107">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials107">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks107">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks107">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks107">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks107">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials107">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials107">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks107"> 
@@ -2809,19 +2810,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials108">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks108">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks108">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials108">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks108">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks108">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks108">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks108">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials108">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials108">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks108">
@@ -2834,19 +2835,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials109">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks109">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks109">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials109">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks109">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks109">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks109">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks109">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials109">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials109">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks109">
@@ -2859,19 +2860,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials110">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks110">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks110">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials110">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks110">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks110">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks110">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks110">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials110">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials110">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks110">
@@ -2884,19 +2885,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials111">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks111">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks111">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials111">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks111">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks111">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks111">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks111">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials111">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials111">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks111">
@@ -2909,19 +2910,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials112">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks112">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks112">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials112">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks112">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks112">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks112">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks112">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials112">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials112">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks112">
@@ -2934,19 +2935,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials113">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks113">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks113">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials113">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks113">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks113">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks113">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks113">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials113">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials113">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks113">
@@ -2960,19 +2961,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials114">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks114">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks114">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials114">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks114">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks114">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks114">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks114">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials114">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials114">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks114">
@@ -2986,19 +2987,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials115">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks115">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks115">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials115">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks115">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks115">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks115">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks115">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials115">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials115">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks115">
@@ -3011,19 +3012,19 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials116">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks116">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks116">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials116">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks116">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks116">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks116">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks116">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials116">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials116">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks116">
@@ -3036,24 +3037,32 @@
                     <input type="date" form-control formControlName="summ_trial_date_trials117">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_sdc-checks117">
+                    <input type="text" form-control formControlName="summ_trial_sdc_checks117">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_vib_trials117">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_SPM-checks117">
+                    <input type="text" form-control formControlName="summ_trial_SPM_checks117">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_Attenuation-checks117">
+                    <input type="text" form-control formControlName="summ_trial_Attenuation_checks117">
                 </td>
                 <td>
-                    <input type="text" form-control formControlName="summ_trial_performance-trials117">
+                    <input type="text" form-control formControlName="summ_trial_performance_trials117">
                 </td>
                 <td>
                     <input type="text" form-control formControlName="summ_trial_remarks117">
                 </td>
             </tr>
+        </table>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
 
 
 
