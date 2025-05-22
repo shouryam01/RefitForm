@@ -1,0 +1,482 @@
+
+<div class="table-container">
+  <h3 class="table-title" style="text-align: left;"><strong>Thermal parameters at SRPM 255 (01 Nominal)</strong></h3>
+  <form [formGroup]="thermalForm">
+    <table class="thermal-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Ser</th>
+          <th rowspan="2">Position</th>
+          <th colspan="2">Port Shaft (SRPM)</th>
+          <th colspan="2">Stbd Shaft (SRPM)</th>
+        </tr>
+        <tr>
+          <th>Remote(°C)<br>(FWD GTR)</th>
+          <th>Local (°C)</th>
+          <th>Remote(°C)<br>(AFT GTR)</th>
+          <th>Local (°C)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row (a) -->
+        <tr>
+          <td>(a)</td>
+          <td>Main Thrust Block FWD</td>
+          <td><input type="number" formControlName="portRemote0_1" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_1" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_1" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_1" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (b) -->
+        <tr>
+          <td>(b)</td>
+          <td>Main Thrust Block AFT</td>
+          <td><input type="number" formControlName="portRemote0_2" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_2" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_2" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_2" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (c) -->
+        <tr>
+          <td>(c)</td>
+          <td>Plummer Block - 1</td>
+          <td><input type="number" formControlName="portRemote0_3" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_3" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_3" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_3" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (d) -->
+        <tr>
+          <td>(d)</td>
+          <td>Plummer Block - 2</td>
+          <td><input type="number" formControlName="portRemote0_4" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_4" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_4" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_4" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (e) -->
+        <tr>
+          <td>(e)</td>
+          <td>Plummer Block - 3</td>
+          <td><input type="number" formControlName="portRemote0_5" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_5" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_5" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_5" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (f) -->
+        <tr>
+          <td>(f)</td>
+          <td>Plummer Block - 4</td>
+          <td><input type="number" formControlName="portRemote0_6" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_6" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_6" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_6" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (g) -->
+        <tr>
+          <td>(g)</td>
+          <td>Plummer Block - 5</td>
+          <td><input type="number" formControlName="portRemote0_7" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_7" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_7" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_7" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (h) -->
+        <tr>
+          <td>(h)</td>
+          <td>Plummer Block - 6</td>
+          <td><input type="number" formControlName="portRemote0_8" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_8" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_8" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_8" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (i) -->
+        <tr>
+          <td>(i)</td>
+          <td>Plummer Block - 7</td>
+          <td><input type="number" formControlName="portRemote0_9" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal0_9" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote0_9" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal0_9" class="temp-input"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+
+
+<div>
+<h3 class="table-title2" style="text-align: left;"><strong>Thermal parameters at SRPM  0000 (0.000 Nominal)</strong></h3>
+    <form [formGroup]="thermalForm2">
+    <table class="thermal-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Ser</th>
+          <th rowspan="2">Position</th>
+          <th colspan="2">Port Shaft (SRPM)</th>
+          <th colspan="2">Stbd Shaft (SRPM)</th>
+        </tr>
+        <tr>
+          <th>Remote(°C)<br>(FWD GTR)</th>
+          <th>Local (°C)</th>
+          <th>Remote(°C)<br>(AFT GTR)</th>
+          <th>Local (°C)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row (a) -->
+        <tr>
+          <td>(a)</td>
+          <td>Main Thrust Block FWD</td>
+          <td><input type="number" formControlName="portRemote1" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal1" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote1" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal1" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (b) -->
+        <tr>
+          <td>(b)</td>
+          <td>Main Thrust Block AFT</td>
+          <td><input type="number" formControlName="portRemote2" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal2" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote2" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal2" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (c) -->
+        <tr>
+          <td>(c)</td>
+          <td>Plummer Block - 1</td>
+          <td><input type="number" formControlName="portRemote3" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal3" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote3" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal3" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (d) -->
+        <tr>
+          <td>(d)</td>
+          <td>Plummer Block - 2</td>
+          <td><input type="number" formControlName="portRemote4" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal4" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote4" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal4" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (e) -->
+        <tr>
+          <td>(e)</td>
+          <td>Plummer Block - 3</td>
+          <td><input type="number" formControlName="portRemote5" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal5" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote5" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal5" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (f) -->
+        <tr>
+          <td>(f)</td>
+          <td>Plummer Block - 4</td>
+          <td><input type="number" formControlName="portRemote6" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal6" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote6" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal6" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (g) -->
+        <tr>
+          <td>(g)</td>
+          <td>Plummer Block - 5</td>
+          <td><input type="number" formControlName="portRemote7" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal7" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote7" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal7" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (h) -->
+        <tr>
+          <td>(h)</td>
+          <td>Plummer Block - 6</td>
+          <td><input type="number" formControlName="portRemote8" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal8" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote8" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal8" class="temp-input"></td>
+        </tr>
+        
+        <!-- Row (i) -->
+        <tr>
+          <td>(i)</td>
+          <td>Plummer Block - 7</td>
+          <td><input type="number" formControlName="portRemote9" class="temp-input"></td>
+          <td><input type="number" formControlName="portLocal9" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdRemote9" class="temp-input"></td>
+          <td><input type="number" formControlName="stbdLocal9" class="temp-input"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  </div>
+</div>
+
+
+<!-- 4th form in Appendix A -->
+
+<div class="table-container">
+  <h2 class="table-title" style="text-align: left;">Shafting Vibration Parameters</h2>
+  
+  <table class="vibration-table">
+    <thead>
+      <tr>
+        <th rowspan="2">Ser</th>
+        <th rowspan="2">Measuring Point</th>
+        <th rowspan="1">Dir</th>
+        <th rowspan="1">Limit</th>
+        <th colspan="2">Max Overall Value in mm/s at 0.00N/SRPM</th>
+        <th colspan="2">Max Overall Value in mm/s at 0.0N/SRPM</th>
+      </tr>
+      <tr>
+        <th>RPM</th>
+        <th></th>
+        <th>Port Shaft</th>
+        <th>Stbd Shaft</th>
+        <th>Port Shaft</th>
+        <th>Stbd Shaft</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Row (a) MTB 1 -->
+      <tr>
+        <td rowspan="3">(a)</td>
+        <td rowspan="3">MTB 1</td>
+        <td>V</td>
+        <td rowspan="27">
+          <div>Trend</div>
+          <div>Limit 3 mm/sec</div>
+          <br>
+          <div>Alarm 7 mm/sec</div>
+        </td>
+        <td><input type="number" formControlName="mtb1V.stbd1" class="vibration-input"></td>
+        <td rowspan="3">NA</td>
+        
+        <td><input type="number" formControlName="mtb1V.stbd2" class="vibration-input"></td>
+        <td rowspan="3">NA</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="mtb1A.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb1A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="mtb1H.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb1H.stbd2" class="vibration-input"></td>
+      </tr>
+
+      <!-- Row (b) MTB 2 -->
+      <tr>
+        <td rowspan="3">(b)</td>
+        <td rowspan="3">MTB 2</td>
+        <td>V</td>
+        <td rowspan="3">NA</td>
+        <td><input type="number" formControlName="mtb2V.stbd1" class="vibration-input"></td>
+        <td rowspan="3">NA</td>
+        <td><input type="number" formControlName="mtb2V.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="mtb2A.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb2A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="mtb2H.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb2H.stbd2" class="vibration-input"></td>
+      </tr>
+
+      <!-- Row (c) PB 1 -->
+      <tr>
+        <td rowspan="3">(c)</td>
+        <td rowspan="3">PB 1</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td rowspan="15">NA</td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <td rowspan="15">NA</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+
+      <!-- Continue with remaining rows (d)-(k) following same structure -->
+       <tr>
+        <td rowspan="3">(d)</td>
+        <td rowspan="3">PB 2</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+<tr>
+        <td rowspan="3">(e)</td>
+        <td rowspan="3">PB 3</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+
+      <tr>
+        <td rowspan="3">(f)</td>
+        <td rowspan="3">PB 4</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+<tr>
+        <td rowspan="3">(g)</td>
+        <td rowspan="3">PB 5</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td rowspan="3">(h)</td>
+        <td rowspan="3">PB 6</td>
+        <td>V</td>
+        <td rowspan="6">NA</td>
+        <td><input type="number" formControlName="pb1V.stbd1" class="vibration-input"></td>
+        <td rowspan="6">NA</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="pb1A.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="pb1H.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.stbd2" class="vibration-input"></td>
+      </tr>
+
+<tr>
+        <td rowspan="3">(j)</td>
+        <td rowspan="3">PB 7</td>
+        <td>V</td>
+        
+        <td><input type="number" formControlName="pb1V.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="pb1A.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="pb1H.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.stbd2" class="vibration-input"></td>
+      </tr>
+     
+      <!-- ... -->
+      
+      <!-- Row (k) Stern Tube -->
+      <tr>
+        <td rowspan="3">(k)</td>
+        <td rowspan="3">Stern Tube</td>
+        <td>V</td>
+        <td rowspan="3">
+          <div>Trend</div>
+          <div>2 mm/sec</div>
+          <br>
+          <div>Alarm 7 mm/sec</div>
+        </td>
+        <td><input type="number" formControlName="sternTubeV.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeV.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeV.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeV.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="sternTubeA.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeA.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeA.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeA.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="sternTubeH.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeH.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeH.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeH.stbd2" class="vibration-input"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
