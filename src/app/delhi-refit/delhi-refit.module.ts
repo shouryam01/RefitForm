@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'delhi-refit-two', component: DelhiRefitTwoComponent },
   { path: 'delhi-refit-three', component: DelhiRefitThreeComponent },
   { path: 'delhi-refit-four', component: DelhiRefitFourComponent },
-  // { path: 'component-b', component: ComponentB }
 ];
 
 @NgModule({
