@@ -1,0 +1,96 @@
+form {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.main-heading {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 13px;
+  table-layout: auto;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 4px 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th[colspan], th[rowspan] {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 60px;
+  padding: 3px;
+  font-size: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 50px;
+    font-size: 11px;
+  }
+}
+.spm-table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.spm-table th,
+.spm-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.spm-table input {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.vibration-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.vibration-table th,
+.vibration-table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+.vibration-table input {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+}

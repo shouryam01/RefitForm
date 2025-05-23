@@ -235,7 +235,7 @@
 
 <h3 class="main-heading">Positional Checks -Steering Gear Harbour Trials Follow on Checks   </h3>
 <div class="table-section">
-<form [formGroup]="steeringForm">
+<form [formGroup]="steeringForm" (ngSubmit)="onSubmit()">
   <h4 class="sub-heading">(a)	Operating Position- Bridge with Port Pump   </h4>
   <!-- You can reuse this table structure for other headings too -->
   <table>
@@ -1586,3 +1586,8 @@
   </table>
 </form>
 </div>
+<div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>

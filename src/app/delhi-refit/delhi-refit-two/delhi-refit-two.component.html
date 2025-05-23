@@ -1,7 +1,7 @@
 
 <div class="table-container">
   <h3 class="table-title" style="text-align: left;"><strong>Thermal parameters at SRPM 255 (01 Nominal)</strong></h3>
-  <form [formGroup]="thermalForm">
+  <form [formGroup]="thermalForm"  (ngSubmit)="onSubmit()">
     <table class="thermal-table">
       <thead>
         <tr>
@@ -109,12 +109,12 @@
         </tr>
       </tbody>
     </table>
-  </form>
+  <!-- </form> -->
 
 
 <div>
 <h3 class="table-title2" style="text-align: left;"><strong>Thermal parameters at SRPM  0000 (0.000 Nominal)</strong></h3>
-    <form [formGroup]="thermalForm">
+    <!-- <form [formGroup]="thermalForm"> -->
     <table class="thermal-table">
       <thead>
         <tr>
@@ -222,16 +222,16 @@
         </tr>
       </tbody>
     </table>
-  </form>
+  <!-- </form> -->
   </div>
-</div>
+<!-- </div> -->
 
 
 <!-- 4th form in Appendix A -->
 
 <div class="table-container">
   <h2 class="table-title" style="text-align: left;">Shafting Vibration Parameters</h2>
-  <form [formGroup]="thermalForm">
+  <!-- <form [formGroup]="thermalForm"> -->
   <table class="vibration-table">
     <thead>
       <tr>
@@ -342,7 +342,7 @@
         <td><input type="number" formControlName="pb2H_port30" class="vibration-input"></td>
         <td><input type="number" formControlName="pb2H_port030" class="vibration-input"></td>
       </tr>
-<tr>
+ <tr>
         <td rowspan="3">(e)</td>
         <td rowspan="3">PB 3</td>
         <td>V</td>
@@ -379,7 +379,7 @@
         <td><input type="number" formControlName="pb4H_port36" class="vibration-input"></td>
         <td><input type="number" formControlName="pb4H_port036" class="vibration-input"></td>
       </tr>
-<tr>
+ <tr>
         <td rowspan="3">(g)</td>
         <td rowspan="3">PB 5</td>
         <td>V</td>
@@ -421,7 +421,7 @@
         <td><input type="number" formControlName="pb6H_stbd042" class="vibration-input"></td>
       </tr>
 
-<tr>
+ <tr>
         <td rowspan="3">(j)</td>
         <td rowspan="3">PB 7</td>
         <td>V</td>
@@ -479,5 +479,11 @@
       </tr>
     </tbody>
   </table>
-  </form>
+</div>
+</form>
+</div>
+<div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
 </div>

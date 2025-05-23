@@ -6,14 +6,13 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   templateUrl: './delhi-refit-four.component.html',
   styleUrls: ['./delhi-refit-four.component.scss']
 })
-export class DelhiRefitFourComponent {
+export class DelhiRefitFourComponent implements OnInit {
 
-  WheelPortNFUForm: FormGroup;
+  WheelPortNFUForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder) {}
 
-// WheelPortNFUForm
-
+ ngOnInit() : void {
   this.WheelPortNFUForm = this.fb.group({
       // Position 0
   bridgeEnclosed0: [''],
@@ -945,9 +944,99 @@ export class DelhiRefitFourComponent {
       zeroToTenPort116: [''],
       tenPortToTenStbd116: [''],
       tenStbdToZero116: [''],
+
+
+  channel1_port_117: [''],
+  channel1_stbd_117: [''],
+  channel1_both_117: [''],
+
+  channel1_port_118: [''],
+  channel1_stbd_118: [''],
+  channel1_both_118: [''],
+
+  channel2_port_119: [''],
+  channel2_stbd_119: [''],
+  channel2_both_119: [''],
+
+  channel2_port_120: [''],
+  channel2_stbd_120: [''],
+  channel2_both_120: [''],
+
+  channel1_port_121: [''],
+  channel1_stbd_121: [''],
+  channel1_both_121: [''],
+
+  channel1_port_122: [''],
+  channel1_stbd_122: [''],
+  channel1_both_122: [''],
+
+  channel2_port_123: [''],
+  channel2_stbd_123: [''],
+  channel2_both_123: [''],
+
+  channel2_port_124: [''],
+  channel2_stbd_124: [''],
+  channel2_both_124: [''],
+
+  channel1_port_125: [''],
+  channel1_stbd_125: [''],
+  channel1_both_125: [''],
+
+  channel1_port_126: [''],
+  channel1_stbd_126: [''],
+  channel1_both_126: [''],
+
+  channel1_port_127: [''],
+  channel1_stbd_127: [''],
+  channel1_both_127: [''],
+
+  channel1_port_128: [''],
+  channel1_stbd_128: [''],
+  channel1_both_128: [''],
+
+  channel2_port_129: [''],
+  channel2_stbd_129: [''],
+  channel2_both_129: [''],
+
+  channel2_port_130: [''],
+  channel2_stbd_130: [''],
+  channel2_both_130: [''],
+
+  channel1_port_131: [''],
+  channel1_stbd_131: [''],
+  channel1_both_131: [''],
+
+  channel1_port_132: [''],
+  channel1_stbd_132: [''],
+  channel1_both_132: [''],
+
+  channel2_port_133: [''],
+  channel2_stbd_133: [''],
+  channel2_both_133: [''],
+
+  channel2_port_134: [''],
+  channel2_stbd_134: [''],
+  channel2_both_134: [''],
+
+  channel1_port_135: [''],
+  channel1_stbd_135: [''],
+  channel1_both_135: [''],
+
+  channel1_port_136: [''],
+  channel1_stbd_136: [''],
+  channel1_both_136: [''],
+
+  channel2_port_137: [''],
+  channel2_stbd_137: [''],
+  channel2_both_137: [''],
+
+  channel2_port_138: [''],
+  channel2_stbd_138: [''],
+  channel2_both_138: ['']
     });
 
-
-
   }
+  onSubmit() {
+  console.log(this.WheelPortNFUForm.value);  // { name: '...', email: '...', age: '...' }
+}
 }

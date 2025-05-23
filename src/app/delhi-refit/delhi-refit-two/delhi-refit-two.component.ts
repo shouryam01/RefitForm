@@ -126,5 +126,7 @@ thermalForm!: FormGroup;
 
 
   }
-
+  onSubmit() {
+  console.log(this.thermalForm.value);  // { name: '...', email: '...', age: '...' }
+}
 }

@@ -34,11 +34,13 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { KutharRefitComponent } from './kuthar-refit/kuthar-refit.component';
 import { DelhiRefitOneComponent} from './delhi-refit/delhi-refit-one/delhi-refit-one.component';
+import { DelhiRefitFiveComponent } from './delhi-refit-five/delhi-refit-five.component';
 @NgModule({
   declarations: [
     AppComponent,
     KutharRefitComponent,
-    DelhiRefitOneComponent
+    DelhiRefitOneComponent,
+    DelhiRefitFiveComponent
   ],
   imports: [
     BrowserModule,

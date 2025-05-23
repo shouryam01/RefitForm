@@ -6,17 +6,14 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   templateUrl: './delhi-refit-three.component.html',
   styleUrls: ['./delhi-refit-three.component.scss']
 })
-export class DelhiRefitThreeComponent{
- steeringForm: FormGroup;
-  // bridgePortForm: FormGroup;
-  // bridgeStbdForm: FormGroup;
-  // WheelStbdForm: FormGroup;
-  // WheelPortForm: FormGroup;
-  // rudderForm!: FormGroup;
-  helmPositions = ['MIDSHIP', '5° PORT', '10°', '15°'];
+export class DelhiRefitThreeComponent  implements OnInit{
+ steeringForm!: FormGroup;
+ helmPositions = ['MIDSHIP', '5° PORT', '10°', '15°'];
 
-  constructor(private fb: FormBuilder) {
+ constructor(private fb: FormBuilder) {}
 
+ ngOnInit() : void {
+  
 this.steeringForm = this.fb.group({
   // Local Control Panel - Port Motor
   portTime1: [''],
@@ -1113,5 +1110,9 @@ this.steeringForm = this.fb.group({
   wheel_35S_30P_remarks136: ['']
 });
 
+
   }
+    onSubmit() {
+  console.log(this.steeringForm.value);  // { name: '...', email: '...', age: '...' }
+}
 }
