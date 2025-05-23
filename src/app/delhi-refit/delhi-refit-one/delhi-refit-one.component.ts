@@ -852,6 +852,7 @@ export class DelhiRefitOneComponent implements OnInit {
   onSubmit() {
     const formData = this.delhiForm.value;
     this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.delhiForm.patchValue(formData);
       this.loadData(); // Refresh list
   console.log(this.delhiForm.value);  // { name: '...', email: '...', age: '...' }
 });
