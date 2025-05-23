@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
+// import { DelhiRefitService } from '../delhi-refit.service';
+import { environment } from '../../../../src/environments/environment'
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector : 'app-delhi-refit-one',
@@ -8,7 +11,9 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 })
 export class DelhiRefitOneComponent implements OnInit {
     delhiForm! : FormGroup;
-  constructor(private fb : FormBuilder) { }
+    records: any[] = [];
+    apiUrl = environment.apiUrl + 'delhi-refit-one';
+  constructor(private fb : FormBuilder, private http: HttpClient) { }
 
   ngOnInit() : void {
     this.delhiForm = this.fb.group({
@@ -833,10 +838,23 @@ export class DelhiRefitOneComponent implements OnInit {
       summ_trial_remarks117 : new FormControl(''),
     });
 
+    this.loadData();
+  }
+
+
+  loadData(): void {
+    this.http.get(this.apiUrl).subscribe(data => {
+      console.log(data);
+      this.records = data as any[];
+    });
   }
 
   onSubmit() {
+    const formData = this.delhiForm.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.loadData(); // Refresh list
   console.log(this.delhiForm.value);  // { name: '...', email: '...', age: '...' }
-}
+});
 
+}
 }
