@@ -1,0 +1,38 @@
+.main-heading {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.table-section {
+  width: fit-content;
+  margin: 0 auto 30px auto;
+}
+
+.sub-heading {
+  margin: 10px 0;
+  text-align: left;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+table {
+  width: 900px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 6px 10px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}

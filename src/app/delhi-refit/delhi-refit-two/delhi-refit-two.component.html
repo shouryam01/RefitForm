@@ -1,0 +1,3256 @@
+<section>
+  <div class="text-center">
+    <h2>RG AND SHAFTING SEA TRIALS PARAMETER SHEET</h2>
+    <h3>SHAFTING THERMAL PARAMETERS</h3>
+  </div>
+  <form [formGroup]="delhiRefit_Two" (ngSubmit)="onSubmit()">
+    <table class="table-bordered">
+          <tr>
+            <th>Occassion</th>
+            <td><input type="text" formControlName="Shaft_Thermal_Para_Occa" class="temp-input"></td>
+            <th>Date</th>
+            <td><input type="date" formControlName="Shaft_Thermal_Para_Date" class="temp-input"></td>
+          </tr>
+    </table>
+    <h3 class="table-title" style="text-align: left;"><strong>1. Thermal parameters at SRPM 255 (01 Nominal)</strong></h3>
+      <table class="table-bordered">
+        <thead>
+          <tr>
+            <th rowspan="2">Ser</th>
+            <th rowspan="2">Position</th>
+            <th colspan="2">Port Shaft (SRPM)</th>
+            <th colspan="2">Stbd Shaft (SRPM)</th>
+          </tr>
+          <tr>
+            <th>Remote(°C)<br>(FWD GTR)</th>
+            <th>Local (°C)</th>
+            <th>Remote(°C)<br>(AFT GTR)</th>
+            <th>Local (°C)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Row (a) -->
+          <tr>
+            <td>(a)</td>
+            <td>Main Thrust Block FWD</td>
+            <td><input type="text" formControlName="portRemote0_1" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_1" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_1" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_1" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (b) -->
+          <tr>
+            <td>(b)</td>
+            <td>Main Thrust Block AFT</td>
+            <td><input type="text" formControlName="portRemote0_2" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_2" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_2" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_2" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (c) -->
+          <tr>
+            <td>(c)</td>
+            <td>Plummer Block - 1</td>
+            <td><input type="text" formControlName="portRemote0_3" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_3" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_3" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_3" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (d) -->
+          <tr>
+            <td>(d)</td>
+            <td>Plummer Block - 2</td>
+            <td><input type="text" formControlName="portRemote0_4" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_4" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_4" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_4" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (e) -->
+          <tr>
+            <td>(e)</td>
+            <td>Plummer Block - 3</td>
+            <td><input type="text" formControlName="portRemote0_5" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_5" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_5" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_5" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (f) -->
+          <tr>
+            <td>(f)</td>
+            <td>Plummer Block - 4</td>
+            <td><input type="text" formControlName="portRemote0_6" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_6" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_6" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_6" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (g) -->
+          <tr>
+            <td>(g)</td>
+            <td>Plummer Block - 5</td>
+            <td><input type="text" formControlName="portRemote0_7" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_7" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_7" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_7" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (h) -->
+          <tr>
+            <td>(h)</td>
+            <td>Plummer Block - 6</td>
+            <td><input type="text" formControlName="portRemote0_8" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_8" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_8" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_8" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (i) -->
+          <tr>
+            <td>(i)</td>
+            <td>Plummer Block - 7</td>
+            <td><input type="text" formControlName="portRemote0_9" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal0_9" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote0_9" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal0_9" class="temp-input"></td>
+          </tr>
+        </tbody>
+      </table>
+  <div>
+  <h3 class="table-title2" style="text-align: left;"><strong>2. Thermal parameters at SRPM  0000 (0.000 Nominal)</strong></h3>
+      <table class="table-bordered">
+        <thead>
+          <tr>
+            <th rowspan="2">Ser</th>
+            <th rowspan="2">Position</th>
+            <th colspan="2">Port Shaft (SRPM)</th>
+            <th colspan="2">Stbd Shaft (SRPM)</th>
+          </tr>
+          <tr>
+            <th>Remote(°C)<br>(FWD GTR)</th>
+            <th>Local (°C)</th>
+            <th>Remote(°C)<br>(AFT GTR)</th>
+            <th>Local (°C)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Row (a) -->
+          <tr>
+            <td>(a)</td>
+            <td>Main Thrust Block FWD</td>
+            <td><input type="text" formControlName="portRemote10" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal10" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote10" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal10" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (b) -->
+          <tr>
+            <td>(b)</td>
+            <td>Main Thrust Block AFT</td>
+            <td><input type="text" formControlName="portRemote11" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal11" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote11" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal11" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (c) -->
+          <tr>
+            <td>(c)</td>
+            <td>Plummer Block - 1</td>
+            <td><input type="text" formControlName="portRemote12" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal12" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote12" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal12" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (d) -->
+          <tr>
+            <td>(d)</td>
+            <td>Plummer Block - 2</td>
+            <td><input type="text" formControlName="portRemote13" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal13" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote13" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal13" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (e) -->
+          <tr>
+            <td>(e)</td>
+            <td>Plummer Block - 3</td>
+            <td><input type="text" formControlName="portRemote14" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal14" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote14" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal14" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (f) -->
+          <tr>
+            <td>(f)</td>
+            <td>Plummer Block - 4</td>
+            <td><input type="text" formControlName="portRemote15" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal15" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote15" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal15" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (g) -->
+          <tr>
+            <td>(g)</td>
+            <td>Plummer Block - 5</td>
+            <td><input type="text" formControlName="portRemote16" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal16" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote16" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal16" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (h) -->
+          <tr>
+            <td>(h)</td>
+            <td>Plummer Block - 6</td>
+            <td><input type="text" formControlName="portRemote17" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal17" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote17" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal17" class="temp-input"></td>
+          </tr>
+          
+          <!-- Row (i) -->
+          <tr>
+            <td>(i)</td>
+            <td>Plummer Block - 7</td>
+            <td><input type="text" formControlName="portRemote18" class="temp-input"></td>
+            <td><input type="text" formControlName="portLocal18" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdRemote18" class="temp-input"></td>
+            <td><input type="text" formControlName="stbdLocal18" class="temp-input"></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+
+  <!-- 4th form in Appendix A -->
+
+  <div class="text-center">
+    <h2 class="table-title" style="text-align: left;">3. Shafting Vibration Parameters</h2>
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th rowspan="2">Ser</th>
+          <th rowspan="2">Measuring Point</th>
+          <th rowspan="1">Dir</th>
+          <th rowspan="1">Limit</th>
+          <th colspan="2">Max Overall Value in mm/s at 0.00N/SRPM</th>
+          <th colspan="2">Max Overall Value in mm/s at 0.0N/SRPM</th>
+        </tr>
+        <tr>
+          <th>RPM</th>
+          <th></th>
+          <th>Port Shaft</th>
+          <th>Stbd Shaft</th>
+          <th>Port Shaft</th>
+          <th>Stbd Shaft</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Row (a) MTB 1 -->
+        <tr>
+          <td rowspan="3">(a)</td>
+          <td rowspan="3">MTB 1</td>
+          <td>V</td>
+          <td rowspan="27">
+            <div>Trend</div>
+            <div>Limit 3 mm/sec</div>
+            <br>
+            <div>Alarm 7 mm/sec</div>
+          </td>
+          <td><input type="text" formControlName="mtb1V_port19" class="vibration-input"></td>
+          <td rowspan="3">NA</td>
+          
+          <td><input type="text" formControlName="mtb1V_port019" class="vibration-input"></td>
+          <td rowspan="3">NA</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td><input type="text" formControlName="mtb1A_port20" class="vibration-input"></td>
+          <td><input type="text" formControlName="mtb1A_port020" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td><input type="text" formControlName="mtb1H_port21" class="vibration-input"></td>
+          <td><input type="text" formControlName="mtb1H_port021" class="vibration-input"></td>
+        </tr>
+
+        <!-- Row (b) MTB 2 -->
+        <tr>
+          <td rowspan="3">(b)</td>
+          <td rowspan="3">MTB 2</td>
+          <td>V</td>
+          <td rowspan="3">NA</td>
+          <td><input type="text" formControlName="mtb2V_stbd22" class="vibration-input"></td>
+          <td rowspan="3">NA</td>
+          <td><input type="text" formControlName="mtb2V_stbd022" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td><input type="text" formControlName="mtb2A_stbd23" class="vibration-input"></td>
+          <td><input type="text" formControlName="mtb2A_stbd023" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td><input type="text" formControlName="mtb2H_stbd24" class="vibration-input"></td>
+          <td><input type="text" formControlName="mtb2H_stbd024" class="vibration-input"></td>
+        </tr>
+
+        <!-- Row (c) PB 1 -->
+        <tr>
+          <td rowspan="3">(c)</td>
+          <td rowspan="3">PB 1</td>
+          <td>V</td>
+          <td><input type="text" formControlName="pb1V_port25" class="vibration-input"></td>
+          <td rowspan="15">NA</td>
+          <td><input type="text" formControlName="pb1V_port025" class="vibration-input"></td>
+          <td rowspan="15">NA</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td><input type="text" formControlName="pb1A_port26" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb1A_port026" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td><input type="text" formControlName="pb1H_port27" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb1H_port027" class="vibration-input"></td>
+        </tr>
+
+        <!-- Continue with remaining rows (d)-(k) following same structure -->
+        <tr>
+          <td rowspan="3">(d)</td>
+          <td rowspan="3">PB 2</td>
+          <td>V</td>
+          <td><input type="text" formControlName="pb2V_port28" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb2V_port028" class="vibration-input"></td>
+          <!-- <td>NA</td> -->
+        </tr>
+        <tr>
+          <td>A</td>
+          <td><input type="text" formControlName="pb2A_port29" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb2A_port029" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td><input type="text" formControlName="pb2H_port30" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb2H_port030" class="vibration-input"></td>
+        </tr>
+  <tr>
+          <td rowspan="3">(e)</td>
+          <td rowspan="3">PB 3</td>
+          <td>V</td>
+          <td><input type="text" formControlName="pb3V_port31" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb3V_port031" class="vibration-input"></td>
+          <!-- <td>NA</td> -->
+        </tr>
+        <tr>
+          <td>A</td>
+          <td><input type="text" formControlName="pb3A_port32" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb3A_port032" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td><input type="text" formControlName="pb3H_port33" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb3H_port033" class="vibration-input"></td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">(f)</td>
+          <td rowspan="3">PB 4</td>
+          <td>V</td>
+          <td><input type="text" formControlName="pb4V_port34" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb4V_port034" class="vibration-input"></td>
+          <!-- <td>NA</td> -->
+        </tr>
+        <tr>
+          <td>A</td>
+          <td><input type="text" formControlName="pb4A_port35" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb4A_port035" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td><input type="text" formControlName="pb4H_port36" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb4H_port036" class="vibration-input"></td>
+        </tr>
+  <tr>
+          <td rowspan="3">(g)</td>
+          <td rowspan="3">PB 5</td>
+          <td>V</td>
+          <td><input type="text" formControlName="pb5V_port37" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb5V_port037" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>A</td>
+          
+          <td><input type="text" formControlName="pb5A_port38" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb5A_port038" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          
+          <td><input type="text" formControlName="pb5H_port39" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb5H_port039" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td rowspan="3">(h)</td>
+          <td rowspan="3">PB 6</td>
+          <td>V</td>
+          <td rowspan="6">NA</td>
+          <td><input type="text" formControlName="pb6V_stbd40" class="vibration-input"></td>
+          <td rowspan="6">NA</td>
+          <td><input type="text" formControlName="pb6V_stbd040" class="vibration-input"></td>
+          
+        </tr>
+        <tr>
+          <td>A</td>
+          
+          <td><input type="text" formControlName="pb6A_stbd41" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb6A_stbd041" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          
+          <td><input type="text" formControlName="pb6H_stbd42" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb6H_stbd042" class="vibration-input"></td>
+        </tr>
+
+  <tr>
+          <td rowspan="3">(j)</td>
+          <td rowspan="3">PB 7</td>
+          <td>V</td>
+          
+          <td><input type="text" formControlName="pb7V_stbd43" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb7V_stbd043" class="vibration-input"></td>
+          <!-- <td>NA</td> -->
+        </tr>
+        <tr>
+          <td>A</td>
+          
+          <td><input type="text" formControlName="pb7A_stbd44" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb7A_stbd044" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          
+          <td><input type="text" formControlName="pb7H_stbd45" class="vibration-input"></td>
+          <td><input type="text" formControlName="pb7H_stbd045" class="vibration-input"></td>
+        </tr>
+      
+        <!-- ___ -->
+        
+        <!-- Row (k) Stern Tube -->
+        <tr>
+          <td rowspan="3">(k)</td>
+          <td rowspan="3">Stern Tube</td>
+          <td>V</td>
+          <td rowspan="3">
+            <div>Trend</div>
+            <div>2 mm/sec</div>
+            <br>
+            <div>Alarm 7 mm/sec</div>
+          </td>
+          <td><input type="text" formControlName="sternTubeV_port46" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeV_stbd46" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeV_port046" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeV_stbd_46" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>A</td>
+          
+          <td><input type="text" formControlName="sternTubeA_port47" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeA_stbd47" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeA_port047" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeA_stbd_47" class="vibration-input"></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          
+          <td><input type="text" formControlName="sternTubeH_port48" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeH_stbd48" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeH_port048" class="vibration-input"></td>
+          <td><input type="text" formControlName="sternTubeH_stbd_48" class="vibration-input"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="text-center">
+  <h2>STEERING GEAR HARBOUR TRIALS</h2>
+  <table class="table-bordered">
+          <tr>
+            <th>Occassion</th>
+            <td><input type="text" formControlName="Steer_Gear_Hrbr_Occa" class="temp-input"></td>
+            <th>Date</th>
+            <td><input type="date" formControlName="Steer_Gear_Hrbr_Date" class="temp-input"></td>
+          </tr>
+    </table>
+  </div>
+  <h2>1. <u>Timing Checks</u></h2>
+  <h2 class="main-heading">(a) Operating Position - Local control panel</h2>
+  <div class="table-section">
+    <h3 class="sub-heading">(i) Port steering motor, in operation</h3>
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th>Rudder movement</th>
+          <th>Timing limit</th>
+          <th>Timing (Seconds)</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>35°Stbd - 30°Port</td>
+          <td>24-28</td>
+          <td><input type="text" formControlName="portTime1" /></td>
+          <td><input type="text" formControlName="portRemark1" /></td>
+        </tr>
+        <tr>
+          <td>35°Port - 30°Stbd</td>
+          <td>24-28</td>
+          <td><input type="text" formControlName="portTime2" /></td>
+          <td><input type="text" formControlName="portRemark2" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-section">
+  <h3 class="sub-heading">(ii) Stbd steering motor, in operation</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Rudder movement</th>
+        <th>Timing limit</th>
+        <th>Timing (Seconds)</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35°Stbd - 30°Port</td>
+        <td>24-28</td>
+        <td><input type="text" formControlName="stbdTime3" /></td>
+        <td><input type="text" formControlName="stbdRemark3" /></td>
+      </tr>
+      <tr>
+        <td>35°Port - 30°Stbd</td>
+        <td>24-28</td>
+        <td><input type="text" formControlName="stbdTime4" /></td>
+        <td><input type="text" formControlName="stbdRemark4" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <h2 class="main-heading">(b) Operating Position - Bridge</h2>
+
+  <div class="table-section">
+    <h3 class="sub-heading">(i) Port steering motor, in operation</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Rudder movement</th>
+          <th>Timing limit</th>
+          <th>Timing (Seconds)</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>35°Stbd - 30°Port</td>
+          <td>28</td>
+          <td><input type="text" formControlName="bridgePortTime5" /></td>
+          <td><input type="text" formControlName="bridgePortRemark5" /></td>
+        </tr>
+        <tr>
+          <td>35°Port - 30°Stbd</td>
+          <td>28</td>
+          <td><input type="text" formControlName="bridgePortTime6" /></td>
+          <td><input type="text" formControlName="bridgePortRemark6" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table-section">
+  <h3 class="sub-heading">(ii) Stbd steering motor, in operation</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Rudder movement</th>
+        <th>Timing limit</th>
+        <th>Timing (Seconds)</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35°Stbd - 30°Port</td>
+        <td>28</td>
+        <td><input type="text" formControlName="bridgeStbdTime7" /></td>
+        <td><input type="text" formControlName="bridgeStbdRemark7" /></td>
+      </tr>
+      <tr>
+        <td>35°Port - 30°Stbd</td>
+        <td>28</td>
+        <td><input type="text" formControlName="bridgeStbdTime8" /></td>
+        <td><input type="text" formControlName="bridgeStbdRemark8" /></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="table-section">
+  <h3 class="sub-heading">(iii) With both pumps in operation</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Rudder movement</th>
+        <th>Timing limit</th>
+        <th>Timing (Seconds)</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35°Stbd - 30°Port</td>
+        <td>14</td>
+        <td><input type="text" formControlName="bridgeBothTime9" /></td>
+        <td><input type="text" formControlName="bridgeBothRemark9" /></td>
+      </tr>
+      <tr>
+        <td>35°Port - 30°Stbd</td>
+        <td>14</td>
+        <td><input type="text" formControlName="bridgeBothTime10" /></td>
+        <td><input type="text" formControlName="bridgeBothRemark10" /></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+    <h2 class="main-heading">(C) Operating Position – Wheel House  </h2>
+
+    <div class="table-section">
+  <h3 class="sub-heading">(i) Port steering motor, in operation</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Rudder movement</th>
+        <th>Timing limit</th>
+        <th>Timing (Seconds)</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35°Stbd - 30°Port</td>
+        <td>28</td>
+        <td><input type="text" formControlName="bridgePortTime11" /></td>
+        <td><input type="text" formControlName="bridgePortRemark11" /></td>
+      </tr>
+      <tr>
+        <td>35°Port - 30°Stbd</td>
+        <td>28</td>
+        <td><input type="text" formControlName="bridgePortTime12" /></td>
+        <td><input type="text" formControlName="bridgePortRemark12" /></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+<div class="table-section">
+  <h3 class="sub-heading">(ii) Stbd steering motor, in operation</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Rudder movement</th>
+        <th>Timing limit</th>
+        <th>Timing (Seconds)</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35°Stbd - 30°Port</td>
+        <td>28</td>
+        <td><input type="text" formControlName="bridgeStbdTime13" /></td>
+        <td><input type="text" formControlName="bridgeStbdRemark13" /></td>
+      </tr>
+      <tr>
+        <td>35°Port - 30°Stbd</td>
+        <td>28</td>
+        <td><input type="text" formControlName="bridgeStbdTime14" /></td>
+        <td><input type="text" formControlName="bridgeStbdRemark14" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="table-section">
+  <h3 class="sub-heading">(iii) With both pumps in operation</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Rudder movement</th>
+        <th>Timing limit</th>
+        <th>Timing (Seconds)</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35°Stbd - 30°Port</td>
+        <td>12-14</td>
+        <td><input type="text" formControlName="bridgeBothTime15" /></td>
+        <td><input type="text" formControlName="bridgeBothRemark15" /></td>
+      </tr>
+      <tr>
+        <td>35°Port - 30°Stbd</td>
+        <td>12-14</td>
+        <td><input type="text" formControlName="bridgeBothTime16" /></td>
+        <td><input type="text" formControlName="bridgeBothRemark16" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="main-heading">2. Positional Checks -Steering Gear Harbour Trials Follow on Checks   </h3>
+<div class="table-section">
+  <h4 class="sub-heading">(a)	Operating Position- Bridge with Port Pump   </h4>
+  <!-- You can reuse this table structure for other headings too -->
+  <table>
+    <tr>
+      <th rowspan="2">Helm applied</th>
+      <th rowspan="2">Bridge Enclosed</th>
+      <th rowspan="2">Analog ASP</th>
+      <th rowspan="2">Wheel House</th>
+      <th rowspan="2">MCR</th>
+      <th colspan="2">Mechanical Indicator (ASP)</th>
+      <th rowspan="2">Remarks</th>
+    </tr>
+    <tr>
+      <th>Port</th>
+      <th>Stbd</th>
+    </tr>
+
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed17" /></td>
+      <td><input type="text" formControlName="analogAsp17" /></td>
+      <td><input type="text" formControlName="wheelHouse17" /></td>
+      <td><input type="text" formControlName="mcr17" /></td>
+      <td><input type="text" formControlName="mechPort17" /></td>
+      <td><input type="text" formControlName="mechStbd17" /></td>
+      <td><input type="text" formControlName="remarks17" /></td>
+    </tr>
+
+    <tr>
+      <td>5° PORT</td>
+      <td><input type="text" formControlName="bridgeEnclosed18" /></td>
+      <td><input type="text" formControlName="analogAsp18" /></td>
+      <td><input type="text" formControlName="wheelHouse18" /></td>
+      <td><input type="text" formControlName="mcr18" /></td>
+      <td><input type="text" formControlName="mechPort18" /></td>
+      <td><input type="text" formControlName="mechStbd18" /></td>
+      <td><input type="text" formControlName="remarks18" /></td>
+    </tr>
+
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed19" /></td>
+      <td><input type="text" formControlName="analogAsp19" /></td>
+      <td><input type="text" formControlName="wheelHouse19" /></td>
+      <td><input type="text" formControlName="mcr19" /></td>
+      <td><input type="text" formControlName="mechPort19" /></td>
+      <td><input type="text" formControlName="mechStbd19" /></td>
+      <td><input type="text" formControlName="remarks19" /></td>
+    </tr>
+
+    <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed20" /></td>
+      <td><input type="text" formControlName="analogAsp20" /></td>
+      <td><input type="text" formControlName="wheelHouse20" /></td>
+      <td><input type="text" formControlName="mcr20" /></td>
+      <td><input type="text" formControlName="mechPort20" /></td>
+      <td><input type="text" formControlName="mechStbd20" /></td>
+      <td><input type="text" formControlName="remarks20" /></td>
+    </tr>
+    <!-- 20° -->
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed21"></td>
+          <td><input type="text" formControlName="analogAsp21"></td>
+          <td><input type="text" formControlName="wheelHouse21"></td>
+          <td><input type="text" formControlName="mcr21"></td>
+          <td><input type="text" formControlName="mechPort21"></td>
+          <td><input type="text" formControlName="mechStbd21"></td>
+          <td><input type="text" formControlName="remarks21"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed22"></td>
+          <td><input type="text" formControlName="analogAsp22"></td>
+          <td><input type="text" formControlName="wheelHouse22"></td>
+          <td><input type="text" formControlName="mcr22"></td>
+          <td><input type="text" formControlName="mechPort22"></td>
+          <td><input type="text" formControlName="mechStbd22"></td>
+          <td><input type="text" formControlName="remarks22"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed23"></td>
+          <td><input type="text" formControlName="analogAsp23"></td>
+          <td><input type="text" formControlName="wheelHouse23"></td>
+          <td><input type="text" formControlName="mcr23"></td>
+          <td><input type="text" formControlName="mechPort23"></td>
+          <td><input type="text" formControlName="mechStbd23"></td>
+          <td><input type="text" formControlName="remarks23"></td>
+        </tr>
+        <tr>
+          <td>35°</td>
+          <td><input type="text" formControlName="bridgeEnclosed24"></td>
+          <td><input type="text" formControlName="analogAsp24"></td>
+          <td><input type="text" formControlName="wheelHouse24"></td>
+          <td><input type="text" formControlName="mcr24"></td>
+          <td><input type="text" formControlName="mechPort24"></td>
+          <td><input type="text" formControlName="mechStbd24"></td>
+          <td><input type="text" formControlName="remarks24"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed25"></td>
+          <td><input type="text" formControlName="analogAsp25"></td>
+          <td><input type="text" formControlName="wheelHouse25"></td>
+          <td><input type="text" formControlName="mcr25"></td>
+          <td><input type="text" formControlName="mechPort25"></td>
+          <td><input type="text" formControlName="mechStbd25"></td>
+          <td><input type="text" formControlName="remarks25"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed26"></td>
+          <td><input type="text" formControlName="analogAsp26"></td>
+          <td><input type="text" formControlName="wheelHouse26"></td>
+          <td><input type="text" formControlName="mcr26"></td>
+          <td><input type="text" formControlName="mechPort26"></td>
+          <td><input type="text" formControlName="mechStbd26"></td>
+          <td><input type="text" formControlName="remarks26"></td>
+        </tr>
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed27"></td>
+          <td><input type="text" formControlName="analogAsp27"></td>
+          <td><input type="text" formControlName="wheelHouse27"></td>
+          <td><input type="text" formControlName="mcr27"></td>
+          <td><input type="text" formControlName="mechPort27"></td>
+          <td><input type="text" formControlName="mechStbd27"></td>
+          <td><input type="text" formControlName="remarks27"></td>
+        </tr>
+        <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed28" /></td>
+      <td><input type="text" formControlName="analogAsp28" /></td>
+      <td><input type="text" formControlName="wheelHouse28" /></td>
+      <td><input type="text" formControlName="mcr28" /></td>
+      <td><input type="text" formControlName="mechPort28" /></td>
+      <td><input type="text" formControlName="mechStbd28" /></td>
+      <td><input type="text" formControlName="remarks28" /></td>
+    </tr>
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed29" /></td>
+      <td><input type="text" formControlName="analogAsp29" /></td>
+      <td><input type="text" formControlName="wheelHouse29" /></td>
+      <td><input type="text" formControlName="mcr29" /></td>
+      <td><input type="text" formControlName="mechPort29" /></td>
+      <td><input type="text" formControlName="mechStbd29" /></td>
+      <td><input type="text" formControlName="remarks29" /></td>
+    </tr>
+    <tr>
+      <td>5°</td>
+      <td><input type="text" formControlName="bridgeEnclosed30" /></td>
+      <td><input type="text" formControlName="analogAsp30" /></td>
+      <td><input type="text" formControlName="wheelHouse30" /></td>
+      <td><input type="text" formControlName="mcr30" /></td>
+      <td><input type="text" formControlName="mechPort30" /></td>
+      <td><input type="text" formControlName="mechStbd30" /></td>
+      <td><input type="text" formControlName="remarks30" /></td>
+    </tr>
+
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed31" /></td>
+      <td><input type="text" formControlName="analogAsp31" /></td>
+      <td><input type="text" formControlName="wheelHouse31" /></td>
+      <td><input type="text" formControlName="mcr31" /></td>
+      <td><input type="text" formControlName="mechPort31" /></td>
+      <td><input type="text" formControlName="mechStbd31" /></td>
+      <td><input type="text" formControlName="remarks31" /></td>
+    </tr>
+
+    <tr>
+      <td>5° STBD</td>
+      <td><input type="text" formControlName="bridgeEnclosed32" /></td>
+      <td><input type="text" formControlName="analogAsp32" /></td>
+      <td><input type="text" formControlName="wheelHouse32" /></td>
+      <td><input type="text" formControlName="mcr32" /></td>
+      <td><input type="text" formControlName="mechPort32" /></td>
+      <td><input type="text" formControlName="mechStbd32" /></td>
+      <td><input type="text" formControlName="remarks32" /></td>
+    </tr>
+
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed33" /></td>
+      <td><input type="text" formControlName="analogAsp33" /></td>
+      <td><input type="text" formControlName="wheelHouse33" /></td>
+      <td><input type="text" formControlName="mcr33" /></td>
+      <td><input type="text" formControlName="mechPort33" /></td>
+      <td><input type="text" formControlName="mechStbd33" /></td>
+      <td><input type="text" formControlName="remarks33" /></td>
+    </tr>
+
+    <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed34" /></td>
+      <td><input type="text" formControlName="analogAsp34" /></td>
+      <td><input type="text" formControlName="wheelHouse34" /></td>
+      <td><input type="text" formControlName="mcr34" /></td>
+      <td><input type="text" formControlName="mechPort34" /></td>
+      <td><input type="text" formControlName="mechStbd34" /></td>
+      <td><input type="text" formControlName="remarks34" /></td>
+    </tr>
+    <!-- 20° -->
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed35"></td>
+          <td><input type="text" formControlName="analogAsp35"></td>
+          <td><input type="text" formControlName="wheelHouse35"></td>
+          <td><input type="text" formControlName="mcr35"></td>
+          <td><input type="text" formControlName="mechPort35"></td>
+          <td><input type="text" formControlName="mechStbd35"></td>
+          <td><input type="text" formControlName="remarks35"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed36"></td>
+          <td><input type="text" formControlName="analogAsp36"></td>
+          <td><input type="text" formControlName="wheelHouse36"></td>
+          <td><input type="text" formControlName="mcr36"></td>
+          <td><input type="text" formControlName="mechPort36"></td>
+          <td><input type="text" formControlName="mechStbd36"></td>
+          <td><input type="text" formControlName="remarks36"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed37"></td>
+          <td><input type="text" formControlName="analogAsp37"></td>
+          <td><input type="text" formControlName="wheelHouse37"></td>
+          <td><input type="text" formControlName="mcr37"></td>
+          <td><input type="text" formControlName="mechPort37"></td>
+          <td><input type="text" formControlName="mechStbd37"></td>
+          <td><input type="text" formControlName="remarks37"></td>
+        </tr>
+        <tr>
+          <td>35°</td>
+          <td><input type="text" formControlName="bridgeEnclosed38"></td>
+          <td><input type="text" formControlName="analogAsp38"></td>
+          <td><input type="text" formControlName="wheelHouse38"></td>
+          <td><input type="text" formControlName="mcr38"></td>
+          <td><input type="text" formControlName="mechPort38"></td>
+          <td><input type="text" formControlName="mechStbd38"></td>
+          <td><input type="text" formControlName="remarks38"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed39"></td>
+          <td><input type="text" formControlName="analogAsp39"></td>
+          <td><input type="text" formControlName="wheelHouse39"></td>
+          <td><input type="text" formControlName="mcr39"></td>
+          <td><input type="text" formControlName="mechPort39"></td>
+          <td><input type="text" formControlName="mechStbd39"></td>
+          <td><input type="text" formControlName="remarks39"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed40"></td>
+          <td><input type="text" formControlName="analogAsp40"></td>
+          <td><input type="text" formControlName="wheelHouse40"></td>
+          <td><input type="text" formControlName="mcr40"></td>
+          <td><input type="text" formControlName="mechPort40"></td>
+          <td><input type="text" formControlName="mechStbd40"></td>
+          <td><input type="text" formControlName="remarks40"></td>
+        </tr>
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed41"></td>
+          <td><input type="text" formControlName="analogAsp41"></td>
+          <td><input type="text" formControlName="wheelHouse41"></td>
+          <td><input type="text" formControlName="mcr41"></td>
+          <td><input type="text" formControlName="mechPort41"></td>
+          <td><input type="text" formControlName="mechStbd41"></td>
+          <td><input type="text" formControlName="remarks41"></td>
+        </tr>
+        <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed42" /></td>
+      <td><input type="text" formControlName="analogAsp42" /></td>
+      <td><input type="text" formControlName="wheelHouse42" /></td>
+      <td><input type="text" formControlName="mcr42" /></td>
+      <td><input type="text" formControlName="mechPort42" /></td>
+      <td><input type="text" formControlName="mechStbd42" /></td>
+      <td><input type="text" formControlName="remarks42" /></td>
+    </tr>
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed43" /></td>
+      <td><input type="text" formControlName="analogAsp43" /></td>
+      <td><input type="text" formControlName="wheelHouse43" /></td>
+      <td><input type="text" formControlName="mcr43" /></td>
+      <td><input type="text" formControlName="mechPort43" /></td>
+      <td><input type="text" formControlName="mechStbd43" /></td>
+      <td><input type="text" formControlName="remarks43" /></td>
+    </tr>
+    <tr>
+      <td>5°</td>
+      <td><input type="text" formControlName="bridgeEnclosed44" /></td>
+      <td><input type="text" formControlName="analogAsp44" /></td>
+      <td><input type="text" formControlName="wheelHouse44" /></td>
+      <td><input type="text" formControlName="mcr44" /></td>
+      <td><input type="text" formControlName="mechPort44" /></td>
+      <td><input type="text" formControlName="mechStbd44" /></td>
+      <td><input type="text" formControlName="remarks44" /></td>
+    </tr>
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed45" /></td>
+      <td><input type="text" formControlName="analogAsp45" /></td>
+      <td><input type="text" formControlName="wheelHouse45" /></td>
+      <td><input type="text" formControlName="mcr45" /></td>
+      <td><input type="text" formControlName="mechPort45" /></td>
+      <td><input type="text" formControlName="mechStbd45" /></td>
+      <td><input type="text" formControlName="remarks45" /></td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+
+  <div class="table-section">
+  <h4 class="sub-heading">(b)	Operating Position- Bridge with Stbd Pump</h4>
+  <!-- You can reuse this table structure for other headings too -->
+  <table>
+    <tr>
+      <th rowspan="2">Helm applied</th>
+      <th rowspan="2">Bridge Enclosed</th>
+      <th rowspan="2">Analog ASP</th>
+      <th rowspan="2">Wheel House</th>
+      <th rowspan="2">MCR</th>
+      <th colspan="2">Mechanical Indicator (ASP)</th>
+      <th rowspan="2">Remarks</th>
+    </tr>
+    <tr>
+      <th>Port</th>
+      <th>Stbd</th>
+    </tr>
+
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed46" /></td>
+      <td><input type="text" formControlName="analogAsp46" /></td>
+      <td><input type="text" formControlName="wheelHouse46" /></td>
+      <td><input type="text" formControlName="mcr46" /></td>
+      <td><input type="text" formControlName="mechPort46" /></td>
+      <td><input type="text" formControlName="mechStbd46" /></td>
+      <td><input type="text" formControlName="remarks46" /></td>
+    </tr>
+
+    <tr>
+      <td>5° PORT</td>
+      <td><input type="text" formControlName="bridgeEnclosed47" /></td>
+      <td><input type="text" formControlName="analogAsp47" /></td>
+      <td><input type="text" formControlName="wheelHouse47" /></td>
+      <td><input type="text" formControlName="mcr47" /></td>
+      <td><input type="text" formControlName="mechPort47" /></td>
+      <td><input type="text" formControlName="mechStbd47" /></td>
+      <td><input type="text" formControlName="remarks47" /></td>
+    </tr>
+
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed48" /></td>
+      <td><input type="text" formControlName="analogAsp48" /></td>
+      <td><input type="text" formControlName="wheelHouse48" /></td>
+      <td><input type="text" formControlName="mcr48" /></td>
+      <td><input type="text" formControlName="mechPort48" /></td>
+      <td><input type="text" formControlName="mechStbd48" /></td>
+      <td><input type="text" formControlName="remarks48" /></td>
+    </tr>
+
+    <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed49" /></td>
+      <td><input type="text" formControlName="analogAsp49" /></td>
+      <td><input type="text" formControlName="wheelHouse49" /></td>
+      <td><input type="text" formControlName="mcr49" /></td>
+      <td><input type="text" formControlName="mechPort49" /></td>
+      <td><input type="text" formControlName="mechStbd49" /></td>
+      <td><input type="text" formControlName="remarks49" /></td>
+    </tr>
+    <!-- 20° -->
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed50"></td>
+          <td><input type="text" formControlName="analogAsp50"></td>
+          <td><input type="text" formControlName="wheelHouse50"></td>
+          <td><input type="text" formControlName="mcr50"></td>
+          <td><input type="text" formControlName="mechPort50"></td>
+          <td><input type="text" formControlName="mechStbd50"></td>
+          <td><input type="text" formControlName="remarks50"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed51"></td>
+          <td><input type="text" formControlName="analogAsp51"></td>
+          <td><input type="text" formControlName="wheelHouse51"></td>
+          <td><input type="text" formControlName="mcr51"></td>
+          <td><input type="text" formControlName="mechPort51"></td>
+          <td><input type="text" formControlName="mechStbd51"></td>
+          <td><input type="text" formControlName="remarks51"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed52"></td>
+          <td><input type="text" formControlName="analogAsp52"></td>
+          <td><input type="text" formControlName="wheelHouse52"></td>
+          <td><input type="text" formControlName="mcr52"></td>
+          <td><input type="text" formControlName="mechPort52"></td>
+          <td><input type="text" formControlName="mechStbd52"></td>
+          <td><input type="text" formControlName="remarks52"></td>
+        </tr>
+        <tr>
+          <td>35°</td>
+          <td><input type="text" formControlName="bridgeEnclosed53"></td>
+          <td><input type="text" formControlName="analogAsp53"></td>
+          <td><input type="text" formControlName="wheelHouse53"></td>
+          <td><input type="text" formControlName="mcr53"></td>
+          <td><input type="text" formControlName="mechPort53"></td>
+          <td><input type="text" formControlName="mechStbd53"></td>
+          <td><input type="text" formControlName="remarks53"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed54"></td>
+          <td><input type="text" formControlName="analogAsp54"></td>
+          <td><input type="text" formControlName="wheelHouse54"></td>
+          <td><input type="text" formControlName="mcr54"></td>
+          <td><input type="text" formControlName="mechPort54"></td>
+          <td><input type="text" formControlName="mechStbd54"></td>
+          <td><input type="text" formControlName="remarks54"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed55"></td>
+          <td><input type="text" formControlName="analogAsp55"></td>
+          <td><input type="text" formControlName="wheelHouse55"></td>
+          <td><input type="text" formControlName="mcr55"></td>
+          <td><input type="text" formControlName="mechPort55"></td>
+          <td><input type="text" formControlName="mechStbd55"></td>
+          <td><input type="text" formControlName="remarks55"></td>
+        </tr>
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed56"></td>
+          <td><input type="text" formControlName="analogAsp56"></td>
+          <td><input type="text" formControlName="wheelHouse56"></td>
+          <td><input type="text" formControlName="mcr56"></td>
+          <td><input type="text" formControlName="mechPort56"></td>
+          <td><input type="text" formControlName="mechStbd56"></td>
+          <td><input type="text" formControlName="remarks56"></td>
+        </tr>
+        <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed57" /></td>
+      <td><input type="text" formControlName="analogAsp57" /></td>
+      <td><input type="text" formControlName="wheelHouse57" /></td>
+      <td><input type="text" formControlName="mcr57" /></td>
+      <td><input type="text" formControlName="mechPort57" /></td>
+      <td><input type="text" formControlName="mechStbd57" /></td>
+      <td><input type="text" formControlName="remarks57" /></td>
+    </tr>
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed58" /></td>
+      <td><input type="text" formControlName="analogAsp58" /></td>
+      <td><input type="text" formControlName="wheelHouse58" /></td>
+      <td><input type="text" formControlName="mcr58" /></td>
+      <td><input type="text" formControlName="mechPort58" /></td>
+      <td><input type="text" formControlName="mechStbd58" /></td>
+      <td><input type="text" formControlName="remarks58" /></td>
+    </tr>
+    <tr>
+      <td>5°</td>
+      <td><input type="text" formControlName="bridgeEnclosed59" /></td>
+      <td><input type="text" formControlName="analogAsp59" /></td>
+      <td><input type="text" formControlName="wheelHouse59" /></td>
+      <td><input type="text" formControlName="mcr59" /></td>
+      <td><input type="text" formControlName="mechPort59" /></td>
+      <td><input type="text" formControlName="mechStbd59" /></td>
+      <td><input type="text" formControlName="remarks59" /></td>
+    </tr>
+
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed60" /></td>
+      <td><input type="text" formControlName="analogAsp60" /></td>
+      <td><input type="text" formControlName="wheelHouse60" /></td>
+      <td><input type="text" formControlName="mcr60" /></td>
+      <td><input type="text" formControlName="mechPort60" /></td>
+      <td><input type="text" formControlName="mechStbd60" /></td>
+      <td><input type="text" formControlName="remarks60" /></td>
+    </tr>
+
+    <tr>
+      <td>5° STBD</td>
+      <td><input type="text" formControlName="bridgeEnclosed61" /></td>
+      <td><input type="text" formControlName="analogAsp61" /></td>
+      <td><input type="text" formControlName="wheelHouse61" /></td>
+      <td><input type="text" formControlName="mcr61" /></td>
+      <td><input type="text" formControlName="mechPort61" /></td>
+      <td><input type="text" formControlName="mechStbd61" /></td>
+      <td><input type="text" formControlName="remarks61" /></td>
+    </tr>
+
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed62" /></td>
+      <td><input type="text" formControlName="analogAsp62" /></td>
+      <td><input type="text" formControlName="wheelHouse62" /></td>
+      <td><input type="text" formControlName="mcr62" /></td>
+      <td><input type="text" formControlName="mechPort62" /></td>
+      <td><input type="text" formControlName="mechStbd62" /></td>
+      <td><input type="text" formControlName="remarks62" /></td>
+    </tr>
+
+    <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed63" /></td>
+      <td><input type="text" formControlName="analogAsp63" /></td>
+      <td><input type="text" formControlName="wheelHouse63" /></td>
+      <td><input type="text" formControlName="mcr63" /></td>
+      <td><input type="text" formControlName="mechPort63" /></td>
+      <td><input type="text" formControlName="mechStbd63" /></td>
+      <td><input type="text" formControlName="remarks63" /></td>
+    </tr>
+    <!-- 20° -->
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed64"></td>
+          <td><input type="text" formControlName="analogAsp64"></td>
+          <td><input type="text" formControlName="wheelHouse64"></td>
+          <td><input type="text" formControlName="mcr64"></td>
+          <td><input type="text" formControlName="mechPort64"></td>
+          <td><input type="text" formControlName="mechStbd64"></td>
+          <td><input type="text" formControlName="remarks64"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed65"></td>
+          <td><input type="text" formControlName="analogAsp65"></td>
+          <td><input type="text" formControlName="wheelHouse65"></td>
+          <td><input type="text" formControlName="mcr65"></td>
+          <td><input type="text" formControlName="mechPort65"></td>
+          <td><input type="text" formControlName="mechStbd65"></td>
+          <td><input type="text" formControlName="remarks65"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed66"></td>
+          <td><input type="text" formControlName="analogAsp66"></td>
+          <td><input type="text" formControlName="wheelHouse66"></td>
+          <td><input type="text" formControlName="mcr66"></td>
+          <td><input type="text" formControlName="mechPort66"></td>
+          <td><input type="text" formControlName="mechStbd66"></td>
+          <td><input type="text" formControlName="remarks66"></td>
+        </tr>
+        <tr>
+          <td>35°</td>
+          <td><input type="text" formControlName="bridgeEnclosed67"></td>
+          <td><input type="text" formControlName="analogAsp67"></td>
+          <td><input type="text" formControlName="wheelHouse67"></td>
+          <td><input type="text" formControlName="mcr67"></td>
+          <td><input type="text" formControlName="mechPort67"></td>
+          <td><input type="text" formControlName="mechStbd67"></td>
+          <td><input type="text" formControlName="remarks67"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed68"></td>
+          <td><input type="text" formControlName="analogAsp68"></td>
+          <td><input type="text" formControlName="wheelHouse68"></td>
+          <td><input type="text" formControlName="mcr68"></td>
+          <td><input type="text" formControlName="mechPort68"></td>
+          <td><input type="text" formControlName="mechStbd68"></td>
+          <td><input type="text" formControlName="remarks68"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed69"></td>
+          <td><input type="text" formControlName="analogAsp69"></td>
+          <td><input type="text" formControlName="wheelHouse69"></td>
+          <td><input type="text" formControlName="mcr69"></td>
+          <td><input type="text" formControlName="mechPort69"></td>
+          <td><input type="text" formControlName="mechStbd69"></td>
+          <td><input type="text" formControlName="remarks69"></td>
+        </tr>
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed70"></td>
+          <td><input type="text" formControlName="analogAsp70"></td>
+          <td><input type="text" formControlName="wheelHouse70"></td>
+          <td><input type="text" formControlName="mcr70"></td>
+          <td><input type="text" formControlName="mechPort70"></td>
+          <td><input type="text" formControlName="mechStbd70"></td>
+          <td><input type="text" formControlName="remarks70"></td>
+        </tr>
+        <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed71" /></td>
+      <td><input type="text" formControlName="analogAsp71" /></td>
+      <td><input type="text" formControlName="wheelHouse71" /></td>
+      <td><input type="text" formControlName="mcr71" /></td>
+      <td><input type="text" formControlName="mechPort71" /></td>
+      <td><input type="text" formControlName="mechStbd71" /></td>
+      <td><input type="text" formControlName="remarks71" /></td>
+    </tr>
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed72" /></td>
+      <td><input type="text" formControlName="analogAsp72" /></td>
+      <td><input type="text" formControlName="wheelHouse72" /></td>
+      <td><input type="text" formControlName="mcr72" /></td>
+      <td><input type="text" formControlName="mechPort72" /></td>
+      <td><input type="text" formControlName="mechStbd72" /></td>
+      <td><input type="text" formControlName="remarks72" /></td>
+    </tr>
+    <tr>
+      <td>5°</td>
+      <td><input type="text" formControlName="bridgeEnclosed73" /></td>
+      <td><input type="text" formControlName="analogAsp73" /></td>
+      <td><input type="text" formControlName="wheelHouse73" /></td>
+      <td><input type="text" formControlName="mcr73" /></td>
+      <td><input type="text" formControlName="mechPort73" /></td>
+      <td><input type="text" formControlName="mechStbd73" /></td>
+      <td><input type="text" formControlName="remarks73" /></td>
+    </tr>
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed74" /></td>
+      <td><input type="text" formControlName="analogAsp74" /></td>
+      <td><input type="text" formControlName="wheelHouse74" /></td>
+      <td><input type="text" formControlName="mcr74" /></td>
+      <td><input type="text" formControlName="mechPort74" /></td>
+      <td><input type="text" formControlName="mechStbd74" /></td>
+      <td><input type="text" formControlName="remarks74" /></td>
+    </tr>
+  </table>
+  </div>
+  <div>
+    <h4 class="sub-heading">(c)	Operating Position - Wheel House with Stbd Pump</h4>
+    <table>
+      <tr>
+        <th rowspan="2">Helm applied</th>
+        <th rowspan="2">Bridge Enclosed</th>
+        <th rowspan="2">Analog ASP</th>
+        <th rowspan="2">Wheel House</th>
+        <th rowspan="2">MCR</th>
+        <th colspan="2">Mechanical Indicator (ASP)</th>
+        <th rowspan="2">Remarks</th>
+      </tr>
+      <tr>
+        <th>Port</th>
+        <th>Stbd</th>
+      </tr>
+
+      <tr>
+        <td>MIDSHIP</td>
+        <td><input type="text" formControlName="bridgeEnclosed75" /></td>
+        <td><input type="text" formControlName="analogAsp75" /></td>
+        <td><input type="text" formControlName="wheelHouse75" /></td>
+        <td><input type="text" formControlName="mcr75" /></td>
+        <td><input type="text" formControlName="mechPort75" /></td>
+        <td><input type="text" formControlName="mechStbd75" /></td>
+        <td><input type="text" formControlName="remarks75" /></td>
+      </tr>
+
+      <tr>
+        <td>5° PORT</td>
+        <td><input type="text" formControlName="bridgeEnclosed76" /></td>
+        <td><input type="text" formControlName="analogAsp76" /></td>
+        <td><input type="text" formControlName="wheelHouse76" /></td>
+        <td><input type="text" formControlName="mcr76" /></td>
+        <td><input type="text" formControlName="mechPort76" /></td>
+        <td><input type="text" formControlName="mechStbd76" /></td>
+        <td><input type="text" formControlName="remarks76" /></td>
+      </tr>
+
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="bridgeEnclosed77" /></td>
+        <td><input type="text" formControlName="analogAsp77" /></td>
+        <td><input type="text" formControlName="wheelHouse77" /></td>
+        <td><input type="text" formControlName="mcr77" /></td>
+        <td><input type="text" formControlName="mechPort77" /></td>
+        <td><input type="text" formControlName="mechStbd77" /></td>
+        <td><input type="text" formControlName="remarks77" /></td>
+      </tr>
+
+      <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="bridgeEnclosed78" /></td>
+        <td><input type="text" formControlName="analogAsp78" /></td>
+        <td><input type="text" formControlName="wheelHouse78" /></td>
+        <td><input type="text" formControlName="mcr78" /></td>
+        <td><input type="text" formControlName="mechPort78" /></td>
+        <td><input type="text" formControlName="mechStbd78" /></td>
+        <td><input type="text" formControlName="remarks78" /></td>
+      </tr>
+      <!-- 20° -->
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="bridgeEnclosed79"></td>
+            <td><input type="text" formControlName="analogAsp79"></td>
+            <td><input type="text" formControlName="wheelHouse79"></td>
+            <td><input type="text" formControlName="mcr79"></td>
+            <td><input type="text" formControlName="mechPort79"></td>
+            <td><input type="text" formControlName="mechStbd79"></td>
+            <td><input type="text" formControlName="remarks79"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="bridgeEnclosed80"></td>
+            <td><input type="text" formControlName="analogAsp80"></td>
+            <td><input type="text" formControlName="wheelHouse80"></td>
+            <td><input type="text" formControlName="mcr80"></td>
+            <td><input type="text" formControlName="mechPort80"></td>
+            <td><input type="text" formControlName="mechStbd80"></td>
+            <td><input type="text" formControlName="remarks80"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="bridgeEnclosed81"></td>
+            <td><input type="text" formControlName="analogAsp81"></td>
+            <td><input type="text" formControlName="wheelHouse81"></td>
+            <td><input type="text" formControlName="mcr81"></td>
+            <td><input type="text" formControlName="mechPort81"></td>
+            <td><input type="text" formControlName="mechStbd81"></td>
+            <td><input type="text" formControlName="remarks81"></td>
+          </tr>
+          <tr>
+            <td>35°</td>
+            <td><input type="text" formControlName="bridgeEnclosed82"></td>
+            <td><input type="text" formControlName="analogAsp82"></td>
+            <td><input type="text" formControlName="wheelHouse82"></td>
+            <td><input type="text" formControlName="mcr82"></td>
+            <td><input type="text" formControlName="mechPort82"></td>
+            <td><input type="text" formControlName="mechStbd82"></td>
+            <td><input type="text" formControlName="remarks82"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="bridgeEnclosed83"></td>
+            <td><input type="text" formControlName="analogAsp83"></td>
+            <td><input type="text" formControlName="wheelHouse83"></td>
+            <td><input type="text" formControlName="mcr83"></td>
+            <td><input type="text" formControlName="mechPort83"></td>
+            <td><input type="text" formControlName="mechStbd83"></td>
+            <td><input type="text" formControlName="remarks83"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="bridgeEnclosed84"></td>
+            <td><input type="text" formControlName="analogAsp84"></td>
+            <td><input type="text" formControlName="wheelHouse84"></td>
+            <td><input type="text" formControlName="mcr84"></td>
+            <td><input type="text" formControlName="mechPort84"></td>
+            <td><input type="text" formControlName="mechStbd84"></td>
+            <td><input type="text" formControlName="remarks84"></td>
+          </tr>
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="bridgeEnclosed85"></td>
+            <td><input type="text" formControlName="analogAsp85"></td>
+            <td><input type="text" formControlName="wheelHouse85"></td>
+            <td><input type="text" formControlName="mcr85"></td>
+            <td><input type="text" formControlName="mechPort85"></td>
+            <td><input type="text" formControlName="mechStbd85"></td>
+            <td><input type="text" formControlName="remarks85"></td>
+          </tr>
+          <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="bridgeEnclosed86" /></td>
+        <td><input type="text" formControlName="analogAsp86" /></td>
+        <td><input type="text" formControlName="wheelHouse86" /></td>
+        <td><input type="text" formControlName="mcr86" /></td>
+        <td><input type="text" formControlName="mechPort86" /></td>
+        <td><input type="text" formControlName="mechStbd86" /></td>
+        <td><input type="text" formControlName="remarks86" /></td>
+      </tr>
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="bridgeEnclosed87" /></td>
+        <td><input type="text" formControlName="analogAsp87" /></td>
+        <td><input type="text" formControlName="wheelHouse87" /></td>
+        <td><input type="text" formControlName="mcr87" /></td>
+        <td><input type="text" formControlName="mechPort87" /></td>
+        <td><input type="text" formControlName="mechStbd87" /></td>
+        <td><input type="text" formControlName="remarks87" /></td>
+      </tr>
+      <tr>
+        <td>5°</td>
+        <td><input type="text" formControlName="bridgeEnclosed88" /></td>
+        <td><input type="text" formControlName="analogAsp88" /></td>
+        <td><input type="text" formControlName="wheelHouse88" /></td>
+        <td><input type="text" formControlName="mcr88" /></td>
+        <td><input type="text" formControlName="mechPort88" /></td>
+        <td><input type="text" formControlName="mechStbd88" /></td>
+        <td><input type="text" formControlName="remarks88" /></td>
+      </tr>
+
+      <tr>
+        <td>MIDSHIP</td>
+        <td><input type="text" formControlName="bridgeEnclosed89" /></td>
+        <td><input type="text" formControlName="analogAsp89" /></td>
+        <td><input type="text" formControlName="wheelHouse89" /></td>
+        <td><input type="text" formControlName="mcr89" /></td>
+        <td><input type="text" formControlName="mechPort89" /></td>
+        <td><input type="text" formControlName="mechStbd89" /></td>
+        <td><input type="text" formControlName="remarks89" /></td>
+      </tr>
+
+      <tr>
+        <td>5° STBD</td>
+        <td><input type="text" formControlName="bridgeEnclosed90" /></td>
+        <td><input type="text" formControlName="analogAsp90" /></td>
+        <td><input type="text" formControlName="wheelHouse90" /></td>
+        <td><input type="text" formControlName="mcr90" /></td>
+        <td><input type="text" formControlName="mechPort90" /></td>
+        <td><input type="text" formControlName="mechStbd90" /></td>
+        <td><input type="text" formControlName="remarks90" /></td>
+      </tr>
+
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="bridgeEnclosed91" /></td>
+        <td><input type="text" formControlName="analogAsp91" /></td>
+        <td><input type="text" formControlName="wheelHouse91" /></td>
+        <td><input type="text" formControlName="mcr91" /></td>
+        <td><input type="text" formControlName="mechPort91" /></td>
+        <td><input type="text" formControlName="mechStbd91" /></td>
+        <td><input type="text" formControlName="remarks91" /></td>
+      </tr>
+
+      <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="bridgeEnclosed92" /></td>
+        <td><input type="text" formControlName="analogAsp92" /></td>
+        <td><input type="text" formControlName="wheelHouse92" /></td>
+        <td><input type="text" formControlName="mcr92" /></td>
+        <td><input type="text" formControlName="mechPort92" /></td>
+        <td><input type="text" formControlName="mechStbd92" /></td>
+        <td><input type="text" formControlName="remarks92" /></td>
+      </tr>
+      <!-- 20° -->
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="bridgeEnclosed93"></td>
+            <td><input type="text" formControlName="analogAsp93"></td>
+            <td><input type="text" formControlName="wheelHouse93"></td>
+            <td><input type="text" formControlName="mcr93"></td>
+            <td><input type="text" formControlName="mechPort93"></td>
+            <td><input type="text" formControlName="mechStbd93"></td>
+            <td><input type="text" formControlName="remarks93"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="bridgeEnclosed94"></td>
+            <td><input type="text" formControlName="analogAsp94"></td>
+            <td><input type="text" formControlName="wheelHouse94"></td>
+            <td><input type="text" formControlName="mcr94"></td>
+            <td><input type="text" formControlName="mechPort94"></td>
+            <td><input type="text" formControlName="mechStbd94"></td>
+            <td><input type="text" formControlName="remarks94"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="bridgeEnclosed95"></td>
+            <td><input type="text" formControlName="analogAsp95"></td>
+            <td><input type="text" formControlName="wheelHouse95"></td>
+            <td><input type="text" formControlName="mcr95"></td>
+            <td><input type="text" formControlName="mechPort95"></td>
+            <td><input type="text" formControlName="mechStbd95"></td>
+            <td><input type="text" formControlName="remarks95"></td>
+          </tr>
+          <tr>
+            <td>35°</td>
+            <td><input type="text" formControlName="bridgeEnclosed96"></td>
+            <td><input type="text" formControlName="analogAsp96"></td>
+            <td><input type="text" formControlName="wheelHouse96"></td>
+            <td><input type="text" formControlName="mcr96"></td>
+            <td><input type="text" formControlName="mechPort96"></td>
+            <td><input type="text" formControlName="mechStbd96"></td>
+            <td><input type="text" formControlName="remarks96"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="bridgeEnclosed97"></td>
+            <td><input type="text" formControlName="analogAsp97"></td>
+            <td><input type="text" formControlName="wheelHouse97"></td>
+            <td><input type="text" formControlName="mcr97"></td>
+            <td><input type="text" formControlName="mechPort97"></td>
+            <td><input type="text" formControlName="mechStbd97"></td>
+            <td><input type="text" formControlName="remarks97"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="bridgeEnclosed98"></td>
+            <td><input type="text" formControlName="analogAsp98"></td>
+            <td><input type="text" formControlName="wheelHouse98"></td>
+            <td><input type="text" formControlName="mcr98"></td>
+            <td><input type="text" formControlName="mechPort98"></td>
+            <td><input type="text" formControlName="mechStbd98"></td>
+            <td><input type="text" formControlName="remarks98"></td>
+          </tr>
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="bridgeEnclosed99"></td>
+            <td><input type="text" formControlName="analogAsp99"></td>
+            <td><input type="text" formControlName="wheelHouse99"></td>
+            <td><input type="text" formControlName="mcr99"></td>
+            <td><input type="text" formControlName="mechPort99"></td>
+            <td><input type="text" formControlName="mechStbd99"></td>
+            <td><input type="text" formControlName="remarks99"></td>
+          </tr>
+          <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="bridgeEnclosed100" /></td>
+        <td><input type="text" formControlName="analogAsp100" /></td>
+        <td><input type="text" formControlName="wheelHouse100" /></td>
+        <td><input type="text" formControlName="mcr100" /></td>
+        <td><input type="text" formControlName="mechPort100" /></td>
+        <td><input type="text" formControlName="mechStbd100" /></td>
+        <td><input type="text" formControlName="remarks100" /></td>
+      </tr>
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="bridgeEnclosed101" /></td>
+        <td><input type="text" formControlName="analogAsp101" /></td>
+        <td><input type="text" formControlName="wheelHouse101" /></td>
+        <td><input type="text" formControlName="mcr101" /></td>
+        <td><input type="text" formControlName="mechPort101" /></td>
+        <td><input type="text" formControlName="mechStbd101" /></td>
+        <td><input type="text" formControlName="remarks101" /></td>
+      </tr>
+      <tr>
+        <td>5°</td>
+        <td><input type="text" formControlName="bridgeEnclosed102" /></td>
+        <td><input type="text" formControlName="analogAsp102" /></td>
+        <td><input type="text" formControlName="wheelHouse102" /></td>
+        <td><input type="text" formControlName="mcr102" /></td>
+        <td><input type="text" formControlName="mechPort102" /></td>
+        <td><input type="text" formControlName="mechStbd102" /></td>
+        <td><input type="text" formControlName="remarks102" /></td>
+      </tr>
+      <tr>
+        <td>MIDSHIP</td>
+        <td><input type="text" formControlName="bridgeEnclosed103" /></td>
+        <td><input type="text" formControlName="analogAsp103" /></td>
+        <td><input type="text" formControlName="wheelHouse103" /></td>
+        <td><input type="text" formControlName="mcr103" /></td>
+        <td><input type="text" formControlName="mechPort103" /></td>
+        <td><input type="text" formControlName="mechStbd103" /></td>
+        <td><input type="text" formControlName="remarks103" /></td>
+      </tr>
+    </table>
+  </div>
+
+
+    <div class="table-section">
+    <h4 class="sub-heading"> (d)	Operating Position - Wheel House with Port Pump</h4>
+  <!-- You can reuse this table structure for other headings too -->
+  <table>
+    <tr>
+      <th rowspan="2">Helm applied</th>
+      <th rowspan="2">Bridge Enclosed</th>
+      <th rowspan="2">Analog ASP</th>
+      <th rowspan="2">Wheel House</th>
+      <th rowspan="2">MCR</th>
+      <th colspan="2">Mechanical Indicator (ASP)</th>
+      <th rowspan="2">Remarks</th>
+    </tr>
+    <tr>
+      <th>P</th>
+      <th>S</th>
+    </tr>
+
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed104" /></td>
+      <td><input type="text" formControlName="analogAsp104" /></td>
+      <td><input type="text" formControlName="wheelHouse104" /></td>
+      <td><input type="text" formControlName="mcr104" /></td>
+      <td><input type="text" formControlName="mechPort104" /></td>
+      <td><input type="text" formControlName="mechStbd104" /></td>
+      <td><input type="text" formControlName="remarks104" /></td>
+    </tr>
+
+    <tr>
+      <td>5° PORT</td>
+      <td><input type="text" formControlName="bridgeEnclosed105" /></td>
+      <td><input type="text" formControlName="analogAsp105" /></td>
+      <td><input type="text" formControlName="wheelHouse105" /></td>
+      <td><input type="text" formControlName="mcr105" /></td>
+      <td><input type="text" formControlName="mechPort105" /></td>
+      <td><input type="text" formControlName="mechStbd105" /></td>
+      <td><input type="text" formControlName="remarks105" /></td>
+    </tr>
+
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed106" /></td>
+      <td><input type="text" formControlName="analogAsp106" /></td>
+      <td><input type="text" formControlName="wheelHouse106" /></td>
+      <td><input type="text" formControlName="mcr106" /></td>
+      <td><input type="text" formControlName="mechPort106" /></td>
+      <td><input type="text" formControlName="mechStbd106" /></td>
+      <td><input type="text" formControlName="remarks106" /></td>
+    </tr>
+
+    <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed107" /></td>
+      <td><input type="text" formControlName="analogAsp107" /></td>
+      <td><input type="text" formControlName="wheelHouse107" /></td>
+      <td><input type="text" formControlName="mcr107" /></td>
+      <td><input type="text" formControlName="mechPort107" /></td>
+      <td><input type="text" formControlName="mechStbd107" /></td>
+      <td><input type="text" formControlName="remarks107" /></td>
+    </tr>
+    <!-- 20° -->
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed108"></td>
+          <td><input type="text" formControlName="analogAsp108"></td>
+          <td><input type="text" formControlName="wheelHouse108"></td>
+          <td><input type="text" formControlName="mcr108"></td>
+          <td><input type="text" formControlName="mechPort108"></td>
+          <td><input type="text" formControlName="mechStbd108"></td>
+          <td><input type="text" formControlName="remarks108"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed109"></td>
+          <td><input type="text" formControlName="analogAsp109"></td>
+          <td><input type="text" formControlName="wheelHouse109"></td>
+          <td><input type="text" formControlName="mcr109"></td>
+          <td><input type="text" formControlName="mechPort109"></td>
+          <td><input type="text" formControlName="mechStbd109"></td>
+          <td><input type="text" formControlName="remarks109"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed110"></td>
+          <td><input type="text" formControlName="analogAsp110"></td>
+          <td><input type="text" formControlName="wheelHouse110"></td>
+          <td><input type="text" formControlName="mcr110"></td>
+          <td><input type="text" formControlName="mechPort110"></td>
+          <td><input type="text" formControlName="mechStbd110"></td>
+          <td><input type="text" formControlName="remarks110"></td>
+        </tr>
+        <tr>
+          <td>35°</td>
+          <td><input type="text" formControlName="bridgeEnclosed111"></td>
+          <td><input type="text" formControlName="analogAsp111"></td>
+          <td><input type="text" formControlName="wheelHouse111"></td>
+          <td><input type="text" formControlName="mcr111"></td>
+          <td><input type="text" formControlName="mechPort111"></td>
+          <td><input type="text" formControlName="mechStbd111"></td>
+          <td><input type="text" formControlName="remarks111"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed112"></td>
+          <td><input type="text" formControlName="analogAsp112"></td>
+          <td><input type="text" formControlName="wheelHouse112"></td>
+          <td><input type="text" formControlName="mcr112"></td>
+          <td><input type="text" formControlName="mechPort112"></td>
+          <td><input type="text" formControlName="mechStbd112"></td>
+          <td><input type="text" formControlName="remarks112"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed113"></td>
+          <td><input type="text" formControlName="analogAsp113"></td>
+          <td><input type="text" formControlName="wheelHouse113"></td>
+          <td><input type="text" formControlName="mcr113"></td>
+          <td><input type="text" formControlName="mechPort113"></td>
+          <td><input type="text" formControlName="mechStbd113"></td>
+          <td><input type="text" formControlName="remarks113"></td>
+        </tr>
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed114"></td>
+          <td><input type="text" formControlName="analogAsp114"></td>
+          <td><input type="text" formControlName="wheelHouse114"></td>
+          <td><input type="text" formControlName="mcr114"></td>
+          <td><input type="text" formControlName="mechPort114"></td>
+          <td><input type="text" formControlName="mechStbd114"></td>
+          <td><input type="text" formControlName="remarks114"></td>
+        </tr>
+        <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed115" /></td>
+      <td><input type="text" formControlName="analogAsp115" /></td>
+      <td><input type="text" formControlName="wheelHouse115" /></td>
+      <td><input type="text" formControlName="mcr115" /></td>
+      <td><input type="text" formControlName="mechPort115" /></td>
+      <td><input type="text" formControlName="mechStbd115" /></td>
+      <td><input type="text" formControlName="remarks115" /></td>
+    </tr>
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed116" /></td>
+      <td><input type="text" formControlName="analogAsp116" /></td>
+      <td><input type="text" formControlName="wheelHouse116" /></td>
+      <td><input type="text" formControlName="mcr116" /></td>
+      <td><input type="text" formControlName="mechPort116" /></td>
+      <td><input type="text" formControlName="mechStbd116" /></td>
+      <td><input type="text" formControlName="remarks116" /></td>
+    </tr>
+    <tr>
+      <td>5°</td>
+      <td><input type="text" formControlName="bridgeEnclosed117" /></td>
+      <td><input type="text" formControlName="analogAsp117" /></td>
+      <td><input type="text" formControlName="wheelHouse117" /></td>
+      <td><input type="text" formControlName="mcr117" /></td>
+      <td><input type="text" formControlName="mechPort117" /></td>
+      <td><input type="text" formControlName="mechStbd117" /></td>
+      <td><input type="text" formControlName="remarks117" /></td>
+    </tr>
+
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed118" /></td>
+      <td><input type="text" formControlName="analogAsp118" /></td>
+      <td><input type="text" formControlName="wheelHouse118" /></td>
+      <td><input type="text" formControlName="mcr118" /></td>
+      <td><input type="text" formControlName="mechPort118" /></td>
+      <td><input type="text" formControlName="mechStbd118" /></td>
+      <td><input type="text" formControlName="remarks118" /></td>
+    </tr>
+
+    <tr>
+      <td>5° STBD</td>
+      <td><input type="text" formControlName="bridgeEnclosed119" /></td>
+      <td><input type="text" formControlName="analogAsp119" /></td>
+      <td><input type="text" formControlName="wheelHouse119" /></td>
+      <td><input type="text" formControlName="mcr119" /></td>
+      <td><input type="text" formControlName="mechPort119" /></td>
+      <td><input type="text" formControlName="mechStbd119" /></td>
+      <td><input type="text" formControlName="remarks119" /></td>
+    </tr>
+
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed120" /></td>
+      <td><input type="text" formControlName="analogAsp120" /></td>
+      <td><input type="text" formControlName="wheelHouse120" /></td>
+      <td><input type="text" formControlName="mcr120" /></td>
+      <td><input type="text" formControlName="mechPort120" /></td>
+      <td><input type="text" formControlName="mechStbd120" /></td>
+      <td><input type="text" formControlName="remarks120" /></td>
+    </tr>
+
+    <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed121" /></td>
+      <td><input type="text" formControlName="analogAsp121" /></td>
+      <td><input type="text" formControlName="wheelHouse121" /></td>
+      <td><input type="text" formControlName="mcr121" /></td>
+      <td><input type="text" formControlName="mechPort121" /></td>
+      <td><input type="text" formControlName="mechStbd121" /></td>
+      <td><input type="text" formControlName="remarks121" /></td>
+    </tr>
+    <!-- 20° -->
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed122"></td>
+          <td><input type="text" formControlName="analogAsp122"></td>
+          <td><input type="text" formControlName="wheelHouse122"></td>
+          <td><input type="text" formControlName="mcr122"></td>
+          <td><input type="text" formControlName="mechPort122"></td>
+          <td><input type="text" formControlName="mechStbd122"></td>
+          <td><input type="text" formControlName="remarks122"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed123"></td>
+          <td><input type="text" formControlName="analogAsp123"></td>
+          <td><input type="text" formControlName="wheelHouse123"></td>
+          <td><input type="text" formControlName="mcr123"></td>
+          <td><input type="text" formControlName="mechPort123"></td>
+          <td><input type="text" formControlName="mechStbd123"></td>
+          <td><input type="text" formControlName="remarks123"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed124"></td>
+          <td><input type="text" formControlName="analogAsp124"></td>
+          <td><input type="text" formControlName="wheelHouse124"></td>
+          <td><input type="text" formControlName="mcr124"></td>
+          <td><input type="text" formControlName="mechPort124"></td>
+          <td><input type="text" formControlName="mechStbd124"></td>
+          <td><input type="text" formControlName="remarks124"></td>
+        </tr>
+        <tr>
+          <td>35°</td>
+          <td><input type="text" formControlName="bridgeEnclosed125"></td>
+          <td><input type="text" formControlName="analogAsp125"></td>
+          <td><input type="text" formControlName="wheelHouse125"></td>
+          <td><input type="text" formControlName="mcr125"></td>
+          <td><input type="text" formControlName="mechPort125"></td>
+          <td><input type="text" formControlName="mechStbd125"></td>
+          <td><input type="text" formControlName="remarks125"></td>
+        </tr>
+        <tr>
+          <td>30°</td>
+          <td><input type="text" formControlName="bridgeEnclosed126"></td>
+          <td><input type="text" formControlName="analogAsp126"></td>
+          <td><input type="text" formControlName="wheelHouse126"></td>
+          <td><input type="text" formControlName="mcr126"></td>
+          <td><input type="text" formControlName="mechPort126"></td>
+          <td><input type="text" formControlName="mechStbd126"></td>
+          <td><input type="text" formControlName="remarks126"></td>
+        </tr>
+        <tr>
+          <td>25°</td>
+          <td><input type="text" formControlName="bridgeEnclosed127"></td>
+          <td><input type="text" formControlName="analogAsp127"></td>
+          <td><input type="text" formControlName="wheelHouse127"></td>
+          <td><input type="text" formControlName="mcr127"></td>
+          <td><input type="text" formControlName="mechPort127"></td>
+          <td><input type="text" formControlName="mechStbd127"></td>
+          <td><input type="text" formControlName="remarks127"></td>
+        </tr>
+        <tr>
+          <td>20°</td>
+          <td><input type="text" formControlName="bridgeEnclosed128"></td>
+          <td><input type="text" formControlName="analogAsp128"></td>
+          <td><input type="text" formControlName="wheelHouse128"></td>
+          <td><input type="text" formControlName="mcr128"></td>
+          <td><input type="text" formControlName="mechPort128"></td>
+          <td><input type="text" formControlName="mechStbd128"></td>
+          <td><input type="text" formControlName="remarks128"></td>
+        </tr>
+        <tr>
+      <td>15°</td>
+      <td><input type="text" formControlName="bridgeEnclosed129" /></td>
+      <td><input type="text" formControlName="analogAsp129" /></td>
+      <td><input type="text" formControlName="wheelHouse129" /></td>
+      <td><input type="text" formControlName="mcr129" /></td>
+      <td><input type="text" formControlName="mechPort129" /></td>
+      <td><input type="text" formControlName="mechStbd129" /></td>
+      <td><input type="text" formControlName="remarks129" /></td>
+    </tr>
+    <tr>
+      <td>10°</td>
+      <td><input type="text" formControlName="bridgeEnclosed130" /></td>
+      <td><input type="text" formControlName="analogAsp130" /></td>
+      <td><input type="text" formControlName="wheelHouse130" /></td>
+      <td><input type="text" formControlName="mcr130" /></td>
+      <td><input type="text" formControlName="mechPort130" /></td>
+      <td><input type="text" formControlName="mechStbd130" /></td>
+      <td><input type="text" formControlName="remarks130" /></td>
+    </tr>
+    <tr>
+      <td>5°</td>
+      <td><input type="text" formControlName="bridgeEnclosed131" /></td>
+      <td><input type="text" formControlName="analogAsp131" /></td>
+      <td><input type="text" formControlName="wheelHouse131" /></td>
+      <td><input type="text" formControlName="mcr131" /></td>
+      <td><input type="text" formControlName="mechPort131" /></td>
+      <td><input type="text" formControlName="mechStbd131" /></td>
+      <td><input type="text" formControlName="remarks131" /></td>
+    </tr>
+    <tr>
+      <td>MIDSHIP</td>
+      <td><input type="text" formControlName="bridgeEnclosed132" /></td>
+      <td><input type="text" formControlName="analogAsp132" /></td>
+      <td><input type="text" formControlName="wheelHouse132" /></td>
+      <td><input type="text" formControlName="mcr132" /></td>
+      <td><input type="text" formControlName="mechPort132" /></td>
+      <td><input type="text" formControlName="mechStbd132" /></td>
+      <td><input type="text" formControlName="remarks132" /></td>
+    </tr>
+  </table>
+  </div>
+
+  <div class="table-section">
+    <h4 class="sub-heading">(e)	Steering Gear Rudder Follow Up Timing</h4>
+  <table>
+    <thead>
+      <tr>
+        <th><u>Control Post</u></th>
+        <th><u>Rudder Order</u></th>
+        <th><u>Port Pump Running</u></th>
+        <th><u>Stbd Pump Running</u></th>
+        <th><u>Both Pumps Running</u></th>
+        <th><u>Remarks</u></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Bridge Rows -->
+      <tr>
+        <td rowspan="2">Bridge</td>
+        <td>35P-0-30S</td>
+        <td><input formControlName="bridge_35P_30S_port133" type="text"></td>
+        <td><input formControlName="bridge_35P_30S_stbd133" type="text"></td>
+        <td><input formControlName="bridge_35P_30S_both133" type="text"></td>
+        <td><input formControlName="bridge_35P_30S_remarks133" type="text"></td>
+      </tr>
+      <tr>
+        <td>35S-0-30P</td>
+        <td><input formControlName="bridge_35S_30P_port134" type="text"></td>
+        <td><input formControlName="bridge_35S_30P_stbd134" type="text"></td>
+        <td><input formControlName="bridge_35S_30P_both134" type="text"></td>
+        <td><input formControlName="bridge_35S_30P_remarks134" type="text"></td>
+      </tr>
+
+      <!-- Wheel House Rows -->
+      <tr>
+        <td rowspan="2">Wheel House</td>
+        <td>35P-0-30S</td>
+        <td><input formControlName="wheel_35P_30S_port135" type="text"></td>
+        <td><input formControlName="wheel_35P_30S_stbd135" type="text"></td>
+        <td><input formControlName="wheel_35P_30S_both135" type="text"></td>
+        <td><input formControlName="wheel_35P_30S_remarks135" type="text"></td>
+      </tr>
+      <tr>
+        <td>35S-0-30P</td>
+        <td><input formControlName="wheel_35S_30P_port136" type="text"></td>
+        <td><input formControlName="wheel_35S_30P_stbd136" type="text"></td>
+        <td><input formControlName="wheel_35S_30P_both136" type="text"></td>
+        <td><input formControlName="wheel_35S_30P_remarks136" type="text"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+      <h3 class="main-heading">3.	Positional Checks -Steering Gear Harbour Trials in Non-Follow up mode   </h3>
+    <div class="table-section">
+      <h4 class="sub-heading">(a)	Operating Position - Wheel house with Port Pump (NFU)</h4>
+      <!-- You can reuse this table structure for other headings too -->
+      <table>
+        <tr>
+          <th rowspan="2">Helm applied</th>
+          <th rowspan="2">Bridge Enclosed</th>
+          <th rowspan="2">Analog ASP</th>
+          <th rowspan="2">Wheel House</th>
+          <th rowspan="2">MCR</th>
+          <th colspan="2">Mechanical Indicator (ASP)</th>
+        </tr>
+        <tr>
+          <th>P</th>
+          <th>S</th>
+        </tr>
+
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="bridgeEnclosed0" /></td>
+          <td><input type="text" formControlName="analogAsp0" /></td>
+          <td><input type="text" formControlName="wheelHouse0" /></td>
+          <td><input type="text" formControlName="mcr0" /></td>
+          <td><input type="text" formControlName="mechPort0" /></td>
+          <td><input type="text" formControlName="mechStbd0" /></td>
+        </tr>
+
+        <tr>
+          <td>5° PORT</td>
+          <td><input type="text" formControlName="bridgeEnclosed1" /></td>
+          <td><input type="text" formControlName="analogAsp1" /></td>
+          <td><input type="text" formControlName="wheelHouse1" /></td>
+          <td><input type="text" formControlName="mcr1" /></td>
+          <td><input type="text" formControlName="mechPort1" /></td>
+          <td><input type="text" formControlName="mechStbd1" /></td>
+        </tr>
+
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="bridgeEnclosed2" /></td>
+          <td><input type="text" formControlName="analogAsp2" /></td>
+          <td><input type="text" formControlName="wheelHouse2" /></td>
+          <td><input type="text" formControlName="mcr2" /></td>
+          <td><input type="text" formControlName="mechPort2" /></td>
+          <td><input type="text" formControlName="mechStbd2" /></td>
+        </tr>
+
+        <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="bridgeEnclosed3" /></td>
+          <td><input type="text" formControlName="analogAsp3" /></td>
+          <td><input type="text" formControlName="wheelHouse3" /></td>
+          <td><input type="text" formControlName="mcr3" /></td>
+          <td><input type="text" formControlName="mechPort3" /></td>
+          <td><input type="text" formControlName="mechStbd3" /></td>
+        </tr>
+        <!-- 20° -->
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="bridgeEnclosed4"></td>
+              <td><input type="text" formControlName="analogAsp4"></td>
+              <td><input type="text" formControlName="wheelHouse4"></td>
+              <td><input type="text" formControlName="mcr4"></td>
+              <td><input type="text" formControlName="mechPort4"></td>
+              <td><input type="text" formControlName="mechStbd4"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="bridgeEnclosed5"></td>
+              <td><input type="text" formControlName="analogAsp5"></td>
+              <td><input type="text" formControlName="wheelHouse5"></td>
+              <td><input type="text" formControlName="mcr5"></td>
+              <td><input type="text" formControlName="mechPort5"></td>
+              <td><input type="text" formControlName="mechStbd5"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="bridgeEnclosed6"></td>
+              <td><input type="text" formControlName="analogAsp6"></td>
+              <td><input type="text" formControlName="wheelHouse6"></td>
+              <td><input type="text" formControlName="mcr6"></td>
+              <td><input type="text" formControlName="mechPort6"></td>
+              <td><input type="text" formControlName="mechStbd6"></td>
+            </tr>
+            <tr>
+              <td>35°</td>
+              <td><input type="text" formControlName="bridgeEnclosed7"></td>
+              <td><input type="text" formControlName="analogAsp7"></td>
+              <td><input type="text" formControlName="wheelHouse7"></td>
+              <td><input type="text" formControlName="mcr7"></td>
+              <td><input type="text" formControlName="mechPort7"></td>
+              <td><input type="text" formControlName="mechStbd7"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="bridgeEnclosed8"></td>
+              <td><input type="text" formControlName="analogAsp8"></td>
+              <td><input type="text" formControlName="wheelHouse8"></td>
+              <td><input type="text" formControlName="mcr8"></td>
+              <td><input type="text" formControlName="mechPort8"></td>
+              <td><input type="text" formControlName="mechStbd8"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="bridgeEnclosed9"></td>
+              <td><input type="text" formControlName="analogAsp9"></td>
+              <td><input type="text" formControlName="wheelHouse9"></td>
+              <td><input type="text" formControlName="mcr9"></td>
+              <td><input type="text" formControlName="mechPort9"></td>
+              <td><input type="text" formControlName="mechStbd9"></td>
+            </tr>
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="bridgeEnclosed10"></td>
+              <td><input type="text" formControlName="analogAsp10"></td>
+              <td><input type="text" formControlName="wheelHouse10"></td>
+              <td><input type="text" formControlName="mcr10"></td>
+              <td><input type="text" formControlName="mechPort10"></td>
+              <td><input type="text" formControlName="mechStbd10"></td>
+            </tr>
+            <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="bridgeEnclosed11" /></td>
+          <td><input type="text" formControlName="analogAsp11" /></td>
+          <td><input type="text" formControlName="wheelHouse11" /></td>
+          <td><input type="text" formControlName="mcr11" /></td>
+          <td><input type="text" formControlName="mechPort11" /></td>
+          <td><input type="text" formControlName="mechStbd11" /></td>
+        </tr>
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="bridgeEnclosed12" /></td>
+          <td><input type="text" formControlName="analogAsp12" /></td>
+          <td><input type="text" formControlName="wheelHouse12" /></td>
+          <td><input type="text" formControlName="mcr12" /></td>
+          <td><input type="text" formControlName="mechPort12" /></td>
+          <td><input type="text" formControlName="mechStbd12" /></td>
+        </tr>
+        <tr>
+          <td>5°</td>
+          <td><input type="text" formControlName="bridgeEnclosed13" /></td>
+          <td><input type="text" formControlName="analogAsp13" /></td>
+          <td><input type="text" formControlName="wheelHouse13" /></td>
+          <td><input type="text" formControlName="mcr13" /></td>
+          <td><input type="text" formControlName="mechPort13" /></td>
+          <td><input type="text" formControlName="mechStbd13" /></td>
+        </tr>
+
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="bridgeEnclosed14" /></td>
+          <td><input type="text" formControlName="analogAsp14" /></td>
+          <td><input type="text" formControlName="wheelHouse14" /></td>
+          <td><input type="text" formControlName="mcr14" /></td>
+          <td><input type="text" formControlName="mechPort14" /></td>
+          <td><input type="text" formControlName="mechStbd14" /></td>
+        </tr>
+
+        <tr>
+          <td>5° STBD</td>
+          <td><input type="text" formControlName="bridgeEnclosed15" /></td>
+          <td><input type="text" formControlName="analogAsp15" /></td>
+          <td><input type="text" formControlName="wheelHouse15" /></td>
+          <td><input type="text" formControlName="mcr15" /></td>
+          <td><input type="text" formControlName="mechPort15" /></td>
+          <td><input type="text" formControlName="mechStbd15" /></td>
+        </tr>
+
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="bridgeEnclosed16" /></td>
+          <td><input type="text" formControlName="analogAsp16" /></td>
+          <td><input type="text" formControlName="wheelHouse16" /></td>
+          <td><input type="text" formControlName="mcr16" /></td>
+          <td><input type="text" formControlName="mechPort16" /></td>
+          <td><input type="text" formControlName="mechStbd16" /></td>
+        </tr>
+
+        <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed17" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp17" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse17" /></td>
+          <td><input type="text" formControlName="PORT1mcr17" /></td>
+          <td><input type="text" formControlName="PORT1mechPort17" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd17" /></td>
+        </tr>
+        <!-- 20° -->
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed18"></td>
+              <td><input type="text" formControlName="PORT1analogAsp18"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse18"></td>
+              <td><input type="text" formControlName="PORT1mcr18"></td>
+              <td><input type="text" formControlName="PORT1mechPort18"></td>
+              <td><input type="text" formControlName="PORT1mechStbd18"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed19"></td>
+              <td><input type="text" formControlName="PORT1analogAsp19"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse19"></td>
+              <td><input type="text" formControlName="PORT1mcr19"></td>
+              <td><input type="text" formControlName="PORT1mechPort19"></td>
+              <td><input type="text" formControlName="PORT1mechStbd19"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed20"></td>
+              <td><input type="text" formControlName="PORT1analogAsp20"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse20"></td>
+              <td><input type="text" formControlName="PORT1mcr20"></td>
+              <td><input type="text" formControlName="PORT1mechPort20"></td>
+              <td><input type="text" formControlName="PORT1mechStbd20"></td>
+            </tr>
+            <tr>
+              <td>35°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed21"></td>
+              <td><input type="text" formControlName="PORT1analogAsp21"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse21"></td>
+              <td><input type="text" formControlName="PORT1mcr21"></td>
+              <td><input type="text" formControlName="PORT1mechPort21"></td>
+              <td><input type="text" formControlName="PORT1mechStbd21"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed22"></td>
+              <td><input type="text" formControlName="PORT1analogAsp22"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse22"></td>
+              <td><input type="text" formControlName="PORT1mcr22"></td>
+              <td><input type="text" formControlName="PORT1mechPort22"></td>
+              <td><input type="text" formControlName="PORT1mechStbd22"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed23"></td>
+              <td><input type="text" formControlName="PORT1analogAsp23"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse23"></td>
+              <td><input type="text" formControlName="PORT1mcr23"></td>
+              <td><input type="text" formControlName="PORT1mechPort23"></td>
+              <td><input type="text" formControlName="PORT1mechStbd23"></td>
+            </tr>
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed24"></td>
+              <td><input type="text" formControlName="PORT1analogAsp24"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse24"></td>
+              <td><input type="text" formControlName="PORT1mcr24"></td>
+              <td><input type="text" formControlName="PORT1mechPort24"></td>
+              <td><input type="text" formControlName="PORT1mechStbd24"></td>
+            </tr>
+            <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed25" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp25" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse25" /></td>
+          <td><input type="text" formControlName="PORT1mcr25" /></td>
+          <td><input type="text" formControlName="PORT1mechPort25" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd25" /></td>
+        </tr>
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed26" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp26" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse26" /></td>
+          <td><input type="text" formControlName="PORT1mcr26" /></td>
+          <td><input type="text" formControlName="PORT1mechPort26" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd26" /></td>
+        </tr>
+        <tr>
+          <td>5°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed27" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp27" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse27" /></td>
+          <td><input type="text" formControlName="PORT1mcr27" /></td>
+          <td><input type="text" formControlName="PORT1mechPort27" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd27" /></td>
+        </tr>
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed28" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp28" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse28" /></td>
+          <td><input type="text" formControlName="PORT1mcr28" /></td>
+          <td><input type="text" formControlName="PORT1mechPort28" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd28" /></td>
+        </tr>
+      </table>
+    </div>
+
+      <div class="table-section">
+      <h4 class="sub-heading">(b)	Operating Position- Bridge with Stbd Pump (NFU)</h4>
+    <!-- You can reuse this table structure for other headings too -->
+      <table>
+        <tr>
+          <th rowspan="2">Helm applied</th>
+          <th rowspan="2">Bridge Enclosed</th>
+          <th rowspan="2">Analog ASP</th>
+          <th rowspan="2">Wheel House</th>
+          <th rowspan="2">MCR</th>
+          <th colspan="2">Mechanical Indicator (ASP)</th>
+        </tr>
+        <tr>
+          <th>P</th>
+          <th>S</th>
+        </tr>
+
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed29" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp29" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse29" /></td>
+          <td><input type="text" formControlName="PORT1mcr29" /></td>
+          <td><input type="text" formControlName="PORT1mechPort29" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd29" /></td>
+        </tr>
+
+        <tr>
+          <td>5° PORT</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed30" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp30" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse30" /></td>
+          <td><input type="text" formControlName="PORT1mcr30" /></td>
+          <td><input type="text" formControlName="PORT1mechPort30" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd30" /></td>
+        </tr>
+
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed31" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp31" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse31" /></td>
+          <td><input type="text" formControlName="PORT1mcr31" /></td>
+          <td><input type="text" formControlName="PORT1mechPort31" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd31" /></td>
+        </tr>
+
+        <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed32" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp32" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse32" /></td>
+          <td><input type="text" formControlName="PORT1mcr32" /></td>
+          <td><input type="text" formControlName="PORT1mechPort32" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd32" /></td>
+        </tr>
+        <!-- 20° -->
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed33"></td>
+              <td><input type="text" formControlName="PORT1analogAsp33"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse33"></td>
+              <td><input type="text" formControlName="PORT1mcr33"></td>
+              <td><input type="text" formControlName="PORT1mechPort33"></td>
+              <td><input type="text" formControlName="PORT1mechStbd33"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed34"></td>
+              <td><input type="text" formControlName="PORT1analogAsp34"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse34"></td>
+              <td><input type="text" formControlName="PORT1mcr34"></td>
+              <td><input type="text" formControlName="PORT1mechPort34"></td>
+              <td><input type="text" formControlName="PORT1mechStbd34"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed35"></td>
+              <td><input type="text" formControlName="PORT1analogAsp35"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse35"></td>
+              <td><input type="text" formControlName="PORT1mcr35"></td>
+              <td><input type="text" formControlName="PORT1mechPort35"></td>
+              <td><input type="text" formControlName="PORT1mechStbd35"></td>
+            </tr>
+            <tr>
+              <td>35°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed36"></td>
+              <td><input type="text" formControlName="PORT1analogAsp36"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse36"></td>
+              <td><input type="text" formControlName="PORT1mcr36"></td>
+              <td><input type="text" formControlName="PORT1mechPort36"></td>
+              <td><input type="text" formControlName="PORT1mechStbd36"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed37"></td>
+              <td><input type="text" formControlName="PORT1analogAsp37"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse37"></td>
+              <td><input type="text" formControlName="PORT1mcr37"></td>
+              <td><input type="text" formControlName="PORT1mechPort37"></td>
+              <td><input type="text" formControlName="PORT1mechStbd37"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed38"></td>
+              <td><input type="text" formControlName="PORT1analogAsp38"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse38"></td>
+              <td><input type="text" formControlName="PORT1mcr38"></td>
+              <td><input type="text" formControlName="PORT1mechPort38"></td>
+              <td><input type="text" formControlName="PORT1mechStbd38"></td>
+            </tr>
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed39"></td>
+              <td><input type="text" formControlName="PORT1analogAsp39"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse39"></td>
+              <td><input type="text" formControlName="PORT1mcr39"></td>
+              <td><input type="text" formControlName="PORT1mechPort39"></td>
+              <td><input type="text" formControlName="PORT1mechStbd39"></td>
+            </tr>
+            <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed40" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp40" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse40" /></td>
+          <td><input type="text" formControlName="PORT1mcr40" /></td>
+          <td><input type="text" formControlName="PORT1mechPort40" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd40" /></td>
+        </tr>
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed41" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp41" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse41" /></td>
+          <td><input type="text" formControlName="PORT1mcr41" /></td>
+          <td><input type="text" formControlName="PORT1mechPort41" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd41" /></td>
+        </tr>
+        <tr>
+          <td>5°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed42" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp42" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse42" /></td>
+          <td><input type="text" formControlName="PORT1mcr42" /></td>
+          <td><input type="text" formControlName="PORT1mechPort42" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd42" /></td>
+        </tr>
+
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed43" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp43" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse43" /></td>
+          <td><input type="text" formControlName="PORT1mcr43" /></td>
+          <td><input type="text" formControlName="PORT1mechPort43" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd43" /></td>
+        </tr>
+
+        <tr>
+          <td>5° STBD</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed44" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp44" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse44" /></td>
+          <td><input type="text" formControlName="PORT1mcr44" /></td>
+          <td><input type="text" formControlName="PORT1mechPort44" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd44" /></td>
+        </tr>
+
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed45" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp45" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse45" /></td>
+          <td><input type="text" formControlName="PORT1mcr45" /></td>
+          <td><input type="text" formControlName="PORT1mechPort45" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd45" /></td>
+        </tr>
+
+        <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed46" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp46" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse46" /></td>
+          <td><input type="text" formControlName="PORT1mcr46" /></td>
+          <td><input type="text" formControlName="PORT1mechPort46" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd46" /></td>
+        </tr>
+        <!-- 20° -->
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed47"></td>
+              <td><input type="text" formControlName="PORT1analogAsp47"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse47"></td>
+              <td><input type="text" formControlName="PORT1mcr47"></td>
+              <td><input type="text" formControlName="PORT1mechPort47"></td>
+              <td><input type="text" formControlName="PORT1mechStbd47"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed48"></td>
+              <td><input type="text" formControlName="PORT1analogAsp48"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse48"></td>
+              <td><input type="text" formControlName="PORT1mcr48"></td>
+              <td><input type="text" formControlName="PORT1mechPort48"></td>
+              <td><input type="text" formControlName="PORT1mechStbd48"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed49"></td>
+              <td><input type="text" formControlName="PORT1analogAsp49"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse49"></td>
+              <td><input type="text" formControlName="PORT1mcr49"></td>
+              <td><input type="text" formControlName="PORT1mechPort49"></td>
+              <td><input type="text" formControlName="PORT1mechStbd49"></td>
+            </tr>
+            <tr>
+              <td>35°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed50"></td>
+              <td><input type="text" formControlName="PORT1analogAsp50"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse50"></td>
+              <td><input type="text" formControlName="PORT1mcr50"></td>
+              <td><input type="text" formControlName="PORT1mechPort50"></td>
+              <td><input type="text" formControlName="PORT1mechStbd50"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed51"></td>
+              <td><input type="text" formControlName="PORT1analogAsp51"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse51"></td>
+              <td><input type="text" formControlName="PORT1mcr51"></td>
+              <td><input type="text" formControlName="PORT1mechPort51"></td>
+              <td><input type="text" formControlName="PORT1mechStbd51"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed52"></td>
+              <td><input type="text" formControlName="PORT1analogAsp52"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse52"></td>
+              <td><input type="text" formControlName="PORT1mcr52"></td>
+              <td><input type="text" formControlName="PORT1mechPort52"></td>
+              <td><input type="text" formControlName="PORT1mechStbd52"></td>
+            </tr>
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="PORT1bridgeEnclosed53"></td>
+              <td><input type="text" formControlName="PORT1analogAsp53"></td>
+              <td><input type="text" formControlName="PORT1wheelHouse53"></td>
+              <td><input type="text" formControlName="PORT1mcr53"></td>
+              <td><input type="text" formControlName="PORT1mechPort53"></td>
+              <td><input type="text" formControlName="PORT1mechStbd53"></td>
+            </tr>
+            <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed54" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp54" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse54" /></td>
+          <td><input type="text" formControlName="PORT1mcr54" /></td>
+          <td><input type="text" formControlName="PORT1mechPort54" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd54" /></td>
+        </tr>
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed55" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp55" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse55" /></td>
+          <td><input type="text" formControlName="PORT1mcr55" /></td>
+          <td><input type="text" formControlName="PORT1mechPort55" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd55" /></td>
+        </tr>
+        <tr>
+          <td>5°</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed56" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp56" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse56" /></td>
+          <td><input type="text" formControlName="PORT1mcr56" /></td>
+          <td><input type="text" formControlName="PORT1mechPort56" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd56" /></td>
+        </tr>
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="PORT1bridgeEnclosed57" /></td>
+          <td><input type="text" formControlName="PORT1analogAsp57" /></td>
+          <td><input type="text" formControlName="PORT1wheelHouse57" /></td>
+          <td><input type="text" formControlName="PORT1mcr57" /></td>
+          <td><input type="text" formControlName="PORT1mechPort57" /></td>
+          <td><input type="text" formControlName="PORT1mechStbd57" /></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="table-section">
+      <h4 class="sub-heading">(c)	Operating Position- Bridge with PORT Pump (NFU)</h4>
+    <!-- You can reuse this table structure for other headings too -->
+      <table>
+        <tr>
+          <th rowspan="2">Helm applied</th>
+          <th rowspan="2">Bridge</th>
+          <th rowspan="2">ASP</th>
+          <th rowspan="2">Wheel House</th>
+          <th rowspan="2">MCR</th>
+          <th colspan="2">Mechanical Indicator (ASP)</th>
+        </tr>
+        <tr>
+          <th>P</th>
+          <th>S</th>
+        </tr>
+
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT29" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp29" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse29" /></td>
+          <td><input type="text" formControlName="PORTmcr29" /></td>
+          <td><input type="text" formControlName="PORTmechPort29" /></td>
+          <td><input type="text" formControlName="PORTmechStbd29" /></td>
+        </tr>
+
+        <tr>
+          <td>5° PORT</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT30" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp30" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse30" /></td>
+          <td><input type="text" formControlName="PORTmcr30" /></td>
+          <td><input type="text" formControlName="PORTmechPort30" /></td>
+          <td><input type="text" formControlName="PORTmechStbd30" /></td>
+        </tr>
+
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT31" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp31" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse31" /></td>
+          <td><input type="text" formControlName="PORTmcr31" /></td>
+          <td><input type="text" formControlName="PORTmechPort31" /></td>
+          <td><input type="text" formControlName="PORTmechStbd31" /></td>
+        </tr>
+
+        <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT32" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp32" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse32" /></td>
+          <td><input type="text" formControlName="PORTmcr32" /></td>
+          <td><input type="text" formControlName="PORTmechPort32" /></td>
+          <td><input type="text" formControlName="PORTmechStbd32" /></td>
+        </tr>
+        <!-- 20° -->
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT33"></td>
+              <td><input type="text" formControlName="PORTanalogAsp33"></td>
+              <td><input type="text" formControlName="PORTwheelHouse33"></td>
+              <td><input type="text" formControlName="PORTmcr33"></td>
+              <td><input type="text" formControlName="PORTmechPort33"></td>
+              <td><input type="text" formControlName="PORTmechStbd33"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT34"></td>
+              <td><input type="text" formControlName="PORTanalogAsp34"></td>
+              <td><input type="text" formControlName="PORTwheelHouse34"></td>
+              <td><input type="text" formControlName="PORTmcr34"></td>
+              <td><input type="text" formControlName="PORTmechPort34"></td>
+              <td><input type="text" formControlName="PORTmechStbd34"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT35"></td>
+              <td><input type="text" formControlName="PORTanalogAsp35"></td>
+              <td><input type="text" formControlName="PORTwheelHouse35"></td>
+              <td><input type="text" formControlName="PORTmcr35"></td>
+              <td><input type="text" formControlName="PORTmechPort35"></td>
+              <td><input type="text" formControlName="PORTmechStbd35"></td>
+            </tr>
+            <tr>
+              <td>35°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT36"></td>
+              <td><input type="text" formControlName="PORTanalogAsp36"></td>
+              <td><input type="text" formControlName="PORTwheelHouse36"></td>
+              <td><input type="text" formControlName="PORTmcr36"></td>
+              <td><input type="text" formControlName="PORTmechPort36"></td>
+              <td><input type="text" formControlName="PORTmechStbd36"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT37"></td>
+              <td><input type="text" formControlName="PORTanalogAsp37"></td>
+              <td><input type="text" formControlName="PORTwheelHouse37"></td>
+              <td><input type="text" formControlName="PORTmcr37"></td>
+              <td><input type="text" formControlName="PORTmechPort37"></td>
+              <td><input type="text" formControlName="PORTmechStbd37"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT38"></td>
+              <td><input type="text" formControlName="PORTanalogAsp38"></td>
+              <td><input type="text" formControlName="PORTwheelHouse38"></td>
+              <td><input type="text" formControlName="PORTmcr38"></td>
+              <td><input type="text" formControlName="PORTmechPort38"></td>
+              <td><input type="text" formControlName="PORTmechStbd38"></td>
+            </tr>
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT39"></td>
+              <td><input type="text" formControlName="PORTanalogAsp39"></td>
+              <td><input type="text" formControlName="PORTwheelHouse39"></td>
+              <td><input type="text" formControlName="PORTmcr39"></td>
+              <td><input type="text" formControlName="PORTmechPort39"></td>
+              <td><input type="text" formControlName="PORTmechStbd39"></td>
+            </tr>
+            <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT40" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp40" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse40" /></td>
+          <td><input type="text" formControlName="PORTmcr40" /></td>
+          <td><input type="text" formControlName="PORTmechPort40" /></td>
+          <td><input type="text" formControlName="PORTmechStbd40" /></td>
+        </tr>
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT41" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp41" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse41" /></td>
+          <td><input type="text" formControlName="PORTmcr41" /></td>
+          <td><input type="text" formControlName="PORTmechPort41" /></td>
+          <td><input type="text" formControlName="PORTmechStbd41" /></td>
+        </tr>
+        <tr>
+          <td>5°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT42" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp42" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse42" /></td>
+          <td><input type="text" formControlName="PORTmcr42" /></td>
+          <td><input type="text" formControlName="PORTmechPort42" /></td>
+          <td><input type="text" formControlName="PORTmechStbd42" /></td>
+        </tr>
+
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT43" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp43" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse43" /></td>
+          <td><input type="text" formControlName="PORTmcr43" /></td>
+          <td><input type="text" formControlName="PORTmechPort43" /></td>
+          <td><input type="text" formControlName="PORTmechStbd43" /></td>
+        </tr>
+
+        <tr>
+          <td>5° STBD</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT44" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp44" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse44" /></td>
+          <td><input type="text" formControlName="PORTmcr44" /></td>
+          <td><input type="text" formControlName="PORTmechPort44" /></td>
+          <td><input type="text" formControlName="PORTmechStbd44" /></td>
+        </tr>
+
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT45" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp45" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse45" /></td>
+          <td><input type="text" formControlName="PORTmcr45" /></td>
+          <td><input type="text" formControlName="PORTmechPort45" /></td>
+          <td><input type="text" formControlName="PORTmechStbd45" /></td>
+        </tr>
+
+        <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT46" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp46" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse46" /></td>
+          <td><input type="text" formControlName="PORTmcr46" /></td>
+          <td><input type="text" formControlName="PORTmechPort46" /></td>
+          <td><input type="text" formControlName="PORTmechStbd46" /></td>
+        </tr>
+        <!-- 20° -->
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT47"></td>
+              <td><input type="text" formControlName="PORTanalogAsp47"></td>
+              <td><input type="text" formControlName="PORTwheelHouse47"></td>
+              <td><input type="text" formControlName="PORTmcr47"></td>
+              <td><input type="text" formControlName="PORTmechPort47"></td>
+              <td><input type="text" formControlName="PORTmechStbd47"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT48"></td>
+              <td><input type="text" formControlName="PORTanalogAsp48"></td>
+              <td><input type="text" formControlName="PORTwheelHouse48"></td>
+              <td><input type="text" formControlName="PORTmcr48"></td>
+              <td><input type="text" formControlName="PORTmechPort48"></td>
+              <td><input type="text" formControlName="PORTmechStbd48"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT49"></td>
+              <td><input type="text" formControlName="PORTanalogAsp49"></td>
+              <td><input type="text" formControlName="PORTwheelHouse49"></td>
+              <td><input type="text" formControlName="PORTmcr49"></td>
+              <td><input type="text" formControlName="PORTmechPort49"></td>
+              <td><input type="text" formControlName="PORTmechStbd49"></td>
+            </tr>
+            <tr>
+              <td>35°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT50"></td>
+              <td><input type="text" formControlName="PORTanalogAsp50"></td>
+              <td><input type="text" formControlName="PORTwheelHouse50"></td>
+              <td><input type="text" formControlName="PORTmcr50"></td>
+              <td><input type="text" formControlName="PORTmechPort50"></td>
+              <td><input type="text" formControlName="PORTmechStbd50"></td>
+            </tr>
+            <tr>
+              <td>30°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT51"></td>
+              <td><input type="text" formControlName="PORTanalogAsp51"></td>
+              <td><input type="text" formControlName="PORTwheelHouse51"></td>
+              <td><input type="text" formControlName="PORTmcr51"></td>
+              <td><input type="text" formControlName="PORTmechPort51"></td>
+              <td><input type="text" formControlName="PORTmechStbd51"></td>
+            </tr>
+            <tr>
+              <td>25°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT52"></td>
+              <td><input type="text" formControlName="PORTanalogAsp52"></td>
+              <td><input type="text" formControlName="PORTwheelHouse52"></td>
+              <td><input type="text" formControlName="PORTmcr52"></td>
+              <td><input type="text" formControlName="PORTmechPort52"></td>
+              <td><input type="text" formControlName="PORTmechStbd52"></td>
+            </tr>
+            <tr>
+              <td>20°</td>
+              <td><input type="text" formControlName="bridgeEnclosedPORT53"></td>
+              <td><input type="text" formControlName="PORTanalogAsp53"></td>
+              <td><input type="text" formControlName="PORTwheelHouse53"></td>
+              <td><input type="text" formControlName="PORTmcr53"></td>
+              <td><input type="text" formControlName="PORTmechPort53"></td>
+              <td><input type="text" formControlName="PORTmechStbd53"></td>
+            </tr>
+            <tr>
+          <td>15°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT54" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp54" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse54" /></td>
+          <td><input type="text" formControlName="PORTmcr54" /></td>
+          <td><input type="text" formControlName="PORTmechPort54" /></td>
+          <td><input type="text" formControlName="PORTmechStbd54" /></td>
+        </tr>
+        <tr>
+          <td>10°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT55" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp55" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse55" /></td>
+          <td><input type="text" formControlName="PORTmcr55" /></td>
+          <td><input type="text" formControlName="PORTmechPort55" /></td>
+          <td><input type="text" formControlName="PORTmechStbd55" /></td>
+        </tr>
+        <tr>
+          <td>5°</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT56" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp56" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse56" /></td>
+          <td><input type="text" formControlName="PORTmcr56" /></td>
+          <td><input type="text" formControlName="PORTmechPort56" /></td>
+          <td><input type="text" formControlName="PORTmechStbd56" /></td>
+        </tr>
+        <tr>
+          <td>MIDSHIP</td>
+          <td><input type="text" formControlName="bridgeEnclosedPORT57" /></td>
+          <td><input type="text" formControlName="PORTanalogAsp57" /></td>
+          <td><input type="text" formControlName="PORTwheelHouse57" /></td>
+          <td><input type="text" formControlName="PORTmcr57" /></td>
+          <td><input type="text" formControlName="PORTmechPort57" /></td>
+          <td><input type="text" formControlName="PORTmechStbd57" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="table-section">
+    <h4 class="sub-heading">(d)	Operating Position - Wheel house with Stbd Pump (NFU)</h4>
+    <!-- You can reuse this table structure for other headings too -->
+    <table>
+      <tr>
+        <th rowspan="2">Helm applied</th>
+        <th rowspan="2">Bridge Enclosed</th>
+        <th rowspan="2">Analog ASP</th>
+        <th rowspan="2">Wheel House</th>
+        <th rowspan="2">MCR</th>
+        <th colspan="2">Mechanical Indicator (ASP)</th>
+      </tr>
+      <tr>
+        <th>P</th>
+        <th>S</th>
+      </tr>
+
+      <tr>
+        <td>MIDSHIP</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed58" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp58" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse58" /></td>
+        <td><input type="text" formControlName="PORT1mcr58" /></td>
+        <td><input type="text" formControlName="PORT1mechPort58" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd58" /></td>
+      </tr>
+
+      <tr>
+        <td>5° PORT</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed59" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp59" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse59" /></td>
+        <td><input type="text" formControlName="PORT1mcr59" /></td>
+        <td><input type="text" formControlName="PORT1mechPort59" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd59" /></td>
+      </tr>
+
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed60" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp60" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse60" /></td>
+        <td><input type="text" formControlName="PORT1mcr60" /></td>
+        <td><input type="text" formControlName="PORT1mechPort60" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd60" /></td>
+      </tr>
+
+      <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed61" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp61" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse61" /></td>
+        <td><input type="text" formControlName="PORT1mcr61" /></td>
+        <td><input type="text" formControlName="PORT1mechPort61" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd61" /></td>
+      </tr>
+      <!-- 20° -->
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed62"></td>
+            <td><input type="text" formControlName="PORT1analogAsp62"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse62"></td>
+            <td><input type="text" formControlName="PORT1mcr62"></td>
+            <td><input type="text" formControlName="PORT1mechPort62"></td>
+            <td><input type="text" formControlName="PORT1mechStbd62"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed63"></td>
+            <td><input type="text" formControlName="PORT1analogAsp63"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse63"></td>
+            <td><input type="text" formControlName="PORT1mcr63"></td>
+            <td><input type="text" formControlName="PORT1mechPort63"></td>
+            <td><input type="text" formControlName="PORT1mechStbd63"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed64"></td>
+            <td><input type="text" formControlName="PORT1analogAsp64"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse64"></td>
+            <td><input type="text" formControlName="PORT1mcr64"></td>
+            <td><input type="text" formControlName="PORT1mechPort64"></td>
+            <td><input type="text" formControlName="PORT1mechStbd64"></td>
+          </tr>
+          <tr>
+            <td>35°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed65"></td>
+            <td><input type="text" formControlName="PORT1analogAsp65"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse65"></td>
+            <td><input type="text" formControlName="PORT1mcr65"></td>
+            <td><input type="text" formControlName="PORT1mechPort65"></td>
+            <td><input type="text" formControlName="PORT1mechStbd65"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed66"></td>
+            <td><input type="text" formControlName="PORT1analogAsp66"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse66"></td>
+            <td><input type="text" formControlName="PORT1mcr66"></td>
+            <td><input type="text" formControlName="PORT1mechPort66"></td>
+            <td><input type="text" formControlName="PORT1mechStbd66"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed67"></td>
+            <td><input type="text" formControlName="PORT1analogAsp67"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse67"></td>
+            <td><input type="text" formControlName="PORT1mcr67"></td>
+            <td><input type="text" formControlName="PORT1mechPort67"></td>
+            <td><input type="text" formControlName="PORT1mechStbd67"></td>
+          </tr>
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed68"></td>
+            <td><input type="text" formControlName="PORT1analogAsp68"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse68"></td>
+            <td><input type="text" formControlName="PORT1mcr68"></td>
+            <td><input type="text" formControlName="PORT1mechPort68"></td>
+            <td><input type="text" formControlName="PORT1mechStbd68"></td>
+          </tr>
+          <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed69" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp69" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse69" /></td>
+        <td><input type="text" formControlName="PORT1mcr69" /></td>
+        <td><input type="text" formControlName="PORT1mechPort69" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd69" /></td>
+      </tr>
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed70" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp70" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse70" /></td>
+        <td><input type="text" formControlName="PORT1mcr70" /></td>
+        <td><input type="text" formControlName="PORT1mechPort70" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd70" /></td>
+      </tr>
+      <tr>
+        <td>5°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed71" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp71" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse71" /></td>
+        <td><input type="text" formControlName="PORT1mcr71" /></td>
+        <td><input type="text" formControlName="PORT1mechPort71" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd71" /></td>
+      </tr>
+
+      <tr>
+        <td>MIDSHIP</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed72" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp72" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse72" /></td>
+        <td><input type="text" formControlName="PORT1mcr72" /></td>
+        <td><input type="text" formControlName="PORT1mechPort72" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd72" /></td>
+      </tr>
+
+      <tr>
+        <td>5° STBD</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed73" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp73" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse73" /></td>
+        <td><input type="text" formControlName="PORT1mcr73" /></td>
+        <td><input type="text" formControlName="PORT1mechPort73" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd73" /></td>
+      </tr>
+
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed74" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp74" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse74" /></td>
+        <td><input type="text" formControlName="PORT1mcr74" /></td>
+        <td><input type="text" formControlName="PORT1mechPort74" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd74" /></td>
+      </tr>
+
+      <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed75" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp75" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse75" /></td>
+        <td><input type="text" formControlName="PORT1mcr75" /></td>
+        <td><input type="text" formControlName="PORT1mechPort75" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd75" /></td>
+      </tr>
+      <!-- 20° -->
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed76"></td>
+            <td><input type="text" formControlName="PORT1analogAsp76"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse76"></td>
+            <td><input type="text" formControlName="PORT1mcr76"></td>
+            <td><input type="text" formControlName="PORT1mechPort76"></td>
+            <td><input type="text" formControlName="PORT1mechStbd76"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed77"></td>
+            <td><input type="text" formControlName="PORT1analogAsp77"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse77"></td>
+            <td><input type="text" formControlName="PORT1mcr77"></td>
+            <td><input type="text" formControlName="PORT1mechPort77"></td>
+            <td><input type="text" formControlName="PORT1mechStbd77"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed78"></td>
+            <td><input type="text" formControlName="PORT1analogAsp78"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse78"></td>
+            <td><input type="text" formControlName="PORT1mcr78"></td>
+            <td><input type="text" formControlName="PORT1mechPort78"></td>
+            <td><input type="text" formControlName="PORT1mechStbd78"></td>
+          </tr>
+          <tr>
+            <td>35°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed79"></td>
+            <td><input type="text" formControlName="PORT1analogAsp79"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse79"></td>
+            <td><input type="text" formControlName="PORT1mcr79"></td>
+            <td><input type="text" formControlName="PORT1mechPort79"></td>
+            <td><input type="text" formControlName="PORT1mechStbd79"></td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed80"></td>
+            <td><input type="text" formControlName="PORT1analogAsp80"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse80"></td>
+            <td><input type="text" formControlName="PORT1mcr80"></td>
+            <td><input type="text" formControlName="PORT1mechPort80"></td>
+            <td><input type="text" formControlName="PORT1mechStbd80"></td>
+          </tr>
+          <tr>
+            <td>25°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed81"></td>
+            <td><input type="text" formControlName="PORT1analogAsp81"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse81"></td>
+            <td><input type="text" formControlName="PORT1mcr81"></td>
+            <td><input type="text" formControlName="PORT1mechPort81"></td>
+            <td><input type="text" formControlName="PORT1mechStbd81"></td>
+          </tr>
+          <tr>
+            <td>20°</td>
+            <td><input type="text" formControlName="PORT1bridgeEnclosed82"></td>
+            <td><input type="text" formControlName="PORT1analogAsp82"></td>
+            <td><input type="text" formControlName="PORT1wheelHouse82"></td>
+            <td><input type="text" formControlName="PORT1mcr82"></td>
+            <td><input type="text" formControlName="PORT1mechPort82"></td>
+            <td><input type="text" formControlName="PORT1mechStbd82"></td>
+          </tr>
+          <tr>
+        <td>15°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed83" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp83" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse83" /></td>
+        <td><input type="text" formControlName="PORT1mcr83" /></td>
+        <td><input type="text" formControlName="PORT1mechPort83" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd83" /></td>
+      </tr>
+      <tr>
+        <td>10°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed84" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp84" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse84" /></td>
+        <td><input type="text" formControlName="PORT1mcr84" /></td>
+        <td><input type="text" formControlName="PORT1mechPort84" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd84" /></td>
+      </tr>
+      <tr>
+        <td>5°</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed85" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp85" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse85" /></td>
+        <td><input type="text" formControlName="PORT1mcr85" /></td>
+        <td><input type="text" formControlName="PORT1mechPort85" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd85" /></td>
+      </tr>
+      <tr>
+        <td>MIDSHIP</td>
+        <td><input type="text" formControlName="PORT1bridgeEnclosed86" /></td>
+        <td><input type="text" formControlName="PORT1analogAsp86" /></td>
+        <td><input type="text" formControlName="PORT1wheelHouse86" /></td>
+        <td><input type="text" formControlName="PORT1mcr86" /></td>
+        <td><input type="text" formControlName="PORT1mechPort86" /></td>
+        <td><input type="text" formControlName="PORT1mechStbd86" /></td>
+      </tr>
+    </table>
+    </div>
+
+<div class="table-section">
+  <p><strong>4. <u>Steering Timings by Emergency Hand Steering Wheel:</u></strong></p>
+  <table >
+    <thead>
+      <tr>
+        <th>Sequence</th>
+        <th>0° – 10° Port</th>
+        <th>10° Port – 10° Stbd</th>
+        <th>10° Stbd – 0°</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No. of turns</td>
+        <td><input formControlName="zeroToTenPort116" type="text"></td>
+        <td><input formControlName="tenPortToTenStbd116" type="text"></td>
+        <td><input formControlName="tenStbdToZero116" type="text"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <div class="button-container">
+    <button type="submit" class="submit-button">Submit</button>
+  </div>
+  </form>
+</section>

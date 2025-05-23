@@ -1,0 +1,594 @@
+<section>
+   <div class="text-center">
+    <h2>STEERING GEAR SEA TRIALS</h2>
+    <h3>TIMING CHECKS</h3>
+  </div>
+    <form [formGroup]="delhiRefit_Three" (ngSubmit)="onSubmit()">
+
+  <!-- <h3><strong>TIMING CHECKS</strong></h3> -->
+   <h4><strong>1.  Operating Position – Bridge</strong> </h4>
+  <!--  <span style="color:red;">(SRPM, Speed by GPS -, Speed by Log-)</span> -->
+
+  <!-- Channel 1 Table -->
+  <p><strong>(a) FU Mode - Channel 1</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel1_port_117" /></td>
+        <td><input type="text" formControlName="channel1_stbd_117" /></td>
+        <td><input type="text" formControlName="channel1_both_117" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel1_port_118" /></td>
+        <td><input type="text" formControlName="channel1_stbd_118" /></td>
+        <td><input type="text" formControlName="channel1_both_118" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Channel 2 Table -->
+  <p><strong>(b) FU Mode - Channel 2</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel2_port_119" /></td>
+        <td><input type="text" formControlName="channel2_stbd_119" /></td>
+        <td><input type="text" formControlName="channel2_both_119" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel2_port_120" /></td>
+        <td><input type="text" formControlName="channel2_stbd_120" /></td>
+        <td><input type="text" formControlName="channel2_both_120" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+     <h4><strong>2.	Operating Position - Wheel house</strong> </h4>
+  <!--  <span style="color:red;">(SRPM, Speed by GPS -, Speed by Log-)</span> -->
+
+  <!-- Channel 1 Table -->
+  <p><strong>(a) FU Mode - Channel 1</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel1_port_121" /></td>
+        <td><input type="text" formControlName="channel1_stbd_121" /></td>
+        <td><input type="text" formControlName="channel1_both_121" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel1_port_122" /></td>
+        <td><input type="text" formControlName="channel1_stbd_122" /></td>
+        <td><input type="text" formControlName="channel1_both_122" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Channel 2 Table -->
+  <p><strong>(b) FU Mode - Channel 2</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel2_port_123" /></td>
+        <td><input type="text" formControlName="channel2_stbd_123" /></td>
+        <td><input type="text" formControlName="channel2_both_123" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel2_port_124" /></td>
+        <td><input type="text" formControlName="channel2_stbd_124" /></td>
+        <td><input type="text" formControlName="channel2_both_124" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+     <h4><strong>3.	Operating Position - Local ASP through Mechanical Lever </strong> </h4>
+  <!--  <span style="color:red;">(SRPM, Speed by GPS -, Speed by Log-)</span> -->
+
+  <!-- Channel 1 Table -->
+  <p><strong>(a) 	Mechanical Lever (ASP)</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel1_port_125" /></td>
+        <td><input type="text" formControlName="channel1_stbd_125" /></td>
+        <td><input type="text" formControlName="channel1_both_125" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel1_port_126" /></td>
+        <td><input type="text" formControlName="channel1_stbd_126" /></td>
+        <td><input type="text" formControlName="channel1_both_126" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+     <h4><strong>4.	Operating Position - Bridge (In Astern Mode)</strong> </h4>
+  <!--  <span style="color:red;">(SRPM, Speed by GPS -, Speed by Log-)</span> -->
+
+  <!-- Channel 1 Table -->
+  <p><strong>(a) FU Mode - Channel 1</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel1_port_127" /></td>
+        <td><input type="text" formControlName="channel1_stbd_127" /></td>
+        <td><input type="text" formControlName="channel1_both_127" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel1_port_128" /></td>
+        <td><input type="text" formControlName="channel1_stbd_128" /></td>
+        <td><input type="text" formControlName="channel1_both_128" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Channel 2 Table -->
+  <p><strong>(b) FU Mode - Channel 2</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel2_port_129" /></td>
+        <td><input type="text" formControlName="channel2_stbd_129" /></td>
+        <td><input type="text" formControlName="channel2_both_129" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel2_port_130" /></td>
+        <td><input type="text" formControlName="channel2_stbd_130" /></td>
+        <td><input type="text" formControlName="channel2_both_130" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+     <h4><strong>5.	Operating Position - Wheel house (In Astern Mode)</strong> </h4>
+  <!--  <span style="color:red;">(SRPM, Speed by GPS -, Speed by Log-)</span> -->
+
+  <!-- Channel 1 Table -->
+  <p><strong>(a) FU Mode - Channel 1</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel1_port_131" /></td>
+        <td><input type="text" formControlName="channel1_stbd_131" /></td>
+        <td><input type="text" formControlName="channel1_both_131" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel1_port_132" /></td>
+        <td><input type="text" formControlName="channel1_stbd_132" /></td>
+        <td><input type="text" formControlName="channel1_both_132" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Channel 2 Table -->
+  <p><strong>(b) FU Mode - Channel 2</strong></p>
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Rudder Movement</th>
+        <th>Port Pump</th>
+        <th>Stbd Pump</th>
+        <th>Both Pump</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35S – 30P</td>
+        <td><input type="text" formControlName="channel2_port_133" /></td>
+        <td><input type="text" formControlName="channel2_stbd_133" /></td>
+        <td><input type="text" formControlName="channel2_both_133" /></td>
+      </tr>
+      <tr>
+        <td>35P – 30S</td>
+        <td><input type="text" formControlName="channel2_port_134" /></td>
+        <td><input type="text" formControlName="channel2_stbd_134" /></td>
+        <td><input type="text" formControlName="channel2_both_134" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+     <h4><strong>6.	Emergency Hand Wheel (Ship’s Speed)</strong> </h4>
+
+  <table class="fu-table">
+    <thead>
+      <tr>
+        <th>Sequence</th>
+        <th>No. of Turns </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0-5P</td>
+        <td><input type="text" formControlName="channel1_port_135" /></td>
+      </tr>
+      <tr>
+        <td>5P-0</td>
+        <td><input type="text" formControlName="channel1_port_136" /></td>
+      </tr>
+      <tr>
+        <td>0-5S</td>
+        <td><input type="text" formControlName="channel1_port_137" /></td>
+      </tr>
+      <tr>
+        <td>5S-0</td>
+        <td><input type="text" formControlName="channel1_port_138" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="text-center">
+    <h2>STABILISER SEA TRIALS</h2>
+     <table class="table-bordered">
+          <tr>
+            <th>Occassion</th>
+            <td><input type="text" formControlName="STABILISER_Para_Occa" class="temp-input"></td>
+            <th>Date</th>
+            <td><input type="date" formControlName="STABILISER_Para_Date" class="temp-input"></td>
+          </tr>
+    </table>
+  </div>
+
+  <h4>1. Forced Roll Trials </h4>
+  <table class="table-bordered">
+    <tr>
+      <th>Ser.</th>
+      <th>Description</th>
+      <th>At Stabilise Condition</th>
+      <th colspan="3">At Hand roll condition </th>
+    </tr>
+
+    <tr>
+      <td>(i)</td>
+      <td>Ship Speed</td>
+      <td rowspan="6"><input type="text" formControlName="STABILISER_At_stabilise_condition"></td>
+      <td colspan="3"><input type="text" formControlName="STABILISER_At_handroll_1"></td>
+    </tr>
+
+    <tr>
+      <td>(ii)</td>
+      <td>Max Angle</td>
+      <td colspan="3"><input type="text" formControlName="STABILISER_At_handroll_2"></td>
+    </tr>
+    <tr>
+      <td rowspan="3">(iii)</td>
+      <td rowspan="3">Max Fin angle Port/ Stbd</td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_3a"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_3b"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_3c"></td>
+    </tr>
+    <tr>
+      <td><input type="text" formControlName="STABILISER_At_handroll_4a"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_4b"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_4c"></td>
+    </tr>
+    <tr>
+      <td><input type="text" formControlName="STABILISER_At_handroll_5a"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_5b"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_5c"></td>
+    </tr>
+    <tr>
+      <td>(iv)</td>
+      <td>Forced Roll Period</td>
+      <td colspan="2"><input type="text" formControlName="STABILISER_At_handroll_6"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_6a"></td>
+    </tr>
+    <tr>
+      <td>(v)</td>
+      <td>Type of Decline</td>
+      <td><input type="text" formControlName="STABILISER_At_stabilise_condition_2"></td>
+      <td colspan="3"><input type="text" formControlName="STABILISER_At_handroll_7"></td>
+    </tr>
+    <tr>
+      <td rowspan="3">(vi)</td>
+      <td rowspan="3">Time of decline in sec (no of periods to final value) </td>
+      <td rowspan="3"><input type="text" formControlName="STABILISER_At_stabilise_condition_3"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_8a"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_8b"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_8c"></td>
+    </tr>
+    <tr>
+      <td><input type="text" formControlName="STABILISER_At_handroll_9a"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_9b"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_9c"></td>
+    </tr>
+    <tr>
+      <td><input type="text" formControlName="STABILISER_At_handroll_10a"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_10b"></td>
+      <td><input type="text" formControlName="STABILISER_At_handroll_10c"></td>
+    </tr>
+  </table>
+
+  <h4>2. Normal and Quiet Trials. </h4>
+
+ <table class="table-bordered">
+    <tr>
+      <th>Ships Speed</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Normal Mode</th>
+      <th colspan="2">Demand Angle</th>
+      <th colspan="2">Demand Angle</th>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <th>Nose Up</th>
+      <th>Nose Down</th>
+      <th>Nose Up</th>
+      <th>Nose Down</th>
+    </tr>
+    <tr>
+      <td>Port Fwd</td>
+      <td><input type="text" formControlName="Port_fwd_noseUp1"></td>
+      <td><input type="text" formControlName="Port_fwd_noseDown1"></td>
+      <td><input type="text" formControlName="Port_fwd_noseUp2"></td>
+      <td><input type="text" formControlName="Port_fwd_noseDown2"></td>
+    </tr>
+
+    <tr>
+      <td>Port Aft</td>
+      <td><input type="text" formControlName="Port_aft_noseUp1"></td>
+      <td><input type="text" formControlName="Port_aft_noseDown1"></td>
+      <td><input type="text" formControlName="Port_aft_noseUp2"></td>
+      <td><input type="text" formControlName="Port_aft_noseDown2"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Fwd</td>
+      <td><input type="text" formControlName="Stbd_fwd_noseUp1"></td>
+      <td><input type="text" formControlName="Stbd_fwd_noseDown1"></td>
+      <td><input type="text" formControlName="Stbd_fwd_noseUp2"></td>
+      <td><input type="text" formControlName="Stbd_fwd_noseDown2"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Aft</td>
+      <td><input type="text" formControlName="Stbd_aft_noseUp1"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseDown1"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseUp2"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseDown2"></td>
+    </tr>
+
+    <tr>
+      <td>Ships Speed</td>
+      <td><input type="text" formControlName="Stbd_aft_noseUp1"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseDown1"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseUp2"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseDown2"></td>
+    </tr>
+
+    <tr>
+      <td>Quiet Mode</td>
+      <td colspan="2">Demand Angle - <input type="text" formControlName="quiet_mode_demand_angle1"></td>
+      <td colspan="2">Demand Angle - <input type="text" formControlName="quiet_mode_demand_angle2"></td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <th>Nose Up</th>
+      <th>Nose Down</th>
+      <th>Nose Up</th>
+      <th>Nose Down</th>
+    </tr>
+
+    <tr>
+      <td>Port Fwd</td>
+      <td><input type="text" formControlName="Port_fwd_noseUp3"></td>
+      <td><input type="text" formControlName="Port_fwd_noseDown3"></td>
+      <td><input type="text" formControlName="Port_fwd_noseUp4"></td>
+      <td><input type="text" formControlName="Port_fwd_noseDown4"></td>
+    </tr>
+
+    <tr>
+      <td>Port Aft</td>
+      <td><input type="text" formControlName="Port_aft_noseUp3"></td>
+      <td><input type="text" formControlName="Port_aft_noseDown3"></td>
+      <td><input type="text" formControlName="Port_aft_noseUp4"></td>
+      <td><input type="text" formControlName="Port_aft_noseDown4"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Fwd</td>
+      <td><input type="text" formControlName="Stbd_fwd_noseUp3"></td>
+      <td><input type="text" formControlName="Stbd_fwd_noseDown3"></td>
+      <td><input type="text" formControlName="Stbd_fwd_noseUp4"></td>
+      <td><input type="text" formControlName="Stbd_fwd_noseDown4"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Aft</td>
+      <td><input type="text" formControlName="Stbd_aft_noseUp1"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseDown1"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseUp2"></td>
+      <td><input type="text" formControlName="Stbd_aft_noseDown2"></td>
+    </tr>
+  </table>
+
+  <h4>Fin Power Unit Trials </h4>
+  <table>
+    <tr>
+      <th rowspan="2" colspan="2">Ship Speed<input type="text" formControlName="Ship_speed_power_unit"></th>
+      <th colspan="2">Nose Up</th>
+      <th colspan="2">Nose Down</th>
+    </tr>
+    <tr>
+      <th>Pr(Bar)</th>
+      <th>Angle(&deg;)</th>
+      <th>Pr(Bar)</th>
+      <th>Angle(&deg;)</th>
+    </tr>
+
+    <tr>
+      <td rowspan="4">Pressure</td>
+      <td>Port Fwd</td>
+      <td><input type="text" formControlName="Nose_up_Port_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_up_Port_fwd_angle_deg"></td>
+      <td><input type="text" formControlName="Nose_down_Port_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_down_Port_fwd_angle_deg"></td>
+    </tr>
+
+    <tr>
+      <td>Port Aft</td>
+      <td><input type="text" formControlName="Nose_up_Port_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_up_Port_aft_angle_deg"></td>
+      <td><input type="text" formControlName="Nose_down_Port_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_down_Port_aft_angle_deg"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Fwd</td>
+      <td><input type="text" formControlName="Nose_up_Stbd_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_up_Stbd_fwd_angle_deg"></td>
+      <td><input type="text" formControlName="Nose_down_Stbd_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_down_Stbd_fwd_angle_deg"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Aft</td>
+      <td><input type="text" formControlName="Nose_up_Stbd_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_up_Stbd_aft_angle_deg"></td>
+      <td><input type="text" formControlName="Nose_down_Stbd_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Nose_down_Stbd_aft_angle_deg"></td>
+    </tr>
+
+
+    
+    <tr>
+      <td rowspan="4">Motor Amps</td>
+      <td>Port Fwd</td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Port_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Port_fwd_angle_deg"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Port_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Port_fwd_angle_deg"></td>
+    </tr>
+
+    <tr>
+      <td>Port Aft</td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Port_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Port_aft_angle_deg"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Port_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Port_aft_angle_deg"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Fwd</td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Stbd_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Stbd_fwd_angle_deg"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Stbd_fwd_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Stbd_fwd_angle_deg"></td>
+    </tr>
+
+    <tr>
+      <td>Stbd Aft</td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Stbd_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_up_Stbd_aft_angle_deg"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Stbd_aft_Pr_bar"></td>
+      <td><input type="text" formControlName="Moto_amp_Nose_down_Stbd_aft_angle_deg"></td>
+    </tr>
+  </table>
+
+  <h2>HP AIR COMPRESSOR</h2>
+    <table class="table-bordered">
+          <tr>
+            <th>Occassion</th>
+            <td><input type="text" formControlName="HP_Air_Compressor_Occa" class="temp-input"></td>
+            <th>Date</th>
+            <td><input type="date" formControlName="HP_Air_Compressor_Date" class="temp-input"></td>
+          </tr>
+    </table>
+
+    <h4>1. Safety Device Checks </h4>
+  <table class="table-bordered">
+    <tr>
+      <th>Ser.</th>
+      <th>Description</th>
+      <th>Unit</th>
+      <th>Design value</th>
+      <th>No. 1</th>
+      <th>No. 2</th>
+    </tr>
+  </table>
+</form>
+</section>
