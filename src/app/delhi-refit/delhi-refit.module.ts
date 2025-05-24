@@ -6,6 +6,7 @@ import { DelhiRefitTwoComponent } from './delhi-refit-two/delhi-refit-two.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { DelhiRefitThreeComponent } from './delhi-refit-three/delhi-refit-three.component';
 import { DelhiRefitFourComponent } from './delhi-refit-four/delhi-refit-four.component';
+import { DelhiRefitFiveeComponent } from './delhi-refit-fivee/delhi-refit-fivee.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,8 @@ const routes: Routes = [
   { path: 'delhi-refit-two', component: DelhiRefitTwoComponent },
   { path: 'delhi-refit-three', component: DelhiRefitThreeComponent },
   { path: 'delhi-refit-four', component: DelhiRefitFourComponent },
+    { path: 'delhi-refit-fivee', component: DelhiRefitFiveeComponent },
+
 ];
 
 @NgModule({
@@ -21,7 +24,8 @@ const routes: Routes = [
   
     DelhiRefitTwoComponent,
         DelhiRefitThreeComponent,
-        DelhiRefitFourComponent
+        DelhiRefitFourComponent,
+        DelhiRefitFiveeComponent
   ],
   imports: [
     CommonModule,

@@ -11,12 +11,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DelhiRefitOneComponent implements OnInit {
     delhiForm! : FormGroup;
-    records: any[] = [];
-    apiUrl = environment.apiUrl + 'delhi-refit-one';
+    records: any;
+    apiUrl = environment.apiUrl;
+    resData: any;
   constructor(private fb : FormBuilder, private http: HttpClient) { }
 
   ngOnInit() : void {
     this.delhiForm = this.fb.group({
+      id: new FormControl(''),
       summ_trial_date_trials1 : new FormControl(''),
       summ_trial_sdc_checks1 : new FormControl(''),
       summ_trial_vib_trials1 : new FormControl(''),
@@ -843,18 +845,21 @@ export class DelhiRefitOneComponent implements OnInit {
 
 
   loadData(): void {
-    this.http.get(this.apiUrl).subscribe(data => {
+
+    this.http.get(this.apiUrl + "delhi-refit-one/trial-id=11" ).subscribe(data => {
       console.log(data);
-      this.records = data as any[];
+      this.records = data;
+      this.delhiForm.patchValue(this.records)
     });
   }
 
   onSubmit() {
     const formData = this.delhiForm.value;
-    this.http.post(this.apiUrl, formData).subscribe(() => {
-      this.delhiForm.patchValue(formData);
+    this.http.post(this.apiUrl + "delhi-refit-one", formData).subscribe((data) => {
+      this.resData = data;
+      console.log(this.resData, "submit method data")
       this.loadData(); // Refresh list
-  console.log(this.delhiForm.value);  // { name: '...', email: '...', age: '...' }
+      console.log(this.delhiForm.value);  // { name: '...', email: '...', age: '...' }
 });
 
 }

@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {KutharRefitComponent } from './kuthar-refit/kuthar-refit.component';
 
 const routes: Routes = [
+    { path: '', loadChildren: () => import('./delhi-refit/delhi-refit.module').then(m => m.DelhiRefitModule) },
+
   { path: 'delhi-refit', loadChildren: () => import('./delhi-refit/delhi-refit.module').then(m => m.DelhiRefitModule) },
   { path: 'kuthar-refit', component: KutharRefitComponent},
 
