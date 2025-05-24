@@ -1,1199 +1,2259 @@
+<section>
+  <form [formGroup]="DelhiRefit_four">
+
+    <h3 class="main-heading"> BOILER FEED TRANSFER PUMP</h3>
+
+    <h4 class="sub-heading">1. Parameters. </h4>
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th>Ser</th>
+          <th>Description</th>
+          <th>No.1</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(a)</td>
+          <td>Condition of SV mounts of pumps & motor</td>
+          <td><input type="text" form-control formControlName="no1a_202" /></td>
+        </tr>
+        <tr>
+          <td>(b)</td>
+          <td>Condition of suction/discharge compensator </td>
+          <td><input type="text" form-control formControlName="no1b_203" /></td>
+        </tr>
+        <tr>
+          <td>(c)</td>
+          <td>Securing of the suction/discharge pipe</td>
+          <td><input type="text" form-control formControlName="no1c_204" /></td>
+        </tr>
+        <tr>
+          <td>(d)</td>
+          <td>Abnormal noise</td>
+          <td><input type="text" form-control formControlName="no1d_205" /></td>
+        </tr>
+        <tr>
+          <td>(e)</td>
+          <td>Excessive vibration</td>
+          <td><input type="text" form-control formControlName="no1e_206" /></td>
+        </tr>
+        <tr>
+          <td>(f)</td>
+          <td>Gland leak (Mechanical seal)</td>
+          <td><input type="text" form-control formControlName="no1f_207" /></td>
+        </tr>
+        <tr>
+          <td>(g)</td>
+          <td>Pressure fluctuation</td>
+          <td><input type="text" form-control formControlName="no1g_208" /></td>
+        </tr>
+        <tr>
+          <td>(h)</td>
+          <td>Suction pressure</td>
+          <td><input type="text" form-control formControlName="no1h_209" /></td>
+        </tr>
+        <tr>
+          <td>(j)</td>
+          <td>Discharge Pressure</td>
+          <td><input type="text" form-control formControlName="no1f_210" /></td>
+        </tr>
+        <tr>
+          <td>(k)</td>
+          <td>Start/stop from local and remote</td>
+          <td><input type="text" form-control formControlName="no1g_211" /></td>
+        </tr>
+        <tr>
+          <td>(l)</td>
+          <td>Valves and gauges provided with tallies</td>
+          <td><input type="text" form-control formControlName="no1h_212" /></td>
+        </tr>
+        <tr>
+          <td>(m)</td>
+          <td>Operating instructions displayed for pump</td>
+          <td><input type="text" form-control formControlName="no1h_213" /></td>
+        </tr>
+        <tr>
+          <td>(n)</td>
+          <td>Pipe painting as per color standard</td>
+          <td><input type="text" form-control formControlName="no1f_214" /></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h3>2. <u>SPM Levels</u></h3>
+
+    <table class="spm-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>No. 1</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor FE</td>
+          <td><input type="text" form-control formControlName="fe1_215" /></td>
+        </tr>
+        <tr>
+          <td>Motor DE</td>
+          <td><input type="text" form-control formControlName="de1_216" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>3. <u>Overall Vibration</u></h3>
+
+    <!-- First Table -->
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Position</th>
+          <th colspan="3">No. 1</th>
+        </tr>
+        <tr>
+          <th><u>V</u></th>
+          <th><u>A</u></th>
+          <th><u>H</u></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor FE</td>
+          <td><input type="text" form-control formControlName="motor1_217FEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_217FEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_217FEH1" /></td>
+        </tr>
+        <tr>
+          <td>Motor DE</td>
+          <td><input type="text" form-control formControlName="motor1_218DEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_218DEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_218DEH1" /></td>
+        </tr>
+        <tr>
+          <td>Comp DE</td>
+          <td><input type="text" form-control formControlName="comp1_219DEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_219DEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_219DEH1" /></td>
+        </tr>
+        <tr>
+          <td>Comp FE</td>
+          <td><input type="text" form-control formControlName="comp1_220FEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_220FEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_220FEH1" /></td>
+        </tr>
+
+      </tbody>
+    </table>
 
 
-<!-- 3.	Positional Checks -Steering Gear Harbour Trials in Non-Follow up mode    -->
-<h3 class="main-heading">3.	Positional Checks -Steering Gear Harbour Trials in Non-Follow up mode   </h3>
-<div class="table-section">
-<form [formGroup]="WheelPortNFUForm">
-  <h4 class="sub-heading">(a)	Operating Position - Wheel house with Port Pump (NFU)</h4>
-  <!-- You can reuse this table structure for other headings too -->
-  <table>
-    <tr>
-      <th rowspan="2">Helm applied</th>
-      <th rowspan="2">Bridge Enclosed</th>
-      <th rowspan="2">Analog ASP</th>
-      <th rowspan="2">Wheel House</th>
-      <th rowspan="2">MCR</th>
-      <th colspan="2">Mechanical Indicator (ASP)</th>
-    </tr>
-    <tr>
-      <th>P</th>
-      <th>S</th>
-    </tr>
+    <h4 class="sub-heading">4. Attenuation across SV mounts. </h4>
+    <table border="1" class="vibration-table">
+      <thead>
 
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed0" /></td>
-      <td><input type="text" formControlName="analogAsp0" /></td>
-      <td><input type="text" formControlName="wheelHouse0" /></td>
-      <td><input type="text" formControlName="mcr0" /></td>
-      <td><input type="text" formControlName="mechPort0" /></td>
-      <td><input type="text" formControlName="mechStbd0" /></td>
-    </tr>
+        <tr>
+          <th>Mounts</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+      </thead>
 
-    <tr>
-      <td>5° PORT</td>
-      <td><input type="text" formControlName="bridgeEnclosed1" /></td>
-      <td><input type="text" formControlName="analogAsp1" /></td>
-      <td><input type="text" formControlName="wheelHouse1" /></td>
-      <td><input type="text" formControlName="mcr1" /></td>
-      <td><input type="text" formControlName="mechPort1" /></td>
-      <td><input type="text" formControlName="mechStbd1" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed2" /></td>
-      <td><input type="text" formControlName="analogAsp2" /></td>
-      <td><input type="text" formControlName="wheelHouse2" /></td>
-      <td><input type="text" formControlName="mcr2" /></td>
-      <td><input type="text" formControlName="mechPort2" /></td>
-      <td><input type="text" formControlName="mechStbd2" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed3" /></td>
-      <td><input type="text" formControlName="analogAsp3" /></td>
-      <td><input type="text" formControlName="wheelHouse3" /></td>
-      <td><input type="text" formControlName="mcr3" /></td>
-      <td><input type="text" formControlName="mechPort3" /></td>
-      <td><input type="text" formControlName="mechStbd3" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed4"></td>
-          <td><input type="text" formControlName="analogAsp4"></td>
-          <td><input type="text" formControlName="wheelHouse4"></td>
-          <td><input type="text" formControlName="mcr4"></td>
-          <td><input type="text" formControlName="mechPort4"></td>
-          <td><input type="text" formControlName="mechStbd4"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed5"></td>
-          <td><input type="text" formControlName="analogAsp5"></td>
-          <td><input type="text" formControlName="wheelHouse5"></td>
-          <td><input type="text" formControlName="mcr5"></td>
-          <td><input type="text" formControlName="mechPort5"></td>
-          <td><input type="text" formControlName="mechStbd5"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed6"></td>
-          <td><input type="text" formControlName="analogAsp6"></td>
-          <td><input type="text" formControlName="wheelHouse6"></td>
-          <td><input type="text" formControlName="mcr6"></td>
-          <td><input type="text" formControlName="mechPort6"></td>
-          <td><input type="text" formControlName="mechStbd6"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed7"></td>
-          <td><input type="text" formControlName="analogAsp7"></td>
-          <td><input type="text" formControlName="wheelHouse7"></td>
-          <td><input type="text" formControlName="mcr7"></td>
-          <td><input type="text" formControlName="mechPort7"></td>
-          <td><input type="text" formControlName="mechStbd7"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed8"></td>
-          <td><input type="text" formControlName="analogAsp8"></td>
-          <td><input type="text" formControlName="wheelHouse8"></td>
-          <td><input type="text" formControlName="mcr8"></td>
-          <td><input type="text" formControlName="mechPort8"></td>
-          <td><input type="text" formControlName="mechStbd8"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed9"></td>
-          <td><input type="text" formControlName="analogAsp9"></td>
-          <td><input type="text" formControlName="wheelHouse9"></td>
-          <td><input type="text" formControlName="mcr9"></td>
-          <td><input type="text" formControlName="mechPort9"></td>
-          <td><input type="text" formControlName="mechStbd9"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed10"></td>
-          <td><input type="text" formControlName="analogAsp10"></td>
-          <td><input type="text" formControlName="wheelHouse10"></td>
-          <td><input type="text" formControlName="mcr10"></td>
-          <td><input type="text" formControlName="mechPort10"></td>
-          <td><input type="text" formControlName="mechStbd10"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed11" /></td>
-      <td><input type="text" formControlName="analogAsp11" /></td>
-      <td><input type="text" formControlName="wheelHouse11" /></td>
-      <td><input type="text" formControlName="mcr11" /></td>
-      <td><input type="text" formControlName="mechPort11" /></td>
-      <td><input type="text" formControlName="mechStbd11" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed12" /></td>
-      <td><input type="text" formControlName="analogAsp12" /></td>
-      <td><input type="text" formControlName="wheelHouse12" /></td>
-      <td><input type="text" formControlName="mcr12" /></td>
-      <td><input type="text" formControlName="mechPort12" /></td>
-      <td><input type="text" formControlName="mechStbd12" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed13" /></td>
-      <td><input type="text" formControlName="analogAsp13" /></td>
-      <td><input type="text" formControlName="wheelHouse13" /></td>
-      <td><input type="text" formControlName="mcr13" /></td>
-      <td><input type="text" formControlName="mechPort13" /></td>
-      <td><input type="text" formControlName="mechStbd13" /></td>
-    </tr>
-
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed14" /></td>
-      <td><input type="text" formControlName="analogAsp14" /></td>
-      <td><input type="text" formControlName="wheelHouse14" /></td>
-      <td><input type="text" formControlName="mcr14" /></td>
-      <td><input type="text" formControlName="mechPort14" /></td>
-      <td><input type="text" formControlName="mechStbd14" /></td>
-    </tr>
-
-    <tr>
-      <td>5° STBD</td>
-      <td><input type="text" formControlName="bridgeEnclosed15" /></td>
-      <td><input type="text" formControlName="analogAsp15" /></td>
-      <td><input type="text" formControlName="wheelHouse15" /></td>
-      <td><input type="text" formControlName="mcr15" /></td>
-      <td><input type="text" formControlName="mechPort15" /></td>
-      <td><input type="text" formControlName="mechStbd15" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed16" /></td>
-      <td><input type="text" formControlName="analogAsp16" /></td>
-      <td><input type="text" formControlName="wheelHouse16" /></td>
-      <td><input type="text" formControlName="mcr16" /></td>
-      <td><input type="text" formControlName="mechPort16" /></td>
-      <td><input type="text" formControlName="mechStbd16" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed17" /></td>
-      <td><input type="text" formControlName="analogAsp17" /></td>
-      <td><input type="text" formControlName="wheelHouse17" /></td>
-      <td><input type="text" formControlName="mcr17" /></td>
-      <td><input type="text" formControlName="mechPort17" /></td>
-      <td><input type="text" formControlName="mechStbd17" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed18"></td>
-          <td><input type="text" formControlName="analogAsp18"></td>
-          <td><input type="text" formControlName="wheelHouse18"></td>
-          <td><input type="text" formControlName="mcr18"></td>
-          <td><input type="text" formControlName="mechPort18"></td>
-          <td><input type="text" formControlName="mechStbd18"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed19"></td>
-          <td><input type="text" formControlName="analogAsp19"></td>
-          <td><input type="text" formControlName="wheelHouse19"></td>
-          <td><input type="text" formControlName="mcr19"></td>
-          <td><input type="text" formControlName="mechPort19"></td>
-          <td><input type="text" formControlName="mechStbd19"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed20"></td>
-          <td><input type="text" formControlName="analogAsp20"></td>
-          <td><input type="text" formControlName="wheelHouse20"></td>
-          <td><input type="text" formControlName="mcr20"></td>
-          <td><input type="text" formControlName="mechPort20"></td>
-          <td><input type="text" formControlName="mechStbd20"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed21"></td>
-          <td><input type="text" formControlName="analogAsp21"></td>
-          <td><input type="text" formControlName="wheelHouse21"></td>
-          <td><input type="text" formControlName="mcr21"></td>
-          <td><input type="text" formControlName="mechPort21"></td>
-          <td><input type="text" formControlName="mechStbd21"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed22"></td>
-          <td><input type="text" formControlName="analogAsp22"></td>
-          <td><input type="text" formControlName="wheelHouse22"></td>
-          <td><input type="text" formControlName="mcr22"></td>
-          <td><input type="text" formControlName="mechPort22"></td>
-          <td><input type="text" formControlName="mechStbd22"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed23"></td>
-          <td><input type="text" formControlName="analogAsp23"></td>
-          <td><input type="text" formControlName="wheelHouse23"></td>
-          <td><input type="text" formControlName="mcr23"></td>
-          <td><input type="text" formControlName="mechPort23"></td>
-          <td><input type="text" formControlName="mechStbd23"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed24"></td>
-          <td><input type="text" formControlName="analogAsp24"></td>
-          <td><input type="text" formControlName="wheelHouse24"></td>
-          <td><input type="text" formControlName="mcr24"></td>
-          <td><input type="text" formControlName="mechPort24"></td>
-          <td><input type="text" formControlName="mechStbd24"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed25" /></td>
-      <td><input type="text" formControlName="analogAsp25" /></td>
-      <td><input type="text" formControlName="wheelHouse25" /></td>
-      <td><input type="text" formControlName="mcr25" /></td>
-      <td><input type="text" formControlName="mechPort25" /></td>
-      <td><input type="text" formControlName="mechStbd25" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed26" /></td>
-      <td><input type="text" formControlName="analogAsp26" /></td>
-      <td><input type="text" formControlName="wheelHouse26" /></td>
-      <td><input type="text" formControlName="mcr26" /></td>
-      <td><input type="text" formControlName="mechPort26" /></td>
-      <td><input type="text" formControlName="mechStbd26" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed27" /></td>
-      <td><input type="text" formControlName="analogAsp27" /></td>
-      <td><input type="text" formControlName="wheelHouse27" /></td>
-      <td><input type="text" formControlName="mcr27" /></td>
-      <td><input type="text" formControlName="mechPort27" /></td>
-      <td><input type="text" formControlName="mechStbd27" /></td>
-    </tr>
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed28" /></td>
-      <td><input type="text" formControlName="analogAsp28" /></td>
-      <td><input type="text" formControlName="wheelHouse28" /></td>
-      <td><input type="text" formControlName="mcr28" /></td>
-      <td><input type="text" formControlName="mechPort28" /></td>
-      <td><input type="text" formControlName="mechStbd28" /></td>
-    </tr>
-  </table>
-</form>
-</div>
-
-
-<div class="table-section">
-<form [formGroup]="WheelPortNFUForm">
-  <h4 class="sub-heading">(b)	Operating Position- Bridge with Stbd Pump (NFU)</h4>
-  <!-- You can reuse this table structure for other headings too -->
-  <table>
-    <tr>
-      <th rowspan="2">Helm applied</th>
-      <th rowspan="2">Bridge Enclosed</th>
-      <th rowspan="2">Analog ASP</th>
-      <th rowspan="2">Wheel House</th>
-      <th rowspan="2">MCR</th>
-      <th colspan="2">Mechanical Indicator (ASP)</th>
-    </tr>
-    <tr>
-      <th>P</th>
-      <th>S</th>
-    </tr>
-
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed29" /></td>
-      <td><input type="text" formControlName="analogAsp29" /></td>
-      <td><input type="text" formControlName="wheelHouse29" /></td>
-      <td><input type="text" formControlName="mcr29" /></td>
-      <td><input type="text" formControlName="mechPort29" /></td>
-      <td><input type="text" formControlName="mechStbd29" /></td>
-    </tr>
-
-    <tr>
-      <td>5° PORT</td>
-      <td><input type="text" formControlName="bridgeEnclosed30" /></td>
-      <td><input type="text" formControlName="analogAsp30" /></td>
-      <td><input type="text" formControlName="wheelHouse30" /></td>
-      <td><input type="text" formControlName="mcr30" /></td>
-      <td><input type="text" formControlName="mechPort30" /></td>
-      <td><input type="text" formControlName="mechStbd30" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed31" /></td>
-      <td><input type="text" formControlName="analogAsp31" /></td>
-      <td><input type="text" formControlName="wheelHouse31" /></td>
-      <td><input type="text" formControlName="mcr31" /></td>
-      <td><input type="text" formControlName="mechPort31" /></td>
-      <td><input type="text" formControlName="mechStbd31" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed32" /></td>
-      <td><input type="text" formControlName="analogAsp32" /></td>
-      <td><input type="text" formControlName="wheelHouse32" /></td>
-      <td><input type="text" formControlName="mcr32" /></td>
-      <td><input type="text" formControlName="mechPort32" /></td>
-      <td><input type="text" formControlName="mechStbd32" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed33"></td>
-          <td><input type="text" formControlName="analogAsp33"></td>
-          <td><input type="text" formControlName="wheelHouse33"></td>
-          <td><input type="text" formControlName="mcr33"></td>
-          <td><input type="text" formControlName="mechPort33"></td>
-          <td><input type="text" formControlName="mechStbd33"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed34"></td>
-          <td><input type="text" formControlName="analogAsp34"></td>
-          <td><input type="text" formControlName="wheelHouse34"></td>
-          <td><input type="text" formControlName="mcr34"></td>
-          <td><input type="text" formControlName="mechPort34"></td>
-          <td><input type="text" formControlName="mechStbd34"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed35"></td>
-          <td><input type="text" formControlName="analogAsp35"></td>
-          <td><input type="text" formControlName="wheelHouse35"></td>
-          <td><input type="text" formControlName="mcr35"></td>
-          <td><input type="text" formControlName="mechPort35"></td>
-          <td><input type="text" formControlName="mechStbd35"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed36"></td>
-          <td><input type="text" formControlName="analogAsp36"></td>
-          <td><input type="text" formControlName="wheelHouse36"></td>
-          <td><input type="text" formControlName="mcr36"></td>
-          <td><input type="text" formControlName="mechPort36"></td>
-          <td><input type="text" formControlName="mechStbd36"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed37"></td>
-          <td><input type="text" formControlName="analogAsp37"></td>
-          <td><input type="text" formControlName="wheelHouse37"></td>
-          <td><input type="text" formControlName="mcr37"></td>
-          <td><input type="text" formControlName="mechPort37"></td>
-          <td><input type="text" formControlName="mechStbd37"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed38"></td>
-          <td><input type="text" formControlName="analogAsp38"></td>
-          <td><input type="text" formControlName="wheelHouse38"></td>
-          <td><input type="text" formControlName="mcr38"></td>
-          <td><input type="text" formControlName="mechPort38"></td>
-          <td><input type="text" formControlName="mechStbd38"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed39"></td>
-          <td><input type="text" formControlName="analogAsp39"></td>
-          <td><input type="text" formControlName="wheelHouse39"></td>
-          <td><input type="text" formControlName="mcr39"></td>
-          <td><input type="text" formControlName="mechPort39"></td>
-          <td><input type="text" formControlName="mechStbd39"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed40" /></td>
-      <td><input type="text" formControlName="analogAsp40" /></td>
-      <td><input type="text" formControlName="wheelHouse40" /></td>
-      <td><input type="text" formControlName="mcr40" /></td>
-      <td><input type="text" formControlName="mechPort40" /></td>
-      <td><input type="text" formControlName="mechStbd40" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed41" /></td>
-      <td><input type="text" formControlName="analogAsp41" /></td>
-      <td><input type="text" formControlName="wheelHouse41" /></td>
-      <td><input type="text" formControlName="mcr41" /></td>
-      <td><input type="text" formControlName="mechPort41" /></td>
-      <td><input type="text" formControlName="mechStbd41" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed42" /></td>
-      <td><input type="text" formControlName="analogAsp42" /></td>
-      <td><input type="text" formControlName="wheelHouse42" /></td>
-      <td><input type="text" formControlName="mcr42" /></td>
-      <td><input type="text" formControlName="mechPort42" /></td>
-      <td><input type="text" formControlName="mechStbd42" /></td>
-    </tr>
-
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed43" /></td>
-      <td><input type="text" formControlName="analogAsp43" /></td>
-      <td><input type="text" formControlName="wheelHouse43" /></td>
-      <td><input type="text" formControlName="mcr43" /></td>
-      <td><input type="text" formControlName="mechPort43" /></td>
-      <td><input type="text" formControlName="mechStbd43" /></td>
-    </tr>
-
-    <tr>
-      <td>5° STBD</td>
-      <td><input type="text" formControlName="bridgeEnclosed44" /></td>
-      <td><input type="text" formControlName="analogAsp44" /></td>
-      <td><input type="text" formControlName="wheelHouse44" /></td>
-      <td><input type="text" formControlName="mcr44" /></td>
-      <td><input type="text" formControlName="mechPort44" /></td>
-      <td><input type="text" formControlName="mechStbd44" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed45" /></td>
-      <td><input type="text" formControlName="analogAsp45" /></td>
-      <td><input type="text" formControlName="wheelHouse45" /></td>
-      <td><input type="text" formControlName="mcr45" /></td>
-      <td><input type="text" formControlName="mechPort45" /></td>
-      <td><input type="text" formControlName="mechStbd45" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed46" /></td>
-      <td><input type="text" formControlName="analogAsp46" /></td>
-      <td><input type="text" formControlName="wheelHouse46" /></td>
-      <td><input type="text" formControlName="mcr46" /></td>
-      <td><input type="text" formControlName="mechPort46" /></td>
-      <td><input type="text" formControlName="mechStbd46" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed47"></td>
-          <td><input type="text" formControlName="analogAsp47"></td>
-          <td><input type="text" formControlName="wheelHouse47"></td>
-          <td><input type="text" formControlName="mcr47"></td>
-          <td><input type="text" formControlName="mechPort47"></td>
-          <td><input type="text" formControlName="mechStbd47"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed48"></td>
-          <td><input type="text" formControlName="analogAsp48"></td>
-          <td><input type="text" formControlName="wheelHouse48"></td>
-          <td><input type="text" formControlName="mcr48"></td>
-          <td><input type="text" formControlName="mechPort48"></td>
-          <td><input type="text" formControlName="mechStbd48"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed49"></td>
-          <td><input type="text" formControlName="analogAsp49"></td>
-          <td><input type="text" formControlName="wheelHouse49"></td>
-          <td><input type="text" formControlName="mcr49"></td>
-          <td><input type="text" formControlName="mechPort49"></td>
-          <td><input type="text" formControlName="mechStbd49"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed50"></td>
-          <td><input type="text" formControlName="analogAsp50"></td>
-          <td><input type="text" formControlName="wheelHouse50"></td>
-          <td><input type="text" formControlName="mcr50"></td>
-          <td><input type="text" formControlName="mechPort50"></td>
-          <td><input type="text" formControlName="mechStbd50"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed51"></td>
-          <td><input type="text" formControlName="analogAsp51"></td>
-          <td><input type="text" formControlName="wheelHouse51"></td>
-          <td><input type="text" formControlName="mcr51"></td>
-          <td><input type="text" formControlName="mechPort51"></td>
-          <td><input type="text" formControlName="mechStbd51"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed52"></td>
-          <td><input type="text" formControlName="analogAsp52"></td>
-          <td><input type="text" formControlName="wheelHouse52"></td>
-          <td><input type="text" formControlName="mcr52"></td>
-          <td><input type="text" formControlName="mechPort52"></td>
-          <td><input type="text" formControlName="mechStbd52"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed53"></td>
-          <td><input type="text" formControlName="analogAsp53"></td>
-          <td><input type="text" formControlName="wheelHouse53"></td>
-          <td><input type="text" formControlName="mcr53"></td>
-          <td><input type="text" formControlName="mechPort53"></td>
-          <td><input type="text" formControlName="mechStbd53"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed54" /></td>
-      <td><input type="text" formControlName="analogAsp54" /></td>
-      <td><input type="text" formControlName="wheelHouse54" /></td>
-      <td><input type="text" formControlName="mcr54" /></td>
-      <td><input type="text" formControlName="mechPort54" /></td>
-      <td><input type="text" formControlName="mechStbd54" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed55" /></td>
-      <td><input type="text" formControlName="analogAsp55" /></td>
-      <td><input type="text" formControlName="wheelHouse55" /></td>
-      <td><input type="text" formControlName="mcr55" /></td>
-      <td><input type="text" formControlName="mechPort55" /></td>
-      <td><input type="text" formControlName="mechStbd55" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed56" /></td>
-      <td><input type="text" formControlName="analogAsp56" /></td>
-      <td><input type="text" formControlName="wheelHouse56" /></td>
-      <td><input type="text" formControlName="mcr56" /></td>
-      <td><input type="text" formControlName="mechPort56" /></td>
-      <td><input type="text" formControlName="mechStbd56" /></td>
-    </tr>
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed57" /></td>
-      <td><input type="text" formControlName="analogAsp57" /></td>
-      <td><input type="text" formControlName="wheelHouse57" /></td>
-      <td><input type="text" formControlName="mcr57" /></td>
-      <td><input type="text" formControlName="mechPort57" /></td>
-      <td><input type="text" formControlName="mechStbd57" /></td>
-    </tr>
-  </table>
-</form>
-</div>
-
-
-
-<div class="table-section">
-<form [formGroup]="WheelPortNFUForm">
-  <h4 class="sub-heading">(a)	Operating Position - Wheel house with Port Pump (NFU)</h4>
-  <!-- You can reuse this table structure for other headings too -->
-  <table>
-    <tr>
-      <th rowspan="2">Helm applied</th>
-      <th rowspan="2">Bridge Enclosed</th>
-      <th rowspan="2">Analog ASP</th>
-      <th rowspan="2">Wheel House</th>
-      <th rowspan="2">MCR</th>
-      <th colspan="2">Mechanical Indicator (ASP)</th>
-    </tr>
-    <tr>
-      <th>P</th>
-      <th>S</th>
-    </tr>
-
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed58" /></td>
-      <td><input type="text" formControlName="analogAsp58" /></td>
-      <td><input type="text" formControlName="wheelHouse58" /></td>
-      <td><input type="text" formControlName="mcr58" /></td>
-      <td><input type="text" formControlName="mechPort58" /></td>
-      <td><input type="text" formControlName="mechStbd58" /></td>
-    </tr>
-
-    <tr>
-      <td>5° PORT</td>
-      <td><input type="text" formControlName="bridgeEnclosed59" /></td>
-      <td><input type="text" formControlName="analogAsp59" /></td>
-      <td><input type="text" formControlName="wheelHouse59" /></td>
-      <td><input type="text" formControlName="mcr59" /></td>
-      <td><input type="text" formControlName="mechPort59" /></td>
-      <td><input type="text" formControlName="mechStbd59" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed60" /></td>
-      <td><input type="text" formControlName="analogAsp60" /></td>
-      <td><input type="text" formControlName="wheelHouse60" /></td>
-      <td><input type="text" formControlName="mcr60" /></td>
-      <td><input type="text" formControlName="mechPort60" /></td>
-      <td><input type="text" formControlName="mechStbd60" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed61" /></td>
-      <td><input type="text" formControlName="analogAsp61" /></td>
-      <td><input type="text" formControlName="wheelHouse61" /></td>
-      <td><input type="text" formControlName="mcr61" /></td>
-      <td><input type="text" formControlName="mechPort61" /></td>
-      <td><input type="text" formControlName="mechStbd61" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed62"></td>
-          <td><input type="text" formControlName="analogAsp62"></td>
-          <td><input type="text" formControlName="wheelHouse62"></td>
-          <td><input type="text" formControlName="mcr62"></td>
-          <td><input type="text" formControlName="mechPort62"></td>
-          <td><input type="text" formControlName="mechStbd62"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed63"></td>
-          <td><input type="text" formControlName="analogAsp63"></td>
-          <td><input type="text" formControlName="wheelHouse63"></td>
-          <td><input type="text" formControlName="mcr63"></td>
-          <td><input type="text" formControlName="mechPort63"></td>
-          <td><input type="text" formControlName="mechStbd63"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed64"></td>
-          <td><input type="text" formControlName="analogAsp64"></td>
-          <td><input type="text" formControlName="wheelHouse64"></td>
-          <td><input type="text" formControlName="mcr64"></td>
-          <td><input type="text" formControlName="mechPort64"></td>
-          <td><input type="text" formControlName="mechStbd64"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed65"></td>
-          <td><input type="text" formControlName="analogAsp65"></td>
-          <td><input type="text" formControlName="wheelHouse65"></td>
-          <td><input type="text" formControlName="mcr65"></td>
-          <td><input type="text" formControlName="mechPort65"></td>
-          <td><input type="text" formControlName="mechStbd65"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed66"></td>
-          <td><input type="text" formControlName="analogAsp66"></td>
-          <td><input type="text" formControlName="wheelHouse66"></td>
-          <td><input type="text" formControlName="mcr66"></td>
-          <td><input type="text" formControlName="mechPort66"></td>
-          <td><input type="text" formControlName="mechStbd66"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed67"></td>
-          <td><input type="text" formControlName="analogAsp67"></td>
-          <td><input type="text" formControlName="wheelHouse67"></td>
-          <td><input type="text" formControlName="mcr67"></td>
-          <td><input type="text" formControlName="mechPort67"></td>
-          <td><input type="text" formControlName="mechStbd67"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed68"></td>
-          <td><input type="text" formControlName="analogAsp68"></td>
-          <td><input type="text" formControlName="wheelHouse68"></td>
-          <td><input type="text" formControlName="mcr68"></td>
-          <td><input type="text" formControlName="mechPort68"></td>
-          <td><input type="text" formControlName="mechStbd68"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed69" /></td>
-      <td><input type="text" formControlName="analogAsp69" /></td>
-      <td><input type="text" formControlName="wheelHouse69" /></td>
-      <td><input type="text" formControlName="mcr69" /></td>
-      <td><input type="text" formControlName="mechPort69" /></td>
-      <td><input type="text" formControlName="mechStbd69" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed70" /></td>
-      <td><input type="text" formControlName="analogAsp70" /></td>
-      <td><input type="text" formControlName="wheelHouse70" /></td>
-      <td><input type="text" formControlName="mcr70" /></td>
-      <td><input type="text" formControlName="mechPort70" /></td>
-      <td><input type="text" formControlName="mechStbd70" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed71" /></td>
-      <td><input type="text" formControlName="analogAsp71" /></td>
-      <td><input type="text" formControlName="wheelHouse71" /></td>
-      <td><input type="text" formControlName="mcr71" /></td>
-      <td><input type="text" formControlName="mechPort71" /></td>
-      <td><input type="text" formControlName="mechStbd71" /></td>
-    </tr>
-
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed72" /></td>
-      <td><input type="text" formControlName="analogAsp72" /></td>
-      <td><input type="text" formControlName="wheelHouse72" /></td>
-      <td><input type="text" formControlName="mcr72" /></td>
-      <td><input type="text" formControlName="mechPort72" /></td>
-      <td><input type="text" formControlName="mechStbd72" /></td>
-    </tr>
-
-    <tr>
-      <td>5° STBD</td>
-      <td><input type="text" formControlName="bridgeEnclosed73" /></td>
-      <td><input type="text" formControlName="analogAsp73" /></td>
-      <td><input type="text" formControlName="wheelHouse73" /></td>
-      <td><input type="text" formControlName="mcr73" /></td>
-      <td><input type="text" formControlName="mechPort73" /></td>
-      <td><input type="text" formControlName="mechStbd73" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed74" /></td>
-      <td><input type="text" formControlName="analogAsp74" /></td>
-      <td><input type="text" formControlName="wheelHouse74" /></td>
-      <td><input type="text" formControlName="mcr74" /></td>
-      <td><input type="text" formControlName="mechPort74" /></td>
-      <td><input type="text" formControlName="mechStbd74" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed75" /></td>
-      <td><input type="text" formControlName="analogAsp75" /></td>
-      <td><input type="text" formControlName="wheelHouse75" /></td>
-      <td><input type="text" formControlName="mcr75" /></td>
-      <td><input type="text" formControlName="mechPort75" /></td>
-      <td><input type="text" formControlName="mechStbd75" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed76"></td>
-          <td><input type="text" formControlName="analogAsp76"></td>
-          <td><input type="text" formControlName="wheelHouse76"></td>
-          <td><input type="text" formControlName="mcr76"></td>
-          <td><input type="text" formControlName="mechPort76"></td>
-          <td><input type="text" formControlName="mechStbd76"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed77"></td>
-          <td><input type="text" formControlName="analogAsp77"></td>
-          <td><input type="text" formControlName="wheelHouse77"></td>
-          <td><input type="text" formControlName="mcr77"></td>
-          <td><input type="text" formControlName="mechPort77"></td>
-          <td><input type="text" formControlName="mechStbd77"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed78"></td>
-          <td><input type="text" formControlName="analogAsp78"></td>
-          <td><input type="text" formControlName="wheelHouse78"></td>
-          <td><input type="text" formControlName="mcr78"></td>
-          <td><input type="text" formControlName="mechPort78"></td>
-          <td><input type="text" formControlName="mechStbd78"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed79"></td>
-          <td><input type="text" formControlName="analogAsp79"></td>
-          <td><input type="text" formControlName="wheelHouse79"></td>
-          <td><input type="text" formControlName="mcr79"></td>
-          <td><input type="text" formControlName="mechPort79"></td>
-          <td><input type="text" formControlName="mechStbd79"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed80"></td>
-          <td><input type="text" formControlName="analogAsp80"></td>
-          <td><input type="text" formControlName="wheelHouse80"></td>
-          <td><input type="text" formControlName="mcr80"></td>
-          <td><input type="text" formControlName="mechPort80"></td>
-          <td><input type="text" formControlName="mechStbd80"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed81"></td>
-          <td><input type="text" formControlName="analogAsp81"></td>
-          <td><input type="text" formControlName="wheelHouse81"></td>
-          <td><input type="text" formControlName="mcr81"></td>
-          <td><input type="text" formControlName="mechPort81"></td>
-          <td><input type="text" formControlName="mechStbd81"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed82"></td>
-          <td><input type="text" formControlName="analogAsp82"></td>
-          <td><input type="text" formControlName="wheelHouse82"></td>
-          <td><input type="text" formControlName="mcr82"></td>
-          <td><input type="text" formControlName="mechPort82"></td>
-          <td><input type="text" formControlName="mechStbd82"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed83" /></td>
-      <td><input type="text" formControlName="analogAsp83" /></td>
-      <td><input type="text" formControlName="wheelHouse83" /></td>
-      <td><input type="text" formControlName="mcr83" /></td>
-      <td><input type="text" formControlName="mechPort83" /></td>
-      <td><input type="text" formControlName="mechStbd83" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed84" /></td>
-      <td><input type="text" formControlName="analogAsp84" /></td>
-      <td><input type="text" formControlName="wheelHouse84" /></td>
-      <td><input type="text" formControlName="mcr84" /></td>
-      <td><input type="text" formControlName="mechPort84" /></td>
-      <td><input type="text" formControlName="mechStbd84" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed85" /></td>
-      <td><input type="text" formControlName="analogAsp85" /></td>
-      <td><input type="text" formControlName="wheelHouse85" /></td>
-      <td><input type="text" formControlName="mcr85" /></td>
-      <td><input type="text" formControlName="mechPort85" /></td>
-      <td><input type="text" formControlName="mechStbd85" /></td>
-    </tr>
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed86" /></td>
-      <td><input type="text" formControlName="analogAsp86" /></td>
-      <td><input type="text" formControlName="wheelHouse86" /></td>
-      <td><input type="text" formControlName="mcr86" /></td>
-      <td><input type="text" formControlName="mechPort86" /></td>
-      <td><input type="text" formControlName="mechStbd86" /></td>
-    </tr>
-  </table>
-</form>
-</div>
-
-
-<div class="table-section">
-<form [formGroup]="WheelPortNFUForm">
-  <h4 class="sub-heading">(b)	Operating Position- Bridge with Stbd Pump (NFU)</h4>
-  <!-- You can reuse this table structure for other headings too -->
-  <table>
-    <tr>
-      <th rowspan="2">Helm applied</th>
-      <th rowspan="2">Bridge Enclosed</th>
-      <th rowspan="2">Analog ASP</th>
-      <th rowspan="2">Wheel House</th>
-      <th rowspan="2">MCR</th>
-      <th colspan="2">Mechanical Indicator (ASP)</th>
-    </tr>
-    <tr>
-      <th>P</th>
-      <th>S</th>
-    </tr>
-
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed87" /></td>
-      <td><input type="text" formControlName="analogAsp87" /></td>
-      <td><input type="text" formControlName="wheelHouse87" /></td>
-      <td><input type="text" formControlName="mcr87" /></td>
-      <td><input type="text" formControlName="mechPort87" /></td>
-      <td><input type="text" formControlName="mechStbd87" /></td>
-    </tr>
-
-    <tr>
-      <td>5° PORT</td>
-      <td><input type="text" formControlName="bridgeEnclosed88" /></td>
-      <td><input type="text" formControlName="analogAsp88" /></td>
-      <td><input type="text" formControlName="wheelHouse88" /></td>
-      <td><input type="text" formControlName="mcr88" /></td>
-      <td><input type="text" formControlName="mechPort88" /></td>
-      <td><input type="text" formControlName="mechStbd88" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed89" /></td>
-      <td><input type="text" formControlName="analogAsp89" /></td>
-      <td><input type="text" formControlName="wheelHouse89" /></td>
-      <td><input type="text" formControlName="mcr89" /></td>
-      <td><input type="text" formControlName="mechPort89" /></td>
-      <td><input type="text" formControlName="mechStbd89" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed90" /></td>
-      <td><input type="text" formControlName="analogAsp90" /></td>
-      <td><input type="text" formControlName="wheelHouse90" /></td>
-      <td><input type="text" formControlName="mcr90" /></td>
-      <td><input type="text" formControlName="mechPort90" /></td>
-      <td><input type="text" formControlName="mechStbd90" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed91"></td>
-          <td><input type="text" formControlName="analogAsp91"></td>
-          <td><input type="text" formControlName="wheelHouse91"></td>
-          <td><input type="text" formControlName="mcr91"></td>
-          <td><input type="text" formControlName="mechPort91"></td>
-          <td><input type="text" formControlName="mechStbd91"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed92"></td>
-          <td><input type="text" formControlName="analogAsp92"></td>
-          <td><input type="text" formControlName="wheelHouse92"></td>
-          <td><input type="text" formControlName="mcr92"></td>
-          <td><input type="text" formControlName="mechPort92"></td>
-          <td><input type="text" formControlName="mechStbd92"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed93"></td>
-          <td><input type="text" formControlName="analogAsp93"></td>
-          <td><input type="text" formControlName="wheelHouse93"></td>
-          <td><input type="text" formControlName="mcr93"></td>
-          <td><input type="text" formControlName="mechPort93"></td>
-          <td><input type="text" formControlName="mechStbd93"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed94"></td>
-          <td><input type="text" formControlName="analogAsp94"></td>
-          <td><input type="text" formControlName="wheelHouse94"></td>
-          <td><input type="text" formControlName="mcr94"></td>
-          <td><input type="text" formControlName="mechPort94"></td>
-          <td><input type="text" formControlName="mechStbd94"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed95"></td>
-          <td><input type="text" formControlName="analogAsp95"></td>
-          <td><input type="text" formControlName="wheelHouse95"></td>
-          <td><input type="text" formControlName="mcr95"></td>
-          <td><input type="text" formControlName="mechPort95"></td>
-          <td><input type="text" formControlName="mechStbd95"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed96"></td>
-          <td><input type="text" formControlName="analogAsp96"></td>
-          <td><input type="text" formControlName="wheelHouse96"></td>
-          <td><input type="text" formControlName="mcr96"></td>
-          <td><input type="text" formControlName="mechPort96"></td>
-          <td><input type="text" formControlName="mechStbd96"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed97"></td>
-          <td><input type="text" formControlName="analogAsp97"></td>
-          <td><input type="text" formControlName="wheelHouse97"></td>
-          <td><input type="text" formControlName="mcr97"></td>
-          <td><input type="text" formControlName="mechPort97"></td>
-          <td><input type="text" formControlName="mechStbd97"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed98" /></td>
-      <td><input type="text" formControlName="analogAsp98" /></td>
-      <td><input type="text" formControlName="wheelHouse98" /></td>
-      <td><input type="text" formControlName="mcr98" /></td>
-      <td><input type="text" formControlName="mechPort98" /></td>
-      <td><input type="text" formControlName="mechStbd98" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed99" /></td>
-      <td><input type="text" formControlName="analogAsp99" /></td>
-      <td><input type="text" formControlName="wheelHouse99" /></td>
-      <td><input type="text" formControlName="mcr99" /></td>
-      <td><input type="text" formControlName="mechPort99" /></td>
-      <td><input type="text" formControlName="mechStbd99" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed100" /></td>
-      <td><input type="text" formControlName="analogAsp100" /></td>
-      <td><input type="text" formControlName="wheelHouse100" /></td>
-      <td><input type="text" formControlName="mcr100" /></td>
-      <td><input type="text" formControlName="mechPort100" /></td>
-      <td><input type="text" formControlName="mechStbd100" /></td>
-    </tr>
-
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed101" /></td>
-      <td><input type="text" formControlName="analogAsp101" /></td>
-      <td><input type="text" formControlName="wheelHouse101" /></td>
-      <td><input type="text" formControlName="mcr101" /></td>
-      <td><input type="text" formControlName="mechPort101" /></td>
-      <td><input type="text" formControlName="mechStbd101" /></td>
-    </tr>
-
-    <tr>
-      <td>5° STBD</td>
-      <td><input type="text" formControlName="bridgeEnclosed102" /></td>
-      <td><input type="text" formControlName="analogAsp102" /></td>
-      <td><input type="text" formControlName="wheelHouse102" /></td>
-      <td><input type="text" formControlName="mcr102" /></td>
-      <td><input type="text" formControlName="mechPort102" /></td>
-      <td><input type="text" formControlName="mechStbd102" /></td>
-    </tr>
-
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed103" /></td>
-      <td><input type="text" formControlName="analogAsp103" /></td>
-      <td><input type="text" formControlName="wheelHouse103" /></td>
-      <td><input type="text" formControlName="mcr103" /></td>
-      <td><input type="text" formControlName="mechPort103" /></td>
-      <td><input type="text" formControlName="mechStbd103" /></td>
-    </tr>
-
-    <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed104" /></td>
-      <td><input type="text" formControlName="analogAsp104" /></td>
-      <td><input type="text" formControlName="wheelHouse104" /></td>
-      <td><input type="text" formControlName="mcr104" /></td>
-      <td><input type="text" formControlName="mechPort104" /></td>
-      <td><input type="text" formControlName="mechStbd104" /></td>
-    </tr>
-    <!-- 20° -->
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed105"></td>
-          <td><input type="text" formControlName="analogAsp105"></td>
-          <td><input type="text" formControlName="wheelHouse105"></td>
-          <td><input type="text" formControlName="mcr105"></td>
-          <td><input type="text" formControlName="mechPort105"></td>
-          <td><input type="text" formControlName="mechStbd105"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed106"></td>
-          <td><input type="text" formControlName="analogAsp106"></td>
-          <td><input type="text" formControlName="wheelHouse106"></td>
-          <td><input type="text" formControlName="mcr106"></td>
-          <td><input type="text" formControlName="mechPort106"></td>
-          <td><input type="text" formControlName="mechStbd106"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed107"></td>
-          <td><input type="text" formControlName="analogAsp107"></td>
-          <td><input type="text" formControlName="wheelHouse107"></td>
-          <td><input type="text" formControlName="mcr107"></td>
-          <td><input type="text" formControlName="mechPort107"></td>
-          <td><input type="text" formControlName="mechStbd107"></td>
-        </tr>
-        <tr>
-          <td>35°</td>
-          <td><input type="text" formControlName="bridgeEnclosed108"></td>
-          <td><input type="text" formControlName="analogAsp108"></td>
-          <td><input type="text" formControlName="wheelHouse108"></td>
-          <td><input type="text" formControlName="mcr108"></td>
-          <td><input type="text" formControlName="mechPort108"></td>
-          <td><input type="text" formControlName="mechStbd108"></td>
-        </tr>
-        <tr>
-          <td>30°</td>
-          <td><input type="text" formControlName="bridgeEnclosed109"></td>
-          <td><input type="text" formControlName="analogAsp109"></td>
-          <td><input type="text" formControlName="wheelHouse109"></td>
-          <td><input type="text" formControlName="mcr109"></td>
-          <td><input type="text" formControlName="mechPort109"></td>
-          <td><input type="text" formControlName="mechStbd109"></td>
-        </tr>
-        <tr>
-          <td>25°</td>
-          <td><input type="text" formControlName="bridgeEnclosed110"></td>
-          <td><input type="text" formControlName="analogAsp110"></td>
-          <td><input type="text" formControlName="wheelHouse110"></td>
-          <td><input type="text" formControlName="mcr110"></td>
-          <td><input type="text" formControlName="mechPort110"></td>
-          <td><input type="text" formControlName="mechStbd110"></td>
-        </tr>
-        <tr>
-          <td>20°</td>
-          <td><input type="text" formControlName="bridgeEnclosed111"></td>
-          <td><input type="text" formControlName="analogAsp111"></td>
-          <td><input type="text" formControlName="wheelHouse111"></td>
-          <td><input type="text" formControlName="mcr111"></td>
-          <td><input type="text" formControlName="mechPort111"></td>
-          <td><input type="text" formControlName="mechStbd111"></td>
-        </tr>
-        <tr>
-      <td>15°</td>
-      <td><input type="text" formControlName="bridgeEnclosed112" /></td>
-      <td><input type="text" formControlName="analogAsp112" /></td>
-      <td><input type="text" formControlName="wheelHouse112" /></td>
-      <td><input type="text" formControlName="mcr112" /></td>
-      <td><input type="text" formControlName="mechPort112" /></td>
-      <td><input type="text" formControlName="mechStbd112" /></td>
-    </tr>
-    <tr>
-      <td>10°</td>
-      <td><input type="text" formControlName="bridgeEnclosed113" /></td>
-      <td><input type="text" formControlName="analogAsp113" /></td>
-      <td><input type="text" formControlName="wheelHouse113" /></td>
-      <td><input type="text" formControlName="mcr113" /></td>
-      <td><input type="text" formControlName="mechPort113" /></td>
-      <td><input type="text" formControlName="mechStbd113" /></td>
-    </tr>
-    <tr>
-      <td>5°</td>
-      <td><input type="text" formControlName="bridgeEnclosed114" /></td>
-      <td><input type="text" formControlName="analogAsp114" /></td>
-      <td><input type="text" formControlName="wheelHouse114" /></td>
-      <td><input type="text" formControlName="mcr114" /></td>
-      <td><input type="text" formControlName="mechPort114" /></td>
-      <td><input type="text" formControlName="mechStbd114" /></td>
-    </tr>
-    <tr>
-      <td>MIDSHIP</td>
-      <td><input type="text" formControlName="bridgeEnclosed115" /></td>
-      <td><input type="text" formControlName="analogAsp115" /></td>
-      <td><input type="text" formControlName="wheelHouse115" /></td>
-      <td><input type="text" formControlName="mcr115" /></td>
-      <td><input type="text" formControlName="mechPort115" /></td>
-      <td><input type="text" formControlName="mechStbd115" /></td>
-    </tr>
-  </table>
-</form>
-</div>
-
-<div class="table-section">
-<form [formGroup]="WheelPortNFUForm">
-  <p><strong><u>Steering Timings by Emergency Hand Steering Wheel:</u></strong></p>
-  <table border="1">
-    <thead>
       <tr>
-        <th>Sequence</th>
-        <th>0° – 10° Port</th>
-        <th>10° Port – 10° Stbd</th>
-        <th>10° Stbd – 0°</th>
+        <td>Top</td>
+        <td><input type="text" form-control formControlName="top_1_1_221"></td>
+        <td><input type="text" form-control formControlName="top_1_2_221"></td>
+        <td><input type="text" form-control formControlName="top_1_3_221"></td>
+        <td><input type="text" form-control formControlName="top_1_4_221"></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td>No. of turns</td>
-        <td><input formControlName="zeroToTenPort116" type="text"></td>
-        <td><input formControlName="tenPortToTenStbd116" type="text"></td>
-        <td><input formControlName="tenStbdToZero116" type="text"></td>
+        <td>Bot</td>
+        <td><input type="text" form-control formControlName="bot_1_1_222"></td>
+        <td><input type="text" form-control formControlName="bot_1_2_222"></td>
+        <td><input type="text" form-control formControlName="bot_1_3_222"></td>
+        <td><input type="text" form-control formControlName="bot_1_4_222"></td>
       </tr>
-    </tbody>
-  </table>
-</form>
-</div>
+      <tr>
+        <td>Att.</td>
+        <td><input type="text" form-control formControlName="att_1_1_223"></td>
+        <td><input type="text" form-control formControlName="att_1_2_223"></td>
+        <td><input type="text" form-control formControlName="att_1_3_223"></td>
+        <td><input type="text" form-control formControlName="att_1_4_223"></td>
+      </tr>
+
+
+    </table>
+
+
+    <h3 class="main-heading">AVCAT TRANSFER PUMP</h3>
+
+    <h4 class="sub-heading">1. Parameters. </h4>
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th>Ser</th>
+          <th>Description</th>
+          <th>No.1</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(a)</td>
+          <td>Condition of SV mounts of pumps & motor</td>
+          <td><input type="text" form-control formControlName="no1a_224" /></td>
+        </tr>
+        <tr>
+          <td>(b)</td>
+          <td>Condition of suction/discharge compensator </td>
+          <td><input type="text" form-control formControlName="no1b_225" /></td>
+        </tr>
+        <tr>
+          <td>(c)</td>
+          <td>Securing of the suction/discharge pipe</td>
+          <td><input type="text" form-control formControlName="no1c_226" /></td>
+        </tr>
+        <tr>
+          <td>(d)</td>
+          <td>Abnormal noise</td>
+          <td><input type="text" form-control formControlName="no1d_227" /></td>
+        </tr>
+        <tr>
+          <td>(e)</td>
+          <td>Excessive vibration</td>
+          <td><input type="text" form-control formControlName="no1e_228" /></td>
+        </tr>
+        <tr>
+          <td>(f)</td>
+          <td>Gland leak (Mechanical seal)</td>
+          <td><input type="text" form-control formControlName="no1f_229" /></td>
+        </tr>
+        <tr>
+          <td>(g)</td>
+          <td>Pressure fluctuation</td>
+          <td><input type="text" form-control formControlName="no1g_230" /></td>
+        </tr>
+        <tr>
+          <td>(h)</td>
+          <td>Suction pressure</td>
+          <td><input type="text" form-control formControlName="no1h_231" /></td>
+        </tr>
+        <tr>
+          <td>(j)</td>
+          <td>Discharge Pressure</td>
+          <td><input type="text" form-control formControlName="no1f_232" /></td>
+        </tr>
+        <tr>
+          <td>(k)</td>
+          <td>Start/stop from local and remote</td>
+          <td><input type="text" form-control formControlName="no1g_233" /></td>
+        </tr>
+        <tr>
+          <td>(l)</td>
+          <td>Valves and gauges provided with tallies</td>
+          <td><input type="text" form-control formControlName="no1h_234" /></td>
+        </tr>
+        <tr>
+          <td>(m)</td>
+          <td>Operating instructions displayed for pump</td>
+          <td><input type="text" form-control formControlName="no1h_235" /></td>
+        </tr>
+        <tr>
+          <td>(n)</td>
+          <td>Pipe painting as per color standard</td>
+          <td><input type="text" form-control formControlName="no1f_236" /></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h3>2. <u>SPM Levels</u></h3>
+
+    <table class="spm-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>No. 1</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor FE</td>
+          <td><input type="text" form-control formControlName="fe1_237" /></td>
+        </tr>
+        <tr>
+          <td>Motor DE</td>
+          <td><input type="text" form-control formControlName="de1_238" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>3. <u>Overall Vibration</u></h3>
+
+    <!-- First Table -->
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Position</th>
+          <th colspan="3">No. 1</th>
+        </tr>
+        <tr>
+          <th><u>V</u></th>
+          <th><u>A</u></th>
+          <th><u>H</u></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor FE</td>
+          <td><input type="text" form-control formControlName="motor1_239FEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_239FEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_239FEH1" /></td>
+        </tr>
+        <tr>
+          <td>Motor DE</td>
+          <td><input type="text" form-control formControlName="motor1_240DEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_240DEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_240DEH1" /></td>
+        </tr>
+        <tr>
+          <td>Comp DE</td>
+          <td><input type="text" form-control formControlName="comp1_241DEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_241DEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_241DEH1" /></td>
+        </tr>
+        <tr>
+          <td>Comp FE</td>
+          <td><input type="text" form-control formControlName="comp1_242FEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_242FEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_242FEH1" /></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+    <h4 class="sub-heading">4. Attenuation across SV mounts. </h4>
+    <table border="1" class="vibration-table">
+      <thead>
+
+        <tr>
+          <th>Mounts</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>Top</td>
+        <td><input type="text" form-control formControlName="top_1_1_243"></td>
+        <td><input type="text" form-control formControlName="top_1_2_243"></td>
+        <td><input type="text" form-control formControlName="top_1_3_243"></td>
+        <td><input type="text" form-control formControlName="top_1_4_243"></td>
+      </tr>
+      <tr>
+        <td>Bot</td>
+        <td><input type="text" form-control formControlName="bot_1_1_244"></td>
+        <td><input type="text" form-control formControlName="bot_1_2_244"></td>
+        <td><input type="text" form-control formControlName="bot_1_3_244"></td>
+        <td><input type="text" form-control formControlName="bot_1_4_244"></td>
+      </tr>
+      <tr>
+        <td>Att.</td>
+        <td><input type="text" form-control formControlName="att_1_1_245"></td>
+        <td><input type="text" form-control formControlName="att_1_2_245"></td>
+        <td><input type="text" form-control formControlName="att_1_3_245"></td>
+        <td><input type="text" form-control formControlName="att_1_4_245"></td>
+      </tr>
+
+
+    </table>
+
+
+
+
+
+    <h3 class="main-heading">DIESEL DRIVEN FIRE PUMPS</h3>
+
+    <h4 class="sub-heading">1. Parameters. </h4>
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th>Ser</th>
+          <th>Description</th>
+          <th>FWD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(a)</td>
+          <td>Condition of SV mounts of pumps & motor</td>
+          <td><input type="text" form-control formControlName="no1a_246" /></td>
+        </tr>
+        <tr>
+          <td>(b)</td>
+          <td>Condition of suction/discharge compensator </td>
+          <td><input type="text" form-control formControlName="no1b_247" /></td>
+        </tr>
+        <tr>
+          <td>(c)</td>
+          <td>Securing of the suction/discharge pipe</td>
+          <td><input type="text" form-control formControlName="no1c_248" /></td>
+        </tr>
+        <tr>
+          <td>(d)</td>
+          <td>Abnormal noise</td>
+          <td><input type="text" form-control formControlName="no1d_249" /></td>
+        </tr>
+        <tr>
+          <td>(e)</td>
+          <td>Excessive vibration</td>
+          <td><input type="text" form-control formControlName="no1e_250" /></td>
+        </tr>
+        <tr>
+          <td>(f)</td>
+          <td>Gland leak (Mechanical seal)</td>
+          <td><input type="text" form-control formControlName="no1f_251" /></td>
+        </tr>
+        <tr>
+          <td>(g)</td>
+          <td>Pressure fluctuation</td>
+          <td><input type="text" form-control formControlName="no1g_252" /></td>
+        </tr>
+        <tr>
+          <td>(h)</td>
+          <td>Suction pressure</td>
+          <td><input type="text" form-control formControlName="no1h_253" /></td>
+        </tr>
+        <tr>
+          <td>(j)</td>
+          <td>Discharge Pressure</td>
+          <td><input type="text" form-control formControlName="no1f_254" /></td>
+        </tr>
+        <tr>
+          <td>(k)</td>
+          <td>Start/stop from local and remote</td>
+          <td><input type="text" form-control formControlName="no1g_255" /></td>
+        </tr>
+        <tr>
+          <td>(l)</td>
+          <td>Valves and gauges provided with tallies</td>
+          <td><input type="text" form-control formControlName="no1h_256" /></td>
+        </tr>
+        <tr>
+          <td>(m)</td>
+          <td>Operating instructions displayed for pump</td>
+          <td><input type="text" form-control formControlName="no1h_257" /></td>
+        </tr>
+        <tr>
+          <td>(n)</td>
+          <td>Pipe painting as per color standard</td>
+          <td><input type="text" form-control formControlName="no1f_258" /></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+    <h3>3. <u>Overall Vibration</u></h3>
+
+    <!-- First Table -->
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Position</th>
+          <th colspan="3">No. 1</th>
+        </tr>
+        <tr>
+          <th><u>V</u></th>
+          <th><u>A</u></th>
+          <th><u>H</u></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor FE</td>
+          <td><input type="text" form-control formControlName="motor1_259FEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_259FEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_259FEH1" /></td>
+        </tr>
+        <tr>
+          <td>Motor DE</td>
+          <td><input type="text" form-control formControlName="motor1_260DEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_260DEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_260DEH1" /></td>
+        </tr>
+        <tr>
+          <td>Comp DE</td>
+          <td><input type="text" form-control formControlName="comp1_261DEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_261DEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_261DEH1" /></td>
+        </tr>
+        <tr>
+          <td>Comp FE</td>
+          <td><input type="text" form-control formControlName="comp1_262FEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_262FEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_262FEH1" /></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+    <h3 class="main-heading">FRESH WATER PUMPS</h3>
+
+    <h4 class="sub-heading">1. Performance Parameters. </h4>
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th>Ser</th>
+          <th>Description</th>
+          <th>No.1</th>
+          <th>No.2</th>
+          <th>No.3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(a)</td>
+          <td>Condition of SV mounts of pumps & motor</td>
+          <td><input type="text" form-control formControlName="no1a_263" /></td>
+          <td><input type="text" form-control formControlName="no2a_263" /></td>
+          <td><input type="text" form-control formControlName="no3a_263" /></td>
+        </tr>
+        <tr>
+          <td>(b)</td>
+          <td>Condition of suction/discharge compensator </td>
+          <td><input type="text" form-control formControlName="no1b_264" /></td>
+          <td><input type="text" form-control formControlName="no2b_264" /></td>
+          <td><input type="text" form-control formControlName="no3b_264" /></td>
+        </tr>
+        <tr>
+          <td>(c)</td>
+          <td>Securing of the suction/discharge pipe</td>
+          <td><input type="text" form-control formControlName="no1c_265" /></td>
+          <td><input type="text" form-control formControlName="no2c_265" /></td>
+          <td><input type="text" form-control formControlName="no3c_265" /></td>
+        </tr>
+        <tr>
+          <td>(d)</td>
+          <td>Abnormal noise</td>
+          <td><input type="text" form-control formControlName="no1d_266" /></td>
+          <td><input type="text" form-control formControlName="no2d_266" /></td>
+          <td><input type="text" form-control formControlName="no3d_266" /></td>
+        </tr>
+        <tr>
+          <td>(e)</td>
+          <td>Excessive vibration</td>
+          <td><input type="text" form-control formControlName="no1e_267" /></td>
+          <td><input type="text" form-control formControlName="no2e_267" /></td>
+          <td><input type="text" form-control formControlName="no3e_267" /></td>
+        </tr>
+        <tr>
+          <td>(f)</td>
+          <td>Gland leak (Mechanical seal)</td>
+          <td><input type="text" form-control formControlName="no1f_268" /></td>
+          <td><input type="text" form-control formControlName="no2f_268" /></td>
+          <td><input type="text" form-control formControlName="no3f_268" /></td>
+        </tr>
+        <tr>
+          <td>(g)</td>
+          <td>Pressure fluctuation</td>
+          <td><input type="text" form-control formControlName="no1g_269" /></td>
+          <td><input type="text" form-control formControlName="no2g_269" /></td>
+          <td><input type="text" form-control formControlName="no3g_269" /></td>
+        </tr>
+        <tr>
+          <td>(h)</td>
+          <td>Suction pressure</td>
+          <td><input type="text" form-control formControlName="no1h_270" /></td>
+          <td><input type="text" form-control formControlName="no2h_270" /></td>
+          <td><input type="text" form-control formControlName="no3h_270" /></td>
+        </tr>
+        <tr>
+          <td>(j)</td>
+          <td>Discharge Pressure</td>
+          <td><input type="text" form-control formControlName="no1f_271" /></td>
+          <td><input type="text" form-control formControlName="no2f_271" /></td>
+          <td><input type="text" form-control formControlName="no3f_271" /></td>
+        </tr>
+        <tr>
+          <td>(k)</td>
+          <td>Start/stop from local and remote</td>
+          <td><input type="text" form-control formControlName="no1g_272" /></td>
+          <td><input type="text" form-control formControlName="no2g_272" /></td>
+          <td><input type="text" form-control formControlName="no3g_272" /></td>
+        </tr>
+        <tr>
+          <td>(l)</td>
+          <td>Valves and gauges provided with tallies</td>
+          <td><input type="text" form-control formControlName="no1h_273" /></td>
+          <td><input type="text" form-control formControlName="no2h_273" /></td>
+          <td><input type="text" form-control formControlName="no3h_273" /></td>
+        </tr>
+        <tr>
+          <td>(m)</td>
+          <td>Operating instructions displayed for pump</td>
+          <td><input type="text" form-control formControlName="no1h_274" /></td>
+          <td><input type="text" form-control formControlName="no2h_274" /></td>
+          <td><input type="text" form-control formControlName="no3h_274" /></td>
+        </tr>
+        <tr>
+          <td>(n)</td>
+          <td>Pipe painting as per color standard</td>
+          <td><input type="text" form-control formControlName="no1f_275" /></td>
+          <td><input type="text" form-control formControlName="no2f_275" /></td>
+          <td><input type="text" form-control formControlName="no3f_275" /></td>
+        </tr>
+        <tr>
+          <td>(p)</td>
+          <td>Starting current</td>
+          <td><input type="text" form-control formControlName="no1g_276" /></td>
+          <td><input type="text" form-control formControlName="no2g_276" /></td>
+          <td><input type="text" form-control formControlName="no3g_276" /></td>
+        </tr>
+        <tr>
+          <td>(q)</td>
+          <td>Running current</td>
+          <td><input type="text" form-control formControlName="no1h_277" /></td>
+          <td><input type="text" form-control formControlName="no2h_277" /></td>
+          <td><input type="text" form-control formControlName="no3h_277" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2. <u>SPM Levels</u></h3>
+
+    <table class="spm-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>No. 1</th>
+          <th>No. 2</th>
+          <th>No. 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor FE</td>
+          <td><input type="text" form-control formControlName="fe1_278" /></td>
+          <td><input type="text" form-control formControlName="fe2_278" /></td>
+          <td><input type="text" form-control formControlName="fe3_278" /></td>
+        </tr>
+        <tr>
+          <td>Motor DE</td>
+          <td><input type="text" form-control formControlName="de1_279" /></td>
+          <td><input type="text" form-control formControlName="de2_279" /></td>
+          <td><input type="text" form-control formControlName="de3_279" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>3. <u>Overall Vibration</u></h3>
+
+    <!-- First Table -->
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Location</th>
+          <th colspan="3">No. 1</th>
+          <th colspan="3">No. 2</th>
+          <th colspan="3">No. 3</th>
+        </tr>
+        <tr>
+          <th><u>V</u></th>
+          <th><u>A</u></th>
+          <th><u>H</u></th>
+          <th><u>V</u></th>
+          <th><u>A</u></th>
+          <th><u>H</u></th>
+          <th><u>V</u></th>
+          <th><u>A</u></th>
+          <th><u>H</u></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor FE</td>
+          <td><input type="text" form-control formControlName="motor1_280FEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_280FEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_280FEH1" /></td>
+          <td><input type="text" form-control formControlName="motor4_280FEV2" /></td>
+          <td><input type="text" form-control formControlName="motor5_280FEA2" /></td>
+          <td><input type="text" form-control formControlName="motor6_280FEH2" /></td>
+          <td><input type="text" form-control formControlName="motor7_280FEV3" /></td>
+          <td><input type="text" form-control formControlName="motor8_280FEA3" /></td>
+          <td><input type="text" form-control formControlName="motor9_280FEH3" /></td>
+        </tr>
+        <tr>
+          <td>Motor DE</td>
+          <td><input type="text" form-control formControlName="motor1_281DEV1" /></td>
+          <td><input type="text" form-control formControlName="motor2_281DEA1" /></td>
+          <td><input type="text" form-control formControlName="motor3_281DEH1" /></td>
+          <td><input type="text" form-control formControlName="motor4_281DEV2" /></td>
+          <td><input type="text" form-control formControlName="motor5_281DEA2" /></td>
+          <td><input type="text" form-control formControlName="motor6_281DEH2" /></td>
+          <td><input type="text" form-control formControlName="motor7_281DEV3" /></td>
+          <td><input type="text" form-control formControlName="motor8_281DEA3" /></td>
+          <td><input type="text" form-control formControlName="motor9_281DEH3" /></td>
+        </tr>
+        <tr>
+          <td>Comp DE</td>
+          <td><input type="text" form-control formControlName="comp1_282DEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_282DEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_282DEH1" /></td>
+          <td><input type="text" form-control formControlName="comp4_282DEV2" /></td>
+          <td><input type="text" form-control formControlName="comp5_282DEA2" /></td>
+          <td><input type="text" form-control formControlName="comp6_282DEH2" /></td>
+          <td><input type="text" form-control formControlName="comp7_282DEV3" /></td>
+          <td><input type="text" form-control formControlName="comp8_282DEA3" /></td>
+          <td><input type="text" form-control formControlName="comp9_282DEH3" /></td>
+        </tr>
+        <tr>
+          <td>Comp FE</td>
+          <td><input type="text" form-control formControlName="comp1_283FEV1" /></td>
+          <td><input type="text" form-control formControlName="comp2_283FEA1" /></td>
+          <td><input type="text" form-control formControlName="comp3_283FEH1" /></td>
+          <td><input type="text" form-control formControlName="comp4_283FEV2" /></td>
+          <td><input type="text" form-control formControlName="comp5_283FEA2" /></td>
+          <td><input type="text" form-control formControlName="comp6_283FEH2" /></td>
+          <td><input type="text" form-control formControlName="comp7_283FEV3" /></td>
+          <td><input type="text" form-control formControlName="comp8_283FEA3" /></td>
+          <td><input type="text" form-control formControlName="comp9_283FEH3" /></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+    <h4 class="sub-heading">4. Attenuation across SV mounts. </h4>
+    <table border="1" class="vibration-table">
+      <thead>
+
+        <tr>
+          <th>Mounts</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+      </thead>
+
+      <!-- No.1 -->
+      <tr>
+        <td colspan="9" style="text-align:center;"><b><u>No.1</u></b></td>
+      </tr>
+      <tr>
+        <td>Top</td>
+        <td><input type="text" form-control formControlName="top_1_1_284"></td>
+        <td><input type="text" form-control formControlName="top_1_2_284"></td>
+        <td><input type="text" form-control formControlName="top_1_3_284"></td>
+        <td><input type="text" form-control formControlName="top_1_4_284"></td>
+        <td><input type="text" form-control formControlName="top_1_5_284"></td>
+        <td><input type="text" form-control formControlName="top_1_6_284"></td>
+      </tr>
+      <tr>
+        <td>Bot</td>
+        <td><input type="text" form-control formControlName="bot_1_1_285"></td>
+        <td><input type="text" form-control formControlName="bot_1_2_285"></td>
+        <td><input type="text" form-control formControlName="bot_1_3_285"></td>
+        <td><input type="text" form-control formControlName="bot_1_4_285"></td>
+        <td><input type="text" form-control formControlName="bot_1_5_285"></td>
+        <td><input type="text" form-control formControlName="bot_1_6_285"></td>
+      </tr>
+      <tr>
+        <td>Att.</td>
+        <td><input type="text" form-control formControlName="att_1_1_286"></td>
+        <td><input type="text" form-control formControlName="att_1_2_286"></td>
+        <td><input type="text" form-control formControlName="att_1_3_286"></td>
+        <td><input type="text" form-control formControlName="att_1_4_286"></td>
+        <td><input type="text" form-control formControlName="att_1_5_286"></td>
+        <td><input type="text" form-control formControlName="att_1_6_286"></td>
+      </tr>
+
+      <!-- No.2 -->
+      <tr>
+        <td colspan="9" style="text-align:center;"><b><u>No.2</u></b></td>
+      </tr>
+      <tr>
+        <td>Top</td>
+        <td><input type="text" form-control formControlName="top_2_1_287"></td>
+        <td><input type="text" form-control formControlName="top_2_2_287"></td>
+        <td><input type="text" form-control formControlName="top_2_3_287"></td>
+        <td><input type="text" form-control formControlName="top_2_4_287"></td>
+        <td><input type="text" form-control formControlName="top_2_5_287"></td>
+        <td><input type="text" form-control formControlName="top_2_6_287"></td>
+      </tr>
+      <tr>
+        <td>Bot</td>
+        <td><input type="text" form-control formControlName="bot_2_1_288"></td>
+        <td><input type="text" form-control formControlName="bot_2_2_288"></td>
+        <td><input type="text" form-control formControlName="bot_2_3_288"></td>
+        <td><input type="text" form-control formControlName="bot_2_4_288"></td>
+        <td><input type="text" form-control formControlName="bot_2_5_288"></td>
+        <td><input type="text" form-control formControlName="bot_2_6_288"></td>
+      </tr>
+
+      <!-- No.3 -->
+      <tr>
+        <td>Att.</td>
+        <td><input type="text" form-control formControlName="att_3_1_289"></td>
+        <td><input type="text" form-control formControlName="att_3_2_289"></td>
+        <td><input type="text" form-control formControlName="att_3_3_289"></td>
+        <td><input type="text" form-control formControlName="att_3_4_289"></td>
+        <td><input type="text" form-control formControlName="att_3_5_289"></td>
+        <td><input type="text" form-control formControlName="att_3_6_289"></td>
+      </tr>
+      <tr>
+        <td colspan="9" style="text-align:center;"><b><u>No.3</u></b></td>
+      </tr>
+      <tr>
+        <td>Top</td>
+        <td><input type="text" form-control formControlName="top_3_1_290"></td>
+        <td><input type="text" form-control formControlName="top_3_2_290"></td>
+        <td><input type="text" form-control formControlName="top_3_3_290"></td>
+        <td><input type="text" form-control formControlName="top_3_4_290"></td>
+        <td><input type="text" form-control formControlName="top_3_5_290"></td>
+        <td><input type="text" form-control formControlName="top_3_6_290"></td>
+      </tr>
+      <tr>
+        <td>Bot</td>
+        <td><input type="text" form-control formControlName="bot_3_1_291"></td>
+        <td><input type="text" form-control formControlName="bot_3_2_291"></td>
+        <td><input type="text" form-control formControlName="bot_3_3_291"></td>
+        <td><input type="text" form-control formControlName="bot_3_4_291"></td>
+        <td><input type="text" form-control formControlName="bot_3_5_291"></td>
+        <td><input type="text" form-control formControlName="bot_3_6_291"></td>
+      </tr>
+      <tr>
+        <td>Att.</td>
+        <td><input type="text" form-control formControlName="att_3_1_2_292"></td>
+        <td><input type="text" form-control formControlName="att_3_2_2_292"></td>
+        <td><input type="text" form-control formControlName="att_3_3_2_292"></td>
+        <td><input type="text" form-control formControlName="att_3_4_2_292"></td>
+        <td><input type="text" form-control formControlName="att_3_5_2_292"></td>
+        <td><input type="text" form-control formControlName="att_3_6_2_292"></td>
+      </tr>
+
+
+
+      <h3 class="main-heading">FUEL TRANSFER PUMP</h3>
+
+      <h4 class="sub-heading">1. Performance Parameters. </h4>
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th>Ser</th>
+            <th>Description</th>
+            <th>FER</th>
+            <th>AER</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(a)</td>
+            <td>Condition of SV mounts of pumps & motor</td>
+            <td><input type="text" form-control formControlName="no1aAER_263_293" /></td>
+            <td><input type="text" form-control formControlName="no2aFER_263_293" /></td>
+          </tr>
+          <tr>
+            <td>(b)</td>
+            <td>Condition of suction/discharge compensator </td>
+            <td><input type="text" form-control formControlName="no1bAER_264_294" /></td>
+            <td><input type="text" form-control formControlName="no2bFER_264_294" /></td>
+          </tr>
+          <tr>
+            <td>(c)</td>
+            <td>Securing of the suction/discharge pipe</td>
+            <td><input type="text" form-control formControlName="no1cAER_265_295" /></td>
+            <td><input type="text" form-control formControlName="no2cFER_265_295" /></td>
+          </tr>
+          <tr>
+            <td>(d)</td>
+            <td>Abnormal noise</td>
+            <td><input type="text" form-control formControlName="no1dAER_266_296" /></td>
+            <td><input type="text" form-control formControlName="no2dFER_266_296" /></td>
+          </tr>
+          <tr>
+            <td>(e)</td>
+            <td>Excessive vibration</td>
+            <td><input type="text" form-control formControlName="no1eAER_267_297" /></td>
+            <td><input type="text" form-control formControlName="no2eFER_267_297" /></td>
+          </tr>
+          <tr>
+            <td>(f)</td>
+            <td>Gland leak (Mechanical seal)</td>
+            <td><input type="text" form-control formControlName="no1fAER_268_298" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_268_298" /></td>
+          </tr>
+          <tr>
+            <td>(g)</td>
+            <td>Pressure fluctuation</td>
+            <td><input type="text" form-control formControlName="no1gAER_269_299" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_269_299" /></td>
+          </tr>
+          <tr>
+            <td>(h)</td>
+            <td>Suction pressure</td>
+            <td><input type="text" form-control formControlName="no1hAER_270_300" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_270_300" /></td>
+          </tr>
+          <tr>
+            <td>(j)</td>
+            <td>Discharge Pressure</td>
+            <td><input type="text" form-control formControlName="no1fAER_271_301" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_271_301" /></td>
+          </tr>
+          <tr>
+            <td>(k)</td>
+            <td>Start/stop from local and remote</td>
+            <td><input type="text" form-control formControlName="no1gAER_272_302" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_272_302" /></td>
+          </tr>
+          <tr>
+            <td>(l)</td>
+            <td>Valves and gauges provided with tallies</td>
+            <td><input type="text" form-control formControlName="no1hAER_273_303" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_273_303" /></td>
+          </tr>
+          <tr>
+            <td>(m)</td>
+            <td>Operating instructions displayed for pump</td>
+            <td><input type="text" form-control formControlName="no1hAER_274_304" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_274_304" /></td>
+          </tr>
+          <tr>
+            <td>(n)</td>
+            <td>Pipe painting as per color standard</td>
+            <td><input type="text" form-control formControlName="no1iAER_275_305" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_275_305" /></td>
+          </tr>
+          <tr>
+            <td>(p)</td>
+            <td>Starting current</td>
+            <td><input type="text" form-control formControlName="no1jAER_276_306" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_276_306" /></td>
+          </tr>
+          <tr>
+            <td>(q)</td>
+            <td>Running current</td>
+            <td><input type="text" form-control formControlName="no1kAER_277_307" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_277_307" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. <u>SPM Levels</u></h3>
+
+      <table class="spm-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>FER</th>
+            <th>AER</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="fe11_278_308" /></td>
+            <td><input type="text" form-control formControlName="fe22_278_308" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="de11_279_309" /></td>
+            <td><input type="text" form-control formControlName="de22_279_309" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. <u>Overall Vibration</u></h3>
+
+      <!-- First Table -->
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th rowspan="2">Location</th>
+            <th colspan="3">FER</th>
+            <th colspan="3">AER</th>
+          </tr>
+          <tr>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="motor1_280_310FEV1" /></td>
+            <td><input type="text" form-control formControlName="motor2_280_310FEA1" /></td>
+            <td><input type="text" form-control formControlName="motor3_280_310FEH1" /></td>
+            <td><input type="text" form-control formControlName="motor4_280_310FEV2" /></td>
+            <td><input type="text" form-control formControlName="motor5_280_310FEA2" /></td>
+            <td><input type="text" form-control formControlName="motor6_280_310FEH2" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="motor1_281_311DEV1" /></td>
+            <td><input type="text" form-control formControlName="motor2_281_311DEA1" /></td>
+            <td><input type="text" form-control formControlName="motor3_281_311DEH1" /></td>
+            <td><input type="text" form-control formControlName="motor4_281_311DEV2" /></td>
+            <td><input type="text" form-control formControlName="motor5_281_311DEA2" /></td>
+            <td><input type="text" form-control formControlName="motor6_281_311DEH2" /></td>
+          </tr>
+          <tr>
+            <td>Comp DE</td>
+            <td><input type="text" form-control formControlName="comp1_282_312DEV1" /></td>
+            <td><input type="text" form-control formControlName="comp2_282_312DEA1" /></td>
+            <td><input type="text" form-control formControlName="comp3_282_312DEH1" /></td>
+            <td><input type="text" form-control formControlName="comp4_282_312DEV2" /></td>
+            <td><input type="text" form-control formControlName="comp5_282_312DEA2" /></td>
+            <td><input type="text" form-control formControlName="comp6_282_312DEH2" /></td>
+          </tr>
+          <tr>
+            <td>Comp FE</td>
+            <td><input type="text" form-control formControlName="comp1_283_313FEV1" /></td>
+            <td><input type="text" form-control formControlName="comp2_283_313FEA1" /></td>
+            <td><input type="text" form-control formControlName="comp3_283_313FEH1" /></td>
+            <td><input type="text" form-control formControlName="comp4_283_313FEV2" /></td>
+            <td><input type="text" form-control formControlName="comp5_283_313FEA2" /></td>
+            <td><input type="text" form-control formControlName="comp6_283_313FEH2" /></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <h4 class="sub-heading">4. Attenuation across SV mounts. </h4>
+      <table border="1" class="vibration-table">
+        <thead>
+
+          <tr>
+            <th>Mounts</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+          </tr>
+        </thead>
+
+        <!-- No.1 -->
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>FER</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_1_1_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_2_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_3_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_4_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_5_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_6_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_7_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_8_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_9_284_314"></td>
+          <td><input type="text" form-control formControlName="top_1_10_284_314"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_1_1_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_2_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_3_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_4_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_5_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_6_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_7_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_8_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_9_285_315"></td>
+          <td><input type="text" form-control formControlName="bot_1_10_285_315"></td>
+        </tr>
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_1_1_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_2_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_3_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_4_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_5_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_6_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_7_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_8_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_9_286_316"></td>
+          <td><input type="text" form-control formControlName="att_1_10_286_316"></td>
+        </tr>
+
+        <!-- No.2 -->
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>AER</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_2_1_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_2_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_3_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_4_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_5_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_6_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_7_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_8_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_9_287_317"></td>
+          <td><input type="text" form-control formControlName="top_2_10_287_317"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_2_1_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_2_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_3_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_4_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_5_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_6_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_7_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_8_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_9_288_318"></td>
+          <td><input type="text" form-control formControlName="bot_2_10_288_318"></td>
+        </tr>
+
+        <!-- No.3 -->
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_3_1_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_2_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_3_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_4_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_5_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_6_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_7_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_8_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_9_289_319"></td>
+          <td><input type="text" form-control formControlName="att_3_10_289_319"></td>
+        </tr>
+
+
+      </table>
+
+
+
+
+      <h3>5. <u>Capacity trials.</u></h3>
+
+      <div class="trial-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Ser</th>
+              <th>Description</th>
+              <th>Unit</th>
+              <th>Initial reading</th>
+              <th>Final reading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- FER -->
+            <tr>
+              <td colspan="5"><strong>FER</strong></td>
+            </tr>
+            <tr>
+              <td>(a)</td>
+              <td>Sounding of storage tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="fer_storage_initial_320" /></td>
+              <td><input formControlName="fer_storage_final_320" /></td>
+            </tr>
+            <tr>
+              <td>(b)</td>
+              <td>Sounding of RU tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="fer_ru_initial_321" /></td>
+              <td><input formControlName="fer_ru_final_321" /></td>
+            </tr>
+            <tr>
+              <td>(c)</td>
+              <td>Total Fuel Transferred</td>
+              <td>Ltr</td>
+              <td colspan="2"><input formControlName="fer_fuel_initial_322" /></td>
+            </tr>
+            <tr>
+              <td>(d)</td>
+              <td>Time of transfer</td>
+              <td>min</td>
+              <td colspan="2"><input formControlName="fer_time_initial_323" /></td>
+            </tr>
+            <tr>
+              <td>(e)</td>
+              <td>Capacity achieved</td>
+              <td>TPH</td>
+              <td colspan="2"><input formControlName="fer_capacity_initial_324" /></td>
+            </tr>
+
+            <!-- AER -->
+            <tr>
+              <td colspan="5"><strong>AER</strong></td>
+            </tr>
+            <tr>
+              <th>Ser</th>
+              <th>Description</th>
+              <th>Unit</th>
+              <th>Initial reading</th>
+              <th>Final reading</th>
+            </tr>
+            <tr>
+              <td>(a)</td>
+              <td>Sounding of storage tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="aer_storage_initial_325" /></td>
+              <td><input formControlName="aer_storage_final_325" /></td>
+            </tr>
+            <tr>
+              <td>(b)</td>
+              <td>Sounding of RU tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="aer_ru_initial_326" /></td>
+              <td><input formControlName="aer_ru_final_326" /></td>
+            </tr>
+            <tr>
+              <td>(c)</td>
+              <td>Total Fuel Transferred</td>
+              <td>Ltr</td>
+              <td colspan="2"><input formControlName="aer_fuel_initial_327" /></td>
+            </tr>
+            <tr>
+              <td>(d)</td>
+              <td>Time of transfer</td>
+              <td>min</td>
+              <td colspan="2"><input formControlName="aer_time_initial_328" /></td>
+            </tr>
+            <tr>
+              <td>(e)</td>
+              <td>Capacity achieved</td>
+              <td>TPH</td>
+              <td colspan="2"><input formControlName="aer_capacity_initial_329" /></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <h3 class="main-heading">GT LUB OIL TRANSFER PUMP</h3>
+
+      <h4 class="sub-heading">1. Performance Parameters. </h4>
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th>Ser</th>
+            <th>Description</th>
+            <th>FER</th>
+            <th>AER</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(a)</td>
+            <td>Condition of SV mounts of pumps & motor</td>
+            <td><input type="text" form-control formControlName="no1aAER_263_330" /></td>
+            <td><input type="text" form-control formControlName="no2aFER_263_330" /></td>
+          </tr>
+          <tr>
+            <td>(b)</td>
+            <td>Condition of suction/discharge compensator </td>
+            <td><input type="text" form-control formControlName="no1bAER_264_331" /></td>
+            <td><input type="text" form-control formControlName="no2bFER_264_331" /></td>
+          </tr>
+          <tr>
+            <td>(c)</td>
+            <td>Securing of the suction/discharge pipe</td>
+            <td><input type="text" form-control formControlName="no1cAER_265_332" /></td>
+            <td><input type="text" form-control formControlName="no2cFER_265_332" /></td>
+          </tr>
+          <tr>
+            <td>(d)</td>
+            <td>Abnormal noise</td>
+            <td><input type="text" form-control formControlName="no1dAER_266_333" /></td>
+            <td><input type="text" form-control formControlName="no2dFER_266_333" /></td>
+          </tr>
+          <tr>
+            <td>(e)</td>
+            <td>Excessive vibration</td>
+            <td><input type="text" form-control formControlName="no1eAER_267_334" /></td>
+            <td><input type="text" form-control formControlName="no2eFER_267_334" /></td>
+          </tr>
+          <tr>
+            <td>(f)</td>
+            <td>Gland leak (Mechanical seal)</td>
+            <td><input type="text" form-control formControlName="no1fAER_268_335" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_268_335" /></td>
+          </tr>
+          <tr>
+            <td>(g)</td>
+            <td>Pressure fluctuation</td>
+            <td><input type="text" form-control formControlName="no1gAER_269_336" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_269_336" /></td>
+          </tr>
+          <tr>
+            <td>(h)</td>
+            <td>Suction pressure</td>
+            <td><input type="text" form-control formControlName="no1hAER_270_337" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_270_337" /></td>
+          </tr>
+          <tr>
+            <td>(j)</td>
+            <td>Discharge Pressure</td>
+            <td><input type="text" form-control formControlName="no1fAER_271_338" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_271_338" /></td>
+          </tr>
+          <tr>
+            <td>(k)</td>
+            <td>Start/stop from local and remote</td>
+            <td><input type="text" form-control formControlName="no1gAER_272_339" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_272_339" /></td>
+          </tr>
+          <tr>
+            <td>(l)</td>
+            <td>Valves and gauges provided with tallies</td>
+            <td><input type="text" form-control formControlName="no1hAER_273_340" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_273_340" /></td>
+          </tr>
+          <tr>
+            <td>(m)</td>
+            <td>Operating instructions displayed for pump</td>
+            <td><input type="text" form-control formControlName="no1hAER_274_341" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_274_341" /></td>
+          </tr>
+          <tr>
+            <td>(n)</td>
+            <td>Pipe painting as per color standard</td>
+            <td><input type="text" form-control formControlName="no1iAER_275_342" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_275_342" /></td>
+          </tr>
+          <tr>
+            <td>(p)</td>
+            <td>Starting current</td>
+            <td><input type="text" form-control formControlName="no1jAER_276_343" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_276_343" /></td>
+          </tr>
+          <tr>
+            <td>(q)</td>
+            <td>Running current</td>
+            <td><input type="text" form-control formControlName="no1kAER_277_344" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_277_344" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. <u>SPM Levels</u></h3>
+
+      <table class="spm-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>FER</th>
+            <th>AER</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="fe1_278_345" /></td>
+            <td><input type="text" form-control formControlName="fe2_278_345" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="de1_279_346" /></td>
+            <td><input type="text" form-control formControlName="de2_279_346" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. <u>Overall Vibration</u></h3>
+
+      <!-- First Table -->
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th rowspan="2">Location</th>
+            <th colspan="3">FER</th>
+            <th colspan="3">AER</th>
+          </tr>
+          <tr>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="motor1_280_347FEV1" /></td>
+            <td><input type="text" form-control formControlName="motor2_280_347FEA1" /></td>
+            <td><input type="text" form-control formControlName="motor3_280_347FEH1" /></td>
+            <td><input type="text" form-control formControlName="motor4_280_347FEV2" /></td>
+            <td><input type="text" form-control formControlName="motor5_280_347FEA2" /></td>
+            <td><input type="text" form-control formControlName="motor6_280_347FEH2" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="motor1_281_348DEV1" /></td>
+            <td><input type="text" form-control formControlName="motor2_281_348DEA1" /></td>
+            <td><input type="text" form-control formControlName="motor3_281_348DEH1" /></td>
+            <td><input type="text" form-control formControlName="motor4_281_348DEV2" /></td>
+            <td><input type="text" form-control formControlName="motor5_281_348DEA2" /></td>
+            <td><input type="text" form-control formControlName="motor6_281_348DEH2" /></td>
+          </tr>
+          <tr>
+            <td>Comp DE</td>
+            <td><input type="text" form-control formControlName="comp1_282_349DEV1" /></td>
+            <td><input type="text" form-control formControlName="comp2_282_349DEA1" /></td>
+            <td><input type="text" form-control formControlName="comp3_282_349DEH1" /></td>
+            <td><input type="text" form-control formControlName="comp4_282_349DEV2" /></td>
+            <td><input type="text" form-control formControlName="comp5_282_349DEA2" /></td>
+            <td><input type="text" form-control formControlName="comp6_282_349DEH2" /></td>
+          </tr>
+          <tr>
+            <td>Comp FE</td>
+            <td><input type="text" form-control formControlName="comp1_283_350FEV1" /></td>
+            <td><input type="text" form-control formControlName="comp2_283_350FEA1" /></td>
+            <td><input type="text" form-control formControlName="comp3_283_350FEH1" /></td>
+            <td><input type="text" form-control formControlName="comp4_283_350FEV2" /></td>
+            <td><input type="text" form-control formControlName="comp5_283_350FEA2" /></td>
+            <td><input type="text" form-control formControlName="comp6_283_350FEH2" /></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <h4 class="sub-heading">4. Attenuation across SV mounts. </h4>
+      <table border="1" class="vibration-table">
+        <thead>
+
+          <tr>
+            <th>Mounts</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+          </tr>
+        </thead>
+
+        <!-- No.1 -->
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>No.1</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_1_1_284_351"></td>
+          <td><input type="text" form-control formControlName="top_1_2_284_351"></td>
+          <td><input type="text" form-control formControlName="top_1_3_284_351"></td>
+          <td><input type="text" form-control formControlName="top_1_4_284_351"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_1_1_285_352"></td>
+          <td><input type="text" form-control formControlName="bot_1_2_285_352"></td>
+          <td><input type="text" form-control formControlName="bot_1_3_285_352"></td>
+          <td><input type="text" form-control formControlName="bot_1_4_285_352"></td>
+        </tr>
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_1_1_286_353"></td>
+          <td><input type="text" form-control formControlName="att_1_2_286_353"></td>
+          <td><input type="text" form-control formControlName="att_1_3_286_353"></td>
+          <td><input type="text" form-control formControlName="att_1_4_286_353"></td>
+        </tr>
+
+        <!-- No.2 -->
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>No.2</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_2_1_287_354"></td>
+          <td><input type="text" form-control formControlName="top_2_2_287_354"></td>
+          <td><input type="text" form-control formControlName="top_2_3_287_354"></td>
+          <td><input type="text" form-control formControlName="top_2_4_287_354"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_2_1_288_355"></td>
+          <td><input type="text" form-control formControlName="bot_2_2_288_355"></td>
+          <td><input type="text" form-control formControlName="bot_2_3_288_355"></td>
+          <td><input type="text" form-control formControlName="bot_2_4_288_355"></td>
+        </tr>
+
+        <!-- No.3 -->
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_3_1_289_356"></td>
+          <td><input type="text" form-control formControlName="att_3_2_289_356"></td>
+          <td><input type="text" form-control formControlName="att_3_3_289_356"></td>
+          <td><input type="text" form-control formControlName="att_3_4_289_356"></td>
+        </tr>
+
+
+      </table>
+
+
+
+
+
+      <h3>5. <u>Capacity trials.</u></h3>
+
+      <div class="trial-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Ser</th>
+              <th>Description</th>
+              <th>Unit</th>
+              <th>Initial reading</th>
+              <th>Final reading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- FER -->
+            <tr>
+              <td colspan="5"><strong>FER</strong></td>
+            </tr>
+            <tr>
+              <td>(a)</td>
+              <td>Sounding of storage tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="fer_storage_initial_357" /></td>
+              <td><input formControlName="fer_storage_final_357" /></td>
+            </tr>
+            <tr>
+              <td>(b)</td>
+              <td>Sounding of RU tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="fer_ru_initial_358" /></td>
+              <td><input formControlName="fer_ru_final_358" /></td>
+            </tr>
+            <tr>
+              <td>(c)</td>
+              <td>Total Fuel Transferred</td>
+              <td>Ltr</td>
+              <td colspan="2"><input formControlName="fer_fuel_initial_359" /></td>
+            </tr>
+            <tr>
+              <td>(d)</td>
+              <td>Time of transfer</td>
+              <td>min</td>
+              <td colspan="2"><input formControlName="fer_time_initial_360" /></td>
+            </tr>
+            <tr>
+              <td>(e)</td>
+              <td>Capacity achieved</td>
+              <td>TPH</td>
+              <td colspan="2"><input formControlName="fer_capacity_initial_361" /></td>
+            </tr>
+
+            <!-- AER -->
+            <tr>
+              <td colspan="5"><strong>AER</strong></td>
+            </tr>
+            <tr>
+              <th>Ser</th>
+              <th>Description</th>
+              <th>Unit</th>
+              <th>Initial reading</th>
+              <th>Final reading</th>
+            </tr>
+            <tr>
+              <td>(a)</td>
+              <td>Sounding of storage tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="aer_storage_initial_362" /></td>
+              <td><input formControlName="aer_storage_final_362" /></td>
+            </tr>
+            <tr>
+              <td>(b)</td>
+              <td>Sounding of RU tank</td>
+              <td>Ltr</td>
+              <td><input formControlName="aer_ru_initial_363" /></td>
+              <td><input formControlName="aer_ru_final_363" /></td>
+            </tr>
+            <tr>
+              <td>(c)</td>
+              <td>Total Fuel Transferred</td>
+              <td>Ltr</td>
+              <td colspan="2"><input formControlName="aer_fuel_initial_364" /></td>
+            </tr>
+            <tr>
+              <td>(d)</td>
+              <td>Time of transfer</td>
+              <td>min</td>
+              <td colspan="2"><input formControlName="aer_time_initial_365" /></td>
+            </tr>
+            <tr>
+              <td>(e)</td>
+              <td>Capacity achieved</td>
+              <td>TPH</td>
+              <td colspan="2"><input formControlName="aer_capacity_initial_366" /></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <h3 class="main-heading">GT BOOSTER PUMPS</h3>
+
+      <h4 class="sub-heading">1. Performance Parameters. </h4>
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th>Ser</th>
+            <th>Description</th>
+            <th>GT1</th>
+            <th>GT2</th>
+            <th>GT3</th>
+            <th>GT4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(a)</td>
+            <td>Condition of SV mounts of pumps & motor</td>
+            <td><input type="text" form-control formControlName="no1aAER_263_367" /></td>
+            <td><input type="text" form-control formControlName="no2aFER_263_367" /></td>
+            <td><input type="text" form-control formControlName="no3aAER_263_367" /></td>
+            <td><input type="text" form-control formControlName="no4aFER_263_367" /></td>
+          </tr>
+          <tr>
+            <td>(b)</td>
+            <td>Condition of suction/discharge compensator </td>
+            <td><input type="text" form-control formControlName="no1b_264_368" /></td>
+            <td><input type="text" form-control formControlName="no2bFER_264_368" /></td>
+            <td><input type="text" form-control formControlName="no3b_264_368" /></td>
+            <td><input type="text" form-control formControlName="no4bFER_264_368" /></td>
+          </tr>
+          <tr>
+            <td>(c)</td>
+            <td>Securing of the suction/discharge pipe</td>
+            <td><input type="text" form-control formControlName="no1c_265_369" /></td>
+            <td><input type="text" form-control formControlName="no2cFER_265_369" /></td>
+            <td><input type="text" form-control formControlName="no3c_265_369" /></td>
+            <td><input type="text" form-control formControlName="no4cFER_265_369" /></td>
+          </tr>
+          <tr>
+            <td>(d)</td>
+            <td>Abnormal noise</td>
+            <td><input type="text" form-control formControlName="no1d_266_370" /></td>
+            <td><input type="text" form-control formControlName="no2dFER_266_370" /></td>
+            <td><input type="text" form-control formControlName="no3d_266_370" /></td>
+            <td><input type="text" form-control formControlName="no4dFER_266_370" /></td>
+          </tr>
+          <tr>
+            <td>(e)</td>
+            <td>Excessive vibration</td>
+            <td><input type="text" form-control formControlName="no1e_267_371" /></td>
+            <td><input type="text" form-control formControlName="no2eFER_267_371" /></td>
+            <td><input type="text" form-control formControlName="no3e_267_371" /></td>
+            <td><input type="text" form-control formControlName="no4eFER_267_371" /></td>
+          </tr>
+          <tr>
+            <td>(f)</td>
+            <td>Gland leak (Mechanical seal)</td>
+            <td><input type="text" form-control formControlName="no1f_268_372" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_268_372" /></td>
+            <td><input type="text" form-control formControlName="no3f_268_372" /></td>
+            <td><input type="text" form-control formControlName="no4fFER_268_372" /></td>
+          </tr>
+          <tr>
+            <td>(g)</td>
+            <td>Pressure fluctuation</td>
+            <td><input type="text" form-control formControlName="no1g_269_373" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_269_373" /></td>
+            <td><input type="text" form-control formControlName="no3g_269_373" /></td>
+            <td><input type="text" form-control formControlName="no4gFER_269_373" /></td>
+          </tr>
+          <tr>
+            <td>(h)</td>
+            <td>Suction pressure</td>
+            <td><input type="text" form-control formControlName="no1h_270_374" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_270_374" /></td>
+            <td><input type="text" form-control formControlName="no3h_270_374" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_270_374" /></td>
+          </tr>
+          <tr>
+            <td>(j)</td>
+            <td>Discharge Pressure</td>
+            <td><input type="text" form-control formControlName="no1f_271_375" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_271_375" /></td>
+            <td><input type="text" form-control formControlName="no3f_271_375" /></td>
+            <td><input type="text" form-control formControlName="no4fFER_271_375" /></td>
+          </tr>
+          <tr>
+            <td>(k)</td>
+            <td>Start/stop from local and remote</td>
+            <td><input type="text" form-control formControlName="no1g_272_376" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_272_376" /></td>
+            <td><input type="text" form-control formControlName="no3g_272_376" /></td>
+            <td><input type="text" form-control formControlName="no4gFER_272_376" /></td>
+          </tr>
+          <tr>
+            <td>(l)</td>
+            <td>Valves and gauges provided with tallies</td>
+            <td><input type="text" form-control formControlName="no1h_273_377" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_273_377" /></td>
+            <td><input type="text" form-control formControlName="no3h_273_377" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_273_377" /></td>
+          </tr>
+          <tr>
+            <td>(m)</td>
+            <td>Operating instructions displayed for pump</td>
+            <td><input type="text" form-control formControlName="no1h_274_378" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_274_378" /></td>
+            <td><input type="text" form-control formControlName="no3h_274_378" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_274_378" /></td>
+          </tr>
+          <tr>
+            <td>(n)</td>
+            <td>Pipe painting as per color standard</td>
+            <td><input type="text" form-control formControlName="no1f_275_379" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_275_379" /></td>
+            <td><input type="text" form-control formControlName="no3f_275_379" /></td>
+            <td><input type="text" form-control formControlName="no4fFER_275_379" /></td>
+          </tr>
+          <tr>
+            <td>(p)</td>
+            <td>Starting current</td>
+            <td><input type="text" form-control formControlName="no1g_276_380" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_276_380" /></td>
+            <td><input type="text" form-control formControlName="no3g_276_380" /></td>
+            <td><input type="text" form-control formControlName="no4gFER_276_380" /></td>
+          </tr>
+          <tr>
+            <td>(q)</td>
+            <td>Running current</td>
+            <td><input type="text" form-control formControlName="no1h_277_381" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_277_381" /></td>
+            <td><input type="text" form-control formControlName="no3h_277_381" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_277_381" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. <u>SPM Levels</u></h3>
+
+      <table class="spm-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>GT1</th>
+            <th>GT2</th>
+            <th>GT3</th>
+            <th>GT4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="fe1_278_382" /></td>
+            <td><input type="text" form-control formControlName="fe2_278_382" /></td>
+            <td><input type="text" form-control formControlName="fe3_278_382" /></td>
+            <td><input type="text" form-control formControlName="fe4_278_382" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="de1_279_383" /></td>
+            <td><input type="text" form-control formControlName="de2_279_383" /></td>
+            <td><input type="text" form-control formControlName="de3_279_383" /></td>
+            <td><input type="text" form-control formControlName="de4_279_383" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. <u>Overall Vibration</u></h3>
+
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th rowspan="2">Location</th>
+            <th colspan="3">GT1</th>
+            <th colspan="3">GT2</th>
+            <th colspan="3">GT3</th>
+            <th colspan="3">GT4</th>
+          </tr>
+          <tr>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="motor1_280FEV1_384" /></td>
+            <td><input type="text" form-control formControlName="motor2_280FEA1_384" /></td>
+            <td><input type="text" form-control formControlName="motor3_280FEH1_384" /></td>
+            <td><input type="text" form-control formControlName="motor4_280FEV2_384" /></td>
+            <td><input type="text" form-control formControlName="motor5_280FEA2_384" /></td>
+            <td><input type="text" form-control formControlName="motor6_280FEH2_384" /></td>
+            <td><input type="text" form-control formControlName="motor7_280FEV1_384" /></td>
+            <td><input type="text" form-control formControlName="motor8_280FEA1_384" /></td>
+            <td><input type="text" form-control formControlName="motor9_280FEH1_384" /></td>
+            <td><input type="text" form-control formControlName="motor10_280FEV2_384" /></td>
+            <td><input type="text" form-control formControlName="motor11_280FEA2_384" /></td>
+            <td><input type="text" form-control formControlName="motor12_280FEH2_384" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="motor1_281DEV1_385" /></td>
+            <td><input type="text" form-control formControlName="motor2_281DEA1_385" /></td>
+            <td><input type="text" form-control formControlName="motor3_281DEH1_385" /></td>
+            <td><input type="text" form-control formControlName="motor4_281DEV2_385" /></td>
+            <td><input type="text" form-control formControlName="motor5_281DEA2_385" /></td>
+            <td><input type="text" form-control formControlName="motor6_281DEH2_385" /></td>
+            <td><input type="text" form-control formControlName="motor7_281DEV1_385" /></td>
+            <td><input type="text" form-control formControlName="motor8_281DEA1_385" /></td>
+            <td><input type="text" form-control formControlName="motor9_281DEH1_385" /></td>
+            <td><input type="text" form-control formControlName="motor10_281DEV2_385" /></td>
+            <td><input type="text" form-control formControlName="motor11_281DEA2_385" /></td>
+            <td><input type="text" form-control formControlName="motor12_281DEH2_385" /></td>
+          </tr>
+          <tr>
+            <td>Comp DE</td>
+            <td><input type="text" form-control formControlName="comp1_282DEV1_386" /></td>
+            <td><input type="text" form-control formControlName="comp2_282DEA1_386" /></td>
+            <td><input type="text" form-control formControlName="comp3_282DEH1_386" /></td>
+            <td><input type="text" form-control formControlName="comp4_282DEV2_386" /></td>
+            <td><input type="text" form-control formControlName="comp5_282DEA2_386" /></td>
+            <td><input type="text" form-control formControlName="comp6_282DEH2_386" /></td>
+            <td><input type="text" form-control formControlName="comp7_282DEV1_386" /></td>
+            <td><input type="text" form-control formControlName="comp8_282DEA1_386" /></td>
+            <td><input type="text" form-control formControlName="comp9_282DEH1_386" /></td>
+            <td><input type="text" form-control formControlName="comp10_282DEV2_386" /></td>
+            <td><input type="text" form-control formControlName="comp11_282DEA2_386" /></td>
+            <td><input type="text" form-control formControlName="comp12_282DEH2_386" /></td>
+          </tr>
+          <tr>
+            <td>Comp FE</td>
+            <td><input type="text" form-control formControlName="comp1_283FEV1_387" /></td>
+            <td><input type="text" form-control formControlName="comp2_283FEA1_387" /></td>
+            <td><input type="text" form-control formControlName="comp3_283FEH1_387" /></td>
+            <td><input type="text" form-control formControlName="comp4_283FEV2_387" /></td>
+            <td><input type="text" form-control formControlName="comp5_283FEA2_387" /></td>
+            <td><input type="text" form-control formControlName="comp6_283FEH2_387" /></td>
+            <td><input type="text" form-control formControlName="comp7_283FEV1_387" /></td>
+            <td><input type="text" form-control formControlName="comp8_283FEA1_387" /></td>
+            <td><input type="text" form-control formControlName="comp9_283FEH1_387" /></td>
+            <td><input type="text" form-control formControlName="comp10_283FEV2_387" /></td>
+            <td><input type="text" form-control formControlName="comp11_283FEA2_387" /></td>
+            <td><input type="text" form-control formControlName="comp12_283FEH2_387" /></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+      <h4 class="sub-heading">4. Mount Attenuation. </h4>
+      <table border="1" class="vibration-table">
+        <thead>
+
+          <tr>
+            <th>Mounts</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+          </tr>
+        </thead>
+
+        <!-- No.1 -->
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>GT.1</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_1_1_284_388"></td>
+          <td><input type="text" form-control formControlName="top_1_2_284_388"></td>
+          <td><input type="text" form-control formControlName="top_1_3_284_388"></td>
+          <td><input type="text" form-control formControlName="top_1_4_284_388"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_1_1_285_389"></td>
+          <td><input type="text" form-control formControlName="bot_1_2_285_389"></td>
+          <td><input type="text" form-control formControlName="bot_1_3_285_389"></td>
+          <td><input type="text" form-control formControlName="bot_1_4_285_389"></td>
+        </tr>
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_1_1_286_390"></td>
+          <td><input type="text" form-control formControlName="att_1_2_286_390"></td>
+          <td><input type="text" form-control formControlName="att_1_3_286_390"></td>
+          <td><input type="text" form-control formControlName="att_1_4_286_390"></td>
+        </tr>
+
+        <!-- No.2 -->
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>GT.2</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_2_1_287_391"></td>
+          <td><input type="text" form-control formControlName="top_2_2_287_391"></td>
+          <td><input type="text" form-control formControlName="top_2_3_287_391"></td>
+          <td><input type="text" form-control formControlName="top_2_4_287_391"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_2_1_288_392"></td>
+          <td><input type="text" form-control formControlName="bot_2_2_288_392"></td>
+          <td><input type="text" form-control formControlName="bot_2_3_288_392"></td>
+          <td><input type="text" form-control formControlName="bot_2_4_288_392"></td>
+        </tr>
+
+        <!-- No.3 -->
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_3_1_289_393"></td>
+          <td><input type="text" form-control formControlName="att_3_2_289_393"></td>
+          <td><input type="text" form-control formControlName="att_3_3_289_393"></td>
+          <td><input type="text" form-control formControlName="att_3_4_289_393"></td>
+        </tr>
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>GT.3</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_2_1_287_394"></td>
+          <td><input type="text" form-control formControlName="top_2_2_287_394"></td>
+          <td><input type="text" form-control formControlName="top_2_3_287_394"></td>
+          <td><input type="text" form-control formControlName="top_2_4_287_394"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_2_1_288_395"></td>
+          <td><input type="text" form-control formControlName="bot_2_2_288_395"></td>
+          <td><input type="text" form-control formControlName="bot_2_3_288_395"></td>
+          <td><input type="text" form-control formControlName="bot_2_4_288_395"></td>
+        </tr>
+
+        <!-- No.3 -->
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_3_1_289_396"></td>
+          <td><input type="text" form-control formControlName="att_3_2_289_396"></td>
+          <td><input type="text" form-control formControlName="att_3_3_289_396"></td>
+          <td><input type="text" form-control formControlName="att_3_4_289_396"></td>
+        </tr>
+        <tr>
+          <td colspan="9" style="text-align:center;"><b><u>GT.4</u></b></td>
+        </tr>
+        <tr>
+          <td>Top</td>
+          <td><input type="text" form-control formControlName="top_2_1_287_397"></td>
+          <td><input type="text" form-control formControlName="top_2_2_287_397"></td>
+          <td><input type="text" form-control formControlName="top_2_3_287_397"></td>
+          <td><input type="text" form-control formControlName="top_2_4_287_397"></td>
+        </tr>
+        <tr>
+          <td>Bot</td>
+          <td><input type="text" form-control formControlName="bot_2_1_288_398"></td>
+          <td><input type="text" form-control formControlName="bot_2_2_288_398"></td>
+          <td><input type="text" form-control formControlName="bot_2_3_288_398"></td>
+          <td><input type="text" form-control formControlName="bot_2_4_288_398"></td>
+        </tr>
+
+        <!-- No.3 -->
+        <tr>
+          <td>Att.</td>
+          <td><input type="text" form-control formControlName="att_3_1_289_399"></td>
+          <td><input type="text" form-control formControlName="att_3_2_289_399"></td>
+          <td><input type="text" form-control formControlName="att_3_3_289_399"></td>
+          <td><input type="text" form-control formControlName="att_3_4_289_399"></td>
+        </tr>
+
+
+      </table>
+
+      <h3 class="main-heading">GTG FUEL BOOSTER PUMP</h3>
+
+      <h4 class="sub-heading">1. Performance Parameters. </h4>
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th>Ser</th>
+            <th>Description</th>
+            <th>M1</th>
+            <th>M4</th>
+            <th>J1</th>
+            <th>J3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(a)</td>
+            <td>Condition of SV mounts of pumps & motor</td>
+            <td><input type="text" form-control formControlName="no1aAER_263_400" /></td>
+            <td><input type="text" form-control formControlName="no2aFER_263_400" /></td>
+            <td><input type="text" form-control formControlName="no3aAER_263_400" /></td>
+            <td><input type="text" form-control formControlName="no4aFER_263_400" /></td>
+          </tr>
+          <tr>
+            <td>(b)</td>
+            <td>Condition of suction/discharge compensator </td>
+            <td><input type="text" form-control formControlName="no1b_264_401" /></td>
+            <td><input type="text" form-control formControlName="no2bFER_264_401" /></td>
+            <td><input type="text" form-control formControlName="no3b_264_401" /></td>
+            <td><input type="text" form-control formControlName="no4bFER_264_401" /></td>
+          </tr>
+          <tr>
+            <td>(c)</td>
+            <td>Securing of the suction/discharge pipe</td>
+            <td><input type="text" form-control formControlName="no1c_265_402" /></td>
+            <td><input type="text" form-control formControlName="no2cFER_265_402" /></td>
+            <td><input type="text" form-control formControlName="no3c_265_402" /></td>
+            <td><input type="text" form-control formControlName="no4cFER_265_402" /></td>
+          </tr>
+          <tr>
+            <td>(d)</td>
+            <td>Abnormal noise</td>
+            <td><input type="text" form-control formControlName="no1d_266_403" /></td>
+            <td><input type="text" form-control formControlName="no2dFER_266_403" /></td>
+            <td><input type="text" form-control formControlName="no3d_266_403" /></td>
+            <td><input type="text" form-control formControlName="no4dFER_266_403" /></td>
+          </tr>
+          <tr>
+            <td>(e)</td>
+            <td>Excessive vibration</td>
+            <td><input type="text" form-control formControlName="no1e_267_404" /></td>
+            <td><input type="text" form-control formControlName="no2eFER_267_404" /></td>
+            <td><input type="text" form-control formControlName="no3e_267_404" /></td>
+            <td><input type="text" form-control formControlName="no4eFER_267_404" /></td>
+          </tr>
+          <tr>
+            <td>(f)</td>
+            <td>Gland leak (Mechanical seal)</td>
+            <td><input type="text" form-control formControlName="no1f_268_405" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_268_405" /></td>
+            <td><input type="text" form-control formControlName="no3f_268_405" /></td>
+            <td><input type="text" form-control formControlName="no4fFER_268_405" /></td>
+          </tr>
+          <tr>
+            <td>(g)</td>
+            <td>Pressure fluctuation</td>
+            <td><input type="text" form-control formControlName="no1g_269_406" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_269_406" /></td>
+            <td><input type="text" form-control formControlName="no3g_269_406" /></td>
+            <td><input type="text" form-control formControlName="no4gFER_269_406" /></td>
+          </tr>
+          <tr>
+            <td>(h)</td>
+            <td>Suction pressure</td>
+            <td><input type="text" form-control formControlName="no1h_270_407" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_270_407" /></td>
+            <td><input type="text" form-control formControlName="no3h_270_407" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_270_407" /></td>
+          </tr>
+          <tr>
+            <td>(j)</td>
+            <td>Discharge Pressure</td>
+            <td><input type="text" form-control formControlName="no1f_271_408" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_271_408" /></td>
+            <td><input type="text" form-control formControlName="no3f_271_408" /></td>
+            <td><input type="text" form-control formControlName="no4fFER_271_408" /></td>
+          </tr>
+          <tr>
+            <td>(k)</td>
+            <td>Start/stop from local and remote</td>
+            <td><input type="text" form-control formControlName="no1g_272_409" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_272_409" /></td>
+            <td><input type="text" form-control formControlName="no3g_272_409" /></td>
+            <td><input type="text" form-control formControlName="no4gFER_272_409" /></td>
+          </tr>
+          <tr>
+            <td>(l)</td>
+            <td>Valves and gauges provided with tallies</td>
+            <td><input type="text" form-control formControlName="no1h_273_410" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_273_410" /></td>
+            <td><input type="text" form-control formControlName="no3h_273_410" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_273_410" /></td>
+          </tr>
+          <tr>
+            <td>(m)</td>
+            <td>Operating instructions displayed for pump</td>
+            <td><input type="text" form-control formControlName="no1h_274_411" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_274_411" /></td>
+            <td><input type="text" form-control formControlName="no3h_274_411" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_274_411" /></td>
+          </tr>
+          <tr>
+            <td>(n)</td>
+            <td>Pipe painting as per color standard</td>
+            <td><input type="text" form-control formControlName="no1f_275_412" /></td>
+            <td><input type="text" form-control formControlName="no2fFER_275_412" /></td>
+            <td><input type="text" form-control formControlName="no3f_275_412" /></td>
+            <td><input type="text" form-control formControlName="no4fFER_275_412" /></td>
+          </tr>
+          <tr>
+            <td>(p)</td>
+            <td>Starting current</td>
+            <td><input type="text" form-control formControlName="no1g_276_413" /></td>
+            <td><input type="text" form-control formControlName="no2gFER_276_413" /></td>
+            <td><input type="text" form-control formControlName="no3g_276_413" /></td>
+            <td><input type="text" form-control formControlName="no4gFER_276_413" /></td>
+          </tr>
+          <tr>
+            <td>(q)</td>
+            <td>Running current</td>
+            <td><input type="text" form-control formControlName="no1h_277_414" /></td>
+            <td><input type="text" form-control formControlName="no2hFER_277_414" /></td>
+            <td><input type="text" form-control formControlName="no3h_277_414" /></td>
+            <td><input type="text" form-control formControlName="no4hFER_277_414" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. <u>SPM Levels</u></h3>
+
+      <table class="spm-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>M1</th>
+            <th>M4</th>
+            <th>J1</th>
+            <th>J3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="fe1_278_415" /></td>
+            <td><input type="text" form-control formControlName="fe2_278_415" /></td>
+            <td><input type="text" form-control formControlName="fe3_278_415" /></td>
+            <td><input type="text" form-control formControlName="fe4_278_415" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="de1_279_416" /></td>
+            <td><input type="text" form-control formControlName="de2_279_416" /></td>
+            <td><input type="text" form-control formControlName="de3_279_416" /></td>
+            <td><input type="text" form-control formControlName="de4_279_416" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. <u>Overall Vibration</u></h3>
+
+      <table class="vibration-table">
+        <thead>
+          <tr>
+            <th rowspan="2">Location</th>
+            <th colspan="3">M1</th>
+            <th colspan="3">M4</th>
+            <th colspan="3">J1</th>
+            <th colspan="3">J3</th>
+          </tr>
+          <tr>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+            <th><u>V</u></th>
+            <th><u>A</u></th>
+            <th><u>H</u></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motor FE</td>
+            <td><input type="text" form-control formControlName="motor1_280FEV1_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor2_280FEA1_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor3_280FEH1_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor4_280FEV2_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor5_280FEA2_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor6_280FEH2_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor7_280FEV1_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor8_280FEA1_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor9_280FEH1_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor10_280FEV2_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor11_280FEA2_384_417" /></td>
+            <td><input type="text" form-control formControlName="motor12_280FEH2_384_417" /></td>
+          </tr>
+          <tr>
+            <td>Motor DE</td>
+            <td><input type="text" form-control formControlName="motor1_281DEV1_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor2_281DEA1_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor3_281DEH1_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor4_281DEV2_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor5_281DEA2_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor6_281DEH2_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor7_281DEV1_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor8_281DEA1_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor9_281DEH1_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor10_281DEV2_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor11_281DEA2_385_418" /></td>
+            <td><input type="text" form-control formControlName="motor12_281DEH2_385_418" /></td>
+          </tr>
+          <tr>
+            <td>Comp DE</td>
+            <td><input type="text" form-control formControlName="comp1_282DEV1_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp2_282DEA1_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp3_282DEH1_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp4_282DEV2_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp5_282DEA2_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp6_282DEH2_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp7_282DEV1_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp8_282DEA1_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp9_282DEH1_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp10_282DEV2_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp11_282DEA2_386_419" /></td>
+            <td><input type="text" form-control formControlName="comp12_282DEH2_386_419" /></td>
+          </tr>
+          <tr>
+            <td>Comp FE</td>
+            <td><input type="text" form-control formControlName="comp1_283FEV1_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp2_283FEA1_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp3_283FEH1_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp4_283FEV2_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp5_283FEA2_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp6_283FEH2_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp7_283FEV1_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp8_283FEA1_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp9_283FEH1_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp10_283FEV2_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp11_283FEA2_387_420" /></td>
+            <td><input type="text" form-control formControlName="comp12_283FEH2_387_420" /></td>
+          </tr>
+
+        </tbody>
+      </table>
+  <!-- </form> -->
+<!-- </section> -->
