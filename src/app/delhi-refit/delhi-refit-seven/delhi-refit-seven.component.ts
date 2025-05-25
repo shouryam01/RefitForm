@@ -314,7 +314,7 @@ export class DelhiRefitSevenComponent implements OnInit {
   }
 
   getDelhiRefitSeven(): void {
-    this.http.get(this.apiUrl + "/trial-id=15").subscribe(data => {
+    this.http.get(this.apiUrl + "/trial-id=16").subscribe(data => {
       console.log(data);
       this.delhiRefitSevenData = data;
       this.delhiRefitSevenForm.patchValue(this.delhiRefitSevenData);

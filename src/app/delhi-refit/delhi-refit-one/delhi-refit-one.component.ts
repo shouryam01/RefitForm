@@ -843,7 +843,7 @@ export class DelhiRefitOneComponent implements OnInit {
 
 
   getDelhiRefitOne(): void {
-    this.http.get(this.apiUrl).subscribe(data => {
+    this.http.get(this.apiUrl+ "/trial-id=20").subscribe(data => {
       console.log(data);
       this.delhiRefitOneData = data;
       this.delhiForm.patchValue(this.delhiRefitOneData);
