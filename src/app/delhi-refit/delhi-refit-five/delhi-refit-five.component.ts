@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-delhi-refit-five',
@@ -8,8 +10,11 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 })
 export class DelhiRefitFiveComponent implements OnInit {
   DelhiRefit_five!: FormGroup;
+  delhiRefitFiveData: any;
+    apiUrl = environment.apiUrl + 'delhi-refit-five';
+  
 
-  constructor(private fb: FormBuilder) { 
+  constructor(private fb: FormBuilder, private http: HttpClient) { 
 
 this.DelhiRefit_five = this.fb.group({
 no1aAER_263_367 : new FormControl(""),
@@ -830,6 +835,150 @@ attenuation_across_sv_mount_1_no7_03 : new FormControl(''),
 attenuation_across_sv_mount_2_no7_03 : new FormControl(''),
 attenuation_across_sv_mount_3_no7_03 : new FormControl(''),
 attenuation_across_sv_mount_4_no7_03 : new FormControl(''),
+
+BMA_PUMP_Occa: new FormControl(''),
+BMA_PUMP_Date: new FormControl(''),
+sv_mount_no_1: new FormControl(''),
+sv_mount_no_2: new FormControl(''),
+sv_mount_no_3: new FormControl(''),
+sv_mount_no_4: new FormControl(''),
+cond_compensator_no_1: new FormControl(''),
+cond_compensator_no_2: new FormControl(''),
+cond_compensator_no_3: new FormControl(''),
+cond_compensator_no_4: new FormControl(''),
+sec_pipe_no_1: new FormControl(''),
+sec_pipe_no_2: new FormControl(''),
+sec_pipe_no_3: new FormControl(''),
+sec_pipe_no_4: new FormControl(''),
+abn_noise_no_1: new FormControl(''),
+abn_noise_no_2: new FormControl(''),
+abn_noise_no_3: new FormControl(''),
+abn_noise_no_4: new FormControl(''),
+excess_vib_no_1: new FormControl(''),
+excess_vib_no_2: new FormControl(''),
+excess_vib_no_3: new FormControl(''),
+excess_vib_no_4: new FormControl(''),
+gland_leak_no_1: new FormControl(''),
+gland_leak_no_2: new FormControl(''),
+gland_leak_no_3: new FormControl(''),
+gland_leak_no_4: new FormControl(''),
+press_fluct_no_1: new FormControl(''),
+press_fluct_no_2: new FormControl(''),
+press_fluct_no_3: new FormControl(''),
+press_fluct_no_4: new FormControl(''),
+suc_press_no_1: new FormControl(''),
+suc_press_no_2: new FormControl(''),
+suc_press_no_3: new FormControl(''),
+suc_press_no_4: new FormControl(''),
+dis_press_no_1: new FormControl(''),
+dis_press_no_2: new FormControl(''),
+dis_press_no_3: new FormControl(''),
+dis_press_no_4: new FormControl(''),
+loc_remote_no_1: new FormControl(''),
+loc_remote_no_2: new FormControl(''),
+loc_remote_no_3: new FormControl(''),
+loc_remote_no_4: new FormControl(''),
+valves_tallies_no_1: new FormControl(''),
+valves_tallies_no_2: new FormControl(''),
+valves_tallies_no_3: new FormControl(''),
+valves_tallies_no_4: new FormControl(''),
+ops_inst_pump_no_1: new FormControl(''),
+ops_inst_pump_no_2: new FormControl(''),
+ops_inst_pump_no_3: new FormControl(''),
+ops_inst_pump_no_4: new FormControl(''),
+pipe_paint_no_1: new FormControl(''),
+pipe_paint_no_2: new FormControl(''),
+pipe_paint_no_3: new FormControl(''),
+pipe_paint_no_4: new FormControl(''),
+spm_motor_FE_no_1: new FormControl(''),
+spm_motor_FE_no_2: new FormControl(''),
+spm_motor_FE_no_3: new FormControl(''),
+spm_motor_FE_no_4: new FormControl(''),
+spm_motor_DE_no_1: new FormControl(''),
+spm_motor_DE_no_2: new FormControl(''),
+spm_motor_DE_no_3: new FormControl(''),
+spm_motor_DE_no_4: new FormControl(''),
+over_vib_motor_FE_no_1_A: new FormControl(''),
+over_vib_motor_FE_no_1_R: new FormControl(''),
+over_vib_motor_FE_no_2_A: new FormControl(''),
+over_vib_motor_FE_no_2_R: new FormControl(''),
+over_vib_motor_FE_no_3_A: new FormControl(''),
+over_vib_motor_FE_no_3_R: new FormControl(''),
+over_vib_motor_FE_no_4_A: new FormControl(''),
+over_vib_motor_FE_no_4_R: new FormControl(''),
+over_vib_motor_DE_no_1_A: new FormControl(''),
+over_vib_motor_DE_no_1_R: new FormControl(''),
+over_vib_motor_DE_no_2_A: new FormControl(''),
+over_vib_motor_DE_no_2_R: new FormControl(''),
+over_vib_motor_DE_no_3_A: new FormControl(''),
+over_vib_motor_DE_no_3_R: new FormControl(''),
+over_vib_motor_DE_no_4_A: new FormControl(''),
+over_vib_motor_DE_no_4_R: new FormControl(''),
+pump_FE_no_1_A: new FormControl(''),
+pump_FE_no_1_R: new FormControl(''),
+pump_FE_no_2_A: new FormControl(''),
+pump_FE_no_2_R: new FormControl(''),
+pump_FE_no_3_A: new FormControl(''),
+pump_FE_no_3_R: new FormControl(''),
+pump_FE_no_4_A: new FormControl(''),
+pump_FE_no_4_R: new FormControl(''),
+pump_DE_no_1_A: new FormControl(''),
+pump_DE_no_1_R: new FormControl(''),
+pump_DE_no_2_A: new FormControl(''),
+pump_DE_no_2_R: new FormControl(''),
+pump_DE_no_3_A: new FormControl(''),
+pump_DE_no_3_R: new FormControl(''),
+pump_DE_no_4_A: new FormControl(''),
+pump_DE_no_4_R: new FormControl(''),
+mount_no_1_top_1: new FormControl(''),
+mount_no_1_top_2: new FormControl(''),
+mount_no_1_top_3: new FormControl(''),
+mount_no_1_top_4: new FormControl(''),
+mount_no_1_bot_1: new FormControl(''),
+mount_no_1_bot_2: new FormControl(''),
+mount_no_1_bot_3: new FormControl(''),
+mount_no_1_bot_4: new FormControl(''),
+mount_no_1_att_1: new FormControl(''),
+mount_no_1_att_2: new FormControl(''),
+mount_no_1_att_3: new FormControl(''),
+mount_no_1_att_4: new FormControl(''),
+mount_no_2_top_1: new FormControl(''),
+mount_no_2_top_2: new FormControl(''),
+mount_no_2_top_3: new FormControl(''),
+mount_no_2_top_4: new FormControl(''),
+mount_no_2_bot_1: new FormControl(''),
+mount_no_2_bot_2: new FormControl(''),
+mount_no_2_bot_3: new FormControl(''),
+mount_no_2_bot_4: new FormControl(''),
+mount_no_2_att_1: new FormControl(''),
+mount_no_2_att_2: new FormControl(''),
+mount_no_2_att_3: new FormControl(''),
+mount_no_2_att_4: new FormControl(''),
+mount_no_3_top_1: new FormControl(''),
+mount_no_3_top_2: new FormControl(''),
+mount_no_3_top_3: new FormControl(''),
+mount_no_3_top_4: new FormControl(''),
+mount_no_3_bot_1: new FormControl(''),
+mount_no_3_bot_2: new FormControl(''),
+mount_no_3_bot_3: new FormControl(''),
+mount_no_3_bot_4: new FormControl(''),
+mount_no_3_att_1: new FormControl(''),
+mount_no_3_att_2: new FormControl(''),
+mount_no_3_att_3: new FormControl(''),
+mount_no_3_att_4: new FormControl(''),
+mount_no_4_top_1: new FormControl(''),
+mount_no_4_top_2: new FormControl(''),
+mount_no_4_top_3: new FormControl(''),
+mount_no_4_top_4: new FormControl(''),
+mount_no_4_bot_1: new FormControl(''),
+mount_no_4_bot_2: new FormControl(''),
+mount_no_4_bot_3: new FormControl(''),
+mount_no_4_bot_4: new FormControl(''),
+mount_no_4_att_1: new FormControl(''),
+mount_no_4_att_2: new FormControl(''),
+mount_no_4_att_3: new FormControl(''),
+mount_no_4_att_4: new FormControl(''),
+
 });
 
 
@@ -837,6 +986,26 @@ attenuation_across_sv_mount_4_no7_03 : new FormControl(''),
   }
 
   ngOnInit(): void {
+    this.getDelhiRefitFive();
   }
+
+    getDelhiRefitFive(): void {
+    this.http.get(this.apiUrl+ "/trial-id=3").subscribe(data => {
+      console.log(data);
+      this.delhiRefitFiveData = data;
+      this.DelhiRefit_five.patchValue(this.delhiRefitFiveData);
+
+    });
+  }
+
+  onSubmit() {
+    const formData = this.DelhiRefit_five.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.getDelhiRefitFive(); // Refresh list
+  console.log(this.DelhiRefit_five.value);  // { name: '...', email: '...', age: '...' }
+});
+
+}
+
 
 }

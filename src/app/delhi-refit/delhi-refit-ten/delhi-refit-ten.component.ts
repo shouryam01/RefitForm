@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-delhi-refit-ten',
@@ -8,7 +10,10 @@ import { FormBuilder, FormControl } from '@angular/forms';
 })
 export class DelhiRefitTenComponent implements OnInit {
 DelhiRefit_ten: any
-  constructor(private fb: FormBuilder) {
+  delhiRefitTenData: any;
+    apiUrl = environment.apiUrl + 'delhi-refit-ten';
+  
+  constructor(private fb: FormBuilder, private http:HttpClient) {
 this.DelhiRefit_ten = this.fb.group({
     Eng_room_Sprink1 : new FormControl(""),
     Eng_room_Sprink2 : new FormControl(""),
@@ -253,6 +258,24 @@ this.DelhiRefit_ten = this.fb.group({
    }
 
   ngOnInit(): void {
+    this.getDelhiRefitNine()
   }
 
+    getDelhiRefitNine(): void {
+    this.http.get(this.apiUrl+ "/trial-id=1").subscribe(data => {
+      console.log(data);
+      this.delhiRefitTenData = data;
+      this.DelhiRefit_ten.patchValue(this.delhiRefitTenData);
+
+    });
+  }
+
+  onSubmit() {
+    const formData = this.DelhiRefit_ten.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.getDelhiRefitNine(); // Refresh list
+  console.log(this.DelhiRefit_ten.value);  // { name: '...', email: '...', age: '...' }
+});
+
+}
 }

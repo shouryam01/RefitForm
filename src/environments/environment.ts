@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://127.0.0.1:8000/refit/', // Adjust this URL to match your backend API endpoint
+  apiUrl: 'https://api.desiduds.in/refit/', // Adjust this URL to match your backend API endpoint
 };
 
 /*

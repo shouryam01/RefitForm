@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-delhi-refit-three',
@@ -7,8 +9,11 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./delhi-refit-three.component.scss']
 })
 export class DelhiRefitThreeComponent{
-  constructor(private fb: FormBuilder) {}
+  delhiRefitThreeData: any;
+  constructor(private fb: FormBuilder, private http: HttpClient) {}
   delhiRefit_Three!: FormGroup;
+  apiUrl = environment.apiUrl + 'delhi-refit-three';
+  
   helmPositions = ['MIDSHIP', '5° PORT', '10°', '15°'];
   ngOnInit(): void {
     this.delhiRefit_Three = this.fb.group({
@@ -1560,12 +1565,28 @@ export class DelhiRefitThreeComponent{
     no2h_75 : new FormControl(""),
 
     });
+
+    this.getDelhiRefitThree();
   }
 
+
+  getDelhiRefitThree(): void {
+    this.http.get(this.apiUrl+ "/trial-id=11").subscribe(data => {
+      console.log(data);
+      this.delhiRefitThreeData = data;
+      this.delhiRefit_Three.patchValue(this.delhiRefitThreeData);
+
+    });
+  }
 
   onSubmit() {
-    console.log(this.delhiRefit_Three.value); 
-  }
+    const formData = this.delhiRefit_Three.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.getDelhiRefitThree(); // Refresh list
+  console.log(this.delhiRefit_Three.value);  // { name: '...', email: '...', age: '...' }
+});
+
+}
 
 
 }

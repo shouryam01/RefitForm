@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-delhi-refit-eight',
@@ -8,7 +10,10 @@ import { FormBuilder, FormControl } from '@angular/forms';
 })
 export class DelhiRefitEightComponent implements OnInit {
 DelhiRefit_eight: any;
-  constructor(private fb: FormBuilder) { 
+  delhiRefitEightData: any;
+    apiUrl = environment.apiUrl + 'delhi-refit-eight';
+  
+  constructor(private fb: FormBuilder, private http: HttpClient) { 
   this.DelhiRefit_eight = this.fb.group({
 
     air_system_compre_HPAC1 : new FormControl(""),
@@ -284,6 +289,25 @@ DelhiRefit_eight: any;
   }
 
   ngOnInit(): void {
+    this.getDelhiRefitEight()
   }
+
+    getDelhiRefitEight(): void {
+    this.http.get(this.apiUrl+ "/trial-id=1").subscribe(data => {
+      console.log(data);
+      this.delhiRefitEightData = data;
+      this.DelhiRefit_eight.patchValue(this.delhiRefitEightData);
+
+    });
+  }
+
+  onSubmit() {
+    const formData = this.DelhiRefit_eight.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.getDelhiRefitEight(); // Refresh list
+  console.log(this.DelhiRefit_eight.value);  // { name: '...', email: '...', age: '...' }
+});
+
+}
 
 }

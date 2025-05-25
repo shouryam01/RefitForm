@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-delhi-refit-two',
@@ -7,13 +9,16 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
   styleUrls: ['./delhi-refit-two.component.scss']
 })
 export class DelhiRefitTwoComponent implements OnInit {
+  delhiRefitTwoData: any;
 
-   constructor(private fb: FormBuilder) {}
+   constructor(private fb: FormBuilder, private http: HttpClient) {}
   delhiRefit_Two!: FormGroup;
+  apiUrl = environment.apiUrl + 'delhi-refit-two';
+  
   ngOnInit(): void {
 
 
-    this.delhiRefit_Two = this.fb.group({
+  this.delhiRefit_Two = this.fb.group({
   Shaft_Thermal_Para_Occa: new FormControl(""),
   Shaft_Thermal_Para_Date : new FormControl(""),
   portRemote0_1 : new FormControl(""),
@@ -1017,10 +1022,27 @@ export class DelhiRefitTwoComponent implements OnInit {
   wheel_35S_30P_both136 : new FormControl(""),
   wheel_35S_30P_remarks136 : new FormControl(""),
     });
+
+    this.getDelhiRefitTwo();
+  }
+
+  getDelhiRefitTwo(): void {
+    this.http.get(this.apiUrl+ "/trial-id=1").subscribe(data => {
+      console.log(data);
+      this.delhiRefitTwoData = data;
+      this.delhiRefit_Two.patchValue(this.delhiRefitTwoData);
+
+    });
   }
 
   onSubmit() {
-    console.log(this.delhiRefit_Two.value);
-  }
+    const formData = this.delhiRefit_Two.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.delhiRefit_Two.patchValue(formData);
+      this.getDelhiRefitTwo(); // Refresh list
+  console.log(this.delhiRefit_Two.value);  // { name: '...', email: '...', age: '...' }
+});
+
+}
 
 }

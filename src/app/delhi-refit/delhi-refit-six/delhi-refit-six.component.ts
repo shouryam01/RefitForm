@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-delhi-refit-six',
@@ -8,8 +10,10 @@ import { FormBuilder, FormControl } from '@angular/forms';
 })
 export class DelhiRefitSixComponent implements OnInit {
 DelhiRefit_six: any;
+  delhiRefitSixData: any;
+  apiUrl = environment.apiUrl + 'delhi-refit-six';
 
-  constructor(private fb: FormBuilder) { 
+  constructor(private fb: FormBuilder, private http: HttpClient) { 
 this.DelhiRefit_six = this.fb.group({
     
 no1aAER_263_330_1: new FormControl(''),
@@ -418,6 +422,26 @@ no1aAER_263_330_1: new FormControl(''),
   }
 
   ngOnInit(): void {
+    this.getDelhiRefitSix();
   }
+
+    getDelhiRefitSix(): void {
+    this.http.get(this.apiUrl + "/trial-id=1").subscribe(data => {
+      console.log(data);
+      this.delhiRefitSixData = data;
+      this.DelhiRefit_six.patchValue(this.delhiRefitSixData);
+
+    });
+  }
+
+  onSubmit() {
+    const formData = this.DelhiRefit_six.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.getDelhiRefitSix(); // Refresh list
+      console.log(this.DelhiRefit_six.value);  // { name: '...', email: '...', age: '...' }
+    });
+
+  }
+
 
 }

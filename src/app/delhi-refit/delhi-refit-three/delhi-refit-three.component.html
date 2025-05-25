@@ -1,8 +1,9 @@
 <section>
-
+<form [formGroup]="delhiRefit_Three">
 <h3 class="main-heading">3. Positional Checks -Steering Gear Harbour Trials in Non-Follow up mode   </h3>
     <div class="table-section">
       <h4 class="sub-heading">(a)Operating Position - Wheel house with Port Pump (NFU)</h4>  
+  
 <table>
         <tr>
           <th rowspan="2">Helm applied</th>
@@ -1188,7 +1189,6 @@
     <h2>STEERING GEAR SEA TRIALS</h2>
     <h3>TIMING CHECKS</h3>
   </div>
-<form [formGroup]="delhiRefit_Three" (ngSubmit)="onSubmit()">
     <!-- <h3><strong>TIMING CHECKS</strong></h3> -->
       <h4><strong>1.  Operating Position – Bridge</strong> </h4>
       <!--  <span style="color:red;">(SRPM, Speed by GPS -, Speed by Log-)</span> -->
@@ -3484,5 +3484,6 @@
       </tr>
     </tbody>
   </table>
-
+<button class="btn btn-success" (click)="onSubmit()">Submit</button>
 </form>
+</section>

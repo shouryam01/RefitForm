@@ -10,6 +10,8 @@ import { DelhiRefitFiveComponent } from './delhi-refit-five/delhi-refit-five.com
 import { DelhiRefitEightComponent } from './delhi-refit-eight/delhi-refit-eight.component';
 import { DelhiRefitSixComponent } from './delhi-refit-six/delhi-refit-six.component';
 import { DelhiRefitTenComponent } from './delhi-refit-ten/delhi-refit-ten.component';
+import { DelhiRefitSevenComponent } from './delhi-refit-seven/delhi-refit-seven.component';
+import { DelhiRefitNineComponent } from './delhi-refit-nine/delhi-refit-nine.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'delhi-refit-four', component: DelhiRefitFourComponent },
   { path: 'delhi-refit-five', component: DelhiRefitFiveComponent },
   { path: 'delhi-refit-six', component: DelhiRefitSixComponent },
+  { path: 'delhi-refit-seven', component: DelhiRefitSevenComponent },
   { path: 'delhi-refit-eight', component: DelhiRefitEightComponent },
+  { path: 'delhi-refit-nine', component: DelhiRefitNineComponent },
   { path: 'delhi-refit-ten', component: DelhiRefitTenComponent },
 
 
@@ -34,7 +38,9 @@ const routes: Routes = [
         DelhiRefitThreeComponent,
         DelhiRefitFourComponent,
         DelhiRefitFiveComponent,
+        DelhiRefitSevenComponent,
         DelhiRefitEightComponent,
+        DelhiRefitNineComponent,
         DelhiRefitSixComponent,
         DelhiRefitTenComponent
   ],

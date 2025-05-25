@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-delhi-refit-four',
@@ -8,10 +10,12 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 })
 export class DelhiRefitFourComponent {
 
-  DelhiRefit_four!: FormGroup;
+  delhiRefit_Four!: FormGroup;
+  delhiRefitFourData: any;
+  apiUrl = environment.apiUrl + 'delhi-refit-four';
 
-  constructor(private fb: FormBuilder) {
-  this.DelhiRefit_four = this.fb.group({
+  constructor(private fb: FormBuilder, private http: HttpClient) {
+  this.delhiRefit_Four = this.fb.group({
 no1a_76 : new FormControl(""),
     no2a_76 : new FormControl(""),
     no3a_76 : new FormControl(""),
@@ -1476,6 +1480,25 @@ no1a_76 : new FormControl(""),
   
   });
 
-
+this.getDelhiRefitFour();
   }
+
+    getDelhiRefitFour(): void {
+    this.http.get(this.apiUrl+ "/trial-id=3").subscribe(data => {
+      console.log(data);
+      this.delhiRefitFourData = data;
+      this.delhiRefit_Four.patchValue(this.delhiRefitFourData);
+
+    });
+  }
+
+  onSubmit() {
+    const formData = this.delhiRefit_Four.value;
+    this.http.post(this.apiUrl, formData).subscribe(() => {
+      this.getDelhiRefitFour(); // Refresh list
+  console.log(this.delhiRefit_Four.value);  // { name: '...', email: '...', age: '...' }
+});
+
+}
+
 }
