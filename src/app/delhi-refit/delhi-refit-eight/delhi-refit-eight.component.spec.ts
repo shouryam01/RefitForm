@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DelhiRefitNewComponent } from './delhi-refit-new.component';
+import { DelhiRefitEightComponent } from './delhi-refit-eight.component';
 
-describe('DelhiRefitNewComponent', () => {
-  let component: DelhiRefitNewComponent;
-  let fixture: ComponentFixture<DelhiRefitNewComponent>;
+describe('DelhiRefitEightComponent', () => {
+  let component: DelhiRefitEightComponent;
+  let fixture: ComponentFixture<DelhiRefitEightComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DelhiRefitNewComponent ]
+      declarations: [ DelhiRefitEightComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DelhiRefitNewComponent);
+    fixture = TestBed.createComponent(DelhiRefitEightComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

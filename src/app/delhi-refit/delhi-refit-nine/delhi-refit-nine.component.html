@@ -1,0 +1,1190 @@
+<!-- Appendix AQ  -->
+
+<section class="body-card form-style1 trial-form">
+
+    <form [formGroup]="delhiRefitNineForm">
+
+
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="panel-right">
+                        <!-- <back button> -->
+                        <div class="panel-row">
+                            <div class="text-center">
+                                <h2>BILGE PUMPING OUT SYSTEM </h2>
+                            </div>
+                            <p><strong>1. Pre- Requisite Check – Off List for System Trials.</strong></p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th>Description</th>
+                                    <th>Remarks</th>
+                                </tr>
+
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="14">(a)</td>
+                                        <td rowspan="14">Pump installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. Applicable in case of ABER/ MLU replacement of item.</td>
+                                        <td>Bilge Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="bilge_out_pump_no_1"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Bilge Pump No. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="bilge_out_pump_no_2"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_1"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_2"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_3"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_4"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_5"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_6"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 7</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_7"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 8</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_8"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 9</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_9"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 10</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_10"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 11</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_11"></td>
+                                        </tr>
+                                        <tr>
+                                        <td>Salvage Pump No. 12</td>
+                                        <td><input type="text" class="form-control" formControlName="salvage_pump_no_12"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(b)</td>
+                                            <td colspan="2">Pressure and vacuum gauges are calibrated and red marked indicating working pressure of the system </td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_press_vacc"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(c)</td>
+                                            <td colspan="2">System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings </td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_sys_drawings"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(d)</td>
+                                            <td colspan="2">Flexible connections are to be provided at pump suction & discharge flanges.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_flex_flang"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(e)</td>
+                                            <td colspan="2">Sufficient lights available near operating locations.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_suff_loc"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(f)</td>
+                                            <td colspan="2">All the pipes are properly supported with clamps with rubber inserts.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_rubb_inserts"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(g)</td>
+                                            <td colspan="2">Talley plates are fitted on all valves, cocks and gauges.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_talley_plates"></td>
+                                        </tr>
+
+                                    </tbody>
+                            </table>
+
+
+                            <p><strong>2. Bilge/ Salvage Pumps.</strong> Carry out following checks before starting the pump.</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th>Description</th>
+                                    <th>Sat/Unsat</th>
+                                </tr>
+
+                                <tbody>
+                                    <tr>
+                                        <td>(i)</td>
+                                        <td>Check pipe system is clean and clear from obstruction.</td>
+                                        <td><input type="text" class="form-control" formControlName="bilge_sal_pipe_clear_obs"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(ii)</td>
+                                            <td>Priming unit is provided for priming of main pump to avoid dry running.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_sal_prim_unit"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iii)</td>
+                                            <td>Rotate the pumps, by hand, in direction indicated on the driving end cover.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_sal_driv_end_cover"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iv)</td>
+                                            <td>Check that the functional position of all valves should correspond with the valve position indicators.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_sal_pos_indic"></td>
+                                        </tr>
+                                         <tr>
+                                            <td>(v)</td>
+                                            <td>Check that all valves are in the open position.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_sal_open_pos"></td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td>(vi)</td>
+                                            <td>Start the pump and check correct rotation.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_sal_corr_rot"></td>
+                                        </tr>
+
+                                    </tbody>
+                            </table>
+
+                            <p>3.<strong>System Trials</strong></p>
+                            <p>(a).<strong>Piping</strong>Visual checks of following components are to be carried out for any leakages or damage</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th colspan="2">Description</th>
+                                    <th>Sat/Unsat</th>
+                                    </tr>
+
+                                <tbody>
+                                    <tr>
+                                        <td>(i)</td>
+                                        <td colspan="2">Bellows/ flexible connections</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_bellow_conn"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(ii)</td>
+                                        <td colspan="2">Flange-connections</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_flange_conn"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(iii)</td>
+                                        <td colspan="2">Gaskets</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_gasket"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(iv)</td>
+                                        <td colspan="2">Adapters</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_adapter"></td>
+                                       </tr>
+                                    <tr>
+                                        <td rowspan="2">(v)</td>
+                                        <td rowspan="2">Suction strainers of bilge pump - for cleanliness and correct fittings.</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_suc_strainer_1"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>Pump No. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_suc_strainer_2"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>(vi)</td>
+                                        <td colspan="2">System Integrity checks - For any type of leakages. </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_integrity_check"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(vii)</td>
+                                        <td colspan="2">Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support. </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_supp_conn"></td>
+                                       </tr>
+                                    </tbody>
+                            </table>
+
+                            <p>(b)<strong>Valves</strong>Visual and operational checks of following valves are to be carried out.</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th colspan="2">Description</th>
+                                    <th>Sat/Unsat</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">(i)</td>
+                                        <td rowspan="2">Bilge Pump suction valve</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_bilge_suc_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_bilge_suc_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">(ii)</td>
+                                        <td rowspan="2">Bilge Pump discharge valve</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_bilge_disc_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_bilge_disc_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="12">(iii)</td>
+                                        <td rowspan="12">Salvage Pump suction valve</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 7</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_7"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 8</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 9</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_9"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 10</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 11</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_11"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 12</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_suc_pump_no_12"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="12">(iv)</td>
+                                        <td rowspan="12">Salvage Pump discharge valve</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 7</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_7"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 8</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 9</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_9"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 10</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 11</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_11"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 12</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_disc_pump_no_12"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="12">(v)</td>
+                                        <td rowspan="12">Salvage Pump over board valve</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 7</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_7"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 8</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 9</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_9"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 10</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 11</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_11"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 12</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_Salvage_board_pump_no_12"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="17">(vi)</td>
+                                        <td rowspan="17">Eductor power water valve</td>
+                                        <td>Eductor No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 7</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_7"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 8</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 9</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_9"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 10</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 11</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_11"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 12</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_12"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 13</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_13"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 14</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_14"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 15</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_15"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 16</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_16"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eductor no. 17</td>
+                                        <td><input type="text" class="form-control" formControlName="valves_educ_pow_no_17"></td>
+                                    </tr>
+
+                               </tbody>
+                            </table>
+
+                                <p><strong>(d) Foundation.</strong>Visual checks of foundation are to be carried out.</p>
+                                <table class="table table-bordered" class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="14">(i)</td>
+                                            <td rowspan="14">Foundation</td>
+                                            <td>Bilge Pump No. 1</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bilge Pump No. 2</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_pump_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 1</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 2</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 3</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 4</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 5</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_5"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 6</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_6"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 7</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_7"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 8</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_8"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 9</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_9"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 10</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_10"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 11</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_11"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salvage Pump No. 12</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_pump_found_salv_pump_12"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <p><strong>(e) Mounting.</strong>Condition, attenuation and grouping of mounts to be checked.</p>
+                                <table class="table table-bordered" class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3">(i)</td>
+                                            <td rowspan="3">Mounting</td>
+                                            <td>Physical Condition </td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_mount_phy_cond"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Attenuation</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_mount_atten"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Service life as per MAINTOPs/OEM Documents.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_mount_OEM_doc"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <div class="text-center">
+                                    <h2>BALLASTING/ DE-BALLASTING SYSTEM</h2>
+                                </div>
+
+                                <p><strong>Pre -Requisite Check – off List for System Trials.</strong></p>
+
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th>Description</th>
+                                        <th>Sat/Unsat</th>
+                                        </tr>
+
+                                        <tbody>
+                                        <tr>
+                                            <td>(a)</td>
+                                            <td>All the pipes are properly supported with clamps with rubber inserts.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_ballast_rubb_inserts"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(b)</td>
+                                            <td>Sufficient lights available near operating locations.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_ballast_suff_loc"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(c)</td>
+                                            <td>Talley plates are fitted on all valves, cocks and gauges.</td>
+                                            <td><input type="text" class="form-control" formControlName="bilge_out_ballast_talley_plates"></td>
+                                        </tr>
+
+                                        </tbody>
+                                </table>
+                            <p>2.<strong>System Trials</strong></p>
+                            <p>(a).<strong>Piping</strong>Visual checks of following components are to be carried out for any leakages or damage</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th colspan="2">Description</th>
+                                    <th>Sat/Unsat</th>
+                                    </tr>
+
+                                <tbody>
+                                    <tr>
+                                        <td>(i)</td>
+                                        <td colspan="2">Flange-connections</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_flange_conn"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(ii)</td>
+                                        <td colspan="2">Gaskets</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_gasket"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(iii)</td>
+                                        <td colspan="2">Adapters</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_adapter"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(iv)</td>
+                                        <td colspan="2">System Integrity checks - For any type of leakages. </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_integrity_check"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(v)</td>
+                                        <td colspan="2">Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support. </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_supp_conn"></td>
+                                       </tr>
+                                    </tbody>
+                            </table>
+                            <p>(c).<strong>Valves</strong>Visual checks of following components are to be carried out for any leakages or damage</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ballast Tank No.</th>
+                                    <th>Valve</th>
+                                    <th>Sat/Unsat</th>
+                                    </tr>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td rowspan="2">Isolating valve</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_iso_valve_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ballasting valve</td>
+                                         <td><input type="text" class="form-control" formControlName="syst_trial_ballas_ball_valve_1"></td>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td rowspan="2">Isolating valve</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_iso_valve_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ballasting valve</td>
+                                         <td><input type="text" class="form-control" formControlName="syst_trial_ballas_ball_valve_2"></td>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td rowspan="2">Isolating valve</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_iso_valve_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ballasting valve</td>
+                                         <td><input type="text" class="form-control" formControlName="syst_trial_ballas_ball_valve_3"></td>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td rowspan="2">Isolating valve</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_iso_valve_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ballasting valve</td>
+                                         <td><input type="text" class="form-control" formControlName="syst_trial_ballas_ball_valve_4"></td>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td rowspan="2">Isolating valve</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_iso_valve_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ballasting valve</td>
+                                         <td><input type="text" class="form-control" formControlName="syst_trial_ballas_ball_valve_5"></td>                                       
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td rowspan="2">Isolating valve</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_ballas_iso_valve_6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ballasting valve</td>
+                                         <td><input type="text" class="form-control" formControlName="syst_trial_ballas_ball_valve_6"></td>                                       
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            <div class="text-center">
+                                <h2>CHILLED WATER SYSTEM </h2>
+                            </div>
+                            <p><strong>1. Pre- Requisite Check – Off List for System Trials.</strong></p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th colspan="2">Description</th>
+                                    <th>Remarks</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="8">(a)</td>
+                                        <td rowspan="8">Pump and ATU installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. Applicable in case of ABER/ MLU replacement of item.  </td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_pump_1"></td>                                       
+                                 </tr>
+                                    <tr>
+                                        <td>Pump No. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_pump_2"></td>  
+                                    </tr>                                     
+                                    <tr>
+                                        <td>Pump No. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_pump_3"></td>  
+                                    </tr>                                     
+                                    <tr>
+                                        <td>Pump No. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_pump_4"></td>  
+                                    </tr>                                     
+                                    <tr>
+                                        <td>Pump No. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_pump_5"></td>  
+                                    </tr>                                     
+                                    <tr>
+                                        <td>Pump No. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_pump_6"></td>  
+                                    </tr>                                     
+                                    <tr>
+                                        <td>HE Inlet Valves</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_HE_inlet"></td>  
+                                    </tr>                                     
+                                    <tr>
+                                        <td>HE Outlet Valves</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_ATU_HE_outlet"></td>  
+                                    </tr> 
+                                    
+                                    <tr>
+                                        <td rowspan="2">(b)</td>
+                                        <td rowspan="2">Pressure gauges and thermometers are calibrated and red marked indicating working pressure of the system.</td>
+                                        <td>Pump suction pressure gauges </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_press_therm_suc"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>Pump discharge pressure gauges </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_press_therm_disc"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(c)</td>
+                                        <td colspan="2">System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_press_inst_acc"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(d)</td>
+                                        <td colspan="2">Flexible connections are to be provided at pump suction & discharge flanges.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_disc_flanges"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(e)</td>
+                                        <td colspan="2">Chilled water pipes are not to be laid through tanks which contains oil.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_water_pipe"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(f)</td>
+                                        <td colspan="2">All the pipes are properly supported with clamps with rubber inserts.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_clamp_inst"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(g)</td>
+                                        <td colspan="2"> Sufficient lights available near operating locations.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_suff_oper_loc"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(h)</td>
+                                        <td colspan="2">All chilled water pipes are insulated with cold lagging.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_cold_lagg"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(j)</td>
+                                        <td colspan="2">Talley plates are fitted on all valves, cocks and gauges.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_talley_plate"></td>                                     
+                                    </tr>
+                                    <tr>
+                                        <td>(k)</td>
+                                        <td colspan="2"> Air purging cocks are in shut position and the outlet is led to drain.</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_chill_press_purg_drain"></td>                                     
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div class="text-center">
+                                <h2>CHILLED WATER PUMP </h2>
+                            </div>
+                            <p><strong>(a). Carry out following checks before starting the pump</strong></p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th>Description</th>
+                                    <th>Remarks</th>
+                                </tr>
+
+                                <tbody>
+                                    <tr>
+                                        <td>(i)</td>
+                                        <td>Check pipe system is clean and clear from obstruction.</td>
+                                        <td><input type="text" class="form-control" ormControlName="syst_trial_chill_pump_clear_obs"></td>
+                                    </tr>
+                                     <tr>
+                                        <td>(ii)</td>
+                                        <td>Prime the pumps by opening the pump suction valve and carry out purging of pump casing (for initial starting).</td>
+                                        <td><input type="text" class="form-control" ormControlName="syst_trial_chill_pump_init_start"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(iii)</td>
+                                        <td>Rotate the pumps, by hand, in direction indicated on the driving end cover.</td>
+                                        <td><input type="text" class="form-control" ormControlName="syst_trial_chill_pump_end_cover"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(iv)</td>
+                                        <td>Check that the functional position of all valves should correspond with the valve position indicators.</td>
+                                        <td><input type="text" class="form-control" ormControlName="syst_trial_chill_pump_pos_indic"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(v)</td>
+                                        <td>Check that all valves are in the open position.</td>
+                                        <td><input type="text" class="form-control" ormControlName="syst_trial_chill_pump_open_pos"></td>
+                                    </tr>
+                                     <tr>
+                                        <td>(vi)</td>
+                                        <td>Start the pump and check correct rotation.</td>
+                                        <td><input type="text" class="form-control" ormControlName="syst_trial_chill_pump_corr_rot"></td>
+                                    </tr>
+                                  
+                                </tbody>
+
+                            </table>
+
+                            <p>3.<strong>System Trials</strong></p>
+                            <p>(a).<strong>Piping</strong>Visual checks of following components are to be carried out for any leakages or damage</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th colspan="2">Description</th>
+                                    <th>Sat/Unsat</th>
+                                    </tr>
+
+                                <tbody>
+                                    <tr>
+                                        <td>(i)</td>
+                                        <td colspan="2">Bellows/ flexible connections</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_bellow_conn"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(ii)</td>
+                                        <td colspan="2">Flange-connections</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_flange_conn"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(iii)</td>
+                                        <td colspan="2">Gaskets</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_gasket"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(iv)</td>
+                                        <td colspan="2">Adapters</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_adapter"></td>
+                                       </tr>
+                                    <tr>
+                                        <td rowspan="2">(v)</td>
+                                        <td rowspan="2">Suction strainers of bilge pump - for cleanliness and correct fittings.</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_suc_strainer_1"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>Pump No. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_suc_strainer_2"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>(vi)</td>
+                                        <td colspan="2">System Integrity checks - For any type of leakages. </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_integrity_check"></td>
+                                       </tr>
+                                    <tr>
+                                        <td>(vii)</td>
+                                        <td colspan="2">Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support. </td>
+                                        <td><input type="text" class="form-control" formControlName="syst_trial_pip_supp_conn"></td>
+                                       </tr>
+                                    </tbody>
+                            </table>
+
+                            <p>(b)<strong>Valves</strong>Visual and operational checks of following valves are to be carried out. Operate the valves through their complete range of operations to ensure that the valve position indicator moves with the valve.</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th>Description</th>
+                                    <th>Sat/Unsat</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="6">(i)</td>
+                                        <td rowspan="6">Pump suction valve</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_suc_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_suc_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_suc_pump_no_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_suc_pump_no_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_suc_pump_no_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_suc_pump_no_6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="6">(ii)</td>
+                                        <td rowspan="6">Pump discharge valve</td>
+                                        <td>Pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_pump_no_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_pump_no_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_pump_no_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump no. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_pump_no_6"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(iii)</td>
+                                        <td colspan="2">Chilled water system isolating valves</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_isolat_valves"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(iv)</td>
+                                        <td colspan="2">Expansion tank 1 filling valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_fill_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(v)</td>
+                                        <td colspan="2">Expansion tank 1 outlet valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_out_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(vi)</td>
+                                        <td colspan="2">Expansion tank 1 purging valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_purg_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(vii)</td>
+                                        <td colspan="2">Expansion tank 2 filling valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_fill_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(viii)</td>
+                                        <td colspan="2">Expansion tank 2 outlet valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_out_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(ix)</td>
+                                        <td colspan="2">Expansion tank 2 purging valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_purg_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(x)</td>
+                                        <td colspan="2">Expansion tank 3 filling valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_exp_fill_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(xi)</td>
+                                        <td colspan="2">Expansion tank 3 outlet valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_out_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(xii)</td>
+                                        <td colspan="2">Expansion tank 3 purging valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_tank_purg_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(xiii)</td>
+                                        <td colspan="2">HE inlet valves (for all HEs) </td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_HE_inlet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(xiv)</td>
+                                        <td colspan="2">HE outlet valves (for all HEs) </td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_HE_outlet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(xv)</td>
+                                        <td colspan="2">Purging valves</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_purg_valves"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(xvi)</td>
+                                        <td colspan="2">Inlet and outlet valves to HUMSA sonar post </td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_HUMSA_sonar_post"></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">(xvii)</td>
+                                        <td rowspan="4">Chilled water shore connection </td>
+                                        <td>Stbd inlet valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_stbd_inlet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Port inlet valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_port_inlet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stbd outlet valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_stbd_outlet"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Port outlet valve</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_disc_port_outlet"></td>
+                                    </tr>
+
+                               </tbody>
+                            </table>
+
+                            <p>(c)<strong>Expansion tank.</strong>Visual/ functional checks are to be carried out for the following. Test certificate to be obtained as applicable.</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th>Description</th>
+                                    <th>Remarks</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>(i)</td>
+                                        <td>Sight glass for level indication to be intact and clear.</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_exp_tank_sight_glass"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(ii)</td>
+                                        <td>Paint scheme. As per Navy Order NO 56/16</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_exp_tank_paint_scheme"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(iii)</td>
+                                        <td>Inspection door gaskets to be renewed.</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_exp_tank_insp_door"></td>
+                                    </tr>
+                                    
+                                </tbody>                               
+                            </table>
+                    
+                            <p>(d)<strong>Instrumentation</strong>Visual/ functional checks are to be carried out for the following :-</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th>Description</th>
+                                    <th>Remarks</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>(i)</td>
+                                        <td>Pressure gauges. All pressure and vacuum gauges in the system and equipment to checked for functionality and operation.</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_inst_press_gauge"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(ii)</td>
+                                        <td>Gauge lines. All gauge lines to be checked for proper fitting and leakages. </td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_inst_gauge_lines"></td>
+                                    </tr>
+                              </tbody>
+                            </table>
+
+                            <p>(e)<strong>Foundation</strong>Visual checks of foundation are to be carried out ascertaining its condition.</p>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Ser</th>
+                                    <th colspan="2">Description</th>
+                                    <th>Remarks</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="9">(i)</td>
+                                        <td rowspan="9">Foundation</td>
+                                        <td>Chilled water pump No. 1</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_pump_no_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chilled water pump No. 2</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_pump_no_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chilled water pump No. 3</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_pump_no_3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chilled water pump No. 4</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_pump_no_4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chilled water pump No. 5</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_pump_no_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chilled water pump No. 6</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_pump_no_6"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Expansion tank 1</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_exp_tank_1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expansion tank 2</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_exp_tank_2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expansion tank 3</td>
+                                        <td><input type="text" class="form-control" formControlName="sys_trial_found_exp_tank_3"></td>
+                                    </tr>
+
+                              </tbody>
+                            </table>
+                                <p><strong>(f) Mounting.</strong>Condition, attenuation and grouping of mounts to be checked.</p>
+                                <table class="table table-bordered" class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3">(i)</td>
+                                            <td rowspan="3">Mounting</td>
+                                            <td>Physical Condition </td>
+                                            <td><input type="text" class="form-control" formControlName="sys_trial_mount_phy_cond"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Attenuation</td>
+                                            <td><input type="text" class="form-control" formControlName="sys_trial_mount_atten"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Service life as per MAINTOPs/OEM Documents.</td>
+                                            <td><input type="text" class="form-control" formControlName="sys_trial_mount_OEM_doc"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-success" (click)="onSubmit()">Submit</button>
+    </form>
+</section>
+<!-- Appendix AS  -->

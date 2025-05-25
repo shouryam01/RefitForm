@@ -1,0 +1,1273 @@
+<section class="body-card form-style1 trial-form">
+
+    <form [formGroup]="delhiRefitSevenForm">
+
+
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="panel-right">
+                        <!-- <back button> -->
+                        <div class="panel-row">
+                            <div class="text-center">
+                                <h2>REVERSE OSMOSIS PLANTS</h2>
+                            </div>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Occassion</th>
+                                        <td><input type="text" class="form-control" formControlName="BMA_PUMP_Occa" class="temp-input"></td>
+                                        <th>Date</th>
+                                        <td><input type="date" formControlName="BMA_PUMP_Date" class="temp-input"></td>
+                                    </tr>
+                                </table>
+
+                                <p><strong>1. Safety Device Checks</strong></p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th colspan="4">30 TPD RO Plants</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">Ser.</th>
+                                        <th rowspan="2">Description</th>
+                                        <th rowspan="2">Design Value</th>
+                                        <th colspan="4">Achieved value </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>(a)</td>
+                                            <td>Raw water feed</td>
+                                            <td>1-1.5</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_raw_water_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_raw_water_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_raw_water_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_raw_water_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(b)</td>
+                                            <td>High discharge pure water</td>
+                                            <td>3.5</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_disc_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_disc_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_disc_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_disc_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(c)</td>
+                                            <td>Control valve VS60 Closed</td>
+                                            <td>-</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_vs60_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_vs60_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_vs60_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_vs60_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(d)</td>
+                                            <td>High Pressure module</td>
+                                            <td>70</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_press_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_press_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_press_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_high_press_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(e)</td>
+                                            <td>High pressure at brine pipe</td>
+                                            <td>4.0</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_brine_pipe_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_brine_pipe_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_brine_pipe_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_brine_pipe_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(f)</td>
+                                            <td>High pressure shut off valve </td>
+                                            <td>80</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_shut_off_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_shut_off_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_shut_off_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_shut_off_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(g)</td>
+                                            <td>High conductivity pure water</td>
+                                            <td>30</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_pure_water_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_pure_water_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_pure_water_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_pure_water_4"></td>
+                                        </tr>
+
+
+
+                                    </tbody>
+
+                                </table>
+
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th colspan="2">5 TPD RO Plants</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">Ser.</th>
+                                        <th rowspan="2">Description</th>
+                                        <th rowspan="2">Design Value</th>
+                                        <th colspan="2">Achieved value </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>5</th>
+                                        <th>7</th>
+
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>(a)</td>
+                                            <td>Raw water feed</td>
+                                            <td>1-1.5</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_raw_water_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_raw_water_7"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(b)</td>
+                                            <td>High discharge pure water</td>
+                                            <td>3.5</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_disc_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_disc_7"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(c)</td>
+                                            <td>Control valve VS60 Closed</td>
+                                            <td>-</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_vs60_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_vs60_7"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(d)</td>
+                                            <td>High Pressure module</td>
+                                            <td>70</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_press_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_press_7"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(e)</td>
+                                            <td>High pressure at brine pipe</td>
+                                            <td>4.0</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_brine_pipe_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_brine_pipe_7"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(f)</td>
+                                            <td>High pressure shut off valve </td>
+                                            <td>80</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_shut_off_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_shut_off_7"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(g)</td>
+                                            <td>High conductivity pure water</td>
+                                            <td>30</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_pure_water_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_pure_water_7"></td>
+                                        </tr>
+
+
+
+                                    </tbody>
+
+                                </table>
+
+
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th colspan="2">6 TPD RO Plants</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">Ser.</th>
+                                        <th rowspan="2">Description</th>
+                                        <th rowspan="2">Design Value</th>
+                                        <th colspan="2">Achieved value </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>6</th>
+                                        <th>8</th>
+
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>(a)</td>
+                                            <td>Raw water feed</td>
+                                            <td>1-1.5</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_raw_water_6"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_raw_water_8"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(b)</td>
+                                            <td>High discharge pure water</td>
+                                            <td>3.5</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_disc_6"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_disc_8"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(c)</td>
+                                            <td>Control valve VS60 Closed</td>
+                                            <td>-</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_vs60_6"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_vs60_8"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(d)</td>
+                                            <td>High Pressure module</td>
+                                            <td>70</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_press_6"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_high_press_8"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(e)</td>
+                                            <td>High pressure at brine pipe</td>
+                                            <td>4.0</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_brine_pipe_6"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_brine_pipe_8"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(f)</td>
+                                            <td>High pressure shut off valve </td>
+                                            <td>80</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_shut_off_6"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_shut_off_8"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(g)</td>
+                                            <td>High conductivity pure water</td>
+                                            <td>30</td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_pure_water_6"></td>
+                                            <td><input type="text" class="form-control" formControlName="rev_osm_5TDO_pure_water_8"></td>
+                                        </tr>
+
+
+
+                                    </tbody>
+
+                                </table>
+
+                                <p><strong>2. Performance Parameters</strong></p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th colspan="5">30 TPD RO Plants</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">Ser.</th>
+                                        <th rowspan="2">Parameter</th>
+                                        <th rowspan="2">Units</th>
+                                        <th rowspan="2">Design Value</th>
+                                        <th colspan="4">Achieved value </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>(a)</td>
+                                            <td>IP-1 Sand filter inlet</td>
+                                            <td rowspan="2">Bar</td>
+                                            <td>2.5-4.5</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_inlet_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_inlet_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_inlet_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_inlet_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(b)</td>
+                                            <td>IP-1 Sand filter outlet</td>
+                                            <td>2.0-4.0</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_outlet_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_outlet_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_outlet_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IP_outlet_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="5">Pressure on dry panel</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(c)</td>
+                                            <td>IR-1 Cartridge filter inlet</td>
+                                            <td>Bar</td>
+                                            <td>2.0-4.0</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_inlet_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_inlet_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_inlet_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_inlet_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(d)</td>
+                                            <td>IR-1 Cartridge filter outlet</td>
+                                            <td>Bar</td>
+                                            <td>1.5-3.5</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_outlet_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_outlet_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_outlet_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR_outlet_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(e)</td>
+                                            <td>IR-5 HP pump suction</td>
+                                            <td>Bar</td>
+                                            <td>1.5-3.5</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_suct_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_suct_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_suct_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_suct_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(f)</td>
+                                            <td> IR-5 HP pump discharge </td>
+                                            <td>Bar</td>
+                                            <td>1.5-3.5</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_disc_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_disc_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_disc_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR5_HP_disc_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan="5">Salinity measurement</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(g)</td>
+                                            <td>IR-4 Permeate conductivity</td>
+                                            <td>µS/cm3</td>
+                                            <td>1000</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR4_permeate_disc_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR4_permeate_disc_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR4_permeate_disc_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_IR4_permeate_disc_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(j)</td>
+                                            <td>Permeate flow rate</td>
+                                            <td>LPH</td>
+                                            <td>1250</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_permeate_flow_disc_1">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_permeate_flow_disc_2">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_permeate_flow_disc_3">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_permeate_flow_disc_4">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(K)</td>
+                                            <td>Sea Water flow rate</td>
+                                            <td>m3/hr</td>
+                                            <td>4-4.5</td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_sea_water_disc_1">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_sea_water_disc_2">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_sea_water_disc_3">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="per_30TPD_sea_water_disc_4">
+                                            </td>
+                                        </tr>
+
+
+
+                                    </tbody>
+
+                                </table>
+
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th colspan="10">RO Plant EDI STBD – No. 5 (5 TPD)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Feed Pressure(PI 331) (1.5-4 bar)</th>
+                                        <th>Feed in pressure (PI333) (1.5-4 bar)</th>
+                                        <th>Permeate PR (PI380) (0-1.5bar)</th>
+                                        <th>Concentrate Pr (PI332) (1.5-4 bar)</th>
+                                        <th>Electrolyte PR (PI334) (1.5-4bar)</th>
+                                        <th>Concentrate inlet flow FI332 (20-30 LPH) </th>
+                                        <th>Permeate outlet Flow FI380 </th>
+                                        <th>Feed flow meter FIS 330 (240260LPH)</th>
+                                        <th>Conductivity</th>
+
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_time_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI331_time_1">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI333_time_1">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_permeate_PR_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_concentrate_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_electrolyte_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI332_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI380_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_FIS_330_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_conductivity_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_time_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI331_time_2">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI333_time_2">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_permeate_PR_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_concentrate_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_electrolyte_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI332_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI380_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_FIS_330_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_conductivity_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_time_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI331_time_3">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI333_time_3">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_permeate_PR_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_concentrate_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_electrolyte_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI332_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI380_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_FIS_330_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_conductivity_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_time_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI331_time_4">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_feed_press_PI333_time_4">
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_permeate_PR_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_concentrate_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_electrolyte_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI332_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_flow_FI380_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_FIS_330_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_conductivity_4"></td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+                                <table>
+                                    <tr>
+                                        <th colspan="10">RO Plant EDI STBD – No. 7 (5 TPD)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Feed Pressure(PI 331) (1.5-4 bar)</th>
+                                        <th>Feed in pressure (PI333) (1.5-4 bar)</th>
+                                        <th>Permeate PR (PI380) (0-1.5bar)</th>
+                                        <th>Concentrate Pr (PI332) (1.5-4 bar)</th>
+                                        <th>Electrolyte PR (PI334) (1.5-4bar)</th>
+                                        <th>Concentrate inlet flow FI332 (20-30 LPH) </th>
+                                        <th>Permeate outlet Flow FI380 </th>
+                                        <th>Feed flow meter FIS 330 (240260LPH)</th>
+                                        <th>Conductivity</th>
+
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_time_1"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI331_time_1"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI333_time_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_permeate_PR_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_concentrate_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_electrolyte_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI332_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI380_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_FIS_330_1"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_conductivity_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_time_2"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI331_time_2"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI333_time_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_permeate_PR_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_concentrate_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_electrolyte_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI332_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI380_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_FIS_330_2"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_conductivity_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_time_3"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI331_time_3"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI333_time_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_permeate_PR_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_concentrate_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_electrolyte_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI332_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI380_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_FIS_330_3"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_conductivity_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_time_4"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI331_time_4"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI333_time_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_permeate_PR_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_concentrate_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_electrolyte_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI332_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI380_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_FIS_330_4"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_conductivity_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_time_5"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI331_time_5"></td>
+                                            <td><input type="text" class="form-control"
+                                                    formControlName="RO_plant_No_7_feed_press_PI333_time_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_permeate_PR_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_concentrate_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_electrolyte_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI332_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_flow_FI380_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_FIS_330_5"></td>
+                                            <td><input type="text" class="form-control" formControlName="RO_plant_No_7_conductivity_5"></td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                                <div class="text-center">
+                                    <h2>FUEL SYSTEM</h2>
+                                </div>
+
+                                <p><strong>1. Fuel Transfer Pump</strong></p>
+                                <span><strong>(a). Carry out following checks before starting the pump. </strong></span>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th>Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>(i)</td>
+                                            <td>Check pipe system is clean and clear from obstruction</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pipe_sys"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(ii)</td>
+                                            <td>Prime the pumps with fuel oil drawn from the supply system to ensure
+                                                that the pump will not run in a dry unlubricated condition. </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_prime_pump"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iii)</td>
+                                            <td>Rotate the pumps, by hand, in direction indicated on the driving end
+                                                cover.</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_end_cover"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iv)</td>
+                                            <td>Check that the functional position of all valves should correspond with
+                                                the valve position indicators.</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valve_pos"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(v)</td>
+                                            <td>Check that all valves are in the open position.</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_open_pos"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(vii)</td>
+                                            <td>Ensure all deck fuel receiving valve should be closed</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_deck_closed"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(viii)</td>
+                                            <td> Switch ON starter and check rotation of motor </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_switch_on"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(ix)</td>
+                                            <td>Check pump for sign of overheating over a 10minute period </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_10min_prd"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(x)</td>
+                                            <td>Open suction from one of the Aft tanks No. 10 and 22</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_Aft_tanks"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(xi)</td>
+                                            <td>Repeat the above fuel transfer procedure for aft fuel tanks no. 10 to 22
+                                                and check time taken from start to pump working </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pump_working"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(xii)</td>
+                                            <td>During fuel transfer check operation of Sounding tubes, TL 15 and record
+                                                figures </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_TL_15"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <span><strong>(2). Check – Off List for System Trials</strong></span>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th>Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">(a)</td>
+                                            <td rowspan="4">Pump/ centrifuge installation completed in accordance with
+                                                the reference drawings</td>
+                                            <td>Pump No.1</td>
+                                            <!-- <td>Pump No.2</td>
+                                    <td>Fuel Separator no.1 </td>
+                                    <td>Fuel Separator no.2</td> -->
+                                            <td><input type="text" class="form-control" formControlName="check_off_centrifuge_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump No.2</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_centrifuge_pump_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel Separator no.1</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_centrifuge_fuel_1"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Fuel Separator no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_centrifuge_fuel_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="7">(b)</td>
+                                            <td rowspan="7">Pressure gauges and thermometers are calibrated and red
+                                                marked indicating working pressure of the system. </td>
+                                            <td>Pump 1 suction pressure gauges </td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_therm_pump_suc_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump 1 discharge pressure gauges</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_therm_pump_disc_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump 2 suction pressure gauges </td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_therm_pump_suc_2"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Pump 2 discharge pressure gauges </td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_therm_pump_disc_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump suction gauges</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_therm_sep_suc_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump discharge gauges</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_therm_sep_disc_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator 2 feed pump suction gauges</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_therm_sep_suc_2"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td rowspan="7">(c)</td>
+                                            <td rowspan="7">All FO tanks and FO Service tanks cleaned,inspected and
+                                                cleared by respective agencies and ready to receive fuel oil.(NA for
+                                                PRT) </td>
+                                            <td>Storage tank no.1 </td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fO_tank_stor_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fO_tank_stor_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.3</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fO_tank_stor_3"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Storage tank no.4</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fO_tank_stor_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no. 5 Storage tank no. 6 , 9, 10, 11, 14, 15, 16, 17, 18,
+                                                19, 20 , 21 and 22</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fO_tank_stor_22"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel oil service tank no.1 & 2</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fO_tank_fuel_oil_1_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel oil service tank no.3 & 4</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_ffO_tank_fuel_oil_3_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(d)</td>
+                                            <td colspan="2">Sufficient lights available.</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_suff_light"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(e)</td>
+                                            <td colspan="2">Communication control position available between and tanks.
+                                                (Motorola) pump</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_comm_moto"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(f)</td>
+                                            <td colspan="2">Test area is cleaned.</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_test_area"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(g)</td>
+                                            <td colspan="2">All the pipes are clamps properly supported with</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_pipe_clamps"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(h)</td>
+                                            <td colspan="2">Talley plates are gauges fitted on all valves, and gauge.
+                                            </td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_talley_plate"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(j)</td>
+                                            <td colspan="2">Portable Fire Fighting extinguisher as per CNAL.</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fire_CNAL"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="7">(k)</td>
+                                            <td rowspan="7">Air escape pipes of all FO tanks are open/clear of any
+                                                obstruction (prior to filling of Tanks).</td>
+                                            <td>Storage tank no.1</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_stor_tank_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_stor_tank_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.3</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_stor_tank_3"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Storage tank no.4</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_stor_tank_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no. 5 Storage tank no. 6 , 9, 10, 11, 14, 15, 16, 17, 18,
+                                                19, 20 , 21 and 22</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_stor_tank_22"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel oil service tank no.1 & 2</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fuel_oil_1_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel oil service tank no.3 & 4</td>
+                                            <td><input type="text" class="form-control" formControlName="check_off_fuel_oil_3_4"></td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <p><strong>System Trials.</strong></p>
+                                <h4>(a). Piping</h4>
+                                <p>Visual checks of following components to be carried out for any leakages or damage.
+                                </p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>(i)</td>
+                                            <td colspan="2">Compensators</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_ppip_compen"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(ii)</td>
+                                            <td colspan="2">Flange-connections</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_flange"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iii)</td>
+                                            <td colspan="2">Gaskets</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_gasket"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iv)</td>
+                                            <td colspan="2">Adapters</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_adap"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">(v)</td>
+                                            <td rowspan="4">Suction strainers - for cleanliness and correctfittings. </td>
+                                            <td>Pump No.1</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_strain_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump No.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_strain_pump_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump no.1</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_feed_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_feed_pump_2"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(vi)</td>
+                                            <td colspan="2">System Integrity checks</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_integrity_check"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(vii)</td>
+                                            <td colspan="2">Supporting clamps </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_pip_supp_clamps"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <h4>(b). Valves</h4>
+                                <p>Visual and operational checks of following valves to be carried out. Operate the
+                                    valves through their complete range of operations to ensure that the valve position
+                                    indicator moves with the valve..</p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">(i)</td>
+                                            <td rowspan="4">Pump valves suction </td>
+                                            <td>Pump No.1</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_suc_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump No.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_suc_pump_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel Separator no.1</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_sep_1"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Fuel Separator no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_sep_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">(ii)</td>
+                                            <td rowspan="4">Pump discharge valves </td>
+                                            <td>Pump No. 1</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_disc_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump No.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_disc_pump_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump no.1</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_sep_feed_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_sep_feed_pump_2"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td rowspan="7">(iii)</td>
+                                            <td rowspan="7">Tank fuelling and defueling valves </td>
+                                            <td>Storage tank no.1 </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_def_tank_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_def_tank_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.3</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_def_tank_3"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Storage tank no.4</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_def_tank_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no. 5 Storage tank no. 6 , 9, 10, 11, 14, 15, 16, 17, 18,
+                                                19, 20 , 21 and 22</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_tank5_22"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel oil service tank no.1 & 2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_oil_tank_1_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel oil service tank no.3 & 4</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_oil_tank_3_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td rowspan="4">(v)</td>
+                                            <td rowspan="4">Main fuelling valves (fitted on upper deck) </td>
+                                            <td>FWD fuelling (AK100 fwd and rear)</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_FWD_AK100"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Port drum space</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_port_drum"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Starboard drum space</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_drum_space"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Aft fuelling (helo deck) </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_AFT_deck"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(vi)</td>
+                                            <td>Balancing valves</td>
+                                            <td>Balancing valves between fuel oil tank no. 3&4, 8&9, 10&11, 14&15,
+                                                16 & 17, 18 & 19. </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_bal_19"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">(vii)</td>
+                                            <td rowspan="2">Service tank filling and suction valves</td>
+                                            <td>Fuel oil service tank no. 1 & 2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_tank_1_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel oil service tank no. 3 & 4</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_tank_3_4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">(viii)</td>
+                                            <td rowspan="2">Separator feed pump suction and discharge valves</td>
+                                            <td>Feed pump no.1</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_feed_pump_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feed pump no.2</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_feed_pump_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(ix)</td>
+                                            <td colspan="2">Separator system inlet, outlet, isolating and service tank filling
+                                                valves</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_valves_sep_inlet"></td>
+                                        </tr>
+
+
+
+
+                                    </tbody>
+                                </table>
+
+                                <p><strong>(c) Tanks. Visual/ functional checks to be carried out for the
+                                        following.</strong></p>
+                                <table>
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th>Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>(i)</td>
+                                            <td>Sounding tube and sounding tapes – Volumetric marking on sounding chart
+                                                to be cross checked with sounding tape markings during fuelling.
+                                                Intactness of sounding tape and tube to be checked during tank cleaning
+                                                activity.</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_soun_tube"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(ii)</td>
+                                            <td>Manhole door gaskets to be renewed. </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_gasket_renewed"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <p><strong>(d)Instrumentation.</strong>Visual/ functional checks to be carried out for
+                                    the following and test certificate to be obtained.</p>
+                                <table>
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="9">(i)</td>
+                                            <td rowspan="9">Pressure gauges. All pressure and vacuum gauges in the
+                                                system and equipment to checked for functionality and operation.
+                                                Pressure gauge marking for operating range to be completed.Calibration
+                                                certificates to be provided. Valves in gauge line and on the pressure
+                                                gauge is to be checked for functionality and operation. </td>
+                                            <td>Pump no.1 suction pressure gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_pump_suc_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump no.1 discharge pressure gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_pump_disc_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump no.2 suction pressure gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_pump_suc_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pump no.2 discharge pressure gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_pump_disc_2"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Separator feed pump no. 1 suction gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_feed_suc_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump no. 1 discharge gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_feed_disc_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump no. 2 suction gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_feed_suc_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator feed pump no. 2 discharge gauge </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_feed_disc_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>other gauges</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_press_other_gauges"></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="7">(ii)</td>
+                                            <td rowspan="7">Sensor. All sensors in the tanks to be checked for
+                                                functionality and operation. Calibration certificates to be provided
+                                            </td>
+                                            <td>Storage tank no.1 level sensor </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_stor_tank_1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.2 level sensor</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_stor_tank_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.3 level sensor</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_stor_tank_3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage tank no.4 level sensor</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_stor_tank_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Storage tank no. 5 ,6,9,10,11,14,15,16,17, 18, 19,20,21 & 22 level
+                                                sensor</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_stor_tank_22"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Service tank no.1& 2 level sensor</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_stor_tank_1_2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Service tank no. 3 & 4 level sensor </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_stor_tank_3_4"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>(iii)</td>
+                                            <td colspan="2">Gauge lines. All gauge lines to be checked for proper
+                                                fitting and leakages</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_inst_sensor_gauge_line"></td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <p><strong>(e) Foundation.</strong>Visual checks of foundation to be carried out
+                                    ascertaining its condition.</p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3">(i)</td>
+                                            <td rowspan="3">Foundation</td>
+                                            <td>Fuel Transfer Pumps</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_found_pump"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel feed pumps</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_found_feed_pump"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Separator</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_found_sep"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <p><strong>(f) Mounting.</strong>Condition, attenuation and grouping of mounts to be
+                                    checked.</p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th colspan="2">Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3">(i)</td>
+                                            <td rowspan="3">Mounting</td>
+                                            <td>Physical Condition </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_mount_phy_cond"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Attenuation</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_mount_atten"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Service life as per MAINTOPs/OEM Documents.</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_mount_OEM_doc"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <p><strong>(g) Functionality Checks.</strong>Functionality checks of system (fueling and
+                                    defueling lines) is to be carried out as follows..</p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>Ser</th>
+                                        <th>Description</th>
+                                        <th>Sat/Unsat</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>(i)</td>
+                                            <td>Fuelling. Functionality checks/ Intactness of the fueling line to be
+                                                checked during fueling from barge/ ship at harbour. </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_func_barge_ship"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(ii)</td>
+                                            <td>Goose necks of foxle fueling points (Port) and pressure gauges to be
+                                                checked for proper fitment and working.</td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_func_goose_neck"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iii)</td>
+                                            <td>Port and Stbd torpedo deck fuelling points (angle valve) to be checked
+                                                for proper fitment and intactness. </td>
+                                            <td><input type="text" class="form-control" formControlName="fuel_trans_func_port_stbd"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+   <button class="btn btn-success" (click)="onSubmit()">Submit</button>
+
+    </form>
+</section>

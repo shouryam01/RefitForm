@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DelhiRefitTwooComponent } from './delhi-refit-twoo.component';
+import { DelhiRefitTenComponent } from './delhi-refit-ten.component';
 
-describe('DelhiRefitTwooComponent', () => {
-  let component: DelhiRefitTwooComponent;
-  let fixture: ComponentFixture<DelhiRefitTwooComponent>;
+describe('DelhiRefitTenComponent', () => {
+  let component: DelhiRefitTenComponent;
+  let fixture: ComponentFixture<DelhiRefitTenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DelhiRefitTwooComponent ]
+      declarations: [ DelhiRefitTenComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DelhiRefitTwooComponent);
+    fixture = TestBed.createComponent(DelhiRefitTenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

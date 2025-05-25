@@ -1,0 +1,1053 @@
+<section>
+    <form [formGroup]="DelhiRefit_ten">
+        
+    <h3>ENGINE ROOM SPRINKLING SYSTEM </h3>
+    <h4>1. Pre-Requisite Check – Off List for System Trials.</h4>
+    <table>
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td rowspan="4">(a)</td>
+            <td rowspan="4">Pressure gauges are calibrated and red marked indicating working pressure  of the system.</td>
+            <td>Sprinkling system gauges in FER</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_Sprink1" /></td>      
+        </tr>
+        <tr>
+            <td>Sprinkling system gauges in  AER</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_Sprink2" /></td>
+        </tr>
+
+        <tr>
+            <td>Sprinkling system gauges in AMR </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_Sprink3" /></td>
+        </tr>
+        <tr>
+            <td>Pressure gauges of 03 HP air cylinder (for operation of Pneumatic valves) </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_Sprink4" /></td>
+        </tr>
+
+        <tr>
+            <td>(b)</td>
+            <td colspan="2">System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_system_compre" /></td>      
+        </tr>
+
+        <tr>
+            <td>(c)</td>
+            <td colspan="2">Sufficient lights available. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_Sufficient_light"/></td>      
+        </tr>
+
+        <tr>
+            <td>(d)</td>
+            <td colspan="2">Test area is cleaned</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_test_area_clean" /></td>
+        </tr>
+        <tr>
+            <td>(e)</td>
+            <td colspan="2">All the pipes are properly supported with clamps.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_pipes_clamps" /></td>
+        </tr>
+
+        <tr>
+            <td>(f)</td>
+            <td colspan="2">Talley plates are fitted on all valves, cocks and gauges </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_talley_plats_gauge" /></td>
+        </tr>
+
+        <tr>
+            <td>(g)</td>
+            <td colspan="2">All nozzles/ sprinklers to be covered with plastic bags so as to avoid filling of water in the compartment. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_nozzle_bag" /></td>
+        </tr>
+
+        <tr>
+            <td>(h)</td>
+            <td colspan="2">Inlet and outlet valve of QOV(pneumatic valve) for sprinkling system of particular compartment to be in open position</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_room_inlet_QOV" /></td>
+        </tr>
+    </table>
+    <h4>2. System Trials</h4>
+    <h4>a. Piping </h4>
+
+        <table>
+            <tr>
+                <th>Ser.</th>
+                <th>Description</th>
+                <th>SAT/UNSAT</th>
+            </tr>
+
+            <tr>
+                <td>(i)</td>
+                <td>Compensators</td>
+                <td><input type="text" class="form-control" form-control formControlName="Eng_Spr_Piping_pipelines" /></td>
+            </tr>
+
+            <tr>
+                <td>(ii)</td>
+                <td>Flange-connections</td>
+                <td><input type="text" class="form-control" form-control formControlName="Eng_Spr_Piping_Flange" /></td>
+            </tr>
+
+            <tr>
+                <td>(iii)</td>
+                <td>Gaskets</td>
+                <td><input type="text" class="form-control" form-control formControlName="Eng_Spr_Piping_Gaskets" /></td>
+            </tr>
+
+            <tr>
+                <td>(iv)</td>
+                <td>Adapters</td>
+                <td><input type="text" class="form-control" form-control formControlName="Eng_Spr_Piping_Adapters" /></td>
+            </tr>
+
+            <tr>
+                <td>(vi)</td>
+                <td>System Integrity checks - </td>
+                <td><input type="text" class="form-control" form-control formControlName="Eng_Spr_Piping_System_Integrity" /></td>
+            </tr>
+
+            <tr>
+                <td>(vii)</td>
+                <td>Supporting Clamps -</td>
+                <td><input type="text" class="form-control" form-control formControlName="Eng_Spr_Piping_Leakage_checks" /></td>
+            </tr>
+
+        </table>
+
+
+
+
+        <p>(c) <strong>Valves. </strong>Visual and operational checks of following valves are to be carried out. operate the valves through their complete range of operations</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th rowspan="2">Ser.</th>
+            <th rowspan="2">Compartment</th>
+            <th colspan="2">Location</th>
+            <th rowspan="2">Remarks</th>
+        </tr>
+        <tr>
+            <th>Valves with pneumatic drive</th>
+            <th>Hand operated control valves</th>
+        </tr>
+        <tr>
+            <td rowspan="3">(i)</td>
+            <td rowspan="3">Forward Engine Room</td>
+            <td rowspan="2">Forward Engine Room Starboard</td>
+            <td>Lobby No. 4 (for start and cut off of the system)</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_valve01"></td>
+        </tr>
+        <tr>
+            <td>Lobby No. 21 (for start and cut off of the system) </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_valve02"></td>
+        </tr>
+        <tr>
+            <td>Forward engine room portside</td>
+            <td>Lobby No. 21  (for cut off of the water sprinkling system of gangway)</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_valve03"></td>
+        </tr>
+        <tr>
+            <td rowspan="4">(ii)</td>
+            <td rowspan="4">Aft Engine Room</td>
+            <td rowspan="2">Aft Engine Room Starboard</td>
+            <td>Aft engine room, starboard, near the ladder(for start and cut off of the system)</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_valve04"></td>
+        </tr>
+        <tr>
+            <td>Aft engine room, portside, near the ladder(for start and cut  off of the system) </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_valve05"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Aft engine room, No.3 deck, portside</td>
+            <td>Near GTG port side</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_valve06"></td>
+        </tr>
+        <tr>
+            <td>Near GTG starboard side</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_valve07"></td>
+        </tr>
+
+<!-- Doubt in this Section.... Page -126 -->
+    </table>
+
+
+
+ <p>(d) <strong>Instrumentation. </strong>Visual/ functional checks are to be carried out for the following:</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+
+        <tr>
+            <td rowspan="5">(i)</td>
+            <td rowspan="5">Pressure gauges. <br>All pressure gauges in the system and equipment to checked for functionality and operation.<br>Pressure gauge marking for operating range to be completed.</td>
+            <td>Sprinkling system pressure gauge for FER  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_01"></td>
+        </tr>
+        <tr>
+            <td>Sprinkling system pressure gauge for AER </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_02"></td>
+        </tr>
+
+        <tr>
+            <td>Sprinkling system pressure gauge for  AMR </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_03"></td>
+        </tr>
+
+        <tr>
+            <td>Other gauges</td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_04"></td>
+        </tr>   
+
+        <tr>
+            <td>Pressure gauges of 03 HP air cylinder (for operation  of Pneumatic valves) </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_05"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td>Sensor. All sensors in the system and related equipment to be checked for functionality and operation. Calibration certificates to be provided  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_06"></td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_07"></td>
+        </tr>
+
+         <tr>
+            <td>(iv)</td>
+            <td colspan="2"> Gauge lines. All gauge lines to be checked for proper fitting and leakages.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Eng_spr_Instru_08"></td>
+        </tr>
+    </table>
+<!-- End of Appendix AT and Starting of Appendix AU  -->
+
+ <h3>SEA WATER COOLING SYSTEM </h3>
+    <h4>1. Pre-Requisite Check – Off List for System Trials.</h4>
+    <table>
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td rowspan="7">(a)</td>
+            <td rowspan="7">Pump installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. Applicable in case of ABER/ MLU replacement of item. </td>
+            <td>Pump No. 1</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump1" /></td>      
+        </tr>
+        <tr>
+            <td>Pump No. 2</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump2" /></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 3</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump3" /></td>
+        </tr>
+        <tr>
+            <td>Pump No. 4</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump4" /></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 5</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump5" /></td>
+        </tr>
+        <tr>
+            <td>Pump No. 6</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump6" /></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 7</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump7" /></td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">(b)</td>
+            <td rowspan="2">Pressure gauges and thermometers are calibrated and  red marked indicating working pressure of the system </td>
+            <td>Pump suction pressure gauges</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump_suction1" /></td>      
+        </tr>
+        <tr>
+            <td>Pump  discharge pressure gauges   </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pump_discharge1" /></td>  
+        </tr>
+
+        <tr>
+            <td>(c)</td>
+            <td colspan="2">System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_sys_install" /></td>
+        </tr>
+        <tr>
+            <td>(d)</td>
+            <td colspan="2">Flexible connections are to be provided at pump suction & discharge flanges.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_conn1" /></td>
+        </tr>
+
+        <tr>
+            <td>(e)</td>
+            <td colspan="2">Sea water pipes are not to be laid through tanks which contains oil.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pipes" /></td>
+
+        </tr>
+         <tr>
+            <td>(f)</td>
+            <td colspan="2">All the pipes are properly supported with clamps with rubber inserts.   </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_pipes_clamps" /></td>
+
+        </tr>
+        <tr>
+            <td>(g)</td>
+            <td colspan="2">Sufficient lights available. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_Sufficient_light"/></td>      
+        </tr>
+
+        <tr>
+            <td>(h)</td>
+            <td colspan="2">Talley plates are fitted on all valves, cocks and gauges </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_talley_plats_gauge" /></td>
+        </tr>
+    </table>
+
+    <h4>2. Sea Water Cooling Pump.</h4>
+    <p>Carry out following checks before starting the pump.</p>
+
+
+    <table>
+        <tr>
+            <th width="5%">Ser.</th>
+            <th colspan="2">Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td colspan="2">Check pipe system is clean and clear from obstruction. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_cooling_pump1" /></td>      
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td colspan="2">Prime the pumps by opening the pump suction valve and carry out purging of pump casing (for initial starting</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_cooling_pump2" /></td>
+        </tr>
+
+        <tr>
+            <td>(iii)</td>
+            <td colspan="2">Rotate the pumps, by hand, in direction indicated on the driving end cove</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_cooling_pump3" /></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td colspan="2">Check that the functional position of all valves should correspond with the valve position indicators.</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_cooling_pump4" /></td>
+        </tr>
+
+        <tr>
+            <td>(v)</td>
+            <td colspan="2">Check that all valves are in the open position.</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_cooling_pump5" /></td>
+        </tr>
+        <tr>
+            <td>(vi)</td>
+            <td colspan="2">Start the pump and check correct rotation.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_cooling_pump6" /></td>
+        </tr>
+</table>
+
+         <h4>3. System Trials.</h4>
+         <h4>(a) Piping. Visual checks of following components to be carried out for any leakages or damage.  </h4>
+        <table>
+            <tr>
+                <th>Ser.</th>
+                <th>Description</th>
+                <th>Remarks</th>
+            </tr>
+
+            <tr>
+                <td>(i)</td>
+                <td>Bellows/ flexible connections  </td>
+                <td><input type="text" class="form-control" form-control formControlName="Sea_water_piping_Compen" /></td>
+            </tr>
+
+            <tr>
+                <td>(ii)</td>
+                <td>Flange-connections</td>
+                <td><input type="text" class="form-control" form-control formControlName="Sea_water_piping_Flange" /></td>
+            </tr>
+
+            <tr>
+                <td>(iii)</td>
+                <td>Gaskets</td>
+                <td><input type="text" class="form-control" form-control formControlName="Sea_water_piping_Gaskets" /></td>
+            </tr>
+
+            <tr>
+                <td>(iv)</td>
+                <td>Adapters</td>
+                <td><input type="text" class="form-control" form-control formControlName="Sea_water_piping_Adapters" /></td>
+            </tr>
+
+            <tr>
+                <td>(v)</td>
+                <td>Suction strainers </td>
+                <td><input type="text" class="form-control" form-control formControlName="Sea_water_piping_Suction_HPAC1" /></td>
+            </tr>
+
+            <tr>
+                <td>(vi)</td>
+                <td>System Integrity checks - for any type of leakages.</td>
+                <td><input type="text" class="form-control" form-control formControlName="Sea_water_piping_System_Integrity" /></td>
+            </tr>
+
+            <tr>
+                <td>(vii)</td>
+                <td>Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support </td>
+                <td><input type="text" class="form-control" form-control formControlName="Piping_lub_oil_Supporting_clamps" /></td>
+            </tr>
+        </table>
+
+
+
+        <p>(b) <strong>Valves. </strong>Following valves are to be checked for Visual and operational damage/ defect. Operate the valves through their complete range of operations to ensure that the valve position indicator moves with the valve. </p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="7">(i)</td>
+            <td rowspan="7">Pump sea chest valve </td>
+            <td>Pump No. 1</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve01"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 2</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve02"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 3</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve03"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 4</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve04"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 5</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve05"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 6</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve06"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 7</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve07"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="7">(ii)</td>
+            <td rowspan="7">Pump Suction valve</td>
+            <td>Pump No. 1</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_suction01"></td>
+        </tr>
+        <tr>
+            <td>Pump No. 2</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_suction02"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 3</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_suction03"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 4</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_suction04"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 5</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_suction05"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 6</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_suction06"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 7</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_suction07"></td>
+        </tr>
+
+       <tr>
+            <td rowspan="7">(iii)</td>
+            <td rowspan="7">Pump Discharge valve</td>
+            <td>Pump No. 1</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_disc01"></td>
+        </tr>
+        <tr>
+            <td>Pump No. 2</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_disc02"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 3</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_disc03"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 4</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_disc04"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 5</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_disc05"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 6</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_disc06"></td>
+        </tr>
+
+        <tr>
+            <td>Pump No. 7</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_valve_disc07"></td>
+        </tr>
+
+        <tr>
+            <td>(iv)</td>
+            <td colspan="2">Cooling water system isolating valves</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_cooling_iso_valv"></td>
+        </tr>
+
+        <tr>
+            <td>(v)</td>
+            <td colspan="2">Valves for stern tube cooling </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_stern_valv"></td>
+        </tr>
+
+    </table>
+
+    <p>(c) <strong>Instrumentation. </strong>Following are to be checked for Visual/ functional checks and test certificate to be obtained</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>Remarks</th>
+        </tr>
+
+        <tr>
+            <td>(i)</td>
+            <td>Pressure gauges. <br>All pressure gauges in the system and equipment to checked for functionality and operation.<br>Pressure gauge marking for operating range to be completed. <br>Calibration certificates to be provided Valves in gauge line and on the pressure, gauge are to be checked for functionality and operation .</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_instrumentation_01"></td>
+        </tr>
+         <tr>
+            <td>(ii)</td>
+            <td> Gauge lines. All gauge lines to be checked for proper fitting and leakages.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_instrumentation_02"></td>
+        </tr>
+    </table>
+
+     <p>(d) <strong>Foundation. </strong>Visual checks of foundation are to be done for ascertaining foundation condition.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="7">(i)</td>
+            <td rowspan="7">Foundation</td>
+            <td>Sea Water cooling pump No. 1</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_foundation_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Sea Water cooling pump No. 2</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_foundation_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Sea Water cooling pump No. 3</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_foundation_remark_03"></td>
+        </tr>
+        <tr>
+            <td>Sea Water cooling pump No. 4</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_foundation_remark_04"></td>
+        </tr>
+        <tr>
+            <td>Sea Water cooling pump No. 5</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_foundation_remark_05"></td>
+        </tr>
+        <tr>
+            <td>Sea Water cooling pump No. 6</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_foundation_remark_06"></td>
+        </tr>
+
+        <tr>
+            <td>Sea Water cooling pump No. 7</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_foundation_remark_07"></td>
+        </tr>
+    </table>
+    <p>(e) <strong>Mounting. </strong>Condition, attenuation and grouping of mounts have to be checked.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <td>Ser.</td>
+            <td colspan="2">Description</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <td rowspan="3">(i)</td>
+            <td rowspan="3">Mounting</td>
+            <td>Physical Condition</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_mounting_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Attenuation</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_mounting_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Service life as per MAINTOPS/OEM Doc.</td>
+            <td><input type="text" class="form-control" form-control formControlName="Sea_water_mounting_remark_03"></td>
+        </tr>
+    </table>
+
+    <!-- END OF APPENDIX AU || STARTING OF APPENDIX AV -->
+
+
+
+     <h3>TRIALS STATUS OF HALON FIXED FIRE FIGHTING SYSTEM -  INS MYSORE</h3>
+
+     <table>
+        <tr>
+            <th rowspan="2">Ser.</th>
+            <th rowspan="2">Description</th>
+            <th colspan="3">TRIALS STATUS</th>
+        </tr>
+
+        <tr>
+            <th>Halon (Port Station)</th>
+            <th>Halon (Stbd Station)</th>
+            <th>Halon (Pump & Filter Room)</th>
+        </tr>
+        <tr colspan="6">Control Panel Checks</tr>
+        <tr>
+            <td>1</td>
+            <td>Control Panel lamp test </td>
+            <td colspan="4"><input type="text" class="form-control" form-control formControlName="Halon_system1" /></td>      
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mains ‘ON’ Indication </td>
+            <td colspan="4"><input type="text" class="form-control" form-control formControlName="Halon_system2" /></td>      
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Mains ‘Fail’ Indication </td>
+            <td colspan="4"><input type="text" class="form-control" form-control formControlName="Halon_system3" /></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Emergency battery backup checks (CNC Switchboard)</td>
+            <td colspan="4"><input type="text" class="form-control" form-control formControlName="Halon_system4" /></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Halon abort indication</td>
+            <td colspan="4"><input type="text" class="form-control" form-control formControlName="Halon_system5" /></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Protractor (Actuator) operated indication (Checks will be undertaken in conjunction with Ventilation crash off trials)</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system6" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system7" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system8" /></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Protractor (Actuator) fault indication</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system9" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system10" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system11" /></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Time Delay ‘ON’ indication</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system12" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system13" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system14" /></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>Pilot cylinders fault indication</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system15" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system16" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system17" /></td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Halon cylinders fault indication </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system18" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system19" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system20" /></td>
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>Manifold fault indicatio</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system21" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system22" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system23" /></td>
+        </tr>
+
+        <tr>
+            <td>12</td>
+            <td>Pilot bottle low pressure alarm by simulation </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system24" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system25" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system26" /></td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>Halon bottles low pressure alarm by simulation </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system27" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system28" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system29" /></td>
+        </tr>
+
+        <tr>
+            <td>14</td>
+            <td>Pressure in manifold indication </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system30" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_31" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_32" /></td>
+        </tr>   
+
+        <tr>
+            <td>15</td>
+            <td>Halon discharge alarms checks </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_33" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_34" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_35" /></td>
+
+        </tr>
+
+        <tr>
+            <td>16</td>
+            <td>Halon fault indication  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_36" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_37" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_38" /></td>
+        </tr>
+        <tr colspan="6">Phyical Checks</tr>
+
+        <tr>
+            <td>17</td>
+            <td>Securing arrangements of all three N2 Pilot bottles and all Nine Halon bottles position in each station. (a) Connection of halon bottles to manifold (Checks 
+of flexible wire braided hose connections between bottle and hose, hose and NRV). 
+(b) Connection of pilot nitrogen bottles to DCVs and Master Halon Cylinder. (c) Securing clamps of Halon Bottles. 
+(d) Securing clamps of system lines</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system39" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system40" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system41" /></td>
+        </tr>
+
+        <tr>
+            <td>18</td>
+            <td>Locking arrangement of N2 Pilot bottles </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system42" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system43" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system44" /></td>
+        </tr>
+
+        <tr>
+            <td>19</td>
+            <td>Status of connection of Halon Relief line to atmosphere</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system45" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system46" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system47" /></td>
+        </tr>
+
+        <tr>
+            <td>20</td>
+            <td>Talley plates are fitted on all Valves, Gauges, Pilot Bottle cabinet door, Flow marking and Bottles Marking. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system48" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system49" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system50" /></td>
+        </tr>
+
+        <tr>
+            <td>21</td>
+            <td>Operating instruction availability in compt. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system51" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_51" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_52" /></td>
+        </tr>   
+
+        <tr>
+            <td>22</td>
+            <td>Halon station ventilation status  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_53" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_54" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_55" /></td>
+
+        </tr>
+
+        <tr>
+            <td>23</td>
+            <td>Halon station lights/ AELs  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_56" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_57" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_58" /></td>
+        </tr>
+        
+
+        <tr>
+            <td>24</td>
+            <td>Availability of Thermometer for Halon compartment  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_59" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_61" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_62" /></td>
+        </tr>   
+
+        <tr>
+            <td>25</td>
+            <td>Availability of Bottles (Halon & Pilot) pressure monitoring log book  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_63" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_64" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_65" /></td>
+
+        </tr>
+
+        <tr>
+            <td>26</td>
+            <td>Halon bottles Pressure checks  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_66" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_67" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_68" /></td>
+        </tr>
+
+        <tr>
+            <td>27</td>
+            <td>Pilot bottles Pressure checks </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_69" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_70" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_71" /></td>
+        </tr>
+
+        <tr>
+            <td>28</td>
+            <td>Physical conditions of nozzles fitted in compartment </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_72" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_73" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_74" /></td>
+        </tr>
+
+        <tr>
+            <td>29</td>
+            <td>Operational checks of ventilation (Supply/ exhaust) blowers </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_75" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_76" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_77" /></td>
+        </tr>
+
+        <tr>
+            <td>30</td>
+            <td>Ventilation crash stop through Remote, Local and Manual modes </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_78" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_79" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_80" /></td>
+        </tr>
+
+        <tr>
+            <td>31</td>
+            <td>Audio- Visual alarm Checks (Activated when key switch for releasing halon is turned for respective area).</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_81"/></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_82" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_83" /></td>
+        </tr>
+
+        <tr>
+            <td>32</td>
+            <td>Fault alarm (Indicator will light with single tone alarm) In case of fault (Pilot cylinder fault, halon cylinder fault, manifold fault, protractor fault, halon fault, battery low and main fails) </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_84" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_85" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_86" /></td>
+        </tr>
+
+        <tr>
+            <td>33</td>
+            <td>Non-Return Valve Checks - fitted between halon discharge hose and manifold. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_87" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_88" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_89" /></td>
+        </tr>
+
+        <tr>
+            <td>34</td>
+            <td>Manual operation of DCV </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_90" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_91" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_92" /></td>
+        </tr>
+
+        <tr>
+            <td>35</td>
+            <td>Blow through checks of all nozzles and Manifold pressure alarm checks at 6- 7 bar</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_93" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_94" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_95" /></td>
+        </tr>
+
+        <tr>
+            <td>36</td>
+            <td>Time delay checks from Remote & Local </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_96" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_97" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_98" /></td>
+        </tr>
+
+        <tr>
+            <td>37</td>
+            <td>Solenoid voltage of Pilot bottles from remote & local. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_99" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_100" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_101" /></td>
+        </tr>
+
+        <tr>
+            <td>38</td>
+            <td>Bottle Head Assembly (BHAs) operation checks at shop floor for Master and Slave Halon Cylinders. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_102" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_103" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_104" /></td>
+        </tr>
+
+        <tr>
+            <td>39</td>
+            <td>Direction Control Valve (DCVs) pneumatic operation checks at shop floor. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_105" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_106" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_107" /></td>
+        </tr>
+
+        <tr>
+            <td>40</td>
+            <td>Calibration Certificates of Relief Valves.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_108" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_109" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_110" /></td>
+        </tr>
+
+        <tr>
+            <td>41</td>
+            <td>Calibration Certificates of Pressure switch for Halon discharge alarm fitted in FER, AER and AMR.</td>   
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_111" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_112" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_113" /></td>
+        </tr>
+
+        <tr>
+            <td>42</td>
+            <td>Calibration Certificates of Pressure switch fitted in Manifold in Halon Station </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_114" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_115" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_116" /></td>
+        </tr>
+
+        <tr>
+            <td>43</td>
+            <td>Pressure Test Certificates of NRVs.  </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_117" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_118" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_119" /></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Calibration certificates of halon & N2 bottle pressure gauges </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_120" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_121" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_122" /></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Weighing and pressure testing certificates of N2Pilot</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_123" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_124" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_125" /></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Weighing and pressure testing certificates of Main halon cylinder. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_126" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_127" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_128" /></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Pressure Test Certificates of Halon bottle discharge wire braided hoses </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_129" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_130" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_131" /></td>
+        </tr>
+
+        <tr>
+            <td>48</td>
+            <td>N2 pilot Bottles low pressure alarm - Calibration certificate to be handed over indicating set value of low pressure.</td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_132" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_133" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_134" /></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Halon Bottles low pressure alarm - Calibration certificate to be handed over indicating set value of low pressure. </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_135" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_136" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_137" /></td>
+        </tr>
+
+        <tr>
+            <td>50</td>
+            <td>Halon Bottles pilot hoses </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_138" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_139" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_140" /></td>
+        </tr>
+
+        <tr>
+            <td>51</td>
+            <td>Nitrogen pilot hoses </td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_141" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_142" /></td>
+            <td><input type="text" class="form-control" form-control formControlName="Halon_system_143" /></td>
+        </tr>
+     </table>
+        <button class="btn btn-success" (click)="onSubmit()">Submit</button>
+
+    </form>
+</section>

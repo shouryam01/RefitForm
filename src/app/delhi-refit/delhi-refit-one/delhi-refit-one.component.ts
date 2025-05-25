@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DelhiRefitOneComponent implements OnInit {
     delhiForm! : FormGroup;
-    records: any[] = [];
+    delhiRefitOneData: any;
     apiUrl = environment.apiUrl + 'delhi-refit-one';
   constructor(private fb : FormBuilder, private http: HttpClient) { }
 
@@ -838,14 +838,16 @@ export class DelhiRefitOneComponent implements OnInit {
       summ_trial_remarks117 : new FormControl(''),
     });
 
-    this.loadData();
+    this.getDelhiRefitOne();
   }
 
 
-  loadData(): void {
-    this.http.get(this.apiUrl).subscribe(data => {
+  getDelhiRefitOne(): void {
+    this.http.get(this.apiUrl+ "/trial-id=20").subscribe(data => {
       console.log(data);
-      this.records = data as any[];
+      this.delhiRefitOneData = data;
+      this.delhiForm.patchValue(this.delhiRefitOneData);
+
     });
   }
 
@@ -853,7 +855,7 @@ export class DelhiRefitOneComponent implements OnInit {
     const formData = this.delhiForm.value;
     this.http.post(this.apiUrl, formData).subscribe(() => {
       this.delhiForm.patchValue(formData);
-      this.loadData(); // Refresh list
+      this.getDelhiRefitOne(); // Refresh list
   console.log(this.delhiForm.value);  // { name: '...', email: '...', age: '...' }
 });
 
