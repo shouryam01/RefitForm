@@ -1,0 +1,1564 @@
+<section>
+    <form [formGroup]="DelhiRefit_eight">
+        
+    <h3>AIR SYSTEM</h3>
+    <h4>1. Pre-Requisite Check – Off List for System Trials.</h4>
+    <table>
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td rowspan="4">(a)</td>
+            <td rowspan="4">Compressor installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings</td>
+            <td>HPAC no. 1</td>
+            <td><input type="text" form-control formControlName="air_system_compre_HPAC1" /></td>      
+        </tr>
+        <tr>
+            <td>HPAC no. 2</td>
+            <td><input type="text" form-control formControlName="air_system_compre_HPAC2" /></td>
+        </tr>
+
+        <tr>
+            <td>HPAC no. 3</td>
+            <td><input type="text" form-control formControlName="air_system_compre_HPAC3" /></td>
+        </tr>
+        <tr>
+            <td>DD Air Compresor</td>
+            <td><input type="text" form-control formControlName="air_system_compre_HPAC4" /></td>
+        </tr>
+
+        <tr>
+            <td>(b)</td>
+            <td colspan="2">System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. </td>
+            <td><input type="text" form-control formControlName="system_compre" /></td>      
+        </tr>
+
+        <tr>
+            <td>(c)</td>
+            <td colspan="2">Sufficient lights available. </td>
+            <td><input type="text" form-control formControlName="Sufficient_light"/></td>      
+        </tr>
+
+        <tr>
+            <td>(d)</td>
+            <td colspan="2">Communication available between compressor control position and bottles. (Motorola) </td>
+            <td><input type="text" form-control formControlName="comm_compre_HPAC1" /></td>      
+        </tr>
+
+        <tr>
+            <td>(e)</td>
+            <td colspan="2">Test area is cleaned</td>
+            <td><input type="text" form-control formControlName="test_area_clean" /></td>
+        </tr>
+        <tr>
+            <td>(f)</td>
+            <td colspan="2">All the pipes are properly supported with clamps.  </td>
+            <td><input type="text" form-control formControlName="pipes_clamps" /></td>
+        </tr>
+
+        <tr>
+            <td>(g)</td>
+            <td colspan="2">Talley plates are fitted on all valves, cocks and gauges </td>
+            <td><input type="text" form-control formControlName="talley_plats_gauge" /></td>
+        </tr>
+    </table>
+    <h4>2. Electric Compressor Plant (HPAC 1, 2 & 3).</h4>
+    <h4>a. Carry out following checks before starting the compressor.</h4>
+  <table>
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td>Check pipe system is clean and clear from obstruction. </td>
+            <td><input type="text" form-control formControlName="Electri_compress_pipe_sys" /></td>      
+        </tr>
+
+        <tr>
+            <td>(ii)</td>
+            <td>Check air intake filter for cleanliness, correct fitting and free from any type of obstruction. </td>
+            <td><input type="text" form-control formControlName="Electri_compress_air_intake" /></td>      
+        </tr>
+
+        <tr>
+            <td>(iii)</td>
+            <td>Rotate the compressor, by hand, in direction indicated on the driving end cover.</td>
+            <td><input type="text" form-control formControlName="Electri_compress_rotate_compre" /></td>      
+        </tr>
+
+        <tr>
+            <td>(iv)</td>
+            <td>Check air bottle drain valves to be closed.</td>
+            <td><input type="text" form-control formControlName="Electri_compress_air_bottle" /></td>      
+        </tr>
+
+        <tr>
+            <td>(v)</td>
+            <td>Check air bottle inlet and outlet valves to be opened </td>
+            <td><input type="text" form-control formControlName="Electri_compress_air_bottle_inlet" /></td>
+        </tr>
+        <tr>
+            <td>(vi)</td>
+            <td>All valves are in the system are in open position. </td>
+            <td><input type="text" form-control formControlName="Electri_compress_air_valves" /></td>
+        </tr>
+        <tr>
+            <td>(vii)</td>
+            <td>Check tightness of compressor foundation bolts</td>
+            <td><input type="text" form-control formControlName="Electri_compress_tightness" /></td>
+        </tr>
+        <tr>
+            <td>(viii)</td>
+            <td>Check sump oil level of compressor with the help of dip stick and lubricator oil level.</td>
+            <td><input type="text" form-control formControlName="Electri_compress_sump_oil_level" /></td>
+        </tr>
+        <tr>
+            <td>(ix)</td>
+            <td>Check surrounding of compressor to be free from any type of obstruction.</td>
+            <td><input type="text" form-control formControlName="Electri_compress_surrounding" /></td>
+        </tr>
+        <tr>
+            <td>(x)</td>
+            <td>Check fresh water level in tank and Start the compressor and check correct rotation.</td>
+            <td><input type="text" form-control formControlName="Electri_compress_fresh_water_level" /></td>
+        </tr>
+
+    </table>
+        <h4>b.Following checks carried out Compressor is running condition.</h4>
+        <h5>(i) Performance Checks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Performance Trials - <input type="text" form-control formControlName="perfor_trial"></h5>
+        <h5>(ii) Capacity Trials></h5>
+        <table>
+        <tr>
+            <th rowspan="2">Ser.</th>
+            <th rowspan="2">Description</th>
+            <th rowspan="2">Unit</th>
+            <th colspan="2">HPAC No. 1</th>
+            <th colspan="2">HPAC No. 2</th>
+            <th colspan="2">HPAC No. 3</th>
+        </tr>
+
+         <tr>
+            <th>Initial Reading</th>
+            <th>Final Reading</th>
+            <th>Initial Reading</th>
+            <th>Final Reading</th>
+            <th>Initial Reading</th>
+            <th>Final Reading</th>
+        </tr>
+
+
+        <tr>
+            <td>(aa)</td>
+            <td>Air Bottle Pressure</td>
+            <td>Bar</td>
+            <td><input type="text" form-control formControlName="Perform_checks_Air_bottle1" /></td>  
+            <td><input type="text" form-control formControlName="Perform_checks_Air_bottle2" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_Air_bottle3" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_Air_bottle4" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_Air_bottle5" /></td> 
+            <td><input type="text" form-control formControlName="Perform_checks_Air_bottle6" /></td>      
+        </tr>
+
+        <tr>
+            <td>(ab)</td>
+            <td>Time Taken</td>
+            <td>Min</td>
+            <td><input type="text" form-control formControlName="Perform_checks_Time_taken1" /></td>   
+            <td><input type="text" form-control formControlName="Perform_checks_Time_taken2" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_Time_taken3" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_Time_taken4" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_Time_taken5" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_Time_taken6" /></td>      
+        </tr>
+
+        <tr>
+            <td>(ac)</td>
+            <td>Capacity achieved.</td>
+            <td>M<sup>3</sup>/hr</td>
+            <td><input type="text" form-control formControlName="Perform_checks_capacity1" /></td> 
+            <td><input type="text" form-control formControlName="Perform_checks_capacity2" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_capacity3" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_capacity4" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_capacity5" /></td>      
+            <td><input type="text" form-control formControlName="Perform_checks_capacity6" /></td>      
+        </tr>
+    </table>
+
+    <h4>3. Diesel Driven Compressor</h4>
+    <h4>a. Carry out following checks before starting the compressor.</h4>
+  <table>
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td>Check pipe system is clean and clear from obstruction. </td>
+            <td><input type="text" form-control formControlName="Diesel_driven_1" /></td>      
+        </tr>
+
+        <tr>
+            <td>(ii)</td>
+            <td>Check air intake filter for cleanliness, correct fitting and free from any type of obstruction. </td>
+            <td><input type="text" form-control formControlName="Diesel_driven_2" /></td>      
+        </tr>
+
+        <tr>
+            <td>(iii)</td>
+            <td>Rotate the compressor, by hand, in direction indicated on the driving end cover.</td>
+            <td><input type="text" form-control formControlName="Diesel_driven_3" /></td>      
+        </tr>
+
+        <tr>
+            <td>(iv)</td>
+            <td>Check air bottle drain valves to be closed.</td>
+            <td><input type="text" form-control formControlName="Diesel_driven_4" /></td>      
+        </tr>
+
+        <tr>
+            <td>(v)</td>
+            <td>Check air bottle inlet and outlet valves to be opened </td>
+            <td><input type="text" form-control formControlName="Diesel_driven_5" /></td>
+        </tr>
+        <tr>
+            <td>(vi)</td>
+            <td>All valves are in the system are in open position. </td>
+            <td><input type="text" form-control formControlName="Diesel_driven_6" /></td>
+        </tr>
+        <tr>
+            <td>(vii)</td>
+            <td>Check tightness of compressor foundation bolts</td>
+            <td><input type="text" form-control formControlName="Diesel_driven_7" /></td>
+        </tr>
+        <tr>
+            <td>(viii)</td>
+            <td>Check sump oil level of compressor with the help of dip stick and lubricator oil level.</td>
+            <td><input type="text" form-control formControlName="Diesel_driven_8" /></td>
+        </tr>
+        <tr>
+            <td>(ix)</td>
+            <td>Check surrounding of compressor to be free from any type of obstruction.</td>
+            <td><input type="text" form-control formControlName="Diesel_driven_9" /></td>
+        </tr>
+        <tr>
+            <td>(x)</td>
+            <td>Check fresh water level in tank and Start the compressor and check correct rotation.</td>
+            <td><input type="text" form-control formControlName="Diesel_driven_10" /></td>
+        </tr>
+
+    </table>
+
+    <h4>(b) Piping. Visual checks of following components to be carried out for any leakages or damage.  </h4>
+    <table>
+    <tr>
+        <th>Ser.</th>
+        <th colspan="2">Description</th>
+        <th>SAT/UNSAT</th>
+    </tr>
+
+    <tr>
+        <td>(i)</td>
+        <td colspan="2">Pipelines</td>
+        <td><input type="text" form-control formControlName="Piping_pipelines" /></td>
+    </tr>
+
+    <tr>
+        <td>(ii)</td>
+        <td colspan="2">Flange-connections</td>
+        <td><input type="text" form-control formControlName="Piping_Flange" /></td>
+    </tr>
+
+    <tr>
+        <td>(iii)</td>
+        <td colspan="2">Gaskets</td>
+        <td><input type="text" form-control formControlName="Piping_Gaskets" /></td>
+    </tr>
+
+    <tr>
+        <td>(iv)</td>
+        <td colspan="2">Adapters</td>
+        <td><input type="text" form-control formControlName="Piping_Adapters" /></td>
+    </tr>
+
+    <tr>
+        <td rowspan="4">(v)</td>
+        <td rowspan="4">Suction filter -  for cleanliness and correct fittings</td>
+        <td>HPAC No. 1</td>
+        <td><input type="text" form-control formControlName="Piping_Suction_HPAC1" /></td>
+    </tr>
+
+    <tr>
+        <td>HPAC No. 2</td>
+        <td><input type="text" form-control formControlName="Piping_Suction_HPAC2" /></td>
+    </tr>
+
+     <tr>
+        <td>HPAC No. 3</td>
+        <td><input type="text" form-control formControlName="Piping_Suction_HPAC3" /></td>
+    </tr>
+
+     <tr>
+        <td>Diesel Driven Air Compressor </td>
+        <td><input type="text" form-control formControlName="Piping_Suction_Diesel_driven" /></td>
+    </tr>
+
+    <tr>
+        <td>(vi)</td>
+        <td colspan="2">System Integrity checks - for any type of leakages. 
+Complete starting air system is to be pressurised up to 200 bar pressure</td>
+        <td><input type="text" form-control formControlName="Piping_System_Integrity" /></td>
+    </tr>
+
+     <tr>
+        <td>(vii)</td>
+        <td colspan="2">Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support</td>
+        <td><input type="text" form-control formControlName="Piping_Supporting_clamps" /></td>
+    </tr>
+     <tr>
+        <td>(viii)</td>
+        <td colspan="2">System pipe line to be checked upto   working pressure for 2 hrs.  </td>
+        <td><input type="text" form-control formControlName="Piping_System_pipe" /></td>
+    </tr>
+</table>
+
+
+
+
+<p>(c) <strong>Valves. </strong>Visual and operational checks of following valves are to be carried out. Operate the valves through their complete range of operations to ensure that the valve position indicator moves with the valve.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="4">(i)</td>
+            <td rowspan="4">Compressor discharge valves</td>
+            <td>HPAC No. 1</td>
+            <td><input type="text" form-control formControlName="Valves_compressor__hPAC_no01"></td>
+        </tr>
+        <tr>
+            <td>HPAC No. 2</td>
+            <td><input type="text" form-control formControlName="Valves_compressor__hPAC_no02"></td>
+        </tr>
+        <tr>
+            <td>HPAC No. 3</td>
+            <td><input type="text" form-control formControlName="Valves_compressor__hPAC_no03"></td>
+        </tr>
+        <tr>
+            <td>Diesel Driven Air Compressor</td>
+            <td><input type="text" form-control formControlName="Valves_compressor__hPAC_no04"></td>
+        </tr>
+        
+
+        <tr>
+            <td rowspan="4">(ii)</td>
+            <td rowspan="4">Air Bottle filing valves</td>
+            <td>HPAC air bottles no 1,2,3,4</td>
+            <td><input type="text" form-control formControlName="Valves_air_bottle_hPAC_no01"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 5,6,7,8</td>
+            <td><input type="text" form-control formControlName="Valves_air_bottle_hPAC_no02"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 9,10,11,12</td>
+            <td><input type="text" form-control formControlName="Valves_air_bottle_hPAC_no03"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 13,14,15,16</td>
+            <td><input type="text" form-control formControlName="Valves_air_bottle_hPAC_no04"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">(iii)</td>
+            <td rowspan="4">Air Bottle outlet valves</td>
+            <td>HPAC air bottles no 1,2,3,4</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_outlet_hPAC_no01"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 5,6,7,8</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_outlet_hPAC_no02"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 9,10,11,12</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_outlet_hPAC_no03"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 13,14,15,16</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_outlet_hPAC_no04"></td>
+        </tr>
+
+
+        <tr>
+            <td rowspan="4">(iv)</td>
+            <td rowspan="4">Air Bottle drain valves</td>
+            <td>HPAC air bottles no 1,2,3,4</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_drain_hPAC_no01"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 5,6,7,8</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_drain_hPAC_no02"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 9,10,11,12</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_drain_hPAC_no03"></td>
+        </tr>
+        <tr>
+            <td>HPAC air bottles no 13,14,15,16</td>
+            <td><input type="text" form-control formControlName="Valves_air_bot_drain_hPAC_no04"></td>
+        </tr>
+
+        <tr>
+            <td>(v)</td>
+            <td colspan="2">Supply in inlet and outlet valve of reducers </td>
+            <td><input type="text" form-control formControlName="Valves_supply_hPAC_no01"></td>
+        </tr>
+
+         <tr>
+            <td>(vi)</td>
+            <td colspan="2">Isolating valves </td>
+            <td><input type="text" form-control formControlName="Valves_isolating__hPAC_no01"></td>
+        </tr>
+        <tr>
+            <td rowspan="4">(vi)</td>
+            <td rowspan="4">Safety/ relief valves fitted on compressor and reservoir. Test certificate to be  provided.</td>
+            <td>HPAC No. 1</td>
+            <td><input type="text" form-control formControlName="Valves_safety_compr_hPAC_no01"></td>
+        </tr>
+        <tr>
+            <td>HPAC No. 2</td>
+            <td><input type="text" form-control formControlName="Valves_safety_compr_hPAC_no02"></td>
+        </tr>
+        <tr>
+            <td>HPAC No. 3</td>
+            <td><input type="text" form-control formControlName="Valves_safety_compr_hPAC_no03"></td>
+        </tr>
+        <tr>
+            <td>Diesel Driven Air Compressor</td>
+            <td><input type="text" form-control formControlName="Valves_safety_compr_hPAC_no04"></td>
+        </tr>
+    </table>
+
+
+
+
+    <p>(d) <strong>Instrumentation. </strong>Visual/ functional checks are to be carried out for the following:</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+
+        <tr>
+            <td rowspan="9">(i)</td>
+            <td rowspan="9">Pressure gauges. <br>All pressure gauges in the system and equipment to checked for functionality and operation.<br>  
+Pressure gauge marking for operating range to be completed.   <br>
+Calibration certificates to be provided Valves in gauge line and on the pressure, gauge are to be checked for functionality and operation .</td>
+            <td>HPAC no. 1 discharge Pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_01"></td>
+        </tr>
+        <tr>
+            <td>HPAC no. 2 discharge Pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_02"></td>
+        </tr>
+
+        <tr>
+            
+            <td>HPAC no. 3 discharge Pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_03"></td>
+        </tr>
+
+        <tr>
+            <td>DD air compressor discharge pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_04"></td>
+        </tr>   
+
+        <tr>
+            <td>HP air bottle no.1,2,3,4 Pr gauges </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_05"></td>
+        </tr>
+        <tr>
+            <td>HP air bottle  no.5,6,7,8 Pr gauges </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_06"></td>
+        </tr>
+
+        <tr>
+            <td>HP air bottle no.9,10,11,12 Pr gauges </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_07"></td>
+        </tr>
+
+        <tr>
+            <td>HP air bottle no.13,14,15, 16 Pr gauges </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_08"></td>
+
+        </tr>
+        <tr>
+            <td>All Reducers inlet  and outlet Pr gauges </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_09"></td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="4">(ii)</td>
+            <td rowspan="4">Pressure switches.  All  pressure switches in the system and equipment to be checked for functionality and operation. Auto cut-in and cut-off of compressor to be checked.  Calibration certificates to be provided. </td>
+            <td>HPAC no. 1 discharge Pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_10"></td>
+        </tr>
+        <tr>
+            <td>HPAC no. 2 discharge Pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_11"></td> 
+        </tr>
+
+        <tr>
+            <td>HPAC no. 3 discharge Pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_12"></td>
+        </tr>
+
+        <tr>
+            <td>Diesel Driven Air compressor</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_13"></td> 
+        </tr>
+
+
+         <tr>
+            <td rowspan="5">(iii)</td>
+            <td rowspan="5">Sensors. All sensors in the system and related equipment to be checked for functionality and operation.  Calibration  certificates to be provided </td>
+            <td>Both cruise GTs bottles pressure sensor </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_14"></td>
+        </tr>
+
+        <tr>
+            <td>Both boost GTs bottles pressure sensor </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_15"></td>
+        </tr>
+
+        <tr>
+            <td>HPAC no. 1 running indication in MCR </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_16"></td>
+        </tr>
+
+        <tr>
+            <td>HPAC no. 2 running indication in MCR </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_17"></td>
+        </tr>
+
+        <tr>
+            <td>HPAC no. 3 running indication in MCR </td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_18"></td>
+        </tr>
+
+         <tr>
+            <td>(iv)</td>
+            <td> Gauge lines. All gauge lines to be checked for proper fitting and leakages.  </td>
+            <td>DD air compressor discharge pr gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_pressure_remark_19"></td>
+        </tr>
+    </table>
+
+    <p>(e) <strong>Foundation. </strong>Visual checks of foundation are to be done for ascertaining foundation condition.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="8">(i)</td>
+            <td rowspan="8">Foundation</td>
+            <td>HPAC no. 1</td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_01"></td>
+        </tr>
+        <tr>
+            <td>HPAC no. 2</td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_02"></td>
+        </tr>
+        <tr>
+            <td>HPAC no. 3</td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_03"></td>
+        </tr>
+        <tr>
+            <td>Diesel Driven Air Compressor</td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_04"></td>
+        </tr>
+        <tr>
+            <td>HP air bottle no.1,2,3,4  </td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_05"></td>
+        </tr>
+        <tr>
+            <td>HP air bottle no.5,6,7,8 </td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_06"></td>
+        </tr>
+        <tr>
+            <td>HP air bottle no.9,10,11,12  </td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_07"></td>
+        </tr>
+        <tr>
+            <td>HP air bottle no.13,14,15,16</td>
+            <td><input type="text" form-control formControlName="e_foundation_remark_08"></td>
+        </tr>
+    </table>
+    <p>(f) <strong>Mounting. </strong>Condition, attenuation and grouping of mounts have to be checked.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <td>Ser.</td>
+            <td colspan="2">Description</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <td rowspan="3">(i)</td>
+            <td rowspan="3">Mounting</td>
+            <td>Physical Condition</td>
+            <td><input type="text" form-control formControlName="f_mounting_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Attenuation</td>
+            <td><input type="text" form-control formControlName="f_mounting_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Service life as per MAINTOPS/OEM Doc.</td>
+            <td><input type="text" form-control formControlName="f_mounting_remark_03"></td>
+        </tr>
+    </table>
+
+<!-- Appendix AN -->
+
+<h3>LUB OIL SYSTEM</h3>
+    <h4>1. Pre-Requisite Check – Off List for System Trials.</h4>
+    <table>
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td rowspan="4">(a)</td>
+            <td rowspan="4">Pump/ centrifuge installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. Applicable in case of ABER/ MLU replacement of item</td>
+            <td>GT Lub oil Transfer pump  </td>
+            <td><input type="text" form-control formControlName="lub_oil_sys_GTa" /></td>      
+        </tr>
+        <tr>
+            <td>RG Lub oil Transfer pump  </td>
+            <td><input type="text" form-control formControlName="lub_oil_sys_RGa" /></td>
+        </tr>
+
+        <tr>
+            <td>GT LO Purifier</td>
+            <td><input type="text" form-control formControlName="lub_oil_sys_GT_LOa" /></td>
+        </tr>
+        <tr>
+            <td>RG LO Purifier</td>
+            <td><input type="text" form-control formControlName="lub_oil_sys_RG_LOa" /></td>
+        </tr>
+
+        <tr>
+            <td rowspan="5">(b)</td>
+            <td rowspan="5">Pressure gauges and thermometers are calibrated and  red marked indicating working pressure of the system.</td>
+            <td>Pump suction pressure gauge  </td>
+            <td><input type="text" form-control formControlName="lub_oil_press_pump1b" /></td>      
+        </tr>
+
+        <tr>
+            <td>Pump discharge pressure gauge</td>
+            <td><input type="text" form-control formControlName="lub_oil_press_pump2b" /></td>
+        </tr>
+
+        <tr>
+            <td>Purifier feed pump suction gauges</td>
+            <td><input type="text" form-control formControlName="lub_oil_press_pump3b" /></td>
+        </tr>
+        <tr>
+            <td>Purifier feed pump discharge gauge</td>
+            <td><input type="text" form-control formControlName="lub_oil_press_pump4b" /></td>
+        </tr>
+
+         <tr>
+            <td>Purifier outlet pressure gauge</td>
+            <td><input type="text" form-control formControlName="lub_oil_press_pump5b" /></td>
+        </tr>
+
+        <tr>
+            <td>(c)</td>
+            <td colspan="2"> System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. </td>
+            <td><input type="text" form-control formControlName="lub_oil_sys_install"/></td>      
+        </tr>
+
+        <tr>
+            <td>(d)</td>
+            <td colspan="2">The purifier sludge outlet pipe must not be at an angle of more than 300 from the vertical plane. </td>
+            <td><input type="text" form-control formControlName="lub_oil_purifier_outlet" /></td>      
+        </tr>
+
+        <tr>
+            <td>(e)</td>
+            <td colspan="2">The operating water tank should be placed as closed to the separator as possible and in accordance with the drawing. </td>
+            <td><input type="text" form-control formControlName="lub_oil_operating" /></td>
+        </tr>
+        <tr>
+            <td>(f)</td>
+            <td colspan="2">The discharge from relief valve is to be directed to safe position.   </td>
+            <td><input type="text" form-control formControlName="lub_oil_discharge_valve" /></td>
+        </tr>
+
+        <tr>
+            <td>(g)</td>
+            <td colspan="2">LO purifier heating pipes are to be insulated.</td>
+            <td><input type="text" form-control formControlName="lub_oil_purife_pipe" /></td>
+        </tr>
+
+        <tr>
+            <td>(h)</td>
+            <td colspan="2">The lub oil storage tank is cleaned, inspected and cleared by respective agencies and ready to receive lub oil. </td>
+            <td><input type="text" form-control formControlName="lub_oil_storage_tank" /></td>
+        </tr>
+
+        <tr>
+            <td>(j)</td>
+            <td colspan="2">Sufficient lights available.  </td>
+            <td><input type="text" form-control formControlName="lub_oil_suff_lights" /></td>
+        </tr>
+
+        <tr>
+            <td>(k)</td>
+            <td colspan="2">Communication available between pump control position and tanks. (Motorola) </td>
+            <td><input type="text" form-control formControlName="lub_oil_comm_pumps"/></td>
+        </tr>
+
+         <tr>
+            <td>(l)</td>
+            <td colspan="2">Test area is cleaned. </td>
+            <td><input type="text" form-control formControlName="lub_oil_test_Area"/></td>
+        </tr>
+
+        <tr>
+            <td>(m)</td>
+            <td colspan="2">All the pipes are properly supported with clamps </td>
+            <td><input type="text" form-control formControlName="lub_oil_pipe_clamp"/></td>
+        </tr>
+
+        <tr>
+            <td>(n)</td>
+            <td colspan="2">Talley plates are fitted on all valves, cocks and gauges. </td>
+            <td><input type="text" form-control formControlName="lub_oil_tally_plate"/></td>
+        </tr>
+
+        <tr>
+            <td>(p)</td>
+            <td colspan="2"> Air escape pipes are open/clear of any obstruction (prior to filling of Tanks)</td>
+            <td><input type="text" form-control formControlName="lub_oil_air_escape_obs"/></td>
+        </tr>
+    </table>
+
+
+    <h4>2. Lub Oil Transfer Pump.</h4>
+    <h4>a. Carry out following checks before starting the pump.</h4>
+    <table>
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td>Check pipe system is clean and clear from obstruction. </td>
+            <td><input type="text" form-control formControlName="lub_oil_compress_pipe_sys" /></td>      
+        </tr>
+
+        <tr>
+            <td>(ii)</td>
+            <td>Prime the pump with oil drawn from the supply system to ensure that the pump will not run in a dry unlubricated condition </td>
+            <td><input type="text" form-control formControlName="lub_oil_compress_air_intake" /></td>      
+        </tr>
+
+        <tr>
+            <td>(iii)</td>
+            <td>Rotate the pump, by hand, in direction indicated on the driving end cover.</td>
+            <td><input type="text" form-control formControlName="lub_oil_compress_rotate_compre" /></td>      
+        </tr>
+
+        <tr>
+            <td>(iv)</td>
+            <td>Check that all valves are in the open position. </td>
+            <td><input type="text" form-control formControlName="lub_oil_compress_valve_bottle" /></td>      
+        </tr>
+
+        <tr>
+            <td>(v)</td>
+            <td>Start the pump and check correct rotation.   </td>
+            <td><input type="text" form-control formControlName="lub_oil_start_pump" /></td>
+        </tr>
+    </table>
+
+        <h4>3. System Trials.</h4>
+             <h4>(a) Piping. Visual checks of following components to be carried out for any leakages or damage.  </h4>
+    <table>
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>SAT/UNSAT</th>
+        </tr>
+
+        <tr>
+            <td>(i)</td>
+            <td>Compensators</td>
+            <td><input type="text" form-control formControlName="Piping_lub_oil_Compen" /></td>
+        </tr>
+
+        <tr>
+            <td>(ii)</td>
+            <td>Flange-connections</td>
+            <td><input type="text" form-control formControlName="Piping_lub_oil_Flange" /></td>
+        </tr>
+
+        <tr>
+            <td>(iii)</td>
+            <td>Gaskets</td>
+            <td><input type="text" form-control formControlName="Piping_lub_oil_Gaskets" /></td>
+        </tr>
+
+        <tr>
+            <td>(iv)</td>
+            <td>Adapters</td>
+            <td><input type="text" form-control formControlName="Piping_lub_oil_Adapters" /></td>
+        </tr>
+
+        <tr>
+            <td>(v)</td>
+            <td>Suction strainers -  for cleanliness and correct fittings</td>
+            <td><input type="text" form-control formControlName="Piping_lub_oil_Suction_HPAC1" /></td>
+        </tr>
+
+        <tr>
+            <td>(vi)</td>
+            <td>System Integrity checks - for any type of leakages. (To be undertaken at working pressure during normal operation of system)  </td>
+            <td><input type="text" form-control formControlName="Piping_lub_oil_System_Integrity" /></td>
+        </tr>
+
+        <tr>
+            <td>(vii)</td>
+            <td>Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support </td>
+            <td><input type="text" form-control formControlName="Piping_lub_oil_Supporting_clamps" /></td>
+        </tr>
+    </table>
+
+
+                <p>(b) <strong>Valves. </strong>Visual and operational checks of following valves are to be carried out. Operate the valves through their complete range of operations to ensure that the valve position indicator moves with the valve.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td colspan="2">Pump 1 suction Valve</td>
+            <td><input type="text" form-control formControlName="LO_Pump_syction_valve01"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td colspan="2">Pump 1 discharge Valve</td>
+            <td><input type="text" form-control formControlName="LO_Pump_syction_valve02"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td colspan="2">Pump 2 suction Valve</td>
+            <td><input type="text" form-control formControlName="LO_Pump_syction_valve03"></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td colspan="2">Pump 2 discharge Valve</td>
+            <td><input type="text" form-control formControlName="LO_Pump_syction_valve04"></td>
+        </tr>
+        
+        <tr>
+            <td>(v)</td>
+            <td colspan="2">Tank filling valve.  </td>
+            <td><input type="text" form-control formControlName="LO_Pump_syction_valve05"></td>
+        </tr>
+
+        <tr>
+            <td>(vi)</td>
+            <td colspan="2">Tank de-filling valve.  </td>
+            <td><input type="text" form-control formControlName="LO_Pump_syction_valve06"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="7">(vii)</td>
+            <td rowspan="7">Isolating/filing valves</td>
+            <td>GT-1 Storage Tanks</td>
+            <td><input type="text" form-control formControlName="LO_Isolating_valve01"></td>
+        </tr>
+        <tr>
+            <td>GT-2 Storage Tanks</td>
+            <td><input type="text" form-control formControlName="LO_Isolating_valve02"></td>
+        </tr>
+        <tr>
+            <td>GT-3 Storage Tanks</td>
+            <td><input type="text" form-control formControlName="LO_Isolating_valve03"></td>
+        </tr>
+        <tr>
+            <td>GT-4 Storage Tanks</td>
+            <td><input type="text" form-control formControlName="LO_Isolating_valve04"></td>
+        </tr>
+
+        <tr>
+            <td>No. 1 DA</td>
+            <td><input type="text" form-control formControlName="LO_Isolating_valve05"></td>
+        </tr>
+
+        <tr>
+            <td>Aft E/R general supply</td>
+            <td><input type="text" form-control formControlName="LO_Isolating_valve06"></td>
+        </tr>
+        <tr>
+            <td>Fwd E/R general supply </td>
+            <td><input type="text" form-control formControlName="LO_Isolating_valve07"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">(viii)</td>
+            <td rowspan="2">Purifier Feed pump suction and discharge valves</td>
+            <td>Purifier no. 1</td>
+            <td><input type="text" form-control formControlName="LO_Purifier_valve01"></td>
+        </tr>
+        <tr>
+            <td>Purifier no. 2</td>
+            <td><input type="text" form-control formControlName="LO_Purifier_valve02"></td>
+        </tr>
+        
+        <tr>
+            <td rowspan="2">(ix)</td>
+            <td rowspan="2">Purifier system inlet, outlet, isolating valves</td>
+            <td>Purifier no. 1</td>
+            <td><input type="text" form-control formControlName="LO_Purifier_inlet_valve01"></td>
+        </tr>
+        <tr>
+            <td>Purifier no. 2</td>
+            <td><input type="text" form-control formControlName="LO_Purifier_inlet_valve02"></td>
+        </tr>
+    </table>
+
+        <p>(c) <strong>Tanks. </strong>Visual/ functional checks to be carried out for the following (for LO storage tank in FER/ AER)</p>
+        <table class="table table-bordered">
+            <tr>
+                <th>Ser.</th>
+                <th>Description</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>(i)</td>
+                <td>Sounding tube and sounding tapes – Volumetric marking on sounding chart to be cross checked with sounding tape markings during fuelling.  Intactness of sounding tape and tube to be checked during tank cleaning activity.</td>
+                <td><input type="text" form-control formControlName="LO_Tank_valve01"></td>
+            </tr>
+            <tr>
+                <td>(ii)</td>
+                <td>APT - Test certificate to be obtained from respective agencies.</td>
+                <td><input type="text" form-control formControlName="LO_Tank_valve02"></td>
+            </tr>
+            <tr>
+                <td>(iii)</td>
+                <td>Paint scheme.  </td>
+                <td><input type="text" form-control formControlName="LO_Tank_valve03"></td>
+            </tr>
+            <tr>
+                <td>(iv)</td>
+                <td>Manhole door gaskets to be renewed. </td>
+                <td><input type="text" form-control formControlName="LO_Tank_valve04"></td>
+            </tr>
+        </table>
+        
+
+        <p>(d) <strong>Instrumentation. </strong>Visual/ functional checks are to be carried out for the following:</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+
+        <tr>
+            <td rowspan="10">(i)</td>
+            <td rowspan="10">Pressure gauges. <br>All pressure gauges in the system and equipment to checked for functionality and operation.<br>Pressure gauge marking for operating range to be completed. <br>Calibration certificates to be provided Valves in gauge line and on the pressure, gauge are to be checked for functionality and operation .</td>
+            <td>Pump 1 suction pressure gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Pump 1 discharge pressure gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_02"></td>
+        </tr>
+
+        <tr>
+            <td>Pump 2 suction pressure gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_03"></td>
+        </tr>
+
+        <tr>
+            <td>Pump 2 discharge pressure gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_04"></td>
+        </tr>   
+
+        <tr>
+            <td>Purifier feed pump no. 1 suction gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_05"></td>
+        </tr>
+        <tr>
+            <td>Purifier feed pump no. 1 discharge gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_06"></td>
+        </tr>
+
+        <tr>
+            <td>Purifier feed pump no. 2 suction gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_07"></td>
+        </tr>
+
+        <tr>
+            <td>Purifier feed pump no. 2 discharge gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_08"></td>
+        </tr>
+        <tr>
+            <td>Purifier no. 1 outlet pressure gauge </td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_09"></td>
+        </tr>
+        <tr>
+            <td>Purifier no. 2 outlet pressure gauge </td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_10"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">(ii)</td>
+            <td rowspan="3">Sensor. All sensors in the LO tank to be checked for functionality and operation. Calibration certificates to be provided </td>
+            <td>Storage tank level digital indicator (MCR)</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_20"></td>
+        </tr>
+        <tr>
+            <td>Purifier no.1 running indication  </td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_11"></td> 
+        </tr>
+        <tr>
+            <td>Purifier no.2 running indication  </td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_12"></td>
+        </tr>
+         <tr>
+            <td>(iv)</td>
+            <td> Gauge lines. All gauge lines to be checked for proper fitting and leakages.  </td>
+            <td>DD air compressor discharge pr gauge</td>
+            <td><input type="text" form-control formControlName="LO_instrumentation_pressure_remark_19"></td>
+        </tr>
+    </table>
+
+     <p>(e) <strong>Foundation. </strong>Visual checks of foundation are to be done for ascertaining foundation condition.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="6">(i)</td>
+            <td rowspan="6">Foundation</td>
+            <td>GT Lub oil transfer pump 1</td>
+            <td><input type="text" form-control formControlName="LO_foundation_remark_01"></td>
+        </tr>
+        <tr>
+            <td>GT Lub oil transfer pump 2</td>
+            <td><input type="text" form-control formControlName="LO_foundation_remark_02"></td>
+        </tr>
+        <tr>
+            <td>RG Lub oil transfer pump 1</td>
+            <td><input type="text" form-control formControlName="LO_foundation_remark_03"></td>
+        </tr>
+        <tr>
+            <td>RG Lub oil transfer pump 2</td>
+            <td><input type="text" form-control formControlName="LO_foundation_remark_04"></td>
+        </tr>
+        <tr>
+            <td>Lub oil Purifier 1</td>
+            <td><input type="text" form-control formControlName="LO_foundation_remark_05"></td>
+        </tr>
+        <tr>
+            <td>Lub oil Purifier 2</td>
+            <td><input type="text" form-control formControlName="LO_foundation_remark_06"></td>
+        </tr>
+    </table>
+    <p>(f) <strong>Mounting. </strong>Condition, attenuation and grouping of mounts have to be checked.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <td>Ser.</td>
+            <td colspan="2">Description</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <td rowspan="3">(i)</td>
+            <td rowspan="3">Mounting</td>
+            <td>Physical Condition</td>
+            <td><input type="text" form-control formControlName="LO_mounting_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Attenuation</td>
+            <td><input type="text" form-control formControlName="LO_mounting_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Service life as per MAINTOPS/OEM Doc.</td>
+            <td><input type="text" form-control formControlName="LO_mounting_remark_03"></td>
+        </tr>
+    </table>
+<!-- Appendix AN Finished -->
+
+
+
+<div class="text-center">
+    <h2>FIRE MAIN SYSTEM</h2>
+</div>
+    <p><strong>1. Pre -Requisite Check – Off List for System Trials.</strong></p>
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="9">(a)</td>
+            <td rowspan="9">Pump installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. Applicable in case of ABER/ MLU replacement of  item.</td>
+            <td>Fire main pump no. 1</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 2</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 3</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_03"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 4</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_04"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 5</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_05"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 6</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_06"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 7</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_07"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 8</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_08"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 9</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_09"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">(b)</td>
+            <td rowspan="3">Pressure gauges are calibrated and red  marked working pressure of the system. </td>
+            <td>Pump suction pressure gauges </td>
+            <td><input type="text" form-control formControlName="pre_req_remark_10"></td>
+        </tr>
+        <tr>
+            <td>Pump discharge pressure gauges</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_11"></td>
+        </tr>
+        <tr>
+            <td>Other gauges</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_12"></td>
+        </tr>
+        <tr>
+            <td>(c)</td>
+            <td colspan="2">System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. </td>
+            <td><input type="text" form-control formControlName="pre_req_remark_13"></td>
+        </tr>
+        <tr>
+            <td>(d)</td>
+            <td colspan="2">Sufficient lights available.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_14"></td>
+        </tr>
+        <tr>
+            <td>(e)</td>
+            <td colspan="2">Communication available between pump control position and hydrants. (Motorola)  </td>
+            <td><input type="text" form-control formControlName="pre_req_remark_15"></td>
+        </tr>
+        <tr>
+            <td>(f)</td>
+            <td colspan="2">Test area is cleaned.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_16"></td>
+        </tr>
+        <tr>
+            <td>(g)</td>
+            <td colspan="2">All the pipes are properly supported with clamps.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_17"></td>
+        </tr>
+        <tr>
+            <td>(h)</td>
+            <td colspan="2">Talley plates are fitted on all valves, cocks and gauges.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_18"></td>
+        </tr>
+    </table>
+    <p><strong>2. Fire Main Pump. </strong>Carry out following checks before starting the pump.</p>
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td>Check pipe system is clean and clear from obstruction.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_01"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td>Rotate the pumps, by hand, in direction indicated on the driving end cover.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_02"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td>Check that all valves are in the open position.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_03"></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td>Start the pump and check correct rotation.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_04"></td>
+        </tr>
+        <tr>
+            <td>(v)</td>
+            <td>Check suction and discharge pressure of the pump.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_05"></td>
+        </tr>
+    </table>
+
+    <p><strong>3. System Trials.</strong></p>
+    <p>(a) <strong>Piping. </strong>Visual checks of following components are to be carried out for any leakages or damage.</p>
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td colspan="2">Compensators</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_01"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td colspan="2">Flange-connections</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_02"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td colspan="2">Gaskets</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_03"></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td colspan="2">Adapters</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_04"></td>
+        </tr>
+        <tr>
+            <td rowspan="9">(v)</td>
+            <td rowspan="9">Suction strainers - for cleanliness and correct fittings.</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_05"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_06"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_07"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_08"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_09"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_10"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_11"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_12"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_13"></td>
+        </tr>
+        <tr>
+            <td>(vi)</td>
+            <td colspan="2">System Integrity checks - For any type of leakages. (To be undertaken at working pressure during normal operation of system).</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_14"></td>
+        </tr>
+        <tr>
+            <td>(vii)</td>
+            <td colspan="2">Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support.</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_15"></td>
+        </tr>
+    </table>
+    <p>(b) <strong>Valves. </strong>Visual and operational checks of following valves are to be carried out. Operate the valves through their complete range of operations to ensure that the valve position indicator moves with the valve.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="9">(i)</td>
+            <td rowspan="9">Pump suction valves</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_01"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_02"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_03"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_04"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_05"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_06"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_07"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_08"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_09"></td>
+        </tr>
+        <tr>
+            <td rowspan="9">(ii)</td>
+            <td rowspan="9">Pump discharge valves</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_10"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_11"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_12"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_13"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_14"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_15"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_16"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_17"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_18"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td>Isolating valves</td>
+            <td>09 in no. </td>
+            <td><input type="text" form-control formControlName="b_valves_remark_19"></td>
+        </tr>
+        <tr>
+            <td>(vi)</td>
+            <td>Fire hydrants</td>
+            <td>78 in no.</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_20"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">(v)</td>
+            <td rowspan="2">Shore connection valves</td>
+            <td>Foxle (port & stbd)</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_21"></td>
+        </tr>
+        <tr>
+            <td>Quarter deck (port & stbd)</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_22"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">(vi)</td>
+            <td rowspan="2">Supply valves</td>
+            <td>Steering gear
+                Sanitary system,
+                Prewetting system,  
+                Sprinkling system,  
+                Foam extinguishing system, 
+                emergency cooling supply for AC & REF plants, 
+                Eductors of Drainage sys & bilge puming system, 
+                Fire hydrants, 
+                Salvage eductor</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_23"></td>
+        </tr>
+    </table>
+
+    <p>(c) <strong>Instrumentation. </strong>Visual/ functional checks are to be carried out for the following:</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="4">(i)</td>
+            <td rowspan="4">Pressure gauges. <br>All pressure and vacuum gauges in the system and equipment to checked for functionality and operation. <br> Pressure gauge marking for operating range to be completed. <br> Calibration certificates to be provided .</td>
+            <td>Pump no.1, 2, 3, 4, 5, 6, 7, 8 & 9 suction pressure gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Pump no. 1, 2, 3, 4, 5, 6, 7, 8 & 9 discharge pressure gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_02"></td>
+        </tr>
+        <tr>
+            <td>AER, AMR & FER individual section F/M pressure gauges</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_03"></td>
+        </tr>
+        <tr>
+            <td>All sprinkling stations</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_04"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td colspan="2">Gauge lines. All gauge lines to be checked for proper fitting and leakages.</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_05"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td colspan="2">Remote operation of fire main pumps from MCR</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_06"></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td colspan="2">Remote operation of ACS valves</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_07"></td>
+        </tr>
+    </table>
+
+    <p>(d) <strong>Foundation. </strong>Visual checks of foundation are to be done for ascertaining foundation condition.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>Pump No.</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="9">(i)</td>
+            <td rowspan="9">Foundation</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_01"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_02"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_03"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_04"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_05"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_06"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_07"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_08"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_09"></td>
+        </tr>
+    </table>
+    <p>(e) <strong>Mounting. </strong>Condition, attenuation and grouping of mounts have to be checked.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <td>Ser.</td>
+            <td colspan="2">Description</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <td rowspan="3">(i)</td>
+            <td rowspan="3">Mounting</td>
+            <td>Physical Condition</td>
+            <td><input type="text" form-control formControlName="e_mounting_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Attenuation</td>
+            <td><input type="text" form-control formControlName="e_mounting_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Service life as per MAINTOPS/OEM Doc.</td>
+            <td><input type="text" form-control formControlName="e_mounting_remark_03"></td>
+        </tr>
+    </table>
+    </form>
+</section>
