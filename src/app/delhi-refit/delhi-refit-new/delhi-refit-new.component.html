@@ -1,0 +1,445 @@
+<section>
+<div class="text-center">
+    <h2>FIRE MAIN SYSTEM</h2>
+</div>
+<!-- <form [formGroup]="delhiForm" (ngSubmit)="onSubmit()"> -->
+    <p><strong>1. Pre -Requisite Check – Off List for System Trials.</strong></p>
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="9">(a)</td>
+            <td rowspan="9">Pump installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. Applicable in case of ABER/ MLU replacement of  item.</td>
+            <td>Fire main pump no. 1</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 2</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 3</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_03"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 4</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_04"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 5</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_05"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 6</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_06"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 7</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_07"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 8</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_08"></td>
+        </tr>
+        <tr>
+            <td>Fire main pump no. 9</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_09"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">(b)</td>
+            <td rowspan="3">Pressure gauges are calibrated and red  marked working pressure of the system. </td>
+            <td>Pump suction pressure gauges </td>
+            <td><input type="text" form-control formControlName="pre_req_remark_10"></td>
+        </tr>
+        <tr>
+            <td>Pump discharge pressure gauges</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_11"></td>
+        </tr>
+        <tr>
+            <td>Other gauges</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_12"></td>
+        </tr>
+        <tr>
+            <td>(c)</td>
+            <td colspan="2">System/ installation completed in accordance with the reference drawings. Any modifications as part of refit to be incorporated in the drawings. </td>
+            <td><input type="text" form-control formControlName="pre_req_remark_13"></td>
+        </tr>
+        <tr>
+            <td>(d)</td>
+            <td colspan="2">Sufficient lights available.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_14"></td>
+        </tr>
+        <tr>
+            <td>(e)</td>
+            <td colspan="2">Communication available between pump control position and hydrants. (Motorola)  </td>
+            <td><input type="text" form-control formControlName="pre_req_remark_15"></td>
+        </tr>
+        <tr>
+            <td>(f)</td>
+            <td colspan="2">Test area is cleaned.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_16"></td>
+        </tr>
+        <tr>
+            <td>(g)</td>
+            <td colspan="2">All the pipes are properly supported with clamps.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_17"></td>
+        </tr>
+        <tr>
+            <td>(h)</td>
+            <td colspan="2">Talley plates are fitted on all valves, cocks and gauges.</td>
+            <td><input type="text" form-control formControlName="pre_req_remark_18"></td>
+        </tr>
+    </table>
+    <p><strong>2. Fire Main Pump. </strong>Carry out following checks before starting the pump.</p>
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td>Check pipe system is clean and clear from obstruction.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_01"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td>Rotate the pumps, by hand, in direction indicated on the driving end cover.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_02"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td>Check that all valves are in the open position.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_03"></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td>Start the pump and check correct rotation.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_04"></td>
+        </tr>
+        <tr>
+            <td>(v)</td>
+            <td>Check suction and discharge pressure of the pump.</td>
+            <td><input type="text" form-control formControlName="fire_main_pump_remark_05"></td>
+        </tr>
+    </table>
+
+    <p><strong>3. System Trials.</strong></p>
+    <p>(a) <strong>Piping. </strong>Visual checks of following components are to be carried out for any leakages or damage.</p>
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>(i)</td>
+            <td colspan="2">Compensators</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_01"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td colspan="2">Flange-connections</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_02"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td colspan="2">Gaskets</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_03"></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td colspan="2">Adapters</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_04"></td>
+        </tr>
+        <tr>
+            <td rowspan="9">(v)</td>
+            <td rowspan="9">Suction strainers - for cleanliness and correct fittings.</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_05"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_06"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_07"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_08"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_09"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_10"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_11"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_12"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_13"></td>
+        </tr>
+        <tr>
+            <td>(vi)</td>
+            <td colspan="2">System Integrity checks - For any type of leakages. (To be undertaken at working pressure during normal operation of system).</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_14"></td>
+        </tr>
+        <tr>
+            <td>(vii)</td>
+            <td colspan="2">Supporting clamps - Sufficient supporting clamps to be provided at regular intervals as per NES 865. Clamps should have rubber inserts and adequate fasteners. End connection of supporting frame should have rigid support.</td>
+            <td><input type="text" form-control formControlName="a_piping_remark_15"></td>
+        </tr>
+    </table>
+    <p>(b) <strong>Valves. </strong>Visual and operational checks of following valves are to be carried out. Operate the valves through their complete range of operations to ensure that the valve position indicator moves with the valve.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="9">(i)</td>
+            <td rowspan="9">Pump suction valves</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_01"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_02"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_03"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_04"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_05"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_06"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_07"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_08"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_09"></td>
+        </tr>
+        <tr>
+            <td rowspan="9">(ii)</td>
+            <td rowspan="9">Pump discharge valves</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_10"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_11"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_12"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_13"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_14"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_15"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_16"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_17"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_18"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td>Isolating valves</td>
+            <td>09 in no. </td>
+            <td><input type="text" form-control formControlName="b_valves_remark_19"></td>
+        </tr>
+        <tr>
+            <td>(vi)</td>
+            <td>Fire hydrants</td>
+            <td>78 in no.</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_20"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">(v)</td>
+            <td rowspan="2">Shore connection valves</td>
+            <td>Foxle (port & stbd)</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_21"></td>
+        </tr>
+        <tr>
+            <td>Quarter deck (port & stbd)</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_22"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">(vi)</td>
+            <td rowspan="2">Supply valves</td>
+            <td>Steering gear
+                Sanitary system,
+                Prewetting system,  
+                Sprinkling system,  
+                Foam extinguishing system, 
+                emergency cooling supply for AC & REF plants, 
+                Eductors of Drainage sys & bilge puming system, 
+                Fire hydrants, 
+                Salvage eductor</td>
+            <td><input type="text" form-control formControlName="b_valves_remark_23"></td>
+        </tr>
+    </table>
+
+    <p>(c) <strong>Instrumentation. </strong>Visual/ functional checks are to be carried out for the following:</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th colspan="2">Description</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="4">(i)</td>
+            <td rowspan="4">Pressure gauges. <br>All pressure and vacuum gauges in the system and equipment to checked for functionality and operation. <br> Pressure gauge marking for operating range to be completed. <br> Calibration certificates to be provided .</td>
+            <td>Pump no.1, 2, 3, 4, 5, 6, 7, 8 & 9 suction pressure gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Pump no. 1, 2, 3, 4, 5, 6, 7, 8 & 9 discharge pressure gauge</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_02"></td>
+        </tr>
+        <tr>
+            <td>AER, AMR & FER individual section F/M pressure gauges</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_03"></td>
+        </tr>
+        <tr>
+            <td>All sprinkling stations</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_04"></td>
+        </tr>
+        <tr>
+            <td>(ii)</td>
+            <td colspan="2">Gauge lines. All gauge lines to be checked for proper fitting and leakages.</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_05"></td>
+        </tr>
+        <tr>
+            <td>(iii)</td>
+            <td colspan="2">Remote operation of fire main pumps from MCR</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_06"></td>
+        </tr>
+        <tr>
+            <td>(iv)</td>
+            <td colspan="2">Remote operation of ACS valves</td>
+            <td><input type="text" form-control formControlName="c_instrumentation_remark_07"></td>
+        </tr>
+    </table>
+
+    <p>(d) <strong>Foundation. </strong>Visual checks of foundation are to be done for ascertaining foundation condition.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Ser.</th>
+            <th>Description</th>
+            <th>Pump No.</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td rowspan="9">(i)</td>
+            <td rowspan="9">Foundation</td>
+            <td>F/M pump no. 1</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_01"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 2</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_02"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 3</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_03"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 4</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_04"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 5</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_05"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 6</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_06"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 7</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_07"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 8</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_08"></td>
+        </tr>
+        <tr>
+            <td>F/M pump no. 9</td>
+            <td><input type="text" form-control formControlName="d_foundation_remark_09"></td>
+        </tr>
+    </table>
+    <p>(e) <strong>Mounting. </strong>Condition, attenuation and grouping of mounts have to be checked.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <td>Ser.</td>
+            <td colspan="2">Description</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <td rowspan="3">(i)</td>
+            <td rowspan="3">Mounting</td>
+            <td>Physical Condition</td>
+            <td><input type="text" form-control formControlName="e_mounting_remark_01"></td>
+        </tr>
+        <tr>
+            <td>Attenuation</td>
+            <td><input type="text" form-control formControlName="e_mounting_remark_02"></td>
+        </tr>
+        <tr>
+            <td>Service life as per MAINTOPS/OEM Doc.</td>
+            <td><input type="text" form-control formControlName="e_mounting_remark_03"></td>
+        </tr>
+    </table>
+<!-- </form> -->
+</section>
